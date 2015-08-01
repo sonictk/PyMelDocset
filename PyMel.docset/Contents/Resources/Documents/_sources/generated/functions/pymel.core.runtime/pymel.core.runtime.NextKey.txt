@@ -1,0 +1,6 @@
+pymel.core.runtime.NextKey
+==========================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NextKey

@@ -1,0 +1,6 @@
+pymel.core.runtime.AddToCurrentScene3dsMax
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: AddToCurrentScene3dsMax

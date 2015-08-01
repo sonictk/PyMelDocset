@@ -1,0 +1,6 @@
+pymel.core.runtime.TangetConstraintOptions
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: TangetConstraintOptions

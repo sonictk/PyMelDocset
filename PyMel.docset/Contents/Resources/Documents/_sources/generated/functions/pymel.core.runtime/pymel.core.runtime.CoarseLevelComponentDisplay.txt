@@ -1,0 +1,6 @@
+pymel.core.runtime.CoarseLevelComponentDisplay
+==============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CoarseLevelComponentDisplay

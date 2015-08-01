@@ -1,0 +1,6 @@
+pymel.core.runtime.OutlinerToggleReferenceNodes
+===============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: OutlinerToggleReferenceNodes

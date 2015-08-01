@@ -1,0 +1,6 @@
+pymel.core.runtime.ProfilerToolCpuView
+======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ProfilerToolCpuView

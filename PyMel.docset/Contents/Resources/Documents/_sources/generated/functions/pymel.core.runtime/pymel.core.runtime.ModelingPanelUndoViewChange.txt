@@ -1,0 +1,6 @@
+pymel.core.runtime.ModelingPanelUndoViewChange
+==============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ModelingPanelUndoViewChange

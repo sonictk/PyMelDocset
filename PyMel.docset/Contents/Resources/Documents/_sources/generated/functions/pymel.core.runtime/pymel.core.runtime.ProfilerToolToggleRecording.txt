@@ -1,0 +1,6 @@
+pymel.core.runtime.ProfilerToolToggleRecording
+==============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ProfilerToolToggleRecording

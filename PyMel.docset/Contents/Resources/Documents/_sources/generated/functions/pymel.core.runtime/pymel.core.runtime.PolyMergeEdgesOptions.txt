@@ -1,0 +1,6 @@
+pymel.core.runtime.PolyMergeEdgesOptions
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: PolyMergeEdgesOptions

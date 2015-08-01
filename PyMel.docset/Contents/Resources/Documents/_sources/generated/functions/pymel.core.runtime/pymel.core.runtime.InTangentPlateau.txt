@@ -1,0 +1,6 @@
+pymel.core.runtime.InTangentPlateau
+===================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: InTangentPlateau

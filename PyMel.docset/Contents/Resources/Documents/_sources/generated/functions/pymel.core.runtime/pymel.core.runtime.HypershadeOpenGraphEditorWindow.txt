@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeOpenGraphEditorWindow
+==================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeOpenGraphEditorWindow

@@ -1,0 +1,6 @@
+pymel.core.runtime.HyperGraphPanelRedoViewChange
+================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HyperGraphPanelRedoViewChange

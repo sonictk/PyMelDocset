@@ -1,0 +1,11 @@
+pymel.api.plugins.defaultdict
+=============================
+
+.. currentmodule:: pymel.api.plugins
+
+.. inheritance-diagram:: defaultdict
+    :parts: 1
+
+.. autoclass:: defaultdict
+    :members:
+    :undoc-members:

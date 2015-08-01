@@ -1,0 +1,6 @@
+pymel.core.runtime.OutlinerRevealSelected
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: OutlinerRevealSelected

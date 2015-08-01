@@ -1,0 +1,6 @@
+pymel.core.runtime.OutlinerToggleSetMembers
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: OutlinerToggleSetMembers

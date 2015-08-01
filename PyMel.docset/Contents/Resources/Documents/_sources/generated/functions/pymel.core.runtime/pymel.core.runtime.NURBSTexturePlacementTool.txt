@@ -1,0 +1,6 @@
+pymel.core.runtime.NURBSTexturePlacementTool
+============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NURBSTexturePlacementTool

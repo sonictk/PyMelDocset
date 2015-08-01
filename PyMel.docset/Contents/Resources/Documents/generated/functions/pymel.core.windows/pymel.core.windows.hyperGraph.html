@@ -1,0 +1,1796 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.windows/pymel.core.windows.hyperGraph.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:30:25 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.windows.hyperGraph — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.windows.html" rel="up" title="pymel.core.windows"/>
+<link href="pymel.core.windows.hyperPanel.html" rel="next" title="pymel.core.windows.hyperPanel"/>
+<link href="pymel.core.windows.hudSliderButton.html" rel="prev" title="pymel.core.windows.hudSliderButton"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.windows » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.windows.hyperGraph ¶ 
+ 
+ 
+ hyperGraph ( *args , **kwargs ) ¶ 
+ The following is an overview of the basic features of the hypergraph. A more detailed description is given in the user
+manuals. The hypergraph provides the user with the ability to view and edit the maya scene graph. The hypergraph
+supports two types of graphs: the DAG or..." name="description"/><meta content="__PyMel_generated_functions_pymel_core_windows_pymel_core_windows_hyperGraph_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.windows.hyperPanel.html" title="pymel.core.windows.hyperPanel">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.windows.hudSliderButton.html" title="pymel.core.windows.hudSliderButton">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.windows.html">pymel.core.windows</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-windows-hypergraph">
+<h1>pymel.core.windows.hyperGraph<a class="headerlink" href="#pymel-core-windows-hypergraph" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.core.windows.hyperGraph"><a name="//apple_ref/cpp/Function/pymel.core.windows.hyperGraph"></a>
+<tt class="descname">hyperGraph</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.windows.hyperGraph" title="Permalink to this definition">¶</a></dt>
+<dd><p>The following is an overview of the basic features of the hypergraph. A more detailed description is given in the user
+manuals. The hypergraph provides the user with the ability to view and edit the maya scene graph.  The hypergraph
+supports two types of graphs: the DAG or scene hierarchy and the dependency graph. The default view of the hypergraph
+editor is the DAG view. The user can show the dependency graph for a collection of nodes by first selecting the nodes
+and navigating to the dependency graph using one of the graph options.  The user can save any view by setting a bookmark
+to that view.  The user can also show previous views using the view options provided. The hypergraph supports a simple
+editing mechanism for editing hierarchy in the DAG view and connections in dependency graph view. In the DAG  view, the
+user can reparent or reorder nodes in the graph using drag-and-drop. In the dependency graph view, the user can select
+connections and delete them or make new connections by dragging and dropping nodes or existing connections. The
+hypergraph supports two layout modes in the DAG view: automatic and freeform.  In automatic mode, the graph nodes are
+automatically positioned according to the layout preferences.  In freeform mode, the user can position nodes manually.
+The node position is saved in the scene. A background image can be placed behind DG or DAG in freeform mode. This can be
+used as a template for positioning nodes in a user-defined layout. Nodes in the DAG view can be expanded or collapsed.
+The state is saved in the scene.  The performance of the graph drawing will increase as hierarchies are collapsed. In
+addition to hierachy relationships, the hypergraph can show expression, constraint and deformation relationships in the
+DAG. These can be enabled/disabled through the options provided.  There are also additional filters for showing shape
+nodes and invisible nodes.  The amount of detail show may affect the speed of the display of the graph. Most of the UI
+features of the hypergraph are addressable through the hypergraph command-line interface.  The available command-line
+options are described in the next section.</p>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">addBookmark</span></tt> / <tt class="docutils literal"><span class="pre">abk</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Create a bookmark for the current hypergraph view.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">addDependGraph</span></tt> / <tt class="docutils literal"><span class="pre">adg</span></tt></td>
+<td><em>PyNode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Add a dependency graph starting at the named node to the view</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">addDependNode</span></tt> / <tt class="docutils literal"><span class="pre">adn</span></tt></td>
+<td><em>PyNode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Add a dependency node to the dependency graph view</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">animateTransition</span></tt> / <tt class="docutils literal"><span class="pre">atr</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Turns animate transitions off and on.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">attributeEditor</span></tt> / <tt class="docutils literal"><span class="pre">ae</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Launches attribute editor on selected node.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">backward</span></tt> / <tt class="docutils literal"><span class="pre">bak</span></tt></td>
+<td><em>bool</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">bookmarkName</span></tt> / <tt class="docutils literal"><span class="pre">bn</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns the bookmark name for the most recently created bookmark.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">breakConnectionCommand</span></tt> / <tt class="docutils literal"><span class="pre">bco</span></tt></td>
+<td><em>unicode</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">clear</span></tt> / <tt class="docutils literal"><span class="pre">clr</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Clears the current hypergraph view and deletes the graph UI. (see also -rebuild flag)</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">collapseContainer</span></tt> / <tt class="docutils literal"><span class="pre">cc</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Collapses containers selected in DG graph.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">connectionDrawStyle</span></tt> / <tt class="docutils literal"><span class="pre">cds</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Specify how connections between nodes should be drawn. Valid values are center(draws connection lines from the center of one node to the center of the other) and
+side(draws connection lines from the right side of the source node to the left side of the destination node). The default is center. This flag does not apply to
+Hypershade graphs, which are always drawn with the sideconnection draw style.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">control</span></tt> / <tt class="docutils literal"><span class="pre">ctl</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Query only. Returns the top level control for this editor. Usually used for getting a parent to attach popup menus. Caution: It is possible, at times, for an
+editor to exist without a control. This flag returns NONEif no control is present.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">currentEdge</span></tt> / <tt class="docutils literal"><span class="pre">ced</span></tt></td>
+<td><em>unicode</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">currentNode</span></tt> / <tt class="docutils literal"><span class="pre">cno</span></tt></td>
+<td><em>unicode</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">debug</span></tt> / <tt class="docutils literal"><span class="pre">deb</span></tt></td>
+<td><em>unicode</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">defineTemplate</span></tt> / <tt class="docutils literal"><span class="pre">dt</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Puts a command in a mode where any other flags and args are parsed and added to the command template specified in the argument. They will be used as default
+arguments in any subsequent invocations of the command when templateName is set as the current template.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">deleteBookmark</span></tt> / <tt class="docutils literal"><span class="pre">dbk</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Delete the bookmark with the corresponding node name.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">dependGraph</span></tt> / <tt class="docutils literal"><span class="pre">dg</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Displays dependency graph iterated from specified node.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">dependNode</span></tt> / <tt class="docutils literal"><span class="pre">dn</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Displays dependency node in view.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">directoryPressCommand</span></tt> / <tt class="docutils literal"><span class="pre">dp</span></tt></td>
+<td><em>unicode</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">docTag</span></tt> / <tt class="docutils literal"><span class="pre">dtg</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Attaches a tag to the Maya editor.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">down</span></tt> / <tt class="docutils literal"><span class="pre">do</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Navigate down to the dependency graph containing the current selection. Shows upstream and downstream connections.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">downstream</span></tt> / <tt class="docutils literal"><span class="pre">ds</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Show downstream dependency graph of selected node(s).</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">dragAndDropBehaviorCommand</span></tt> / <tt class="docutils literal"><span class="pre">ddc</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Mel proc called when a drag and drop onto a hyperGraph node has occurred. Proc signature is procName (string $editor, string $sourceNode, string
+$destinationNode).</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">dropNode</span></tt> / <tt class="docutils literal"><span class="pre">dr</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns the name of the source node in a drag and drop connection, when called during processing of a drop.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">dropTargetNode</span></tt> / <tt class="docutils literal"><span class="pre">drt</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns the name of the destination node in a drag and drop connection, when called during processing of a drop.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">edgeDblClickCommand</span></tt> / <tt class="docutils literal"><span class="pre">edc</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Mel proc called when an edge is double clicked.  Proc signature is procName (string $editor, string $edge).</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">edgeDimmedDblClickCommand</span></tt> / <tt class="docutils literal"><span class="pre">edd</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Mel proc called when a dimmed edge is double clicked.  Proc signature is procName (string $editor, string $edge).</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">edgeDropCommand</span></tt> / <tt class="docutils literal"><span class="pre">edr</span></tt></td>
+<td><em>unicode</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">edgePressCommand</span></tt> / <tt class="docutils literal"><span class="pre">ep</span></tt></td>
+<td><em>unicode</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">edgeReleaseCommand</span></tt> / <tt class="docutils literal"><span class="pre">er</span></tt></td>
+<td><em>unicode</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">enableAutomaticLayout</span></tt> / <tt class="docutils literal"><span class="pre">eal</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Rebuild the graph if a node is added or removed from the graph via drag and drop or dg messages. Default is true.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">exists</span></tt> / <tt class="docutils literal"><span class="pre">ex</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns true|false depending upon whether the specified object exists.  Other flags are ignored.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">expandContainer</span></tt> / <tt class="docutils literal"><span class="pre">ec</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Expands containers selected in DG graph.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">feedbackGadget</span></tt> / <tt class="docutils literal"><span class="pre">fbg</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns the name of the current gadget.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">feedbackNode</span></tt> / <tt class="docutils literal"><span class="pre">fbn</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns the name of the current feedback or highlight node.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">filter</span></tt> / <tt class="docutils literal"><span class="pre">f</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Specifies the name of an itemFilter object to be placed on this editor. This filters the information coming onto the main list of the editor.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">filterDetail</span></tt> / <tt class="docutils literal"><span class="pre">fd</span></tt></td>
+<td><em>unicode, bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>This flag is obsolete. Use the showConstraints, showExpressions, showDeformer, showInvisible, showShapes and showUnderworld flags instead.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">fitImageToHeight</span></tt> / <tt class="docutils literal"><span class="pre">fih</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Changes position and scale of background image, so its height fits current editor view.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">fitImageToWidth</span></tt> / <tt class="docutils literal"><span class="pre">fiw</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Changes position and scale of background image, so its width fits current editor view.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">focusCommand</span></tt> / <tt class="docutils literal"><span class="pre">fc</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Mel proc to be run when the mouse is clicked in the hyper graph. Primarily of use in setting the window focus.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">fold</span></tt> / <tt class="docutils literal"><span class="pre">fo</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Folds (Collapses) selected object.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">forceMainConnection</span></tt> / <tt class="docutils literal"><span class="pre">fmc</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Specifies the name of a selectionConnection object which the editor will use as its source of content.  The editor will only display items contained in the
+selectionConnection object. This is a variant of the -mainListConnection flag in that it will force a change even when the connection is locked. This flag is used
+to reduce the overhead when using the -unlockMainConnection , -mainListConnection, -lockMainConnection flags in immediate succession.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">forceRefresh</span></tt> / <tt class="docutils literal"><span class="pre">frf</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Forces the hypergraph to refresh (redraw) its contents.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">forward</span></tt> / <tt class="docutils literal"><span class="pre">fow</span></tt></td>
+<td><em>bool</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">frame</span></tt> / <tt class="docutils literal"><span class="pre">fr</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Frames the selected objects</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">frameBranch</span></tt> / <tt class="docutils literal"><span class="pre">frb</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Frames the the branch from the selected node on downward.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">frameGraph</span></tt> / <tt class="docutils literal"><span class="pre">fg</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Frames the entire graph.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">frameGraphNoRebuild</span></tt> / <tt class="docutils literal"><span class="pre">fgn</span></tt></td>
+<td><em>bool</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">frameHierarchy</span></tt> / <tt class="docutils literal"><span class="pre">frh</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Frames the hierarchy that contains the selected node.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">freeform</span></tt> / <tt class="docutils literal"><span class="pre">fre</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Enable freeform layout mode.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">fromAttr</span></tt> / <tt class="docutils literal"><span class="pre">fat</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns the name of the source attribute in a drag and drop connection, when called during processing of a drop.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">fromNode</span></tt> / <tt class="docutils literal"><span class="pre">frn</span></tt></td>
+<td><em>unicode</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">getNodeList</span></tt> / <tt class="docutils literal"><span class="pre">gnl</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns a string array that represents a list of all the nodes in the graph.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">getNodePosition</span></tt> / <tt class="docutils literal"><span class="pre">gnp</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Returns the position of a specified node in x,y graph coords. This flag and its argument must be passed to the command before the -q flag (see examples).       In
+query mode, this flag can accept a value.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">graphDescription</span></tt> / <tt class="docutils literal"><span class="pre">gd</span></tt></td>
+<td><em>bool</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">graphLayoutStyle</span></tt> / <tt class="docutils literal"><span class="pre">gls</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Selects the graph layout style <span class="classifier-delimiter">:</span> <span class="classifier">circularLayout|hierarchicalLayout|orthogonalLayout|symmetricLayout|treeLayout</span></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">graphType</span></tt> / <tt class="docutils literal"><span class="pre">gt</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns the type name of the current graph in the view (either DAG or DG).</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">heatMapDisplay</span></tt> / <tt class="docutils literal"><span class="pre">hmd</span></tt></td>
+<td><em>bool</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">highlightConnection</span></tt> / <tt class="docutils literal"><span class="pre">hlc</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Specifies the name of a selectionConnection object which the editor will synchronize with its highlight list.  Not all editors have a highlight list. For those
+that do, it is a secondary selection list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">iconSize</span></tt> / <tt class="docutils literal"><span class="pre">ics</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Set or query the icon size for this hyper graph editor. The currently allowed icon sizes are small, mediumand large.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">image</span></tt> / <tt class="docutils literal"><span class="pre">img</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Specify background image to be loaded from the project image directory.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">imageEnabled</span></tt> / <tt class="docutils literal"><span class="pre">ime</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Enable display of a loaded background image (Freeform DAG view or DG view)</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">imageForContainer</span></tt> / <tt class="docutils literal"><span class="pre">ifc</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Specify that the following flags work on selected containers instead of the whole image: -imageScale,-imagePosition, fitImageToWidth, -fitImageToHeight, -image</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">imagePosition</span></tt> / <tt class="docutils literal"><span class="pre">imp</span></tt></td>
+<td><em>float, float</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Position of the background image.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">imageScale</span></tt> / <tt class="docutils literal"><span class="pre">ims</span></tt></td>
+<td><em>float</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Uniform scale of the background image.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">initializeScript</span></tt> / <tt class="docutils literal"><span class="pre">ini</span></tt></td>
+<td><em>unicode</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">isHotkeyTarget</span></tt> / <tt class="docutils literal"><span class="pre">iht</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>For internal use.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">layout</span></tt> / <tt class="docutils literal"><span class="pre">lay</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Perform an automatic layout on the graph.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">layoutSelected</span></tt> / <tt class="docutils literal"><span class="pre">lsl</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Perform an automatic layout on the selected object. circularLayout|hierarchicalLayout|orthogonalLayout|symmetricLayout|treeLayout</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">layoutSubtree</span></tt> / <tt class="docutils literal"><span class="pre">lsb</span></tt></td>
+<td><em>bool</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">limitGraphTraversal</span></tt> / <tt class="docutils literal"><span class="pre">lgt</span></tt></td>
+<td><em>int</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">lockMainConnection</span></tt> / <tt class="docutils literal"><span class="pre">lck</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Locks the current list of objects within the mainConnection, so that only those objects are displayed within the editor. Further changes to the original
+mainConnection are ignored.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">look</span></tt> / <tt class="docutils literal"><span class="pre">loo</span></tt></td>
+<td><em>float, float</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Look at a coordinate in the graph view</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">mainListConnection</span></tt> / <tt class="docutils literal"><span class="pre">mlc</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Specifies the name of a selectionConnection object which the editor will use as its source of content.  The editor will only display items contained in the
+selectionConnection object.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">mergeConnections</span></tt> / <tt class="docutils literal"><span class="pre">mc</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Merge groups of connections into ‘fat’ connections.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">navigateHome</span></tt> / <tt class="docutils literal"><span class="pre">hom</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Navigate to the home (DAG) view.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">navup</span></tt> / <tt class="docutils literal"><span class="pre">nu</span></tt></td>
+<td><em>bool</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">newInputConnection</span></tt> / <tt class="docutils literal"><span class="pre">nin</span></tt></td>
+<td><em>unicode</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">newOutputConnection</span></tt> / <tt class="docutils literal"><span class="pre">nou</span></tt></td>
+<td><em>unicode</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">nextView</span></tt> / <tt class="docutils literal"><span class="pre">nvw</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Changes the view to the next DAG view.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">nodeConnectCommand</span></tt> / <tt class="docutils literal"><span class="pre">nco</span></tt></td>
+<td><em>unicode</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">nodeDblClickCommand</span></tt> / <tt class="docutils literal"><span class="pre">ndc</span></tt></td>
+<td><em>unicode</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">nodeDropCommand</span></tt> / <tt class="docutils literal"><span class="pre">ndr</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Set the command to be called when a node is dropped in the hypergraph window.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">nodeMenuCommand</span></tt> / <tt class="docutils literal"><span class="pre">nm</span></tt></td>
+<td><em>unicode</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">nodePressCommand</span></tt> / <tt class="docutils literal"><span class="pre">np</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Set the command to be called when the user presses a mouse button while the cursor is over a node in the hypergraph window.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">nodeReleaseCommand</span></tt> / <tt class="docutils literal"><span class="pre">nr</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Set the command to be called when the user releases a mouse button while the cursor is over a node in the hypergraph window.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">opaqueContainers</span></tt> / <tt class="docutils literal"><span class="pre">opc</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Sets expanded container background opacity.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">orientation</span></tt> / <tt class="docutils literal"><span class="pre">orientation</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Selects orientation style of graph: horiz|vert</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">panView</span></tt> / <tt class="docutils literal"><span class="pre">pan</span></tt></td>
+<td><em>float, float</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">panel</span></tt> / <tt class="docutils literal"><span class="pre">pnl</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Specifies the panel that the editor belongs to.  By default if an editor is created in the create callback of a scripted panel it will belong to that panel.  If
+an editor doesn’t belong to a panel it will be deleted when the window that it is in is deleted.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">parent</span></tt> / <tt class="docutils literal"><span class="pre">p</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Specifies the parent layout for this editor. This flag will only have an effect if the editor is currently un-parented.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">popupMenuScript</span></tt> / <tt class="docutils literal"><span class="pre">pms</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set the script to be called to register the popup menu with the control for this hypergraph. The script will be called with a string argument which gives the name
+of the hypergraph whose control the popup menu should be parented to.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">previousView</span></tt> / <tt class="docutils literal"><span class="pre">pvw</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Changes the view back to the previous DAG view.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">range</span></tt> / <tt class="docutils literal"><span class="pre">rg</span></tt></td>
+<td><em>float, float</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Limits the display of nodes to only those within the range. There are two float values expected, the first the lower threshold of the range and the second the
+upper threshold of the range. The values are absolute timing values, not percentages.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">rebuild</span></tt> / <tt class="docutils literal"><span class="pre">rb</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Rebuilds graph</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">removeNode</span></tt> / <tt class="docutils literal"><span class="pre">rmn</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Removes the node identified by string from the graph.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">rename</span></tt> / <tt class="docutils literal"><span class="pre">rn</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Pops up text field over selected object for renaming</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">resetFreeform</span></tt> / <tt class="docutils literal"><span class="pre">rf</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Resets freeform position on all nodes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">restoreBookmark</span></tt> / <tt class="docutils literal"><span class="pre">rbk</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Restore the view corresponding to the bookmark.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">scrollUpDownNoZoom</span></tt> / <tt class="docutils literal"><span class="pre">snz</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Specify if we want to be in the scroll along y only with no free zooming mode. By default, hyper graph editor allows user to pan left and right.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">selectionConnection</span></tt> / <tt class="docutils literal"><span class="pre">slc</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Specifies the name of a selectionConnection object which the editor will synchronize with its own selection list.  As the user selects things in this editor, they
+will be selected in the selectionConnection object. If the object undergoes changes, the editor updates to show the change.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">setNodePosition</span></tt> / <tt class="docutils literal"><span class="pre">snp</span></tt></td>
+<td><em>unicode, float, float</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Sets the node identified by string to the (x,y) position in the window specified by the two floats. If the node is not in the graph than it will be added to the
+graph and then moved to the new position.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">showCachedConnections</span></tt> / <tt class="docutils literal"><span class="pre">scc</span></tt></td>
+<td><em>bool</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">showConnectionFromSelected</span></tt> / <tt class="docutils literal"><span class="pre">scf</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Show the connects (constraints, expresions, and deformers - see showConstraints for example) leaving from selected nodes. This can be combined with
+showConnectionToSelected to show both arrive and leaving connects. If both flags are false then all the connections will be shown.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">showConnectionToSelected</span></tt> / <tt class="docutils literal"><span class="pre">sct</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Show the connects (constraints, expresions, and deformers - see showConstraints for example) arriving at selected nodes. This can be combined with
+showConnectionFromSelected to show both arrive and leaving connects. If both flags are false then all the connections will be shown.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">showConstraintLabels</span></tt> / <tt class="docutils literal"><span class="pre">scl</span></tt></td>
+<td><em>bool</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">showConstraints</span></tt> / <tt class="docutils literal"><span class="pre">shc</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Show constraint relationships in the DAG.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">showDeformers</span></tt> / <tt class="docutils literal"><span class="pre">shd</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Show deformer or geometry filter relationships in the DAG.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">showExpressions</span></tt> / <tt class="docutils literal"><span class="pre">shx</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Show expression relationships in the DAG.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">showInvisible</span></tt> / <tt class="docutils literal"><span class="pre">shi</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Show invisible nodes in the DAG.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">showRelationships</span></tt> / <tt class="docutils literal"><span class="pre">shr</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Show relationship (message) connections.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">showShapes</span></tt> / <tt class="docutils literal"><span class="pre">shs</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Show shape nodes in the DAG.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">showUnderworld</span></tt> / <tt class="docutils literal"><span class="pre">shu</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Show underworld graphs in the DAG.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">stateString</span></tt> / <tt class="docutils literal"><span class="pre">sts</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Query only flag.  Returns the MEL command that will edit an editor to match the current editor state. The returned command string uses the string variable
+$editorName in place of a specific name.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">toAttr</span></tt> / <tt class="docutils literal"><span class="pre">tat</span></tt></td>
+<td><em>unicode</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">toNode</span></tt> / <tt class="docutils literal"><span class="pre">ton</span></tt></td>
+<td><em>unicode</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">transitionFrames</span></tt> / <tt class="docutils literal"><span class="pre">tfr</span></tt></td>
+<td><em>int</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Specify te number of transition frames for animate transitions.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">unParent</span></tt> / <tt class="docutils literal"><span class="pre">up</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Specifies that the editor should be removed from its layout. This cannot be used with query.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">unfold</span></tt> / <tt class="docutils literal"><span class="pre">uf</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Unfolds (expands) selected object.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">unfoldAll</span></tt> / <tt class="docutils literal"><span class="pre">ua</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Unfolds everything under selected object.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">unfoldAllShapes</span></tt> / <tt class="docutils literal"><span class="pre">uas</span></tt></td>
+<td><em>bool</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">unfoldHidden</span></tt> / <tt class="docutils literal"><span class="pre">ufh</span></tt></td>
+<td><em>bool</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">unlockMainConnection</span></tt> / <tt class="docutils literal"><span class="pre">ulk</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Unlocks the mainConnection, effectively restoring the original mainConnection (if it is still available), and dynamic updates.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">updateMainConnection</span></tt> / <tt class="docutils literal"><span class="pre">upd</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Causes a locked mainConnection to be updated from the orginal mainConnection, but preserves the lock state.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">updateNodeAdded</span></tt> / <tt class="docutils literal"><span class="pre">una</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Update graph when a new node is added to the database</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">updateSelection</span></tt> / <tt class="docutils literal"><span class="pre">us</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Update selection state in the graph when the selection state of database changes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">upstream</span></tt> / <tt class="docutils literal"><span class="pre">ups</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Show upstream dependency graph of selected node(s).</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">useDrawOverrideColor</span></tt> / <tt class="docutils literal"><span class="pre">drc</span></tt></td>
+<td><em>bool</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">useFeedbackList</span></tt> / <tt class="docutils literal"><span class="pre">ufl</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Use feedback or highlight list as the target selection when processing other hypergraph command-line options.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">useTemplate</span></tt> / <tt class="docutils literal"><span class="pre">ut</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Force the command to use a command template other than the current one.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">viewOption</span></tt> / <tt class="docutils literal"><span class="pre">vo</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Set or query the view option for this hyper graph editor. The currently allowed views are asIconsand asList.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">visibility</span></tt> / <tt class="docutils literal"><span class="pre">vis</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Set the visible state of the selected node(s).</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">zoom</span></tt> / <tt class="docutils literal"><span class="pre">zm</span></tt></td>
+<td><em>float</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Specify the zoom factor for animating transitions                         Flag can have multiple arguments, passed either as a tuple or a list.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+
+<span class="c"># The hyperGraph command is not one which would commonly be used</span>
+<span class="c"># by the user.</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polySphere</span><span class="p">(</span> <span class="n">r</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">sx</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">sy</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="n">tx</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">ch</span><span class="o">=</span><span class="mi">1</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'pSphere1'), nt.PolySphere(u'polySphere1')] #</span>
+
+<span class="c"># Gets the position of the node in the graph.</span>
+<span class="n">maya</span><span class="o">.</span><span class="n">mel</span><span class="o">.</span><span class="n">eval</span><span class="p">(</span> <span class="s">"HypergraphHierarchyWindow"</span> <span class="p">)</span>
+<span class="n">position</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">hyperGraph</span><span class="p">(</span> <span class="s">'hyperGraphPanel1HyperGraphEd'</span><span class="p">,</span> <span class="n">query</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">getNodePosition</span><span class="o">=</span><span class="s">'pSphere1'</span> <span class="p">)</span>
+<span class="k">print</span> <span class="n">position</span>
+</pre></div>
+</div>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.windows.hudSliderButton.html" title="previous chapter">pymel.core.windows.hudSliderButton</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.windows.hyperPanel.html" title="next chapter">pymel.core.windows.hyperPanel</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.core.windows/pymel.core.windows.hyperGraph.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.windows.hyperPanel.html" title="pymel.core.windows.hyperPanel">next</a> |</li>
+<li class="right">
+<a href="pymel.core.windows.hudSliderButton.html" title="pymel.core.windows.hudSliderButton">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.windows.html">pymel.core.windows</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.windows/pymel.core.windows.hyperGraph.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:30:25 GMT -->
+</body></html>

@@ -1,0 +1,6 @@
+pymel.core.runtime.SelectPreviousObjects3dsMax
+==============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SelectPreviousObjects3dsMax

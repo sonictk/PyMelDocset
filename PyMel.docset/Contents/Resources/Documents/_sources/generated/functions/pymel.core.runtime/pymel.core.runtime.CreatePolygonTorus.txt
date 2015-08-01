@@ -1,0 +1,6 @@
+pymel.core.runtime.CreatePolygonTorus
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreatePolygonTorus

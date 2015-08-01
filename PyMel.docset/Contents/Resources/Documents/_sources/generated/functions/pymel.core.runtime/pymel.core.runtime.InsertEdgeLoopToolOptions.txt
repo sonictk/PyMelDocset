@@ -1,0 +1,6 @@
+pymel.core.runtime.InsertEdgeLoopToolOptions
+============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: InsertEdgeLoopToolOptions

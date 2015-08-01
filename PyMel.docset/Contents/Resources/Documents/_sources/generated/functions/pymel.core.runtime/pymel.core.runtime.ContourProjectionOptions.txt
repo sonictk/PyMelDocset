@@ -1,0 +1,6 @@
+pymel.core.runtime.ContourProjectionOptions
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ContourProjectionOptions

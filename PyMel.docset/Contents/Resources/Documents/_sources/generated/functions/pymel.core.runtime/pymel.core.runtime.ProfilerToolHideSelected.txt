@@ -1,0 +1,6 @@
+pymel.core.runtime.ProfilerToolHideSelected
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ProfilerToolHideSelected

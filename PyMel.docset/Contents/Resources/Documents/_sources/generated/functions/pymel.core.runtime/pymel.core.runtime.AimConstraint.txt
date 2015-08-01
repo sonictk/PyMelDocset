@@ -1,0 +1,6 @@
+pymel.core.runtime.AimConstraint
+================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: AimConstraint

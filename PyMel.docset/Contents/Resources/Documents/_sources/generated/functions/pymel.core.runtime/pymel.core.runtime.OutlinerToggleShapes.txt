@@ -1,0 +1,6 @@
+pymel.core.runtime.OutlinerToggleShapes
+=======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: OutlinerToggleShapes

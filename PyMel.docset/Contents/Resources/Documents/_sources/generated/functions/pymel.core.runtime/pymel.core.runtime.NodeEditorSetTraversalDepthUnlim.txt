@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorSetTraversalDepthUnlim
+===================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorSetTraversalDepthUnlim

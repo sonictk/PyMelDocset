@@ -1,0 +1,6 @@
+pymel.core.runtime.BreakTangents
+================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: BreakTangents

@@ -1,0 +1,6 @@
+pymel.core.runtime.SelectPolygonSelectionBoundary
+=================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SelectPolygonSelectionBoundary

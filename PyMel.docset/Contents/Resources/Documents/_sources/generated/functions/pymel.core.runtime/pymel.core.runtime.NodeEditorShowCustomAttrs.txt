@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorShowCustomAttrs
+============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorShowCustomAttrs

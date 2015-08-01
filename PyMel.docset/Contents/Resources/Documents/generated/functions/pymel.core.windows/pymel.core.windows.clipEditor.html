@@ -1,0 +1,756 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.windows/pymel.core.windows.clipEditor.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:22:32 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.windows.clipEditor — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.windows.html" rel="up" title="pymel.core.windows"/>
+<link href="pymel.core.windows.clipSchedulerOutliner.html" rel="next" title="pymel.core.windows.clipSchedulerOutliner"/>
+<link href="pymel.core.windows.checkBoxGrp.html" rel="prev" title="pymel.core.windows.checkBoxGrp"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.windows » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.windows.clipEditor ¶ 
+ 
+ 
+ clipEditor ( *args , **kwargs ) ¶ 
+ Create a clip editor with the given name. 
+ Flags: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Long Name / Short Name 
+ Argument Types 
+ Properties 
+ 
+ 
+ 
+ allTrackHeights / th 
+ int 
+   
+ 
+   
+ 
+ OBSOLETE flag. Use clipStyle instead. 
+ 
+ 
+ 
+ 
+ autoFit / af 
+ unicode 
+ 
+ 
+ 
+ 
+   
+ 
+ on..." name="description"/><meta content="__PyMel_generated_functions_pymel_core_windows_pymel_core_windows_clipEditor_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.windows.clipSchedulerOutliner.html" title="pymel.core.windows.clipSchedulerOutliner">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.windows.checkBoxGrp.html" title="pymel.core.windows.checkBoxGrp">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.windows.html">pymel.core.windows</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-windows-clipeditor">
+<h1>pymel.core.windows.clipEditor<a class="headerlink" href="#pymel-core-windows-clipeditor" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.core.windows.clipEditor"><a name="//apple_ref/cpp/Function/pymel.core.windows.clipEditor"></a>
+<tt class="descname">clipEditor</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.windows.clipEditor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a clip editor with the given name.</p>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">allTrackHeights</span></tt> / <tt class="docutils literal"><span class="pre">th</span></tt></td>
+<td><em>int</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>OBSOLETE flag. Use clipStyle instead.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">autoFit</span></tt> / <tt class="docutils literal"><span class="pre">af</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>on | off | tgl auto fit-to-view</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">characterOutline</span></tt> / <tt class="docutils literal"><span class="pre">co</span></tt></td>
+<td><em>unicode</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">clipDropCmd</span></tt> / <tt class="docutils literal"><span class="pre">cd</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Command executed when clip node is dropped on the TraX editor</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">clipStyle</span></tt> / <tt class="docutils literal"><span class="pre">cs</span></tt></td>
+<td><em>int</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Set/return the clip track style in the specified editor. Default is 2. Valid values are 1-3.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">control</span></tt> / <tt class="docutils literal"><span class="pre">ctl</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Query only. Returns the top level control for this editor. Usually used for getting a parent to attach popup menus. Caution: It is possible, at times, for an
+editor to exist without a control. This flag returns NONEif no control is present.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">defineTemplate</span></tt> / <tt class="docutils literal"><span class="pre">dt</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Puts a command in a mode where any other flags and args are parsed and added to the command template specified in the argument. They will be used as default
+arguments in any subsequent invocations of the command when templateName is set as the current template.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">deleteCmd</span></tt> / <tt class="docutils literal"><span class="pre">dc</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Command executed when backspacekey is pressed</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">deselectAll</span></tt> / <tt class="docutils literal"><span class="pre">da</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Deselect all clips and blends in the editor.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">displayActiveKeyTangents</span></tt> / <tt class="docutils literal"><span class="pre">dat</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>on | off | tgl display tangents in the editor</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">displayActiveKeys</span></tt> / <tt class="docutils literal"><span class="pre">dak</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>on | off | tgl display tangents in the editor</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">displayInfinities</span></tt> / <tt class="docutils literal"><span class="pre">di</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>on | off | tgl display infinities in the editor</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">displayKeys</span></tt> / <tt class="docutils literal"><span class="pre">dk</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>on | off | tgl display keyframes in the editor</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">displayTangents</span></tt> / <tt class="docutils literal"><span class="pre">dtn</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>on | off | tgl display tangents in the editor</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">docTag</span></tt> / <tt class="docutils literal"><span class="pre">dtg</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Attaches a tag to the Maya editor.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">exists</span></tt> / <tt class="docutils literal"><span class="pre">ex</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns true|false depending upon whether the specified object exists.  Other flags are ignored.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">filter</span></tt> / <tt class="docutils literal"><span class="pre">f</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Specifies the name of an itemFilter object to be placed on this editor. This filters the information coming onto the main list of the editor.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">forceMainConnection</span></tt> / <tt class="docutils literal"><span class="pre">fmc</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Specifies the name of a selectionConnection object which the editor will use as its source of content.  The editor will only display items contained in the
+selectionConnection object. This is a variant of the -mainListConnection flag in that it will force a change even when the connection is locked. This flag is used
+to reduce the overhead when using the -unlockMainConnection , -mainListConnection, -lockMainConnection flags in immediate succession.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">frameAll</span></tt> / <tt class="docutils literal"><span class="pre">fa</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Frame view around all clips in the editor.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">frameRange</span></tt> / <tt class="docutils literal"><span class="pre">fr</span></tt></td>
+<td><em>float, float</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>The editor’s current frame range.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">highlightConnection</span></tt> / <tt class="docutils literal"><span class="pre">hlc</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Specifies the name of a selectionConnection object which the editor will synchronize with its highlight list.  Not all editors have a highlight list. For those
+that do, it is a secondary selection list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">highlightedBlend</span></tt> / <tt class="docutils literal"><span class="pre">hb</span></tt></td>
+<td><em>unicode, unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns the highlighted blend, listed as scheduler and index</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">highlightedClip</span></tt> / <tt class="docutils literal"><span class="pre">hc</span></tt></td>
+<td><em>unicode, unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns the highlighted clip, listed as scheduler and index</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">listAllCharacters</span></tt> / <tt class="docutils literal"><span class="pre">lac</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List all characters in the editor and outliner.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">listCurrentCharacters</span></tt> / <tt class="docutils literal"><span class="pre">lc</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List only the characters in the editor and outliner.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">lockMainConnection</span></tt> / <tt class="docutils literal"><span class="pre">lck</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Locks the current list of objects within the mainConnection, so that only those objects are displayed within the editor. Further changes to the original
+mainConnection are ignored.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">lookAt</span></tt> / <tt class="docutils literal"><span class="pre">la</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>all | selected | currentTime fitView helpers</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">mainListConnection</span></tt> / <tt class="docutils literal"><span class="pre">mlc</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Specifies the name of a selectionConnection object which the editor will use as its source of content.  The editor will only display items contained in the
+selectionConnection object.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">manageSequencer</span></tt> / <tt class="docutils literal"><span class="pre">ms</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Sets/returns whether the clip editor should manage sequencer nodes.  If so, animation clips and characters are not represented.                   Flag can have
+multiple arguments, passed either as a tuple or a list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">menuContext</span></tt> / <tt class="docutils literal"><span class="pre">mc</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Returns a string array denoting the type of data object the cursor is over.  Returned values are: timeSlider nothing track, track index, character node name,
+group name clip, clip node name</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">panel</span></tt> / <tt class="docutils literal"><span class="pre">pnl</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Specifies the panel that the editor belongs to.  By default if an editor is created in the create callback of a scripted panel it will belong to that panel.  If
+an editor doesn’t belong to a panel it will be deleted when the window that it is in is deleted.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">parent</span></tt> / <tt class="docutils literal"><span class="pre">p</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Specifies the parent layout for this editor. This flag will only have an effect if the editor is currently un-parented.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">selectBlend</span></tt> / <tt class="docutils literal"><span class="pre">sb</span></tt></td>
+<td><em>unicode, unicode, unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Select the blends specified by the scheduler name and the indicies of the two clips used in the blend. When queried, a string containing the scheduler name and
+the two clip indicies for all of the selected blends is returned.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">selectClip</span></tt> / <tt class="docutils literal"><span class="pre">sc</span></tt></td>
+<td><em>unicode, unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Selects the clip specified by the scheduler name and the clip index. When queried, a string containing the scheduler and clip index of all of the selected clips
+is returned.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">selectionConnection</span></tt> / <tt class="docutils literal"><span class="pre">slc</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Specifies the name of a selectionConnection object which the editor will synchronize with its own selection list.  As the user selects things in this editor, they
+will be selected in the selectionConnection object. If the object undergoes changes, the editor updates to show the change.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">snapTime</span></tt> / <tt class="docutils literal"><span class="pre">st</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>none | integer | keyframe keyframe move snap in time</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">snapValue</span></tt> / <tt class="docutils literal"><span class="pre">sv</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>none | integer | keyframe keyframe move snap in values</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">stateString</span></tt> / <tt class="docutils literal"><span class="pre">sts</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Query only flag.  Returns the MEL command that will edit an editor to match the current editor state. The returned command string uses the string variable
+$editorName in place of a specific name.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">unParent</span></tt> / <tt class="docutils literal"><span class="pre">up</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Specifies that the editor should be removed from its layout. This cannot be used with query.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">unlockMainConnection</span></tt> / <tt class="docutils literal"><span class="pre">ulk</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Unlocks the mainConnection, effectively restoring the original mainConnection (if it is still available), and dynamic updates.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">updateMainConnection</span></tt> / <tt class="docutils literal"><span class="pre">upd</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Causes a locked mainConnection to be updated from the orginal mainConnection, but preserves the lock state.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">useTemplate</span></tt> / <tt class="docutils literal"><span class="pre">ut</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Force the command to use a command template other than the current one.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.clipEditor</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">clipEditor</span><span class="p">(</span> <span class="s">"clipEditorName"</span> <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.windows.checkBoxGrp.html" title="previous chapter">pymel.core.windows.checkBoxGrp</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.windows.clipSchedulerOutliner.html" title="next chapter">pymel.core.windows.clipSchedulerOutliner</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.core.windows/pymel.core.windows.clipEditor.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.windows.clipSchedulerOutliner.html" title="pymel.core.windows.clipSchedulerOutliner">next</a> |</li>
+<li class="right">
+<a href="pymel.core.windows.checkBoxGrp.html" title="pymel.core.windows.checkBoxGrp">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.windows.html">pymel.core.windows</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.windows/pymel.core.windows.clipEditor.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:22:32 GMT -->
+</body></html>

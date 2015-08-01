@@ -1,0 +1,6 @@
+pymel.core.runtime.BreakLightLinks
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: BreakLightLinks

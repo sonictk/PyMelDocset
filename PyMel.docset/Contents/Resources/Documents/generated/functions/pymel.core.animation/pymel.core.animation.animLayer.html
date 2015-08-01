@@ -1,0 +1,789 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.animation/pymel.core.animation.animLayer.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:19:37 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.animation.animLayer — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.animation.html" rel="up" title="pymel.core.animation"/>
+<link href="pymel.core.animation.animView.html" rel="next" title="pymel.core.animation.animView"/>
+<link href="pymel.core.animation.animDisplay.html" rel="prev" title="pymel.core.animation.animDisplay"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.animation » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.animation.animLayer ¶ 
+ 
+ 
+ animLayer ( *args , **kwargs ) ¶ 
+ This command creates and edits animation layers. 
+ 
+ Modifications: 
+ 
+ returns a PyNode object for flags: (query and (root or bestLayer or parent)) 
+ returns a list of PyNode objects for flags: (query and (children or attribute or bestAnimLayer or animCurves or..." name="description"/><meta content="__PyMel_generated_functions_pymel_core_animation_pymel_core_animation_animLayer_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.animation.animView.html" title="pymel.core.animation.animView">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.animation.animDisplay.html" title="pymel.core.animation.animDisplay">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.animation.html">pymel.core.animation</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-animation-animlayer">
+<h1>pymel.core.animation.animLayer<a class="headerlink" href="#pymel-core-animation-animlayer" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.core.animation.animLayer"><a name="//apple_ref/cpp/Function/pymel.core.animation.animLayer"></a>
+<tt class="descname">animLayer</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.animation.animLayer" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command creates and edits animation layers.</p>
+<dl class="docutils">
+<dt>Modifications:</dt>
+<dd><ul class="first last simple">
+<li>returns a PyNode object for flags: (query and (root or bestLayer or parent))</li>
+<li>returns a list of PyNode objects for flags: (query and (children or attribute or bestAnimLayer or animCurves or baseAnimCurves or blendNodes or affectedLayers or parent))</li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">addRelatedKG</span></tt> / <tt class="docutils literal"><span class="pre">akg</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Used adding attributes to a layer. Determines if associated keying groups should be added or not to the layer.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">addSelectedObjects</span></tt> / <tt class="docutils literal"><span class="pre">aso</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Adds selected object(s) to the layer.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">affectedLayers</span></tt> / <tt class="docutils literal"><span class="pre">afl</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Return the layers that the currently selected object(s) are members of</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">animCurves</span></tt> / <tt class="docutils literal"><span class="pre">anc</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>In query mode returns the anim curves associated with this layer</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">attribute</span></tt> / <tt class="docutils literal"><span class="pre">at</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Adds a specific attribute on a object to the layer.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">baseAnimCurves</span></tt> / <tt class="docutils literal"><span class="pre">bac</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>In query mode returns the base layer anim curves associated with this layer, if any.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">bestAnimLayer</span></tt> / <tt class="docutils literal"><span class="pre">blr</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">In query mode returns the best anim layers for keying for the selected objects.  If used in conjunction with -at, will return the best anim layers for keying for
+the specific plugs (attributes) specified.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">bestLayer</span></tt> / <tt class="docutils literal"><span class="pre">bl</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Return the layer that will be keyed for specified attribute.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">blendNodes</span></tt> / <tt class="docutils literal"><span class="pre">bld</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>In query mode returns the blend nodes associated with this layer</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">children</span></tt> / <tt class="docutils literal"><span class="pre">c</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Get the list of children layers. return value is a string array.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">collapse</span></tt> / <tt class="docutils literal"><span class="pre">col</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Determine if a layer is collapse in the layer editor.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">copy</span></tt> / <tt class="docutils literal"><span class="pre">cp</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Copy from layer.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">copyAnimation</span></tt> / <tt class="docutils literal"><span class="pre">ca</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>copy animation from specified layer to destination layer, only animation that are on attribute layered by both layer that are concerned.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">copyNoAnimation</span></tt> / <tt class="docutils literal"><span class="pre">cna</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Copy from layer without the animation curves.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">excludeBoolean</span></tt> / <tt class="docutils literal"><span class="pre">ebl</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>When adding selected object(s) to the layer, excludes any boolean attributes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">excludeDynamic</span></tt> / <tt class="docutils literal"><span class="pre">edn</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>When adding selected object(s) to the layer, excludes any dynamic attributes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">excludeEnum</span></tt> / <tt class="docutils literal"><span class="pre">een</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>When adding selected object(s) to the layer, excludes any enum attributes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">excludeRotate</span></tt> / <tt class="docutils literal"><span class="pre">ert</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>When adding selected object(s) to the layer, exclude the rotate attribute.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">excludeScale</span></tt> / <tt class="docutils literal"><span class="pre">esc</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>When adding selected object(s) to the layer, exclude the scale attribute.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">excludeTranslate</span></tt> / <tt class="docutils literal"><span class="pre">etr</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>When adding selected object(s) to the layer, excludes the translate attribute.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">excludeVisibility</span></tt> / <tt class="docutils literal"><span class="pre">evs</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>When adding selected object(s) to the layer, exclude the visibility attribute.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">exclusive</span></tt> / <tt class="docutils literal"><span class="pre">exl</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Set/get exclusive access for layer                                        Flag can have multiple arguments, passed either as a tuple or a list.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">exists</span></tt> / <tt class="docutils literal"><span class="pre">ex</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Determine if an layer exists.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">extractAnimation</span></tt> / <tt class="docutils literal"><span class="pre">ea</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>transfer animation from specified layer to destination layer, only animation that are on attribute layered by both layer that are concerned.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">findCurveForPlug</span></tt> / <tt class="docutils literal"><span class="pre">fcv</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>finds the parameter curve containing the animation data for the specified plug on the given layer.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">forceUIRebuild</span></tt> / <tt class="docutils literal"><span class="pre">fur</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>rebuilds the animation layers user interface.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">forceUIRefresh</span></tt> / <tt class="docutils literal"><span class="pre">uir</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>refreshes the animation layers user interface.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">layeredPlug</span></tt> / <tt class="docutils literal"><span class="pre">lp</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>returns the plug on the blend node corresponding to the specified layer</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">lock</span></tt> / <tt class="docutils literal"><span class="pre">l</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Set the lock state of the specified layer. A locked layer can not receive key. Default is false.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">moveLayerAfter</span></tt> / <tt class="docutils literal"><span class="pre">mva</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Move layer after the specified layer</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">moveLayerBefore</span></tt> / <tt class="docutils literal"><span class="pre">mvb</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Move layer before the specified layer</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">mute</span></tt> / <tt class="docutils literal"><span class="pre">m</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Set the mute state of the specified layer. Default is false.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">override</span></tt> / <tt class="docutils literal"><span class="pre">o</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Set the overide state of the specified layer. Default is false.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">parent</span></tt> / <tt class="docutils literal"><span class="pre">p</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Set the parent of the specified layer. Default is the animation layer root.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">passthrough</span></tt> / <tt class="docutils literal"><span class="pre">pth</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Set the passthrough state of the specified layer. Default is true.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">preferred</span></tt> / <tt class="docutils literal"><span class="pre">prf</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Determine if a layer is a preferred layer, the best layer algorithm will try to set keyframe in preferred layer first.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">removeAllAttributes</span></tt> / <tt class="docutils literal"><span class="pre">raa</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Remove all objects from layer.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">removeAttribute</span></tt> / <tt class="docutils literal"><span class="pre">ra</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Remove object from layer.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">root</span></tt> / <tt class="docutils literal"><span class="pre">r</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Return the base layer if it exist</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">selected</span></tt> / <tt class="docutils literal"><span class="pre">sel</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Determine if a layer is selected, a selected layer will be show in the timecontrol, graph editor.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">solo</span></tt> / <tt class="docutils literal"><span class="pre">s</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Set the solo state of the specified layer. Default is false.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">weight</span></tt> / <tt class="docutils literal"><span class="pre">w</span></tt></td>
+<td><em>float</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Set the weight of the specified layer between 0.0 and 1.0. Default is 1.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">writeBlendnodeDestinations</span></tt> / <tt class="docutils literal"><span class="pre">wbd</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">In edit mode writes the destination plugs of the blend nodes that belong to the layer into the blend node.  This is used for layer import/export purposes and is
+not for general use.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.animLayer</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">animLayer</span><span class="p">(</span><span class="s">"layer1"</span><span class="p">,</span> <span class="n">mute</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">solo</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">override</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">passthrough</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">lock</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="c"># Result: nt.AnimLayer(u'layer1') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">animLayer</span><span class="p">(</span><span class="s">"layer1"</span><span class="p">,</span> <span class="n">query</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">mute</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="c"># Result: True #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">animLayer</span><span class="p">(</span><span class="s">"layer1"</span><span class="p">,</span> <span class="n">query</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">solo</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="c"># Result: True #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">animLayer</span><span class="p">(</span><span class="s">"layer1"</span><span class="p">,</span> <span class="n">query</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">override</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="c"># Result: True #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">animLayer</span><span class="p">(</span><span class="s">"layer1"</span><span class="p">,</span> <span class="n">query</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">passthrough</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="c"># Result: False #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">animLayer</span><span class="p">(</span><span class="s">"layer1"</span><span class="p">,</span> <span class="n">query</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">lock</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="c"># Result: True #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">animLayer</span><span class="p">(</span><span class="s">"layer1"</span><span class="p">,</span> <span class="n">query</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="c"># Result: nt.AnimLayer(u'BaseAnimation') #</span>
+</pre></div>
+</div>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.animation.animDisplay.html" title="previous chapter">pymel.core.animation.animDisplay</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.animation.animView.html" title="next chapter">pymel.core.animation.animView</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.core.animation/pymel.core.animation.animLayer.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.animation.animView.html" title="pymel.core.animation.animView">next</a> |</li>
+<li class="right">
+<a href="pymel.core.animation.animDisplay.html" title="pymel.core.animation.animDisplay">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.animation.html">pymel.core.animation</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.animation/pymel.core.animation.animLayer.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:19:37 GMT -->
+</body></html>

@@ -1,0 +1,6 @@
+pymel.core.runtime.SetMeshSmoothTool
+====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SetMeshSmoothTool

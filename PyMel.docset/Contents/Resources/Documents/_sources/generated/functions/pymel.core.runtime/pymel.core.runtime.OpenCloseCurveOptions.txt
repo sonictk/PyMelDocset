@@ -1,0 +1,6 @@
+pymel.core.runtime.OpenCloseCurveOptions
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: OpenCloseCurveOptions

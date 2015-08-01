@@ -1,0 +1,6 @@
+pymel.core.runtime.SelectAllInput
+=================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SelectAllInput

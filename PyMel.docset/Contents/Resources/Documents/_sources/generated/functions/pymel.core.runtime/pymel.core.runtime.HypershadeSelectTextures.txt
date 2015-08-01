@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeSelectTextures
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeSelectTextures

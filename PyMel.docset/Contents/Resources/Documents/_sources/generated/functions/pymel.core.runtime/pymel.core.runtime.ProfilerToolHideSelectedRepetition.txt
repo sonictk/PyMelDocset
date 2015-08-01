@@ -1,0 +1,6 @@
+pymel.core.runtime.ProfilerToolHideSelectedRepetition
+=====================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ProfilerToolHideSelectedRepetition

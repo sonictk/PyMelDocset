@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeGraphRemoveUnselected
+==================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeGraphRemoveUnselected

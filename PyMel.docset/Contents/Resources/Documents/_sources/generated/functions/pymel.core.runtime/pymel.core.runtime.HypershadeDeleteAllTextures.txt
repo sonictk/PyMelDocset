@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeDeleteAllTextures
+==============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeDeleteAllTextures

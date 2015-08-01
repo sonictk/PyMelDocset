@@ -1,0 +1,6 @@
+pymel.core.runtime.CoarsenSelectedComponents
+============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CoarsenSelectedComponents

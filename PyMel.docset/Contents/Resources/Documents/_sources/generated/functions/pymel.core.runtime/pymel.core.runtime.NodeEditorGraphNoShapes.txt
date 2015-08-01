@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorGraphNoShapes
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorGraphNoShapes

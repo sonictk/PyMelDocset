@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeDisplayAsList
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeDisplayAsList

@@ -1,0 +1,6 @@
+pymel.core.runtime.fluidReplaceFramesOpt
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: fluidReplaceFramesOpt

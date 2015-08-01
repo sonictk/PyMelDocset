@@ -1,0 +1,6 @@
+pymel.core.runtime.PixelMoveRight
+=================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: PixelMoveRight

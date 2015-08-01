@@ -1,0 +1,6 @@
+pymel.core.runtime.buildSendToBackburnerDialog
+==============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: buildSendToBackburnerDialog

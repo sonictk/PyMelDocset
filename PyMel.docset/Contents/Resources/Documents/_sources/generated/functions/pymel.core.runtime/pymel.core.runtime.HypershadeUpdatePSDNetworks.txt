@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeUpdatePSDNetworks
+==============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeUpdatePSDNetworks

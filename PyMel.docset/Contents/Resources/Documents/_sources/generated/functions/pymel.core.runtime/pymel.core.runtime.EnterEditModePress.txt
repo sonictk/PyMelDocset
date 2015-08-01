@@ -1,0 +1,6 @@
+pymel.core.runtime.EnterEditModePress
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: EnterEditModePress

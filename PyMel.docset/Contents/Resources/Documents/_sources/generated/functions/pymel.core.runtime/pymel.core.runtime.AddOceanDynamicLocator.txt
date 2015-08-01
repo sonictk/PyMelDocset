@@ -1,0 +1,6 @@
+pymel.core.runtime.AddOceanDynamicLocator
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: AddOceanDynamicLocator

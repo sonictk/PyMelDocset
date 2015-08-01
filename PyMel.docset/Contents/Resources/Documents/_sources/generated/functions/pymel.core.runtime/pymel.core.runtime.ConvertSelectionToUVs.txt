@@ -1,0 +1,6 @@
+pymel.core.runtime.ConvertSelectionToUVs
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ConvertSelectionToUVs

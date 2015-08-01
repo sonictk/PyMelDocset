@@ -1,0 +1,6 @@
+pymel.core.runtime.BakeCustomPivot
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: BakeCustomPivot

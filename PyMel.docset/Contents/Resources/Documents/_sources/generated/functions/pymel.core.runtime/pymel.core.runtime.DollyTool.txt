@@ -1,0 +1,6 @@
+pymel.core.runtime.DollyTool
+============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: DollyTool

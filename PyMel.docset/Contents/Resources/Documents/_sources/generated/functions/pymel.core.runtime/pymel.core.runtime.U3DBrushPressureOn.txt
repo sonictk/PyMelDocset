@@ -1,0 +1,6 @@
+pymel.core.runtime.U3DBrushPressureOn
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: U3DBrushPressureOn

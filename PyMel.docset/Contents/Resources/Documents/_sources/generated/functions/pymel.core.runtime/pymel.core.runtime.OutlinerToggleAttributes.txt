@@ -1,0 +1,6 @@
+pymel.core.runtime.OutlinerToggleAttributes
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: OutlinerToggleAttributes

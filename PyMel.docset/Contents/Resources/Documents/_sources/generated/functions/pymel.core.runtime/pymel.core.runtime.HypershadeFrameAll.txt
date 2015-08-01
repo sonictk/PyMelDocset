@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeFrameAll
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeFrameAll

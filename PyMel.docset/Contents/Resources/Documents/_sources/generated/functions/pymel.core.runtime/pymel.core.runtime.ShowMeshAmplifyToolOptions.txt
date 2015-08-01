@@ -1,0 +1,6 @@
+pymel.core.runtime.ShowMeshAmplifyToolOptions
+=============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ShowMeshAmplifyToolOptions

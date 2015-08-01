@@ -1,0 +1,6 @@
+pymel.core.runtime.ScriptPaintTool
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ScriptPaintTool

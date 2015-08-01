@@ -1,0 +1,6 @@
+pymel.core.runtime.SplitEdge
+============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SplitEdge

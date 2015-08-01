@@ -1,0 +1,6 @@
+pymel.util.inMaya
+=================
+
+.. currentmodule:: pymel.util
+
+.. autofunction:: inMaya

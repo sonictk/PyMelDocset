@@ -1,0 +1,6 @@
+pymel.core.runtime.NextGreasePencilFrame
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NextGreasePencilFrame

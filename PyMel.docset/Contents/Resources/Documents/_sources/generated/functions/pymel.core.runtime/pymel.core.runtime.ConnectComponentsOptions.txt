@@ -1,0 +1,6 @@
+pymel.core.runtime.ConnectComponentsOptions
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ConnectComponentsOptions

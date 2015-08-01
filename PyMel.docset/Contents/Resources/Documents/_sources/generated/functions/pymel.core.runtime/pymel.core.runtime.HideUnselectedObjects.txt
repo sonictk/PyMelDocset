@@ -1,0 +1,6 @@
+pymel.core.runtime.HideUnselectedObjects
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HideUnselectedObjects

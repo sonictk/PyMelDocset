@@ -1,0 +1,456 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.uitypes/pymel.core.uitypes.CheckBox.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:22:17 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.uitypes.CheckBox — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.uitypes.html" rel="up" title="pymel.core.uitypes"/>
+<link href="pymel.core.uitypes.CheckBoxGrp.html" rel="next" title="pymel.core.uitypes.CheckBoxGrp"/>
+<link href="pymel.core.uitypes.ChannelBox.html" rel="prev" title="pymel.core.uitypes.ChannelBox"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.uitypes » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.uitypes.CheckBox ¶ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ class CheckBox ¶ 
+ class counterpart of mel function checkBox 
+ This command creates a check box. A check box is a simple control containing a text label and a state of either on or off. Commands can be attached to any or all of the following events: when the check box is turned on, turned off, or..." name="description"/><meta content="__PyMel_generated_classes_pymel_core_uitypes_pymel_core_uitypes_CheckBox_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.uitypes.CheckBoxGrp.html" title="pymel.core.uitypes.CheckBoxGrp">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.uitypes.ChannelBox.html" title="pymel.core.uitypes.ChannelBox">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.uitypes.html">pymel.core.uitypes</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-uitypes-checkbox">
+<h1>pymel.core.uitypes.CheckBox<a class="headerlink" href="#pymel-core-uitypes-checkbox" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img alt="Inheritance diagram of CheckBox" class="inheritance" src="../../../_images/inheritance-ee74e6c7b7cea5f3004a8eef8a05c4b2aa8d1c55.png" usemap="#inheritance804329a72b"/>
+<map id="inheritance804329a72b" name="inheritance804329a72b">
+<area alt="" coords="5,44,77,68" href="#pymel.core.uitypes.CheckBox" id="node1" shape="rect" title="class counterpart of mel function `checkBox`"></area>
+<area alt="" coords="5,5,77,29" href="pymel.core.uitypes.PyUI.html#pymel.core.uitypes.PyUI" id="node2" shape="rect" title="PyUI"></area>
+</map>
+</p>
+<dl class="class">
+<dt id="pymel.core.uitypes.CheckBox"><a name="//apple_ref/cpp/Class/pymel.core.uitypes.CheckBox"></a>
+<em class="property">class </em><tt class="descname">CheckBox</tt><a class="headerlink" href="#pymel.core.uitypes.CheckBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>class counterpart of mel function <tt class="xref py py-obj docutils literal"><span class="pre">checkBox</span></tt></p>
+<p>This command creates a check box.  A check box is a simple control containing a text label and a state of either on or off.  Commands can be attached to any or all of the following events:  when the check box is turned on, turned off, or simply when it’s state is changed.</p>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.dragCallback"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.dragCallback"></a>
+<tt class="descname">dragCallback</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.dragCallback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a callback that is called when the middle mouse button is pressed.  The MEL version of the callback is of the form: global proc string[] callbackName(string $dragControl, int $x, int $y, int $mods) The proc returns a string array that is transferred to the drop site. By convention the first string in the array describes the user settable message type.  Controls that are application defined drag sources may ignore the callback. $mods allows testing for the key modifiers CTL and SHIFT. Possible values are 0 == No modifiers, 1 == SHIFT, 2 == CTL, 3 == CTL + SHIFT. In Python, it is similar, but there are two ways to specify the callback.  The recommended way is to pass a Python function object as the argument.  In that case, the Python callback should have the form: def callbackName( dragControl, x, y, modifiers ): The values of these arguments are the same as those for the MEL version above. The other way to specify the callback in Python is to specify a string to be executed.  In that case, the string will have the values substituted into it via the standard Python format operator.  The format values are passed in a dictionary with the keys dragControl, x, y, modifiers.  The dragControlvalue is a string and the other values are integers (eg the callback string could be print ‘%(dragControl)s %(x)d %(y)d %(modifiers)d’</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.dropCallback"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.dropCallback"></a>
+<tt class="descname">dropCallback</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.dropCallback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a callback that is called when a drag and drop operation is released above the drop site.  The MEL version of the callback is of the form: global proc callbackName(string $dragControl, string $dropControl, string $msgs[], int $x, int $y, int $type) The proc receives a string array that is transferred from the drag source. The first string in the msgs array describes the user defined message type. Controls that are application defined drop sites may ignore the callback. $type can have values of 1 == Move, 2 == Copy, 3 == Link. In Python, it is similar, but there are two ways to specify the callback.  The recommended way is to pass a Python function object as the argument.  In that case, the Python callback should have the form: def pythonDropTest( dragControl, dropControl, messages, x, y, dragType ): The values of these arguments are the same as those for the MEL version above. The other way to specify the callback in Python is to specify a string to be executed.  In that case, the string will have the values substituted into it via the standard Python format operator.  The format values are passed in a dictionary with the keys dragControl, dropControl, messages, x, y, type.  The dragControlvalue is a string and the other values are integers (eg the callback string could be print ‘%(dragControl)s %(dropControl)s %(messages)r %(x)d %(y)d %(type)d’</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getAlign"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getAlign"></a>
+<tt class="descname">getAlign</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getAlign" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag is obsolete and should no longer be used. The check box label will always be left-aligned.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getAnnotation"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getAnnotation"></a>
+<tt class="descname">getAnnotation</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getAnnotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Annotate the control with an extra string value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getBackgroundColor"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getBackgroundColor"></a>
+<tt class="descname">getBackgroundColor</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getBackgroundColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>The background color of the control. The arguments correspond to the red, green, and blue color components. Each component ranges in value from 0.0 to 1.0. When setting backgroundColor, the background is automatically enabled, unless enableBackground is also specified with a false value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getChangeCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getChangeCommand"></a>
+<tt class="descname">getChangeCommand</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getChangeCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command executed when the check box’s state is changed. Note that this flag should not be used in conjunction with onCommand and offCommand. That is, one should either use changeCommand and test the state of the check box from inside the callback, or use onCommand and offCommand as separate callbacks.                    Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getDocTag"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getDocTag"></a>
+<tt class="descname">getDocTag</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getDocTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a documentation flag to the control.  The documentation flag has a directory structure like hierarchy. Eg. -dt render/multiLister/createNode/material</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getEditable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getEditable"></a>
+<tt class="descname">getEditable</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getEditable" title="Permalink to this definition">¶</a></dt>
+<dd><p>The edit state of the check box.  By default, this flag is set to true and the check box value may be changed by clicking on it.  If false then the check box is ‘read only’ and can not be clicked on. The value of the check box can always be changed with the -v/valueflag regardless of the state of the -ed/editableflag.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getEnable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getEnable"></a>
+<tt class="descname">getEnable</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getEnable" title="Permalink to this definition">¶</a></dt>
+<dd><p>The enable state of the control.  By default, this flag is set to true and the control is enabled.  Specify false and the control will appear dimmed or greyed-out indicating it is disabled.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getEnableBackground"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getEnableBackground"></a>
+<tt class="descname">getEnableBackground</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getEnableBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables the background color of the control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getFullPathName"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getFullPathName"></a>
+<tt class="descname">getFullPathName</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getFullPathName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the full path name of the widget, which includes all the parents</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getHeight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getHeight"></a>
+<tt class="descname">getHeight</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>The height of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getIsObscured"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getIsObscured"></a>
+<tt class="descname">getIsObscured</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getIsObscured" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether the control can actually be seen by the user. The control will be obscured if its state is invisible, if it is blocked (entirely or partially) by some other control, if it or a parent layout is unmanaged, or if the control’s window is invisible or iconified.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getLabel"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getLabel"></a>
+<tt class="descname">getLabel</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getLabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>The label text. The default label is the name of the control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getManage"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getManage"></a>
+<tt class="descname">getManage</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getManage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Manage state of the control.  An unmanaged control is not visible, nor does it take up any screen real estate.  All controls are created managed by default.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getNumberOfPopupMenus"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getNumberOfPopupMenus"></a>
+<tt class="descname">getNumberOfPopupMenus</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getNumberOfPopupMenus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of popup menus attached to this control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getOffCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getOffCommand"></a>
+<tt class="descname">getOffCommand</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getOffCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command executed when the check box is turned off.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getOnCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getOnCommand"></a>
+<tt class="descname">getOnCommand</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getOnCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command executed when the check box is turned on.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getPopupMenuArray"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getPopupMenuArray"></a>
+<tt class="descname">getPopupMenuArray</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getPopupMenuArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the names of all the popup menus attached to this control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getPreventOverride"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getPreventOverride"></a>
+<tt class="descname">getPreventOverride</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getPreventOverride" title="Permalink to this definition">¶</a></dt>
+<dd><p>If true, this flag disallows overriding the control’s attribute via the control’s right mouse button menu.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getRecomputeSize"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getRecomputeSize"></a>
+<tt class="descname">getRecomputeSize</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getRecomputeSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>If true then the control will recompute it’s size to just fit the size of the label.  If false then the control size will remain fixed as you change the size of the label.  The default value of this flag is true.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getValue"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getValue"></a>
+<tt class="descname">getValue</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>State of the check box.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getVisible"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getVisible"></a>
+<tt class="descname">getVisible</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getVisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>The visible state of the control.  A control is created visible by default.  Note that a control’s actual appearance is also dependent on the visible state of its parent layout(s).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getVisibleChangeCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getVisibleChangeCommand"></a>
+<tt class="descname">getVisibleChangeCommand</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getVisibleChangeCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command that gets executed when visible state of the control changes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.getWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.getWidth"></a>
+<tt class="descname">getWidth</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.getWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>The width of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.noBackground"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.noBackground"></a>
+<tt class="descname">noBackground</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.noBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear/reset the control’s background. Passing true means the background should not be drawn at all, false means the background should be drawn.  The state of this flag is inherited by children of this control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.setAlign"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.setAlign"></a>
+<tt class="descname">setAlign</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.setAlign" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag is obsolete and should no longer be used. The check box label will always be left-aligned.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.setAnnotation"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.setAnnotation"></a>
+<tt class="descname">setAnnotation</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.setAnnotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Annotate the control with an extra string value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.setBackgroundColor"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.setBackgroundColor"></a>
+<tt class="descname">setBackgroundColor</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.setBackgroundColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>The background color of the control. The arguments correspond to the red, green, and blue color components. Each component ranges in value from 0.0 to 1.0. When setting backgroundColor, the background is automatically enabled, unless enableBackground is also specified with a false value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.setChangeCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.setChangeCommand"></a>
+<tt class="descname">setChangeCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.setChangeCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command executed when the check box’s state is changed. Note that this flag should not be used in conjunction with onCommand and offCommand. That is, one should either use changeCommand and test the state of the check box from inside the callback, or use onCommand and offCommand as separate callbacks.                    Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.setDocTag"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.setDocTag"></a>
+<tt class="descname">setDocTag</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.setDocTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a documentation flag to the control.  The documentation flag has a directory structure like hierarchy. Eg. -dt render/multiLister/createNode/material</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.setEditable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.setEditable"></a>
+<tt class="descname">setEditable</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.setEditable" title="Permalink to this definition">¶</a></dt>
+<dd><p>The edit state of the check box.  By default, this flag is set to true and the check box value may be changed by clicking on it.  If false then the check box is ‘read only’ and can not be clicked on. The value of the check box can always be changed with the -v/valueflag regardless of the state of the -ed/editableflag.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.setEnable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.setEnable"></a>
+<tt class="descname">setEnable</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.setEnable" title="Permalink to this definition">¶</a></dt>
+<dd><p>The enable state of the control.  By default, this flag is set to true and the control is enabled.  Specify false and the control will appear dimmed or greyed-out indicating it is disabled.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.setEnableBackground"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.setEnableBackground"></a>
+<tt class="descname">setEnableBackground</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.setEnableBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables the background color of the control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.setHeight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.setHeight"></a>
+<tt class="descname">setHeight</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.setHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>The height of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.setLabel"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.setLabel"></a>
+<tt class="descname">setLabel</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.setLabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>The label text. The default label is the name of the control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.setManage"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.setManage"></a>
+<tt class="descname">setManage</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.setManage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Manage state of the control.  An unmanaged control is not visible, nor does it take up any screen real estate.  All controls are created managed by default.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.setOffCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.setOffCommand"></a>
+<tt class="descname">setOffCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.setOffCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command executed when the check box is turned off.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.setOnCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.setOnCommand"></a>
+<tt class="descname">setOnCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.setOnCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command executed when the check box is turned on.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.setPreventOverride"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.setPreventOverride"></a>
+<tt class="descname">setPreventOverride</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.setPreventOverride" title="Permalink to this definition">¶</a></dt>
+<dd><p>If true, this flag disallows overriding the control’s attribute via the control’s right mouse button menu.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.setRecomputeSize"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.setRecomputeSize"></a>
+<tt class="descname">setRecomputeSize</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.setRecomputeSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>If true then the control will recompute it’s size to just fit the size of the label.  If false then the control size will remain fixed as you change the size of the label.  The default value of this flag is true.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.setValue"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.setValue"></a>
+<tt class="descname">setValue</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.setValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>State of the check box.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.setVisible"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.setVisible"></a>
+<tt class="descname">setVisible</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.setVisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>The visible state of the control.  A control is created visible by default.  Note that a control’s actual appearance is also dependent on the visible state of its parent layout(s).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.setVisibleChangeCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.setVisibleChangeCommand"></a>
+<tt class="descname">setVisibleChangeCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.setVisibleChangeCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command that gets executed when visible state of the control changes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.CheckBox.setWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.CheckBox.setWidth"></a>
+<tt class="descname">setWidth</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.CheckBox.setWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>The width of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.checkBox</span></tt></p>
+</dd></dl>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.uitypes.ChannelBox.html" title="previous chapter">pymel.core.uitypes.ChannelBox</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.uitypes.CheckBoxGrp.html" title="next chapter">pymel.core.uitypes.CheckBoxGrp</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/classes/pymel.core.uitypes/pymel.core.uitypes.CheckBox.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.uitypes.CheckBoxGrp.html" title="pymel.core.uitypes.CheckBoxGrp">next</a> |</li>
+<li class="right">
+<a href="pymel.core.uitypes.ChannelBox.html" title="pymel.core.uitypes.ChannelBox">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.uitypes.html">pymel.core.uitypes</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.uitypes/pymel.core.uitypes.CheckBox.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:22:18 GMT -->
+</body></html>

@@ -1,0 +1,6 @@
+pymel.core.runtime.FullHotboxDisplay
+====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: FullHotboxDisplay

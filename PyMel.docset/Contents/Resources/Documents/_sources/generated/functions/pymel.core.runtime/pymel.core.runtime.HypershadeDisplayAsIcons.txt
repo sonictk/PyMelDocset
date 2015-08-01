@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeDisplayAsIcons
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeDisplayAsIcons

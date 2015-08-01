@@ -1,0 +1,6 @@
+pymel.core.runtime.DisplaySmoothShaded
+======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: DisplaySmoothShaded

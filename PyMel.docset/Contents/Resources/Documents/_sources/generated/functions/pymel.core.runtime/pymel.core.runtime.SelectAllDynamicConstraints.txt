@@ -1,0 +1,6 @@
+pymel.core.runtime.SelectAllDynamicConstraints
+==============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SelectAllDynamicConstraints

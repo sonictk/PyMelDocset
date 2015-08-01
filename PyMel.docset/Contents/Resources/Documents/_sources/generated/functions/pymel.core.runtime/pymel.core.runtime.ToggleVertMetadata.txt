@@ -1,0 +1,6 @@
+pymel.core.runtime.ToggleVertMetadata
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ToggleVertMetadata

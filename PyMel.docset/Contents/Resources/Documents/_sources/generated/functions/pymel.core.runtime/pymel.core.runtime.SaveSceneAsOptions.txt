@@ -1,0 +1,6 @@
+pymel.core.runtime.SaveSceneAsOptions
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SaveSceneAsOptions

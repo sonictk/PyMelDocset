@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeGraphUpstream
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeGraphUpstream

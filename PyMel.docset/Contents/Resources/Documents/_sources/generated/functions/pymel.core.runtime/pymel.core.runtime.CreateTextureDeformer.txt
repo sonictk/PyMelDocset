@@ -1,0 +1,6 @@
+pymel.core.runtime.CreateTextureDeformer
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreateTextureDeformer

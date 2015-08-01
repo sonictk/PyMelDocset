@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeGraphRemoveUpstream
+================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeGraphRemoveUpstream

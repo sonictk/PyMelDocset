@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadePinByDefault
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadePinByDefault

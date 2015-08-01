@@ -1,0 +1,406 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/pymel.api.plugins.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:16:26 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.api.plugins — PyMEL 1.0.7 documentation</title>
+<link href="../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../_static/jquery.js" type="text/javascript"></script>
+<script src="../_static/underscore.js" type="text/javascript"></script>
+<script src="../_static/doctools.js" type="text/javascript"></script>
+<link href="../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="functions/pymel.api.plugins/pymel.api.plugins.allMPx.html" rel="next" title="pymel.api.plugins.allMPx"/>
+<link href="classes/pymel.tools.loggingControl/pymel.tools.loggingControl.LoggingMenu.html" rel="prev" title="pymel.tools.loggingControl.LoggingMenu"/>
+<link href="../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content='Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.api.plugins ¶ 
+ Maya API plugin utilities 
+ A quick example: 
+ from pymel.api.plugins import Command 
+ class testCmd ( Command ): 
+ def doIt ( self , args ): 
+ print "doIt..." 
+
+ testCmd . register () 
+ cmds . testCmd () 
+ testCmd . deregister () 
+ 
+ 
+ An example of a plugin which creates a node: 
+ 
+ import math 
+ import pymel.api.plugins as plugins
+import...' name="description"/><meta content="__PyMel_generated_pymel_api_plugins_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="functions/pymel.api.plugins/pymel.api.plugins.allMPx.html" title="pymel.api.plugins.allMPx">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="classes/pymel.tools.loggingControl/pymel.tools.loggingControl.LoggingMenu.html" title="pymel.tools.loggingControl.LoggingMenu">previous</a> |</li>
+<li><a href="../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="module-pymel.api.plugins">
+<span id="pymel-api-plugins"></span><h1><a name="//apple_ref/cpp/Module/pymel.api.plugins"></a>pymel.api.plugins<a class="headerlink" href="#module-pymel.api.plugins" title="Permalink to this headline">¶</a></h1>
+<p>Maya API plugin utilities</p>
+<p>A quick example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">pymel.api.plugins</span> <span class="kn">import</span> <span class="n">Command</span>
+<span class="k">class</span> <span class="nc">testCmd</span><span class="p">(</span><span class="n">Command</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">doIt</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">args</span><span class="p">):</span>
+        <span class="k">print</span> <span class="s">"doIt..."</span>
+
+<span class="n">testCmd</span><span class="o">.</span><span class="n">register</span><span class="p">()</span>
+<span class="n">cmds</span><span class="o">.</span><span class="n">testCmd</span><span class="p">()</span>
+<span class="n">testCmd</span><span class="o">.</span><span class="n">deregister</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>An example of a plugin which creates a node:</p>
+<blockquote>
+<div><p>import math</p>
+<p>import pymel.api.plugins as plugins
+import maya.OpenMaya as om</p>
+<dl class="docutils">
+<dt>class PymelSineNode(plugins.DependNode):</dt>
+<dd><p class="first">‘’‘Example node adapted from maya’s example sine node plugin</p>
+<p>Shows how much easier it is to create a plugin node using pymel.api.plugins
+‘’’
+# For quick testing, if _typeId is not defined, pymel will create one by
+# hashing the node name. For longer-term uses, you should explicitly set
+# own typeId like this
+#
+# (NOTE - if using the automatic typeId generation, the hashlib python
+# builtin library must be functional / working from within maya... due
+# to dynamic library linking issues (ie, libssl, libcrypto), this
+# may not always be the case out-of-the-box on some linux distros
+_typeId = om.MTypeId(0x900FF)</p>
+<p># by default, the name of the node will be the name of the class - to
+# override and set your own maya node name, do this:
+#_name = ‘PymelSineNode’</p>
+<p>@classmethod
+def initialize(cls):</p>
+<blockquote>
+<div><p># input
+nAttr = om.MFnNumericAttribute()
+cls.input = nAttr.create( “input”, “in”, om.MFnNumericData.kFloat, 0.0 )
+nAttr.setStorable(1)
+cls.addAttribute( cls.input )</p>
+<p># output
+cls.output = nAttr.create( “output”, “out”, om.MFnNumericData.kFloat, 0.0 )
+nAttr.setStorable(1)
+nAttr.setWritable(1)
+cls.addAttribute( cls.output )</p>
+<p># set attributeAffects relationships
+cls.attributeAffects( cls.input, cls.output )</p>
+</div></blockquote>
+<dl class="last docutils">
+<dt>def compute(self, plug, dataBlock):</dt>
+<dd><dl class="first docutils">
+<dt>if ( plug == self.output ):</dt>
+<dd>dataHandle = dataBlock.inputValue( self.input )
+inputFloat = dataHandle.asFloat()
+result = math.sin( inputFloat )
+outputHandle = dataBlock.outputValue( self.output )
+outputHandle.setFloat( result )
+dataBlock.setClean( plug )
+return om.MStatus.kSuccess</dd>
+</dl>
+<p class="last">return om.MStatus.kUnknownParameter</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>## initialize the script plug-in
+def initializePlugin(mobject):</p>
+<blockquote>
+<div>PymelSineNode.register(mobject)</div></blockquote>
+<p># uninitialize the script plug-in
+def uninitializePlugin(mobject):</p>
+<blockquote>
+<div>PymelSineNode.deregister(mobject)</div></blockquote>
+</div></blockquote>
+<p class="rubric">Functions</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%"></col>
+<col width="90%"></col>
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="functions/pymel.api.plugins/pymel.api.plugins.allMPx.html#pymel.api.plugins.allMPx" title="pymel.api.plugins.allMPx"><tt class="xref py py-obj docutils literal"><span class="pre">allMPx</span></tt></a></td>
+<td>Returns a list of all MPx classes</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="functions/pymel.api.plugins/pymel.api.plugins.enumToStr.html#pymel.api.plugins.enumToStr" title="pymel.api.plugins.enumToStr"><tt class="xref py py-obj docutils literal"><span class="pre">enumToStr</span></tt></a></td>
+<td>Returns a dictionary mapping from an MPxNode node type enum to it’s string name.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="functions/pymel.api.plugins/pymel.api.plugins.initializePlugin.html#pymel.api.plugins.initializePlugin" title="pymel.api.plugins.initializePlugin"><tt class="xref py py-obj docutils literal"><span class="pre">initializePlugin</span></tt></a></td>
+<td>do not call directly</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="functions/pymel.api.plugins/pymel.api.plugins.loadAllMayaPlugins.html#pymel.api.plugins.loadAllMayaPlugins" title="pymel.api.plugins.loadAllMayaPlugins"><tt class="xref py py-obj docutils literal"><span class="pre">loadAllMayaPlugins</span></tt></a></td>
+<td>will load all maya-installed plugins</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="functions/pymel.api.plugins/pymel.api.plugins.mayaPlugins.html#pymel.api.plugins.mayaPlugins" title="pymel.api.plugins.mayaPlugins"><tt class="xref py py-obj docutils literal"><span class="pre">mayaPlugins</span></tt></a></td>
+<td>all maya plugins in the maya install directory</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="functions/pymel.api.plugins/pymel.api.plugins.pluginCommands.html#pymel.api.plugins.pluginCommands" title="pymel.api.plugins.pluginCommands"><tt class="xref py py-obj docutils literal"><span class="pre">pluginCommands</span></tt></a></td>
+<td>Returns the list of all commands that the plugin provides, to the best of our knowledge.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="functions/pymel.api.plugins/pymel.api.plugins.uninitializePlugin.html#pymel.api.plugins.uninitializePlugin" title="pymel.api.plugins.uninitializePlugin"><tt class="xref py py-obj docutils literal"><span class="pre">uninitializePlugin</span></tt></a></td>
+<td>do not call directly</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="functions/pymel.api.plugins/pymel.api.plugins.unloadAllPlugins.html#pymel.api.plugins.unloadAllPlugins" title="pymel.api.plugins.unloadAllPlugins"><tt class="xref py py-obj docutils literal"><span class="pre">unloadAllPlugins</span></tt></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Classes</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%"></col>
+<col width="90%"></col>
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.Assembly.html#pymel.api.plugins.Assembly" title="pymel.api.plugins.Assembly"><tt class="xref py py-obj docutils literal"><span class="pre">Assembly</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.BasePluginMixin.html#pymel.api.plugins.BasePluginMixin" title="pymel.api.plugins.BasePluginMixin"><tt class="xref py py-obj docutils literal"><span class="pre">BasePluginMixin</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.BlendShape.html#pymel.api.plugins.BlendShape" title="pymel.api.plugins.BlendShape"><tt class="xref py py-obj docutils literal"><span class="pre">BlendShape</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.CameraSet.html#pymel.api.plugins.CameraSet" title="pymel.api.plugins.CameraSet"><tt class="xref py py-obj docutils literal"><span class="pre">CameraSet</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.Command.html#pymel.api.plugins.Command" title="pymel.api.plugins.Command"><tt class="xref py py-obj docutils literal"><span class="pre">Command</span></tt></a></td>
+<td>create a subclass of this with a doIt method</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.ComponentShape.html#pymel.api.plugins.ComponentShape" title="pymel.api.plugins.ComponentShape"><tt class="xref py py-obj docutils literal"><span class="pre">ComponentShape</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.Constraint.html#pymel.api.plugins.Constraint" title="pymel.api.plugins.Constraint"><tt class="xref py py-obj docutils literal"><span class="pre">Constraint</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.DeformerNode.html#pymel.api.plugins.DeformerNode" title="pymel.api.plugins.DeformerNode"><tt class="xref py py-obj docutils literal"><span class="pre">DeformerNode</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.DependNode.html#pymel.api.plugins.DependNode" title="pymel.api.plugins.DependNode"><tt class="xref py py-obj docutils literal"><span class="pre">DependNode</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.EmitterNode.html#pymel.api.plugins.EmitterNode" title="pymel.api.plugins.EmitterNode"><tt class="xref py py-obj docutils literal"><span class="pre">EmitterNode</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.FieldNode.html#pymel.api.plugins.FieldNode" title="pymel.api.plugins.FieldNode"><tt class="xref py py-obj docutils literal"><span class="pre">FieldNode</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.FluidEmitterNode.html#pymel.api.plugins.FluidEmitterNode" title="pymel.api.plugins.FluidEmitterNode"><tt class="xref py py-obj docutils literal"><span class="pre">FluidEmitterNode</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.GeometryFilter.html#pymel.api.plugins.GeometryFilter" title="pymel.api.plugins.GeometryFilter"><tt class="xref py py-obj docutils literal"><span class="pre">GeometryFilter</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.HardwareShader.html#pymel.api.plugins.HardwareShader" title="pymel.api.plugins.HardwareShader"><tt class="xref py py-obj docutils literal"><span class="pre">HardwareShader</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.HwShaderNode.html#pymel.api.plugins.HwShaderNode" title="pymel.api.plugins.HwShaderNode"><tt class="xref py py-obj docutils literal"><span class="pre">HwShaderNode</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.IkSolverNode.html#pymel.api.plugins.IkSolverNode" title="pymel.api.plugins.IkSolverNode"><tt class="xref py py-obj docutils literal"><span class="pre">IkSolverNode</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.ImagePlane.html#pymel.api.plugins.ImagePlane" title="pymel.api.plugins.ImagePlane"><tt class="xref py py-obj docutils literal"><span class="pre">ImagePlane</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.LocatorNode.html#pymel.api.plugins.LocatorNode" title="pymel.api.plugins.LocatorNode"><tt class="xref py py-obj docutils literal"><span class="pre">LocatorNode</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.ManipContainer.html#pymel.api.plugins.ManipContainer" title="pymel.api.plugins.ManipContainer"><tt class="xref py py-obj docutils literal"><span class="pre">ManipContainer</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.ManipulatorNode.html#pymel.api.plugins.ManipulatorNode" title="pymel.api.plugins.ManipulatorNode"><tt class="xref py py-obj docutils literal"><span class="pre">ManipulatorNode</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.MotionPathNode.html#pymel.api.plugins.MotionPathNode" title="pymel.api.plugins.MotionPathNode"><tt class="xref py py-obj docutils literal"><span class="pre">MotionPathNode</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.ObjectSet.html#pymel.api.plugins.ObjectSet" title="pymel.api.plugins.ObjectSet"><tt class="xref py py-obj docutils literal"><span class="pre">ObjectSet</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.ParticleAttributeMapperNode.html#pymel.api.plugins.ParticleAttributeMapperNode" title="pymel.api.plugins.ParticleAttributeMapperNode"><tt class="xref py py-obj docutils literal"><span class="pre">ParticleAttributeMapperNode</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.PolyTrg.html#pymel.api.plugins.PolyTrg" title="pymel.api.plugins.PolyTrg"><tt class="xref py py-obj docutils literal"><span class="pre">PolyTrg</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.PyNodeMethod.html#pymel.api.plugins.PyNodeMethod" title="pymel.api.plugins.PyNodeMethod"><tt class="xref py py-obj docutils literal"><span class="pre">PyNodeMethod</span></tt></a></td>
+<td>Used as a decorator, placed on methods on a plugin node class, to signal that these methods should be placed on to PyNode objects constructed for the resulting depend nodes.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.SkinCluster.html#pymel.api.plugins.SkinCluster" title="pymel.api.plugins.SkinCluster"><tt class="xref py py-obj docutils literal"><span class="pre">SkinCluster</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.SpringNode.html#pymel.api.plugins.SpringNode" title="pymel.api.plugins.SpringNode"><tt class="xref py py-obj docutils literal"><span class="pre">SpringNode</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.SurfaceShape.html#pymel.api.plugins.SurfaceShape" title="pymel.api.plugins.SurfaceShape"><tt class="xref py py-obj docutils literal"><span class="pre">SurfaceShape</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.Transform.html#pymel.api.plugins.Transform" title="pymel.api.plugins.Transform"><tt class="xref py py-obj docutils literal"><span class="pre">Transform</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.TransformationMatrix.html#pymel.api.plugins.TransformationMatrix" title="pymel.api.plugins.TransformationMatrix"><tt class="xref py py-obj docutils literal"><span class="pre">TransformationMatrix</span></tt></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="classes/pymel.api.plugins/pymel.api.plugins.defaultdict.html#pymel.api.plugins.defaultdict" title="pymel.api.plugins.defaultdict"><tt class="xref py py-obj docutils literal"><span class="pre">defaultdict</span></tt></a></td>
+<td>defaultdict(default_factory) –&gt; dict with default factory</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Exceptions</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%"></col>
+<col width="90%"></col>
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><tt class="xref py py-obj docutils literal"><span class="pre">AlreadyRegisteredError</span></tt></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><tt class="xref py py-obj docutils literal"><span class="pre">NotRegisteredError</span></tt></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><tt class="xref py py-obj docutils literal"><span class="pre">PluginError</span></tt></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><tt class="xref py py-obj docutils literal"><span class="pre">PluginRegistryError</span></tt></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="classes/pymel.tools.loggingControl/pymel.tools.loggingControl.LoggingMenu.html" title="previous chapter">pymel.tools.loggingControl.LoggingMenu</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="functions/pymel.api.plugins/pymel.api.plugins.allMPx.html" title="next chapter">pymel.api.plugins.allMPx</a></p>
+<h3><a href="../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="##module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../_sources/generated/pymel.api.plugins.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="functions/pymel.api.plugins/pymel.api.plugins.allMPx.html" title="pymel.api.plugins.allMPx">next</a> |</li>
+<li class="right">
+<a href="classes/pymel.tools.loggingControl/pymel.tools.loggingControl.LoggingMenu.html" title="pymel.tools.loggingControl.LoggingMenu">previous</a> |</li>
+<li><a href="../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/pymel.api.plugins.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:16:26 GMT -->
+</body></html>

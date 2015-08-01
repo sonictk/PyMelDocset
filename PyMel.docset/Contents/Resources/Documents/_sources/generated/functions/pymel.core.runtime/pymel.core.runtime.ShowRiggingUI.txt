@@ -1,0 +1,6 @@
+pymel.core.runtime.ShowRiggingUI
+================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ShowRiggingUI

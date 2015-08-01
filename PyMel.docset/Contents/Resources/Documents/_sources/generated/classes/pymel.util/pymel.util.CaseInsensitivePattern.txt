@@ -1,0 +1,11 @@
+pymel.util.CaseInsensitivePattern
+=================================
+
+.. currentmodule:: pymel.util
+
+.. inheritance-diagram:: CaseInsensitivePattern
+    :parts: 1
+
+.. autoclass:: CaseInsensitivePattern
+    :members:
+    :undoc-members:

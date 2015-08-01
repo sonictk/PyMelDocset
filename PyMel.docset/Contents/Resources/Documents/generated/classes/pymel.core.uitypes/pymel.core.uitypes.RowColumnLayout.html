@@ -1,0 +1,446 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.uitypes/pymel.core.uitypes.RowColumnLayout.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:22:52 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.uitypes.RowColumnLayout — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.uitypes.html" rel="up" title="pymel.core.uitypes"/>
+<link href="pymel.core.uitypes.RowLayout.html" rel="next" title="pymel.core.uitypes.RowLayout"/>
+<link href="pymel.core.uitypes.RenderWindowEditor.html" rel="prev" title="pymel.core.uitypes.RenderWindowEditor"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.uitypes » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.uitypes.RowColumnLayout ¶ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ class RowColumnLayout ¶ 
+ class counterpart of mel function rowColumnLayout 
+ This command creates a rowColumn layout. A rowColumn layout positions children in either a row or column format. A column layout, specified with the -nc/numberOfColumnsflag, allows you set text alignment,..." name="description"/><meta content="__PyMel_generated_classes_pymel_core_uitypes_pymel_core_uitypes_RowColumnLayout_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.uitypes.RowLayout.html" title="pymel.core.uitypes.RowLayout">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.uitypes.RenderWindowEditor.html" title="pymel.core.uitypes.RenderWindowEditor">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.uitypes.html">pymel.core.uitypes</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-uitypes-rowcolumnlayout">
+<h1>pymel.core.uitypes.RowColumnLayout<a class="headerlink" href="#pymel-core-uitypes-rowcolumnlayout" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img alt="Inheritance diagram of RowColumnLayout" class="inheritance" src="../../../_images/inheritance-e7629c23b53d6747fe4ab5f4042d003405eabe64.png" usemap="#inheritance70268c2aad"/>
+<map id="inheritance70268c2aad" name="inheritance70268c2aad">
+<area alt="" coords="25,44,97,68" href="pymel.core.uitypes.Layout.html#pymel.core.uitypes.Layout" id="node1" shape="rect" title="Layout"></area>
+<area alt="" coords="5,83,117,107" href="#pymel.core.uitypes.RowColumnLayout" id="node3" shape="rect" title="class counterpart of mel function `rowColumnLayout`"></area>
+<area alt="" coords="25,5,97,29" href="pymel.core.uitypes.PyUI.html#pymel.core.uitypes.PyUI" id="node2" shape="rect" title="PyUI"></area>
+</map>
+</p>
+<dl class="class">
+<dt id="pymel.core.uitypes.RowColumnLayout"><a name="//apple_ref/cpp/Class/pymel.core.uitypes.RowColumnLayout"></a>
+<em class="property">class </em><tt class="descname">RowColumnLayout</tt><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout" title="Permalink to this definition">¶</a></dt>
+<dd><p>class counterpart of mel function <tt class="xref py py-obj docutils literal"><span class="pre">rowColumnLayout</span></tt></p>
+<p>This command creates a rowColumn layout. A rowColumn layout positions children in either a row or column format. A column layout, specified with the -nc/numberOfColumnsflag, allows you set text alignment, attachments and offsets for each column in the layout. Every member of a column will have the same alignment, attachment and offsets.  Likewise the row format, specified by the -nr/numberOfRowsflag, allows setting of these attributes for each row in the layout. Every member of a row will have the same attributes. The layout must be either a row or column format. This layout does not support both, or the specification of attributes on an individual child basis. Some flags only make sense for one of either the row format or the column format.  For example the -rh/rowHeightflag can only be specified in row format. In column format the row height is determined by the tallest child in the row, plus offsets.</p>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.columnAlign"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.columnAlign"></a>
+<tt class="descname">columnAlign</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.columnAlign" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alignment for text and pixmaps in the specified column.  Values are: left, rightand center.  Only valid for column format, ie. number of columns specified with -nc/numberOfColumnsflag.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.columnAttach"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.columnAttach"></a>
+<tt class="descname">columnAttach</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.columnAttach" title="Permalink to this definition">¶</a></dt>
+<dd><p>The attachements and offsets for the children in the specified column.  The first argument is the 1-based column index.  The second argument is the attachment, valid values are left, rightand both.  The third argument must be greater than 0 and specifies the offset.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.columnOffset"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.columnOffset"></a>
+<tt class="descname">columnOffset</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.columnOffset" title="Permalink to this definition">¶</a></dt>
+<dd><p>The attachment offset for the specified column.  The first argument is the 1-based column index.  The second argument is the attachment, valid values are left, rightand both.  The third argument must be greater than 0 and specifies the offset.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.columnSpacing"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.columnSpacing"></a>
+<tt class="descname">columnSpacing</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.columnSpacing" title="Permalink to this definition">¶</a></dt>
+<dd><p>The space between columns in pixels.  In column format this flag specifies that the space be to the left of the given column.  In row format it specifies the space between all columns, however a valid column index is still required.  The first argument is the 1-based column index.  The second argument must be greater than 0 and specifies the spacing.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.columnWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.columnWidth"></a>
+<tt class="descname">columnWidth</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.columnWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Width of a column. This flag is valid only in column format.  The column width must be greater than 0.  The first argument is the 1-based column index.  The second argument must be greater than 0 and specifies the column width.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.dragCallback"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.dragCallback"></a>
+<tt class="descname">dragCallback</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.dragCallback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a callback that is called when the middle mouse button is pressed.  The MEL version of the callback is of the form: global proc string[] callbackName(string $dragControl, int $x, int $y, int $mods) The proc returns a string array that is transferred to the drop site. By convention the first string in the array describes the user settable message type.  Controls that are application defined drag sources may ignore the callback. $mods allows testing for the key modifiers CTL and SHIFT. Possible values are 0 == No modifiers, 1 == SHIFT, 2 == CTL, 3 == CTL + SHIFT. In Python, it is similar, but there are two ways to specify the callback.  The recommended way is to pass a Python function object as the argument.  In that case, the Python callback should have the form: def callbackName( dragControl, x, y, modifiers ): The values of these arguments are the same as those for the MEL version above. The other way to specify the callback in Python is to specify a string to be executed.  In that case, the string will have the values substituted into it via the standard Python format operator.  The format values are passed in a dictionary with the keys dragControl, x, y, modifiers.  The dragControlvalue is a string and the other values are integers (eg the callback string could be print ‘%(dragControl)s %(x)d %(y)d %(modifiers)d’</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.dropCallback"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.dropCallback"></a>
+<tt class="descname">dropCallback</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.dropCallback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a callback that is called when a drag and drop operation is released above the drop site.  The MEL version of the callback is of the form: global proc callbackName(string $dragControl, string $dropControl, string $msgs[], int $x, int $y, int $type) The proc receives a string array that is transferred from the drag source. The first string in the msgs array describes the user defined message type. Controls that are application defined drop sites may ignore the callback. $type can have values of 1 == Move, 2 == Copy, 3 == Link. In Python, it is similar, but there are two ways to specify the callback.  The recommended way is to pass a Python function object as the argument.  In that case, the Python callback should have the form: def pythonDropTest( dragControl, dropControl, messages, x, y, dragType ): The values of these arguments are the same as those for the MEL version above. The other way to specify the callback in Python is to specify a string to be executed.  In that case, the string will have the values substituted into it via the standard Python format operator.  The format values are passed in a dictionary with the keys dragControl, dropControl, messages, x, y, type.  The dragControlvalue is a string and the other values are integers (eg the callback string could be print ‘%(dragControl)s %(dropControl)s %(messages)r %(x)d %(y)d %(type)d’</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.getAnnotation"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.getAnnotation"></a>
+<tt class="descname">getAnnotation</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.getAnnotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Annotate the control with an extra string value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.getBackgroundColor"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.getBackgroundColor"></a>
+<tt class="descname">getBackgroundColor</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.getBackgroundColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>The background color of the control. The arguments correspond to the red, green, and blue color components. Each component ranges in value from 0.0 to 1.0. When setting backgroundColor, the background is automatically enabled, unless enableBackground is also specified with a false value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.getChildArray"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.getChildArray"></a>
+<tt class="descname">getChildArray</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.getChildArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a string array of the names of the layout’s immediate children.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.getDocTag"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.getDocTag"></a>
+<tt class="descname">getDocTag</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.getDocTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a documentation flag to the control.  The documentation flag has a directory structure like hierarchy. Eg. -dt render/multiLister/createNode/material</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.getEnable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.getEnable"></a>
+<tt class="descname">getEnable</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.getEnable" title="Permalink to this definition">¶</a></dt>
+<dd><p>The enable state of the control.  By default, this flag is set to true and the control is enabled.  Specify false and the control will appear dimmed or greyed-out indicating it is disabled.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.getEnableBackground"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.getEnableBackground"></a>
+<tt class="descname">getEnableBackground</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.getEnableBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables the background color of the control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.getFullPathName"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.getFullPathName"></a>
+<tt class="descname">getFullPathName</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.getFullPathName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the full path name of the widget, which includes all the parents</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.getHeight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.getHeight"></a>
+<tt class="descname">getHeight</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.getHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>The height of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.getIsObscured"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.getIsObscured"></a>
+<tt class="descname">getIsObscured</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.getIsObscured" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether the control can actually be seen by the user. The control will be obscured if its state is invisible, if it is blocked (entirely or partially) by some other control, if it or a parent layout is unmanaged, or if the control’s window is invisible or iconified.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.getManage"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.getManage"></a>
+<tt class="descname">getManage</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.getManage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Manage state of the control.  An unmanaged control is not visible, nor does it take up any screen real estate.  All controls are created managed by default.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.getNumberOfChildren"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.getNumberOfChildren"></a>
+<tt class="descname">getNumberOfChildren</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.getNumberOfChildren" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns in an int the number of immediate children of the layout.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.getNumberOfColumns"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.getNumberOfColumns"></a>
+<tt class="descname">getNumberOfColumns</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.getNumberOfColumns" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of columns. This flag is mutually exclusive to the -nr/numRowsflag.  Either one or the other can be specified.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.getNumberOfPopupMenus"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.getNumberOfPopupMenus"></a>
+<tt class="descname">getNumberOfPopupMenus</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.getNumberOfPopupMenus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of popup menus attached to this control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.getNumberOfRows"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.getNumberOfRows"></a>
+<tt class="descname">getNumberOfRows</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.getNumberOfRows" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of rows. This flag is mutually exclusive to the -nc/numColumnsflag. Either one or the other can be specified.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.getPopupMenuArray"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.getPopupMenuArray"></a>
+<tt class="descname">getPopupMenuArray</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.getPopupMenuArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the names of all the popup menus attached to this control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.getPreventOverride"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.getPreventOverride"></a>
+<tt class="descname">getPreventOverride</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.getPreventOverride" title="Permalink to this definition">¶</a></dt>
+<dd><p>If true, this flag disallows overriding the control’s attribute via the control’s right mouse button menu.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.getVisible"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.getVisible"></a>
+<tt class="descname">getVisible</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.getVisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>The visible state of the control.  A control is created visible by default.  Note that a control’s actual appearance is also dependent on the visible state of its parent layout(s).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.getVisibleChangeCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.getVisibleChangeCommand"></a>
+<tt class="descname">getVisibleChangeCommand</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.getVisibleChangeCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command that gets executed when visible state of the control changes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.getWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.getWidth"></a>
+<tt class="descname">getWidth</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.getWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>The width of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.noBackground"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.noBackground"></a>
+<tt class="descname">noBackground</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.noBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear/reset the control’s background. Passing true means the background should not be drawn at all, false means the background should be drawn.  The state of this flag is inherited by children of this control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.rowAlign"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.rowAlign"></a>
+<tt class="descname">rowAlign</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.rowAlign" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alignment for text and pixmaps in the specified row. Values are: left, rightand center.  Only valid for row format, ie. number of rows specified with -nr/numberOfRowsflag.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.rowAttach"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.rowAttach"></a>
+<tt class="descname">rowAttach</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.rowAttach" title="Permalink to this definition">¶</a></dt>
+<dd><p>The attachements and offsets for the children in the specified row.  The first argument is the 1-based row index.  The second argument is the attachment, valid values are top, bottomand both.  The third argument must be greater than 0 and specifies the offset.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.rowHeight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.rowHeight"></a>
+<tt class="descname">rowHeight</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.rowHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Height of a row. This flag is only valid in row format. The row height must be greater than 0. The first argument is the 1-based row index.  The second argument must be greater than 0 and specifies the row height.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.rowOffset"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.rowOffset"></a>
+<tt class="descname">rowOffset</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.rowOffset" title="Permalink to this definition">¶</a></dt>
+<dd><p>The attachment offset for the specified row.  The first argument is the 1-based row index.  The second argument is the attachment, valid values are top, bottomand both.  The third argument must be greater than 0 and specifies the offset.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.rowSpacing"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.rowSpacing"></a>
+<tt class="descname">rowSpacing</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.rowSpacing" title="Permalink to this definition">¶</a></dt>
+<dd><p>The space between rows, in pixels.  In row format this specifies the space above the specified row.  In column format it specifies the space between all rows, however a valid row index is still required.  The first argument is the 1-based row index.  The second argument must be greater than 0 and specifies the spacing.                          Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.setAnnotation"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.setAnnotation"></a>
+<tt class="descname">setAnnotation</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.setAnnotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Annotate the control with an extra string value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.setBackgroundColor"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.setBackgroundColor"></a>
+<tt class="descname">setBackgroundColor</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.setBackgroundColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>The background color of the control. The arguments correspond to the red, green, and blue color components. Each component ranges in value from 0.0 to 1.0. When setting backgroundColor, the background is automatically enabled, unless enableBackground is also specified with a false value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.setDocTag"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.setDocTag"></a>
+<tt class="descname">setDocTag</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.setDocTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a documentation flag to the control.  The documentation flag has a directory structure like hierarchy. Eg. -dt render/multiLister/createNode/material</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.setEnable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.setEnable"></a>
+<tt class="descname">setEnable</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.setEnable" title="Permalink to this definition">¶</a></dt>
+<dd><p>The enable state of the control.  By default, this flag is set to true and the control is enabled.  Specify false and the control will appear dimmed or greyed-out indicating it is disabled.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.setEnableBackground"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.setEnableBackground"></a>
+<tt class="descname">setEnableBackground</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.setEnableBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables the background color of the control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.setHeight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.setHeight"></a>
+<tt class="descname">setHeight</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.setHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>The height of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.setManage"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.setManage"></a>
+<tt class="descname">setManage</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.setManage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Manage state of the control.  An unmanaged control is not visible, nor does it take up any screen real estate.  All controls are created managed by default.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.setPreventOverride"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.setPreventOverride"></a>
+<tt class="descname">setPreventOverride</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.setPreventOverride" title="Permalink to this definition">¶</a></dt>
+<dd><p>If true, this flag disallows overriding the control’s attribute via the control’s right mouse button menu.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.setVisible"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.setVisible"></a>
+<tt class="descname">setVisible</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.setVisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>The visible state of the control.  A control is created visible by default.  Note that a control’s actual appearance is also dependent on the visible state of its parent layout(s).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.setVisibleChangeCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.setVisibleChangeCommand"></a>
+<tt class="descname">setVisibleChangeCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.setVisibleChangeCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command that gets executed when visible state of the control changes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.RowColumnLayout.setWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.RowColumnLayout.setWidth"></a>
+<tt class="descname">setWidth</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.RowColumnLayout.setWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>The width of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+</dd></dl>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.uitypes.RenderWindowEditor.html" title="previous chapter">pymel.core.uitypes.RenderWindowEditor</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.uitypes.RowLayout.html" title="next chapter">pymel.core.uitypes.RowLayout</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/classes/pymel.core.uitypes/pymel.core.uitypes.RowColumnLayout.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.uitypes.RowLayout.html" title="pymel.core.uitypes.RowLayout">next</a> |</li>
+<li class="right">
+<a href="pymel.core.uitypes.RenderWindowEditor.html" title="pymel.core.uitypes.RenderWindowEditor">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.uitypes.html">pymel.core.uitypes</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.uitypes/pymel.core.uitypes.RowColumnLayout.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:22:52 GMT -->
+</body></html>

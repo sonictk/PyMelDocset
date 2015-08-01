@@ -1,0 +1,6 @@
+pymel.core.runtime.TexSculptActivateBrushSize
+=============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: TexSculptActivateBrushSize

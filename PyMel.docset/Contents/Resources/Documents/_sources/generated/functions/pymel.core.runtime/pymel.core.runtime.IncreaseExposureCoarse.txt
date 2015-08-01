@@ -1,0 +1,6 @@
+pymel.core.runtime.IncreaseExposureCoarse
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: IncreaseExposureCoarse

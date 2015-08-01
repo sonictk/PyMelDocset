@@ -1,0 +1,6 @@
+pymel.core.runtime.OutlinerUnhide
+=================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: OutlinerUnhide

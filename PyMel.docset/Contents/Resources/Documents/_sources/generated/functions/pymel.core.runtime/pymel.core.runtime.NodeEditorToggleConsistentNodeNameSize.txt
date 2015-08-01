@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorToggleConsistentNodeNameSize
+=========================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorToggleConsistentNodeNameSize

@@ -1,0 +1,6 @@
+pymel.core.runtime.PolyMergeVertices
+====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: PolyMergeVertices

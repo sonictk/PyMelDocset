@@ -1,0 +1,6 @@
+pymel.core.runtime.OffsetCurveOnSurfaceOptions
+==============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: OffsetCurveOnSurfaceOptions

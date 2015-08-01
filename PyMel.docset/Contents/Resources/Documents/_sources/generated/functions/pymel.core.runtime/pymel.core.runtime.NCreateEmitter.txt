@@ -1,0 +1,6 @@
+pymel.core.runtime.NCreateEmitter
+=================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NCreateEmitter

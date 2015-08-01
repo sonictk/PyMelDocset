@@ -1,0 +1,6 @@
+pymel.core.runtime.SelectLinesMask
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SelectLinesMask

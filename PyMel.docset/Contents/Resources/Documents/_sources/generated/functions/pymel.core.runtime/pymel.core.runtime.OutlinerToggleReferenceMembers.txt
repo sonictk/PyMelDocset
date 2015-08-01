@@ -1,0 +1,6 @@
+pymel.core.runtime.OutlinerToggleReferenceMembers
+=================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: OutlinerToggleReferenceMembers

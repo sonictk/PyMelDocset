@@ -1,0 +1,6 @@
+pymel.core.runtime.ShowMeshSmoothToolOptions
+============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ShowMeshSmoothToolOptions

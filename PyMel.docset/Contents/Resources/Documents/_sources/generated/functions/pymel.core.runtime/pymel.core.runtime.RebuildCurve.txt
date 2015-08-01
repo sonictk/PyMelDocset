@@ -1,0 +1,6 @@
+pymel.core.runtime.RebuildCurve
+===============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: RebuildCurve

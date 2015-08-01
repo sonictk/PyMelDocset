@@ -1,0 +1,6 @@
+pymel.util.dist
+===============
+
+.. currentmodule:: pymel.util
+
+.. autofunction:: dist

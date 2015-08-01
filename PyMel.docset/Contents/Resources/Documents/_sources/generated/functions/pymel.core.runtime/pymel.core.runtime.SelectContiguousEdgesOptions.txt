@@ -1,0 +1,6 @@
+pymel.core.runtime.SelectContiguousEdgesOptions
+===============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SelectContiguousEdgesOptions

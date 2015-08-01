@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeDisplayAsLargeSwatches
+===================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeDisplayAsLargeSwatches

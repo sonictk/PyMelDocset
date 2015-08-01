@@ -1,0 +1,6 @@
+pymel.core.runtime.MoveIKtoFK
+=============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: MoveIKtoFK

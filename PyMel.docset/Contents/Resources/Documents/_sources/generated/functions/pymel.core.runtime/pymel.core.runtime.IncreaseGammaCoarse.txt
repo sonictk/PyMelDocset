@@ -1,0 +1,6 @@
+pymel.core.runtime.IncreaseGammaCoarse
+======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: IncreaseGammaCoarse

@@ -1,0 +1,6 @@
+pymel.core.runtime.CreateNSoftBody
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreateNSoftBody

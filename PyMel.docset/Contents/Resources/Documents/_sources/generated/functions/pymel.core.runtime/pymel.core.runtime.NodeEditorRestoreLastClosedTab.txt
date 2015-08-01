@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorRestoreLastClosedTab
+=================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorRestoreLastClosedTab

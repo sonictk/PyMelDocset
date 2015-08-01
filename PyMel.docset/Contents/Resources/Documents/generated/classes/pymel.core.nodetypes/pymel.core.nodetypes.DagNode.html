@@ -1,0 +1,1401 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.nodetypes/pymel.core.nodetypes.DagNode.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:16:37 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.nodetypes.DagNode — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.nodetypes.html" rel="up" title="pymel.core.nodetypes"/>
+<link href="pymel.core.nodetypes.DagPose.html" rel="next" title="pymel.core.nodetypes.DagPose"/>
+<link href="pymel.core.nodetypes.DagContainer.html" rel="prev" title="pymel.core.nodetypes.DagContainer"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.nodetypes » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.nodetypes.DagNode ¶ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ class DagNode ( *args , **kwargs ) ¶ 
+ 
+ 
+ MObjectColorType = Enum( EnumValue('MObjectColorType', 0, 'defaultColor'), EnumValue('MObjectColorType', 1, 'indexColor'), EnumValue('MObjectColorType', 2, 'RGBColor')) ¶ 
+ 
+
+ 
+ 
+ activeColor ( ) ¶ 
+ Determines the active color used by this..." name="description"/><meta content="__PyMel_generated_classes_pymel_core_nodetypes_pymel_core_nodetypes_DagNode_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.nodetypes.DagPose.html" title="pymel.core.nodetypes.DagPose">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.nodetypes.DagContainer.html" title="pymel.core.nodetypes.DagContainer">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.nodetypes.html">pymel.core.nodetypes</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-nodetypes-dagnode">
+<h1>pymel.core.nodetypes.DagNode<a class="headerlink" href="#pymel-core-nodetypes-dagnode" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img alt="Inheritance diagram of DagNode" class="inheritance" src="../../../_images/inheritance-866d0bbd74c2354e7ac7a4d6b1b5a80805db986f.png" usemap="#inheritance1afa7630c8"/>
+<map id="inheritance1afa7630c8" name="inheritance1afa7630c8">
+<area alt="" coords="5,121,97,145" href="pymel.core.nodetypes.ContainerBase.html#pymel.core.nodetypes.ContainerBase" id="node1" shape="rect" title="ContainerBase"></area>
+<area alt="" coords="15,160,87,184" href="pymel.core.nodetypes.Entity.html#pymel.core.nodetypes.Entity" id="node4" shape="rect" title="Entity"></area>
+<area alt="" coords="9,83,93,107" href="pymel.core.nodetypes.DependNode.html#pymel.core.nodetypes.DependNode" id="node2" shape="rect" title="DependNode"></area>
+<area alt="" coords="15,199,87,223" href="#pymel.core.nodetypes.DagNode" id="node3" shape="rect" title="DagNode"></area>
+<area alt="" coords="15,44,87,68" href="../pymel.core.general/pymel.core.general.PyNode.html#pymel.core.general.PyNode" id="node5" shape="rect" title="Abstract class that is base for all pymel nodes classes."></area>
+<area alt="" coords="7,5,95,29" href="../pymel.util.utilitytypes/pymel.util.utilitytypes.ProxyUnicode.html#pymel.util.utilitytypes.ProxyUnicode" id="node6" shape="rect" title="ProxyUnicode"></area>
+</map>
+</p>
+<dl class="class">
+<dt id="pymel.core.nodetypes.DagNode"><a name="//apple_ref/cpp/Class/pymel.core.nodetypes.DagNode"></a>
+<em class="property">class </em><tt class="descname">DagNode</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attribute">
+<dt id="pymel.core.nodetypes.DagNode.MObjectColorType"><a name="//apple_ref/cpp/Attribute/pymel.core.nodetypes.DagNode.MObjectColorType"></a>
+<tt class="descname">MObjectColorType</tt><em class="property"> = Enum( EnumValue('MObjectColorType', 0, 'defaultColor'), EnumValue('MObjectColorType', 1, 'indexColor'), EnumValue('MObjectColorType', 2, 'RGBColor'))</em><a class="headerlink" href="#pymel.core.nodetypes.DagNode.MObjectColorType" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.activeColor"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.activeColor"></a>
+<tt class="descname">activeColor</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.activeColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines the active color used by this node. The active color is the active color for this kind of dag node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">Color</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.activeColor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.addChild"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.addChild"></a>
+<tt class="descname">addChild</tt><big>(</big><em>child</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.addChild" title="Permalink to this definition">¶</a></dt>
+<dd><p>parent (reversed)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#pymel.core.nodetypes.DagNode" title="pymel.core.nodetypes.DagNode"><tt class="xref py py-obj docutils literal"><span class="pre">DagNode</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.boundingBox"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.boundingBox"></a>
+<tt class="descname">boundingBox</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.boundingBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the bounding box for the dag node in object space.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">BoundingBox</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.boundingBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.childAtIndex"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.childAtIndex"></a>
+<tt class="descname">childAtIndex</tt><big>(</big><em>i</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.childAtIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Queries the DAG Node attached to the Function Set for the child Node corresponding to the given index.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt>i <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></span></dt>
+<dd><p class="first last">Index to the child Node</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><tt class="xref py py-obj docutils literal"><span class="pre">PyNode</span></tt></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.child</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.comp"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.comp"></a>
+<tt class="descname">comp</tt><big>(</big><em>compName</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.comp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Will retrieve a Component object for this node; similar to
+DependNode.attr(), but for components.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">Component</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.dormantColor"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.dormantColor"></a>
+<tt class="descname">dormantColor</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.dormantColor" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Determines the dormant color used by this node. The order to determine the dormant color is:  </dt>
+<dd><p class="first">hilite color if hilite color is used  
+object color if user defined object color is used  
+the dormant color for this kind of dag node</p>
+<p>Parameters:</p>
+<p>[out]  ReturnStatus  Status code.</p>
+<p class="last">Returns: The dormant color. 
+Status Codes: 
+MS::kSuccess  Success  
+MS::kFailure  No valid DAG Node attached to Function Set</p>
+</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">Color</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.dormantColor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.drawOverrideColor"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.drawOverrideColor"></a>
+<tt class="descname">drawOverrideColor</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.drawOverrideColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines the draw override color used by this node. Returns true if there is a draw override color. Otherwise, returns false and color parameter is not changed.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(<tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt>, <tt class="xref py py-obj docutils literal"><span class="pre">Color</span></tt>)</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.drawOverrideColor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.drawOverrideEnabled"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.drawOverrideEnabled"></a>
+<tt class="descname">drawOverrideEnabled</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.drawOverrideEnabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines whether or not draw override is turned on for this node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.drawOverrideEnabled</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.drawOverrideIsReference"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.drawOverrideIsReference"></a>
+<tt class="descname">drawOverrideIsReference</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.drawOverrideIsReference" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines whether or not Display Type of the draw override is Reference for this node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.drawOverrideIsReference</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.drawOverrideIsTemplate"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.drawOverrideIsTemplate"></a>
+<tt class="descname">drawOverrideIsTemplate</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.drawOverrideIsTemplate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines whether or not Display Type of the draw override is Template for this node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.drawOverrideIsTemplate</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.firstParent"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.firstParent"></a>
+<tt class="descname">firstParent</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.firstParent" title="Permalink to this definition">¶</a></dt>
+<dd><p>firstParentOf</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#pymel.core.nodetypes.DagNode" title="pymel.core.nodetypes.DagNode"><tt class="xref py py-obj docutils literal"><span class="pre">DagNode</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.firstParent2"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.firstParent2"></a>
+<tt class="descname">firstParent2</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.firstParent2" title="Permalink to this definition">¶</a></dt>
+<dd><p>unlike the firstParent command which determines the parent via string formatting, this
+command uses the listRelatives command</p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.fullPath"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.fullPath"></a>
+<tt class="descname">fullPath</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.fullPath" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full dag path to the object, including leading pipe ( | )</p>
+<p>unicode</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pm</span><span class="o">.</span><span class="n">newFile</span><span class="p">(</span><span class="n">f</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">''</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube1</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">polyCube</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube2</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">polyCube</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">polyCube</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span> <span class="o">=</span> <span class="n">cube3</span><span class="o">.</span><span class="n">getShape</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cube2</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span><span class="n">cube1</span><span class="p">)</span>
+<span class="go">nt.Transform(u'pCube2')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span><span class="n">cube2</span><span class="p">)</span>
+<span class="go">nt.Transform(u'pCube3')</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span><span class="n">add</span><span class="o">=</span><span class="s">'foo'</span><span class="p">)</span>
+<span class="go">u'foo'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span><span class="n">add</span><span class="o">=</span><span class="s">'bar'</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="s">'foo'</span><span class="p">)</span>
+<span class="go">u'foo:bar'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span><span class="n">add</span><span class="o">=</span><span class="s">'stuff'</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="s">'foo:bar'</span><span class="p">)</span>
+<span class="go">u'foo:bar:stuff'</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cube2</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">':foo:pCube2'</span><span class="p">)</span>
+<span class="go">nt.Transform(u'foo:pCube2')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">':foo:bar:pCube3'</span><span class="p">)</span>
+<span class="go">nt.Transform(u'foo:bar:pCube3')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">':foo:bar:stuff:pCubeShape3'</span><span class="p">)</span>
+<span class="go">nt.Mesh(u'foo:bar:stuff:pCubeShape3')</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">longName</span><span class="p">()</span>
+<span class="go">u'|pCube1|foo:pCube2|foo:bar:pCube3|foo:bar:stuff:pCubeShape3'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">longName</span><span class="p">(</span><span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="go">u'|pCube1|pCube2|pCube3|pCubeShape3'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">longName</span><span class="p">(</span><span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">u'|pCube1|pCube2|bar:pCube3|bar:stuff:pCubeShape3'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">longName</span><span class="p">(</span><span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="go">u'|pCube1|pCube2|pCube3|stuff:pCubeShape3'</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cam</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">camera</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cam</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span><span class="n">cube2</span><span class="p">)</span>
+<span class="go">nt.Transform(u'camera1')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">imagePlane</span><span class="p">(</span><span class="n">camera</span><span class="o">=</span><span class="n">cam</span><span class="o">.</span><span class="n">getShape</span><span class="p">())[</span><span class="mi">1</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">'foo:bar:stuff:imagePlaneShape1'</span><span class="p">)</span>
+<span class="go">nt.ImagePlane(u'cameraShape1-&gt;foo:bar:stuff:imagePlaneShape1')</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">longName</span><span class="p">()</span>
+<span class="go">u'|pCube1|foo:pCube2|camera1|cameraShape1-&gt;|imagePlane1|foo:bar:stuff:imagePlaneShape1'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">longName</span><span class="p">(</span><span class="n">stripUnderWorld</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="go">u'|imagePlane1|foo:bar:stuff:imagePlaneShape1'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">longName</span><span class="p">(</span><span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">u'|pCube1|pCube2|camera1|cameraShape1-&gt;|imagePlane1|bar:stuff:imagePlaneShape1'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">longName</span><span class="p">(</span><span class="n">stripUnderWorld</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="go">u'|imagePlane1|imagePlaneShape1'</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.getAllParents"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.getAllParents"></a>
+<tt class="descname">getAllParents</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.getAllParents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of all parents above this.</p>
+<p>Starts from the parent immediately above, going up.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#pymel.core.nodetypes.DagNode" title="pymel.core.nodetypes.DagNode"><tt class="xref py py-obj docutils literal"><span class="pre">DagNode</span></tt></a> list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.getChildren"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.getChildren"></a>
+<tt class="descname">getChildren</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.getChildren" title="Permalink to this definition">¶</a></dt>
+<dd><p>see also <a class="reference internal" href="#pymel.core.nodetypes.DagNode.childAtIndex" title="pymel.core.nodetypes.DagNode.childAtIndex"><tt class="xref py py-obj docutils literal"><span class="pre">childAtIndex</span></tt></a></p>
+<p>for flags, see pymel.core.general.listRelatives</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#pymel.core.nodetypes.DagNode" title="pymel.core.nodetypes.DagNode"><tt class="xref py py-obj docutils literal"><span class="pre">DagNode</span></tt></a> list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.getConnectedSetsAndMembers"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.getConnectedSetsAndMembers"></a>
+<tt class="descname">getConnectedSetsAndMembers</tt><big>(</big><em>instanceNumber</em>, <em>renderableSetsOnly</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.getConnectedSetsAndMembers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all the sets connected to the specified instance of this DAG object. For each set in the “sets” array there is a corresponding entry in the “comps” array which are all the components in that set. If the entire object is in a set, then the corresponding entry in the comps array will have no elements in it.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt>instanceNumber <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></span></dt>
+<dd><p class="first last">The instance number of the mesh to query</p>
+</dd>
+<dt>renderableSetsOnly <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></span></dt>
+<dd><p class="first last">If true then this method will only return renderable sets</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">(<tt class="xref py py-obj docutils literal"><span class="pre">PyNode</span></tt> list, <tt class="xref py py-obj docutils literal"><span class="pre">PyNode</span></tt> list)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.getConnectedSetsAndMembers</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.getInstances"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.getInstances"></a>
+<tt class="descname">getInstances</tt><big>(</big><em>includeSelf=True</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.getInstances" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#pymel.core.nodetypes.DagNode" title="pymel.core.nodetypes.DagNode"><tt class="xref py py-obj docutils literal"><span class="pre">DagNode</span></tt></a> list</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pymel.core</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span><span class="o">=</span><span class="n">newFile</span><span class="p">(</span><span class="n">f</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c">#start clean</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span> <span class="o">=</span> <span class="n">polyPlane</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">instance</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="go">[nt.Transform(u'pPlane2')]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">instance</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="go">[nt.Transform(u'pPlane3')]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">getShape</span><span class="p">()</span><span class="o">.</span><span class="n">getInstances</span><span class="p">()</span>
+<span class="go">[nt.Mesh(u'pPlane1|pPlaneShape1'), nt.Mesh(u'pPlane2|pPlaneShape1'), nt.Mesh(u'pPlane3|pPlaneShape1')]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">getShape</span><span class="p">()</span><span class="o">.</span><span class="n">getInstances</span><span class="p">(</span><span class="n">includeSelf</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="go">[nt.Mesh(u'pPlane2|pPlaneShape1'), nt.Mesh(u'pPlane3|pPlaneShape1')]</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.getObjectColor"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.getObjectColor"></a>
+<tt class="descname">getObjectColor</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.getObjectColor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.getObjectColorType"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.getObjectColorType"></a>
+<tt class="descname">getObjectColorType</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.getObjectColorType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines whether or not the user defined inactive color will be used for the node, or whether the default inactive color will be used.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#pymel.core.nodetypes.DagNode.MObjectColorType" title="pymel.core.nodetypes.DagNode.MObjectColorType"><tt class="xref py py-obj docutils literal"><span class="pre">DagNode.MObjectColorType</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.objectColorType</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.getOtherInstances"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.getOtherInstances"></a>
+<tt class="descname">getOtherInstances</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.getOtherInstances" title="Permalink to this definition">¶</a></dt>
+<dd><p>same as <a class="reference internal" href="#pymel.core.nodetypes.DagNode.getInstances" title="pymel.core.nodetypes.DagNode.getInstances"><tt class="xref py py-obj docutils literal"><span class="pre">DagNode.getInstances</span></tt></a> with includeSelf=False.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#pymel.core.nodetypes.DagNode" title="pymel.core.nodetypes.DagNode"><tt class="xref py py-obj docutils literal"><span class="pre">DagNode</span></tt></a> list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.getParent"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.getParent"></a>
+<tt class="descname">getParent</tt><big>(</big><em>generations=1</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.getParent" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Modifications:</dt>
+<dd><ul class="first last">
+<li><p class="first">added optional generations flag, which gives the number of levels up that you wish to go for the parent;
+ie:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pymel.core</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">select</span><span class="p">(</span><span class="n">cl</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">bottom</span> <span class="o">=</span> <span class="n">group</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="s">'bottom'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">group</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="s">'almostThere'</span><span class="p">)</span>
+<span class="go">nt.Transform(u'almostThere')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">group</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="s">'nextLevel'</span><span class="p">)</span>
+<span class="go">nt.Transform(u'nextLevel')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">group</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="s">'topLevel'</span><span class="p">)</span>
+<span class="go">nt.Transform(u'topLevel')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">bottom</span><span class="o">.</span><span class="n">longName</span><span class="p">()</span>
+<span class="go">u'|topLevel|nextLevel|almostThere|bottom'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">bottom</span><span class="o">.</span><span class="n">getParent</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="go">nt.Transform(u'nextLevel')</span>
+</pre></div>
+</div>
+<p>Negative values will traverse from the top:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">bottom</span><span class="o">.</span><span class="n">getParent</span><span class="p">(</span><span class="n">generations</span><span class="o">=-</span><span class="mi">3</span><span class="p">)</span>
+<span class="go">nt.Transform(u'almostThere')</span>
+</pre></div>
+</div>
+<p>A value of 0 will return the same node.
+The default value is 1.</p>
+<p>If generations is None, it will be interpreted as ‘return all
+parents’, and a list will be returned.</p>
+<p>Since the original command returned None if there is no parent, to sync with this behavior, None will
+be returned if generations is out of bounds (no IndexError will be thrown).</p>
+</li>
+</ul>
+</dd>
+</dl>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#pymel.core.nodetypes.DagNode" title="pymel.core.nodetypes.DagNode"><tt class="xref py py-obj docutils literal"><span class="pre">DagNode</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.getSiblings"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.getSiblings"></a>
+<tt class="descname">getSiblings</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.getSiblings" title="Permalink to this definition">¶</a></dt>
+<dd><p>for flags, see pymel.core.general.listRelatives</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#pymel.core.nodetypes.DagNode" title="pymel.core.nodetypes.DagNode"><tt class="xref py py-obj docutils literal"><span class="pre">DagNode</span></tt></a> list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.hasChild"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.hasChild"></a>
+<tt class="descname">hasChild</tt><big>(</big><em>node</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.hasChild" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines whether or not the given Node is a child of the DAG Node attached to the Function Set.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt>node <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">PyNode</span></tt></span></dt>
+<dd><p class="first last">node to check</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.hasChild</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.hasParent"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.hasParent"></a>
+<tt class="descname">hasParent</tt><big>(</big><em>node</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.hasParent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines whether or not the given Node is a parent of the DAG Node attached to the Function Set.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt>node <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">PyNode</span></tt></span></dt>
+<dd><p class="first last">Potential parent node</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.hasParent</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.hide"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.hide"></a>
+<tt class="descname">hide</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.hide" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.hiliteColor"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.hiliteColor"></a>
+<tt class="descname">hiliteColor</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.hiliteColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines the current hilite color used by the node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">Color</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.hiliteColor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.inModel"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.inModel"></a>
+<tt class="descname">inModel</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.inModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines whether or not the DAG Node is in the model.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.inModel</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.inUnderWorld"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.inUnderWorld"></a>
+<tt class="descname">inUnderWorld</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.inUnderWorld" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines whether or not the DAG Node is an underworld node. (An example of an underworld node is a  curve on surface .)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.inUnderWorld</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.instanceCount"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.instanceCount"></a>
+<tt class="descname">instanceCount</tt><big>(</big><em>total=True</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.instanceCount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines the number of times the Node attached to the Function Set is instanced.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt>total <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></span></dt>
+<dd><p class="first last">Indirect instance flag</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.instanceCount</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.instanceNumber"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.instanceNumber"></a>
+<tt class="descname">instanceNumber</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.instanceNumber" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns the instance number that this path represents in the DAG. The instance number can be used to determine which
+element of the world space array attributes of a DAG node to connect to get information regarding this instance.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.isChildOf"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.isChildOf"></a>
+<tt class="descname">isChildOf</tt><big>(</big><em>node</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.isChildOf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines whether or not the DAG Node attached to the Function Set is a child of the given node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt>node <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">PyNode</span></tt></span></dt>
+<dd><p class="first last">node to check</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.isChildOf</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.isDisplaced"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.isDisplaced"></a>
+<tt class="descname">isDisplaced</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.isDisplaced" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns whether any of this object’s shading groups have a displacement shader input</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.isInstanceOf"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.isInstanceOf"></a>
+<tt class="descname">isInstanceOf</tt><big>(</big><em>other</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.isInstanceOf" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.isInstanceable"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.isInstanceable"></a>
+<tt class="descname">isInstanceable</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.isInstanceable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns true if the DAG node can be instanced, and false otherwise.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.isInstanceable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.isInstanced"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.isInstanced"></a>
+<tt class="descname">isInstanced</tt><big>(</big><em>indirect=True</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.isInstanced" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines whether the DAG Node attached to the Function Set is directly or indirectly instanced.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt>indirect <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></span></dt>
+<dd><p class="first last">Indirect instance flag</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.isInstanced</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.isIntermediate"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.isIntermediate"></a>
+<tt class="descname">isIntermediate</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.isIntermediate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns true if this object is an intermediate in a geometry calculation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.isIntermediateObject</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.isParentOf"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.isParentOf"></a>
+<tt class="descname">isParentOf</tt><big>(</big><em>node</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.isParentOf" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines whether or not the DAG Node attached to the Function Set is a parent of the given node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt>node <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">PyNode</span></tt></span></dt>
+<dd><p class="first last">node to check</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.isParentOf</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.isUsingObjectColor"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.isUsingObjectColor"></a>
+<tt class="descname">isUsingObjectColor</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.isUsingObjectColor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.isVisible"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.isVisible"></a>
+<tt class="descname">isVisible</tt><big>(</big><em>checkOverride=True</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.isVisible" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.listComp"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.listComp"></a>
+<tt class="descname">listComp</tt><big>(</big><em>names=False</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.listComp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Will return a list of all component objects for this object</p>
+<p>Is to .comp() what .listAttr() is to .attr(); will NOT check the shape
+node.</p>
+<dl class="docutils">
+<dt>names <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>By default, will return a list of actual usabale pymel Component
+objects; if you just want a list of string names which would
+be compatible with .comp(), set names to True</dd>
+</dl>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.listRelatives"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.listRelatives"></a>
+<tt class="descname">listRelatives</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.listRelatives" title="Permalink to this definition">¶</a></dt>
+<dd><p>for flags, see pymel.core.general.listRelatives</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">PyNode</span></tt> list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.longName"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.longName"></a>
+<tt class="descname">longName</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.longName" title="Permalink to this definition">¶</a></dt>
+<dd><p>The full dag path to the object, including leading pipe ( | )</p>
+<p>unicode</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pm</span><span class="o">.</span><span class="n">newFile</span><span class="p">(</span><span class="n">f</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">''</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube1</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">polyCube</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube2</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">polyCube</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">polyCube</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span> <span class="o">=</span> <span class="n">cube3</span><span class="o">.</span><span class="n">getShape</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cube2</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span><span class="n">cube1</span><span class="p">)</span>
+<span class="go">nt.Transform(u'pCube2')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span><span class="n">cube2</span><span class="p">)</span>
+<span class="go">nt.Transform(u'pCube3')</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span><span class="n">add</span><span class="o">=</span><span class="s">'foo'</span><span class="p">)</span>
+<span class="go">u'foo'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span><span class="n">add</span><span class="o">=</span><span class="s">'bar'</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="s">'foo'</span><span class="p">)</span>
+<span class="go">u'foo:bar'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span><span class="n">add</span><span class="o">=</span><span class="s">'stuff'</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="s">'foo:bar'</span><span class="p">)</span>
+<span class="go">u'foo:bar:stuff'</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cube2</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">':foo:pCube2'</span><span class="p">)</span>
+<span class="go">nt.Transform(u'foo:pCube2')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">':foo:bar:pCube3'</span><span class="p">)</span>
+<span class="go">nt.Transform(u'foo:bar:pCube3')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">':foo:bar:stuff:pCubeShape3'</span><span class="p">)</span>
+<span class="go">nt.Mesh(u'foo:bar:stuff:pCubeShape3')</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">longName</span><span class="p">()</span>
+<span class="go">u'|pCube1|foo:pCube2|foo:bar:pCube3|foo:bar:stuff:pCubeShape3'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">longName</span><span class="p">(</span><span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="go">u'|pCube1|pCube2|pCube3|pCubeShape3'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">longName</span><span class="p">(</span><span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">u'|pCube1|pCube2|bar:pCube3|bar:stuff:pCubeShape3'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">longName</span><span class="p">(</span><span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="go">u'|pCube1|pCube2|pCube3|stuff:pCubeShape3'</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cam</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">camera</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cam</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span><span class="n">cube2</span><span class="p">)</span>
+<span class="go">nt.Transform(u'camera1')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">imagePlane</span><span class="p">(</span><span class="n">camera</span><span class="o">=</span><span class="n">cam</span><span class="o">.</span><span class="n">getShape</span><span class="p">())[</span><span class="mi">1</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">'foo:bar:stuff:imagePlaneShape1'</span><span class="p">)</span>
+<span class="go">nt.ImagePlane(u'cameraShape1-&gt;foo:bar:stuff:imagePlaneShape1')</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">longName</span><span class="p">()</span>
+<span class="go">u'|pCube1|foo:pCube2|camera1|cameraShape1-&gt;|imagePlane1|foo:bar:stuff:imagePlaneShape1'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">longName</span><span class="p">(</span><span class="n">stripUnderWorld</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="go">u'|imagePlane1|foo:bar:stuff:imagePlaneShape1'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">longName</span><span class="p">(</span><span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">u'|pCube1|pCube2|camera1|cameraShape1-&gt;|imagePlane1|bar:stuff:imagePlaneShape1'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">longName</span><span class="p">(</span><span class="n">stripUnderWorld</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="go">u'|imagePlane1|imagePlaneShape1'</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.makeLive"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.makeLive"></a>
+<tt class="descname">makeLive</tt><big>(</big><em>state=True</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.makeLive" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.name"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.name"></a>
+<tt class="descname">name</tt><big>(</big><em>update=True</em>, <em>long=False</em>, <em>stripNamespace=False</em>, <em>levels=0</em>, <em>stripUnderWorld=False</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of the node</p>
+<dl class="docutils">
+<dt>update <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>if True, will always query to underlying maya object to get it’s
+current name (and will therefore detect renames, re-parenting, etc);
+if False, it will use a cached value if available (which is slightly
+faster, but may be out of date)</dd>
+<dt>long <span class="classifier-delimiter">:</span> <span class="classifier">{True, False, None}</span></dt>
+<dd>if True, will include always include the full dag path, starting
+from the world root, including leading pipe ( | ); if False, will
+return the shortest-unique path; if None, node names will always be
+returned without any parents, if if they are not unique</dd>
+<dt>stripNamespace <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>if True, all nodes will have their namespaces stipped off of them
+(or a certain number of them, if levels is also used)</dd>
+<dt>levels <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd>if stripNamespace is True, then this number will determine the how
+many namespaces will be removed; if 0 (the default), then all
+leading namespaces will be removed; otherwise, this value gives the
+number of left-most levels to strip</dd>
+<dt>stripUnderWorld <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>if stripUnderWorld is True, and the name has underworld components
+(ie, topNode|topNodeShape-&gt;underWorld|underWorldShape), then only
+the portion in the “deepest underworld” is returned (ie,
+underWorld|underWorldShape)</dd>
+</dl>
+<p>unicode</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pm</span><span class="o">.</span><span class="n">newFile</span><span class="p">(</span><span class="n">f</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">''</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube1</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">polyCube</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube2</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">polyCube</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">polyCube</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span> <span class="o">=</span> <span class="n">cube3</span><span class="o">.</span><span class="n">getShape</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cube2</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span><span class="n">cube1</span><span class="p">)</span>
+<span class="go">nt.Transform(u'pCube2')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span><span class="n">cube2</span><span class="p">)</span>
+<span class="go">nt.Transform(u'pCube3')</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span><span class="n">add</span><span class="o">=</span><span class="s">'foo'</span><span class="p">)</span>
+<span class="go">u'foo'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span><span class="n">add</span><span class="o">=</span><span class="s">'bar'</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="s">'foo'</span><span class="p">)</span>
+<span class="go">u'foo:bar'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span><span class="n">add</span><span class="o">=</span><span class="s">'stuff'</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="s">'foo:bar'</span><span class="p">)</span>
+<span class="go">u'foo:bar:stuff'</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cube2</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">':foo:pCube2'</span><span class="p">)</span>
+<span class="go">nt.Transform(u'foo:pCube2')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">':foo:bar:pCube3'</span><span class="p">)</span>
+<span class="go">nt.Transform(u'foo:bar:pCube3')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">':foo:bar:stuff:pCubeShape3'</span><span class="p">)</span>
+<span class="go">nt.Mesh(u'foo:bar:stuff:pCubeShape3')</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">name</span><span class="p">()</span>
+<span class="go">u'foo:bar:stuff:pCubeShape3'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">name</span><span class="p">(</span><span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="go">u'pCubeShape3'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">name</span><span class="p">(</span><span class="nb">long</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="go">u'|pCube1|foo:pCube2|foo:bar:pCube3|foo:bar:stuff:pCubeShape3'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">name</span><span class="p">(</span><span class="nb">long</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="go">u'|pCube1|pCube2|pCube3|pCubeShape3'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">name</span><span class="p">(</span><span class="nb">long</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">u'|pCube1|pCube2|bar:pCube3|bar:stuff:pCubeShape3'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">name</span><span class="p">(</span><span class="nb">long</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="go">u'|pCube1|pCube2|pCube3|stuff:pCubeShape3'</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cam</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">camera</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cam</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span><span class="n">cube2</span><span class="p">)</span>
+<span class="go">nt.Transform(u'camera1')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">imagePlane</span><span class="p">(</span><span class="n">camera</span><span class="o">=</span><span class="n">cam</span><span class="o">.</span><span class="n">getShape</span><span class="p">())[</span><span class="mi">1</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">'foo:bar:stuff:imagePlaneShape1'</span><span class="p">)</span>
+<span class="go">nt.ImagePlane(u'cameraShape1-&gt;foo:bar:stuff:imagePlaneShape1')</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">name</span><span class="p">()</span>
+<span class="go">u'cameraShape1-&gt;foo:bar:stuff:imagePlaneShape1'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">name</span><span class="p">(</span><span class="n">stripUnderWorld</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="go">u'foo:bar:stuff:imagePlaneShape1'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">name</span><span class="p">(</span><span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">u'cameraShape1-&gt;bar:stuff:imagePlaneShape1'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">name</span><span class="p">(</span><span class="n">stripUnderWorld</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="nb">long</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="go">u'|imagePlane1|foo:bar:stuff:imagePlaneShape1'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">name</span><span class="p">(</span><span class="n">stripUnderWorld</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="nb">long</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="go">u'|imagePlane1|imagePlaneShape1'</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.nodeName"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.nodeName"></a>
+<tt class="descname">nodeName</tt><big>(</big><em>stripUnderWorld=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.nodeName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Just the name of the node, without any dag path</p>
+<p>unicode</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pm</span><span class="o">.</span><span class="n">newFile</span><span class="p">(</span><span class="n">f</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">''</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube1</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">polyCube</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube2</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">polyCube</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">polyCube</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span> <span class="o">=</span> <span class="n">cube3</span><span class="o">.</span><span class="n">getShape</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cube2</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span><span class="n">cube1</span><span class="p">)</span>
+<span class="go">nt.Transform(u'pCube2')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span><span class="n">cube2</span><span class="p">)</span>
+<span class="go">nt.Transform(u'pCube3')</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span><span class="n">add</span><span class="o">=</span><span class="s">'foo'</span><span class="p">)</span>
+<span class="go">u'foo'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span><span class="n">add</span><span class="o">=</span><span class="s">'bar'</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="s">'foo'</span><span class="p">)</span>
+<span class="go">u'foo:bar'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span><span class="n">add</span><span class="o">=</span><span class="s">'stuff'</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="s">'foo:bar'</span><span class="p">)</span>
+<span class="go">u'foo:bar:stuff'</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cube2</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">':foo:pCube2'</span><span class="p">)</span>
+<span class="go">nt.Transform(u'foo:pCube2')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">':foo:bar:pCube3'</span><span class="p">)</span>
+<span class="go">nt.Transform(u'foo:bar:pCube3')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">':foo:bar:stuff:pCubeShape3'</span><span class="p">)</span>
+<span class="go">nt.Mesh(u'foo:bar:stuff:pCubeShape3')</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c"># create an object with the same name as pCube3 / pCube4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Twin</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">polyCube</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Twin</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">'foo:bar:pCube3'</span><span class="p">)</span>
+<span class="go">nt.Transform(u'|foo:bar:pCube3')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3ShapeTwin</span> <span class="o">=</span> <span class="n">cube3Twin</span><span class="o">.</span><span class="n">getShape</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3ShapeTwin</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">'foo:bar:stuff:pCubeShape3'</span><span class="p">)</span>
+<span class="go">nt.Mesh(u'|foo:bar:pCube3|foo:bar:stuff:pCubeShape3')</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">shortName</span><span class="p">()</span>
+<span class="go">u'foo:pCube2|foo:bar:pCube3|foo:bar:stuff:pCubeShape3'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">nodeName</span><span class="p">()</span>
+<span class="go">u'foo:bar:stuff:pCubeShape3'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">nodeName</span><span class="p">(</span><span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="go">u'pCubeShape3'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">nodeName</span><span class="p">(</span><span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">u'bar:stuff:pCubeShape3'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">nodeName</span><span class="p">(</span><span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="go">u'stuff:pCubeShape3'</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cam</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">camera</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cam</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span><span class="n">cube2</span><span class="p">)</span>
+<span class="go">nt.Transform(u'camera1')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlaneTrans</span><span class="p">,</span> <span class="n">imagePlane</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">imagePlane</span><span class="p">(</span><span class="n">camera</span><span class="o">=</span><span class="n">cam</span><span class="o">.</span><span class="n">getShape</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">'foo:bar:stuff:imagePlaneShape1'</span><span class="p">)</span>
+<span class="go">nt.ImagePlane(u'cameraShape1-&gt;foo:bar:stuff:imagePlaneShape1')</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c"># create an object with the same name as cam</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pm</span><span class="o">.</span><span class="n">camera</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span><span class="n">cube3Twin</span><span class="p">)</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">'camera1'</span><span class="p">)</span>
+<span class="go">nt.Transform(u'|foo:bar:pCube3|camera1')</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c"># create an object with the same name as imagePlane</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlaneTwinTrans</span><span class="p">,</span> <span class="n">imagePlaneTwin</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">imagePlane</span><span class="p">(</span><span class="n">camera</span><span class="o">=</span><span class="n">cam</span><span class="o">.</span><span class="n">getShape</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlaneTwin</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">'foo:bar:stuff:imagePlaneShape1'</span><span class="p">)</span>
+<span class="go">nt.ImagePlane(u'foo:pCube2|camera1|cameraShape1-&gt;imagePlane2|foo:bar:stuff:imagePlaneShape1')</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">shortName</span><span class="p">()</span>
+<span class="go">u'foo:pCube2|camera1|cameraShape1-&gt;imagePlane1|foo:bar:stuff:imagePlaneShape1'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">nodeName</span><span class="p">()</span>
+<span class="go">u'foo:bar:stuff:imagePlaneShape1'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">nodeName</span><span class="p">(</span><span class="n">stripUnderWorld</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="go">u'cameraShape1-&gt;foo:bar:stuff:imagePlaneShape1'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">nodeName</span><span class="p">(</span><span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="go">u'imagePlaneShape1'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">nodeName</span><span class="p">(</span><span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">u'bar:stuff:imagePlaneShape1'</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.numChildren"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.numChildren"></a>
+<tt class="descname">numChildren</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.numChildren" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines the number of child Nodes of the Node. Used to determine the upper bound for the child index (max index = childCount-1).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.childCount</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.objectColorIndex"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.objectColorIndex"></a>
+<tt class="descname">objectColorIndex</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.objectColorIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines the index for the current user defined inactive color used by the node. Valid indices are from 0 to 7.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.objectColorIndex</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.objectColorRGB"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.objectColorRGB"></a>
+<tt class="descname">objectColorRGB</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.objectColorRGB" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines the RGB color for the current user defined inactive color used by the node.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">Color</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.objectColorRGB</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.parentAtIndex"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.parentAtIndex"></a>
+<tt class="descname">parentAtIndex</tt><big>(</big><em>i</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.parentAtIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Queries the DAG Node attached to the Function Set for the parent Node corresponding to the given index.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt>i <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></span></dt>
+<dd><p class="first last">Index to the parent Node</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><tt class="xref py py-obj docutils literal"><span class="pre">PyNode</span></tt></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.parent</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.parentCount"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.parentCount"></a>
+<tt class="descname">parentCount</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.parentCount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines the number of parent Nodes of the Node. Used to determine the upper bound for the parent index (max index = parentCount-1).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">int</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.parentCount</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.root"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.root"></a>
+<tt class="descname">root</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.root" title="Permalink to this definition">¶</a></dt>
+<dd><p>rootOf</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">unicode</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.setIntermediate"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.setIntermediate"></a>
+<tt class="descname">setIntermediate</tt><big>(</big><em>isIntermediate</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.setIntermediate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether this object is an intermediate in a geometry calculation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt>isIntermediate <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></span></dt>
+<dd><p class="first last">whether to make this an intermediate object</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.setIntermediateObject</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.setObjectColor"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.setObjectColor"></a>
+<tt class="descname">setObjectColor</tt><big>(</big><em>color=None</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.setObjectColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command sets the dormant wireframe color of the specified objects to an integer
+representing one of the user defined colors, or, if set to None, to the default class color</p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.setObjectColorType"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.setObjectColorType"></a>
+<tt class="descname">setObjectColorType</tt><big>(</big><em>type</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.setObjectColorType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether or not the user defined inactive object color will be used.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt>type <span class="classifier-delimiter">:</span> <span class="classifier"><a class="reference internal" href="#pymel.core.nodetypes.DagNode.MObjectColorType" title="pymel.core.nodetypes.DagNode.MObjectColorType"><tt class="xref py py-obj docutils literal"><span class="pre">DagNode.MObjectColorType</span></tt></a></span></dt>
+<dd><p class="first">MFnDagNode::kUseDefaultColor - the color defined in the color preferences will be used. MFnDagNode::kUseIndexColor - the user-defined inactive object indexed color will be used MFnDagNode::kUseRGBColor - the user defined inactive RGB object color will be used</p>
+<p class="last">values: ‘defaultColor’, ‘indexColor’, ‘RGBColor’</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.setObjectColorType</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.setParent"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.setParent"></a>
+<tt class="descname">setParent</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.setParent" title="Permalink to this definition">¶</a></dt>
+<dd><p>parent</p>
+<dl class="docutils">
+<dt>Modifications:</dt>
+<dd><ul class="first last simple">
+<li>if parent is ‘None’, world=True is automatically set</li>
+<li>if the given parent is the current parent, don’t error</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.setUseObjectColor"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.setUseObjectColor"></a>
+<tt class="descname">setUseObjectColor</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.setUseObjectColor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.shortName"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.shortName"></a>
+<tt class="descname">shortName</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.shortName" title="Permalink to this definition">¶</a></dt>
+<dd><p>The shortest unique name.</p>
+<p>unicode</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pm</span><span class="o">.</span><span class="n">newFile</span><span class="p">(</span><span class="n">f</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">''</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube1</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">polyCube</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube2</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">polyCube</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">polyCube</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span> <span class="o">=</span> <span class="n">cube3</span><span class="o">.</span><span class="n">getShape</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cube2</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span><span class="n">cube1</span><span class="p">)</span>
+<span class="go">nt.Transform(u'pCube2')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span><span class="n">cube2</span><span class="p">)</span>
+<span class="go">nt.Transform(u'pCube3')</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span><span class="n">add</span><span class="o">=</span><span class="s">'foo'</span><span class="p">)</span>
+<span class="go">u'foo'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span><span class="n">add</span><span class="o">=</span><span class="s">'bar'</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="s">'foo'</span><span class="p">)</span>
+<span class="go">u'foo:bar'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span><span class="n">add</span><span class="o">=</span><span class="s">'stuff'</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="s">'foo:bar'</span><span class="p">)</span>
+<span class="go">u'foo:bar:stuff'</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cube2</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">':foo:pCube2'</span><span class="p">)</span>
+<span class="go">nt.Transform(u'foo:pCube2')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">':foo:bar:pCube3'</span><span class="p">)</span>
+<span class="go">nt.Transform(u'foo:bar:pCube3')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">':foo:bar:stuff:pCubeShape3'</span><span class="p">)</span>
+<span class="go">nt.Mesh(u'foo:bar:stuff:pCubeShape3')</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">shortName</span><span class="p">()</span>
+<span class="go">u'foo:bar:stuff:pCubeShape3'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">shortName</span><span class="p">(</span><span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="go">u'pCubeShape3'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">shortName</span><span class="p">(</span><span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">u'bar:stuff:pCubeShape3'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cube3Shape</span><span class="o">.</span><span class="n">shortName</span><span class="p">(</span><span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="go">u'stuff:pCubeShape3'</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">cam</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">camera</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cam</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span><span class="n">cube2</span><span class="p">)</span>
+<span class="go">nt.Transform(u'camera1')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">imagePlane</span><span class="p">(</span><span class="n">camera</span><span class="o">=</span><span class="n">cam</span><span class="o">.</span><span class="n">getShape</span><span class="p">())[</span><span class="mi">1</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="s">'foo:bar:stuff:imagePlaneShape1'</span><span class="p">)</span>
+<span class="go">nt.ImagePlane(u'cameraShape1-&gt;foo:bar:stuff:imagePlaneShape1')</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">shortName</span><span class="p">()</span>
+<span class="go">u'cameraShape1-&gt;foo:bar:stuff:imagePlaneShape1'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">shortName</span><span class="p">(</span><span class="n">stripUnderWorld</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="go">u'foo:bar:stuff:imagePlaneShape1'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">shortName</span><span class="p">(</span><span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">levels</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">u'cameraShape1-&gt;bar:stuff:imagePlaneShape1'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">shortName</span><span class="p">(</span><span class="n">stripUnderWorld</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="go">u'foo:bar:stuff:imagePlaneShape1'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">imagePlane</span><span class="o">.</span><span class="n">shortName</span><span class="p">(</span><span class="n">stripUnderWorld</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">stripNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="go">u'imagePlaneShape1'</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.show"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.show"></a>
+<tt class="descname">show</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.show" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.transformationMatrix"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.transformationMatrix"></a>
+<tt class="descname">transformationMatrix</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.transformationMatrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the object space transformation matrix for this DAG node. In general, only transform nodes have matrices associated with them. Nodes such as shapes (geometry nodes) do not have transform matrices.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">Matrix</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.transformationMatrix</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.DagNode.usingHiliteColor"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.DagNode.usingHiliteColor"></a>
+<tt class="descname">usingHiliteColor</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.DagNode.usingHiliteColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines whether or not the hilite color will be used for the node. hilite command sets this flag to true.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnDagNode.usingHiliteColor</span></tt></p>
+</dd></dl>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.nodetypes.DagContainer.html" title="previous chapter">pymel.core.nodetypes.DagContainer</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.nodetypes.DagPose.html" title="next chapter">pymel.core.nodetypes.DagPose</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/classes/pymel.core.nodetypes/pymel.core.nodetypes.DagNode.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.nodetypes.DagPose.html" title="pymel.core.nodetypes.DagPose">next</a> |</li>
+<li class="right">
+<a href="pymel.core.nodetypes.DagContainer.html" title="pymel.core.nodetypes.DagContainer">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.nodetypes.html">pymel.core.nodetypes</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.nodetypes/pymel.core.nodetypes.DagNode.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:16:38 GMT -->
+</body></html>

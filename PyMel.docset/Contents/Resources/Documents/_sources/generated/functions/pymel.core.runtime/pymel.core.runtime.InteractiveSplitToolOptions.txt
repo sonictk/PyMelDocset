@@ -1,0 +1,6 @@
+pymel.core.runtime.InteractiveSplitToolOptions
+==============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: InteractiveSplitToolOptions

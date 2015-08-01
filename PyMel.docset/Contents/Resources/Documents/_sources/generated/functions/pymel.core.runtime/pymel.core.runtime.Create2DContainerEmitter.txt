@@ -1,0 +1,6 @@
+pymel.core.runtime.Create2DContainerEmitter
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: Create2DContainerEmitter

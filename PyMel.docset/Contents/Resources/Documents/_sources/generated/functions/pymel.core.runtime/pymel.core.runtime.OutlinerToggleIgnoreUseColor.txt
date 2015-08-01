@@ -1,0 +1,6 @@
+pymel.core.runtime.OutlinerToggleIgnoreUseColor
+===============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: OutlinerToggleIgnoreUseColor

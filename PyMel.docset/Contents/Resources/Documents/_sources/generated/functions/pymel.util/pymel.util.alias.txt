@@ -1,0 +1,6 @@
+pymel.util.alias
+================
+
+.. currentmodule:: pymel.util
+
+.. autofunction:: alias

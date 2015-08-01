@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorAddOnNodeCreate
+============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorAddOnNodeCreate

@@ -1,0 +1,6 @@
+pymel.core.runtime.CreateDagContainer
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreateDagContainer

@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeSetLargeNodeSwatchSize
+===================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeSetLargeNodeSwatchSize

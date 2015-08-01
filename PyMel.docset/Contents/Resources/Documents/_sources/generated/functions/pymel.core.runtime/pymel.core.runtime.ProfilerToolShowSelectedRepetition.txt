@@ -1,0 +1,6 @@
+pymel.core.runtime.ProfilerToolShowSelectedRepetition
+=====================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ProfilerToolShowSelectedRepetition

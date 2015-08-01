@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeCreateContainerOptions
+===================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeCreateContainerOptions

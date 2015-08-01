@@ -1,0 +1,6 @@
+pymel.core.runtime.InTangentFixed
+=================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: InTangentFixed

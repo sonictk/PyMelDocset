@@ -1,0 +1,6 @@
+pymel.core.runtime.HideWrapInfluences
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HideWrapInfluences

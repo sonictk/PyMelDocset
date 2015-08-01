@@ -1,0 +1,6 @@
+pymel.core.runtime.UnghostObject
+================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: UnghostObject

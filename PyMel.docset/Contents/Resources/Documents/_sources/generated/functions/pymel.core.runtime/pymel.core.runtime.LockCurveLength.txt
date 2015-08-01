@@ -1,0 +1,6 @@
+pymel.core.runtime.LockCurveLength
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: LockCurveLength

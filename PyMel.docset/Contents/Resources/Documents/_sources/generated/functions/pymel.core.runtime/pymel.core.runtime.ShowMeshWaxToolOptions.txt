@@ -1,0 +1,6 @@
+pymel.core.runtime.ShowMeshWaxToolOptions
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ShowMeshWaxToolOptions

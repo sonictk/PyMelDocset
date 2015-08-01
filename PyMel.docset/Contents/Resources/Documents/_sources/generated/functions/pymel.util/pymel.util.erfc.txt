@@ -1,0 +1,6 @@
+pymel.util.erfc
+===============
+
+.. currentmodule:: pymel.util
+
+.. autofunction:: erfc

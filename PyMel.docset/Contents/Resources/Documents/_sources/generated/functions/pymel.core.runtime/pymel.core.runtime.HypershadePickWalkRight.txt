@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadePickWalkRight
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadePickWalkRight

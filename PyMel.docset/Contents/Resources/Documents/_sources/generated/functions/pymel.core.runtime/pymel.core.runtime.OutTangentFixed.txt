@@ -1,0 +1,6 @@
+pymel.core.runtime.OutTangentFixed
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: OutTangentFixed

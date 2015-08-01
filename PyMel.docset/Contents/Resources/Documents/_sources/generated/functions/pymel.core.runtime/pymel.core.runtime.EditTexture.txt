@@ -1,0 +1,6 @@
+pymel.core.runtime.EditTexture
+==============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: EditTexture

@@ -1,0 +1,11 @@
+pymel.util.OrderedDict
+======================
+
+.. currentmodule:: pymel.util
+
+.. inheritance-diagram:: OrderedDict
+    :parts: 1
+
+.. autoclass:: OrderedDict
+    :members:
+    :undoc-members:

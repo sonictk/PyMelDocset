@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorRenameActiveTab
+============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorRenameActiveTab

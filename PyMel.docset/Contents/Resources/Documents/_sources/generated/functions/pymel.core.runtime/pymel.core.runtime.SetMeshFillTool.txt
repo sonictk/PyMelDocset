@@ -1,0 +1,6 @@
+pymel.core.runtime.SetMeshFillTool
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SetMeshFillTool

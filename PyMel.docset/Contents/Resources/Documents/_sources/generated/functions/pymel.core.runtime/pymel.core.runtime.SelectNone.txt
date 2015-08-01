@@ -1,0 +1,6 @@
+pymel.core.runtime.SelectNone
+=============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SelectNone

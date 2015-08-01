@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorRedockTornOffTab
+=============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorRedockTornOffTab

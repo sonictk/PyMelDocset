@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeSelectUtilities
+============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeSelectUtilities

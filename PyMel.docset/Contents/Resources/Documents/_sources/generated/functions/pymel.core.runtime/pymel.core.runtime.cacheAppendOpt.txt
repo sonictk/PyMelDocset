@@ -1,0 +1,6 @@
+pymel.core.runtime.cacheAppendOpt
+=================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: cacheAppendOpt

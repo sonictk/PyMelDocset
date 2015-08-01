@@ -1,0 +1,6 @@
+pymel.core.runtime.AddEdgeDivisionsOptions
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: AddEdgeDivisionsOptions

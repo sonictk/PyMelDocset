@@ -1,0 +1,6 @@
+pymel.core.runtime.DetachComponent
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: DetachComponent

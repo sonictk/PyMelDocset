@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeTransferAttributeValuesOptions
+===========================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeTransferAttributeValuesOptions

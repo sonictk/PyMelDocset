@@ -1,0 +1,1626 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.uitypes/pymel.core.uitypes.ModelEditor.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:16:38 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.uitypes.ModelEditor — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.uitypes.html" rel="up" title="pymel.core.uitypes"/>
+<link href="pymel.core.uitypes.ModelPanel.html" rel="next" title="pymel.core.uitypes.ModelPanel"/>
+<link href="pymel.core.uitypes.MessageLine.html" rel="prev" title="pymel.core.uitypes.MessageLine"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.uitypes » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.uitypes.ModelEditor ¶ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ class ModelEditor ¶ 
+ class counterpart of mel function modelEditor 
+ Create, edit or query a model editor. Note that some of the flags of this command may have different settings for normal mode and for interactive/playback mode. For example, a modelEditor can be set to use shaded mode..." name="description"/><meta content="__PyMel_generated_classes_pymel_core_uitypes_pymel_core_uitypes_ModelEditor_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.uitypes.ModelPanel.html" title="pymel.core.uitypes.ModelPanel">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.uitypes.MessageLine.html" title="pymel.core.uitypes.MessageLine">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.uitypes.html">pymel.core.uitypes</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-uitypes-modeleditor">
+<h1>pymel.core.uitypes.ModelEditor<a class="headerlink" href="#pymel-core-uitypes-modeleditor" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img alt="Inheritance diagram of ModelEditor" class="inheritance" src="../../../_images/inheritance-317d889d4727df6a8dbcbbe79ef2fb5c6bda544a.png" usemap="#inheritance996a9bd94e"/>
+<map id="inheritance996a9bd94e" name="inheritance996a9bd94e">
+<area alt="" coords="5,44,84,68" href="#pymel.core.uitypes.ModelEditor" id="node1" shape="rect" title="class counterpart of mel function `modelEditor`"></area>
+<area alt="" coords="8,5,80,29" href="pymel.core.uitypes.PyUI.html#pymel.core.uitypes.PyUI" id="node2" shape="rect" title="PyUI"></area>
+</map>
+</p>
+<dl class="class">
+<dt id="pymel.core.uitypes.ModelEditor"><a name="//apple_ref/cpp/Class/pymel.core.uitypes.ModelEditor"></a>
+<em class="property">class </em><tt class="descname">ModelEditor</tt><a class="headerlink" href="#pymel.core.uitypes.ModelEditor" title="Permalink to this definition">¶</a></dt>
+<dd><p>class counterpart of mel function <tt class="xref py py-obj docutils literal"><span class="pre">modelEditor</span></tt></p>
+<p>Create, edit or query a model editor. Note that some of the flags of this command may have different settings for normal mode and for interactive/playback mode.  For example, a modelEditor can be set to use shaded mode normally, but to use wireframe during playback for greater speed.  Some flags also support having defaults set so that new model editors will be created with those settings.</p>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.activeCustomEnvironment"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.activeCustomEnvironment"></a>
+<tt class="descname">activeCustomEnvironment</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.activeCustomEnvironment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies a path to an image file to be used as environment map. It is only enabled when a valid scene render filter is specified.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.addObjects"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.addObjects"></a>
+<tt class="descname">addObjects</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.addObjects" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag causes the objects contained within the selection connection to be added to the list of objects visible in the view (if viewSelected is true).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.addSelected"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.addSelected"></a>
+<tt class="descname">addSelected</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.addSelected" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag causes the currently active objects to be added to the list of objects visible in the view (if viewSelected is true).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.cameraName"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.cameraName"></a>
+<tt class="descname">cameraName</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.cameraName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the name of the panel’s camera transform and shape. The shape name is computed by appending the string Shapeto the transform name. This flag may not be queried.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getActiveComponentsXray"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getActiveComponentsXray"></a>
+<tt class="descname">getActiveComponentsXray</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getActiveComponentsXray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turns on or off Xray mode for active components.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getActiveCustomGeometry"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getActiveCustomGeometry"></a>
+<tt class="descname">getActiveCustomGeometry</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getActiveCustomGeometry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies an identifier for custom geometry to override the geometry to display. It is only enabled when a valid scene render filter is specified.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getActiveCustomLighSet"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getActiveCustomLighSet"></a>
+<tt class="descname">getActiveCustomLighSet</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getActiveCustomLighSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies an identifier for the light set to use with a scene render filter. It is only enabled when a valid scene render filter is specified.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getActiveCustomOverrideGeometry"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getActiveCustomOverrideGeometry"></a>
+<tt class="descname">getActiveCustomOverrideGeometry</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getActiveCustomOverrideGeometry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies an identifier for an override on the custom geometry for a scene render filter.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getActiveCustomRenderer"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getActiveCustomRenderer"></a>
+<tt class="descname">getActiveCustomRenderer</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getActiveCustomRenderer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies an identifier for custom renderer to use when a valid scene render filter is also specified.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getActiveOnly"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getActiveOnly"></a>
+<tt class="descname">getActiveOnly</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getActiveOnly" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether only active objects should appear shaded in shaded display.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getActiveShadingGraph"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getActiveShadingGraph"></a>
+<tt class="descname">getActiveShadingGraph</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getActiveShadingGraph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the shading graph to use to override material display. Only enabled when a valid scene render filter is specified.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getActiveView"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getActiveView"></a>
+<tt class="descname">getActiveView</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getActiveView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets this model editor to be the active view.  Returns true if successful.  On query this flag will return whether the view is the active view.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getAllObjects"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getAllObjects"></a>
+<tt class="descname">getAllObjects</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getAllObjects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of all objects for the view of the model editor. This excludes NURBS, CVs, hulls, grids and manipulators.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getBackfaceCulling"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getBackfaceCulling"></a>
+<tt class="descname">getBackfaceCulling</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getBackfaceCulling" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turns on or off backface culling for the whole view.  This setting overrides the culling settings of individual objects.  All objects draw in the view will be backface culled.  When backface culling is turned on, surfaces becomes invisible in areas where the normal is pointing away from the camera.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getBufferMode"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getBufferMode"></a>
+<tt class="descname">getBufferMode</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getBufferMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the graphic buffer mode.  Possible values are singleor double.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getBumpResolution"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getBumpResolution"></a>
+<tt class="descname">getBumpResolution</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getBumpResolution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the resolution for bakedbump map textures when using the hardware renderer. The default value is 512, 512 respectively.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getCamera"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getCamera"></a>
+<tt class="descname">getCamera</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getCamera" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change or query the name of the camera in model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getCameraSetup"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getCameraSetup"></a>
+<tt class="descname">getCameraSetup</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getCameraSetup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Based on the model editor name passed in will returns a string list containing camera setups. A camera setup can contain one or more cameras which are associated with each other. Camera setups are defined as pairs of consecutive strings in the list. Each pair is comprised of: a string which identifies an active camera, and a string which defines a script to set up a given active camera. As many pairs of strings can be returned as the number of active cameras. If nothing is returned then it is assumed that no set up is required to activate a given camera.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getCameras"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getCameras"></a>
+<tt class="descname">getCameras</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getCameras" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of cameras for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getCmEnabled"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getCmEnabled"></a>
+<tt class="descname">getCmEnabled</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getCmEnabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on or off applying color management in the editor.  If set, the color management configuration set in the current editor is used.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getColorMap"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getColorMap"></a>
+<tt class="descname">getColorMap</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getColorMap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Queries the color map style for the model panel. Possible values are colorIndexand rgb.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getColorResolution"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getColorResolution"></a>
+<tt class="descname">getColorResolution</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getColorResolution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the resolution for bakedcolor textures when using the hardware renderer. The default value is 256, 256 respectively.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getControl"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getControl"></a>
+<tt class="descname">getControl</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getControl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query only. Returns the top level control for this editor. Usually used for getting a parent to attach popup menus. Caution: It is possible, at times, for an editor to exist without a control. This flag returns NONEif no control is present.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getControlVertices"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getControlVertices"></a>
+<tt class="descname">getControlVertices</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getControlVertices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of NURBS CVs for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getCullingOverride"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getCullingOverride"></a>
+<tt class="descname">getCullingOverride</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getCullingOverride" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set whether to override the culling attributes on objects when using the hardware renderer. The options are: none: Use the culling object attributes per object.doubleSided: Force all objects to be double sided.singleSided: Force all objects to be single sided.The default value is none.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getDefault"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getDefault"></a>
+<tt class="descname">getDefault</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getDefault" title="Permalink to this definition">¶</a></dt>
+<dd><p>Causes this command to modify the default value of this setting. Newly created model editors will inherit the values.  This flag may be used with the -interactive to set default interactive settings.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getDeformers"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getDeformers"></a>
+<tt class="descname">getDeformers</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getDeformers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of deformer objects for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getDimensions"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getDimensions"></a>
+<tt class="descname">getDimensions</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getDimensions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of dimension objects for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getDisplayAppearance"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getDisplayAppearance"></a>
+<tt class="descname">getDisplayAppearance</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getDisplayAppearance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the display appearance of the model panel.  Possible values are wireframe, points, boundingBox, smoothShaded, flatShaded.  This flag may be used with the -interactive and -default flags.  Note that only wireframe, points, and boundingBoxare valid for the interactive mode.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getDisplayLights"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getDisplayLights"></a>
+<tt class="descname">getDisplayLights</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getDisplayLights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the lighting for shaded mode.  Possible values are selected, active, all, default, none.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getDisplayTextures"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getDisplayTextures"></a>
+<tt class="descname">getDisplayTextures</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getDisplayTextures" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turns on or off display of textures in shaded mode</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getDocTag"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getDocTag"></a>
+<tt class="descname">getDocTag</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getDocTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Attaches a tag to the Maya editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getDynamicConstraints"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getDynamicConstraints"></a>
+<tt class="descname">getDynamicConstraints</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getDynamicConstraints" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of dynamicConstraints for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getDynamics"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getDynamics"></a>
+<tt class="descname">getDynamics</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getDynamics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of dynamics objects for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getEditorChanged"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getEditorChanged"></a>
+<tt class="descname">getEditorChanged</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getEditorChanged" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional script callback which is called when the editors options have changed.  This is useful in a situation where a scripted panel contains a modelEditor and wants to be notified when the contained editor changes its options.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getExposure"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getExposure"></a>
+<tt class="descname">getExposure</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getExposure" title="Permalink to this definition">¶</a></dt>
+<dd><p>The exposure value used by the color management of the current editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getFilter"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getFilter"></a>
+<tt class="descname">getFilter</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of an itemFilter object to be placed on this editor. This filters the information coming onto the main list of the editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getFilteredObjectList"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getFilteredObjectList"></a>
+<tt class="descname">getFilteredObjectList</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getFilteredObjectList" title="Permalink to this definition">¶</a></dt>
+<dd><p>For model editors with filtering on (either using an object filter, or isolate select), this flag returns a string list of the objects which are displayed in this editor. Note that this list does not take into account visibility (based on camera frustum or flags), it purely captures the objects which are considered when rendering the view.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getFluids"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getFluids"></a>
+<tt class="descname">getFluids</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getFluids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of fluids for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getFogColor"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getFogColor"></a>
+<tt class="descname">getFogColor</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getFogColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>The color used for hardware fogging.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getFogDensity"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getFogDensity"></a>
+<tt class="descname">getFogDensity</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getFogDensity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines the density of hardware fogging.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getFogEnd"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getFogEnd"></a>
+<tt class="descname">getFogEnd</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getFogEnd" title="Permalink to this definition">¶</a></dt>
+<dd><p>The end location of hardware fogging.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getFogMode"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getFogMode"></a>
+<tt class="descname">getFogMode</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getFogMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>This determines the drop-off mode for fog. The possibilities are: linear: linear drop-offexponent: exponential drop-offexponent2: squared exponential drop-off</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getFogSource"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getFogSource"></a>
+<tt class="descname">getFogSource</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getFogSource" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the type of fog algorithm to use. If the argument is fragment(default) then fog is computed per pixel. If the argument is coordinatethen if the geometry has specified vertex fog coordinates, and the OpenGL extension for vertex fog is supported by the graphics system, then fog is computed per vertex.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getFogStart"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getFogStart"></a>
+<tt class="descname">getFogStart</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getFogStart" title="Permalink to this definition">¶</a></dt>
+<dd><p>The start location of hardware fogging.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getFogging"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getFogging"></a>
+<tt class="descname">getFogging</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getFogging" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set whether hardware fogging is enabled or not.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getFollicles"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getFollicles"></a>
+<tt class="descname">getFollicles</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getFollicles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of follicles for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getForceMainConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getForceMainConnection"></a>
+<tt class="descname">getForceMainConnection</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getForceMainConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of a selectionConnection object which the editor will use as its source of content.  The editor will only display items contained in the selectionConnection object. This is a variant of the -mainListConnection flag in that it will force a change even when the connection is locked. This flag is used to reduce the overhead when using the -unlockMainConnection , -mainListConnection, -lockMainConnection flags in immediate succession.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getGamma"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getGamma"></a>
+<tt class="descname">getGamma</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getGamma" title="Permalink to this definition">¶</a></dt>
+<dd><p>The gamma value used by the color management of the current editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getGrid"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getGrid"></a>
+<tt class="descname">getGrid</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getGrid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of the grid for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getHairSystems"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getHairSystems"></a>
+<tt class="descname">getHairSystems</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getHairSystems" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of hairSystems for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getHandles"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getHandles"></a>
+<tt class="descname">getHandles</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getHandles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of select handles for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getHeadsUpDisplay"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getHeadsUpDisplay"></a>
+<tt class="descname">getHeadsUpDisplay</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getHeadsUpDisplay" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether the model panel will draw any enabled heads up display     elements in this window (if true).  Currently this requires the HUD elements to be globally enabled.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getHeight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getHeight"></a>
+<tt class="descname">getHeight</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the height of the associated viewport in pixels</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getHighlightConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getHighlightConnection"></a>
+<tt class="descname">getHighlightConnection</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getHighlightConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of a selectionConnection object which the editor will synchronize with its highlight list.  Not all editors have a highlight list. For those that do, it is a secondary selection list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getHulls"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getHulls"></a>
+<tt class="descname">getHulls</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getHulls" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of NURBS hulls for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getIgnorePanZoom"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getIgnorePanZoom"></a>
+<tt class="descname">getIgnorePanZoom</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getIgnorePanZoom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether the model panel will ignore the 2D pan/zoom value to give an overview of the scene.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getIkHandles"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getIkHandles"></a>
+<tt class="descname">getIkHandles</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getIkHandles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of ik handles and end effectors for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getImagePlane"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getImagePlane"></a>
+<tt class="descname">getImagePlane</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getImagePlane" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of image plane for the view</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getInteractive"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getInteractive"></a>
+<tt class="descname">getInteractive</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getInteractive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Causes this command to modify the interactive refresh settings of the view.  In this way it is possible to change the behavior of the model editor during playback for improved performance.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getIsFiltered"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getIsFiltered"></a>
+<tt class="descname">getIsFiltered</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getIsFiltered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns true for model editors with filtering applied to their view of the scene. This could either be an explicit object filter, or a display option such as isolate select which filters the objects that are displayed.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getJointXray"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getJointXray"></a>
+<tt class="descname">getJointXray</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getJointXray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turns on or off Xray mode for joints.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getJoints"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getJoints"></a>
+<tt class="descname">getJoints</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getJoints" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of joints for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getLights"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getLights"></a>
+<tt class="descname">getLights</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getLights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of lights for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getLineWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getLineWidth"></a>
+<tt class="descname">getLineWidth</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getLineWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set width of lines for display</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getLocators"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getLocators"></a>
+<tt class="descname">getLocators</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getLocators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of locator objects for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getLowQualityLighting"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getLowQualityLighting"></a>
+<tt class="descname">getLowQualityLighting</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getLowQualityLighting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set whether to use low quality lightingwhen using the hardware renderer. The default value is false.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getMainListConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getMainListConnection"></a>
+<tt class="descname">getMainListConnection</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getMainListConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of a selectionConnection object which the editor will use as its source of content.  The editor will only display items contained in the selectionConnection object.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getManipulators"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getManipulators"></a>
+<tt class="descname">getManipulators</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getManipulators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of manipulator objects for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getMaxConstantTransparency"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getMaxConstantTransparency"></a>
+<tt class="descname">getMaxConstantTransparency</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getMaxConstantTransparency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the maximum constant transparency.  Setting this value remaps constant transparency values from the range [0.0, 1.0] to the range [0.0, maxConstantTransparency]. All transparency values are shifted linearly to the new range, so a fully transparency object (transparency 1.0) would appear with a transparency of maxConstantTransparency in the viewport, allowing highly transparent objects to be made visible.  This flag only affects constant (non-textured) transparent objects.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getNCloths"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getNCloths"></a>
+<tt class="descname">getNCloths</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getNCloths" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of nCloths for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getNParticles"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getNParticles"></a>
+<tt class="descname">getNParticles</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getNParticles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of nParticles for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getNRigids"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getNRigids"></a>
+<tt class="descname">getNRigids</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getNRigids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of nRigids for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getNurbsCurves"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getNurbsCurves"></a>
+<tt class="descname">getNurbsCurves</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getNurbsCurves" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of nurbs curves for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getNurbsSurfaces"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getNurbsSurfaces"></a>
+<tt class="descname">getNurbsSurfaces</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getNurbsSurfaces" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of nurbs surfaces for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getObjectFilter"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getObjectFilter"></a>
+<tt class="descname">getObjectFilter</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getObjectFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set or query the current object filter name. An object filter is required to have already been registered.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getObjectFilterList"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getObjectFilterList"></a>
+<tt class="descname">getObjectFilterList</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getObjectFilterList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of names of registered filters.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getObjectFilterListUI"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getObjectFilterListUI"></a>
+<tt class="descname">getObjectFilterListUI</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getObjectFilterListUI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of UI names of registered filters.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getObjectFilterShowInHUD"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getObjectFilterShowInHUD"></a>
+<tt class="descname">getObjectFilterShowInHUD</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getObjectFilterShowInHUD" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether or not to display the object filter UI name in the heads up display when an object filter is active. This string is concatenated with the camera name.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getObjectFilterUI"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getObjectFilterUI"></a>
+<tt class="descname">getObjectFilterUI</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getObjectFilterUI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query the current object filter UI name. The object filter is required to have already been registered.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getOcclusionCulling"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getOcclusionCulling"></a>
+<tt class="descname">getOcclusionCulling</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getOcclusionCulling" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set whether to enable occlusion culling testing when using the hardware renderer. The default value is false.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getPanel"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getPanel"></a>
+<tt class="descname">getPanel</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getPanel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the panel that the editor belongs to.  By default if an editor is created in the create callback of a scripted panel it will belong to that panel.  If an editor doesn’t belong to a panel it will be deleted when the window that it is in is deleted.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getPivots"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getPivots"></a>
+<tt class="descname">getPivots</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getPivots" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of transform pivots for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getPlanes"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getPlanes"></a>
+<tt class="descname">getPlanes</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getPlanes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of sketch planes for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getPolymeshes"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getPolymeshes"></a>
+<tt class="descname">getPolymeshes</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getPolymeshes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of polygon meshes for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getQueryPluginObjects"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getQueryPluginObjects"></a>
+<tt class="descname">getQueryPluginObjects</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getQueryPluginObjects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query the on/off state of plugin objects display for the view. To set the on/off state, use -pluginObjects instead.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getRendererDeviceName"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getRendererDeviceName"></a>
+<tt class="descname">getRendererDeviceName</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getRendererDeviceName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query for the name of the draw API used by the Viewport 2.0 renderer for a 3d modeling viewport. The possible return values are VirtualDeviceGLif Maya is set to use OpenGL for Viewport 2.0 or VirtualDeviceDx11if Maya is set to use DirectX for Viewport 2.0. If the renderer for the 3d modeling viewport is not Viewport 2.0, an empty string will be returned.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getRendererList"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getRendererList"></a>
+<tt class="descname">getRendererList</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getRendererList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query for a list of the internal names for renderers available for use with the 3d modeling viewport. The default list contains at least base_OpenGL_Renderer, and hwRender_OpenGL_Renderer, if supported. See rendererName for more details on these renderers. Any plugin viewport renderers will also appear in this list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getRendererListUI"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getRendererListUI"></a>
+<tt class="descname">getRendererListUI</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getRendererListUI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query for a list of the UI names for renderers available for use with the 3d modeling viewport. The default list consists of the UI name for base_OpenGL_Renderer, and the UI name for hwRender_OpenGL_Renderer, if it is supported. Any plugin viewport renderer’s UI names will also appear in this list. This list and the list returned from rendererList have a 1:1 correspondance.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getRendererName"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getRendererName"></a>
+<tt class="descname">getRendererName</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getRendererName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set or get the renderer used for a 3d modeling viewport. The name provided should an internal name of a renderer. The ‘rendererList’ flag can be used to query for a list of available names. The default renderers available are : base_OpenGL_Renderer: The default OpenGL based renderer, and hwRender_OpenGL_Renderer: The high quality hardware renderer. The default renderer is base_OpenGL_Renderer. The high quality renderer is only supported on certain hardware configurations. See the hardware qualification charts for more details.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getRendererOverrideList"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getRendererOverrideList"></a>
+<tt class="descname">getRendererOverrideList</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getRendererOverrideList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query for a list of the internal names for renderer overrides for a 3d viewport renderer. Currently only the Viewport 2renderer supports renderer overrides.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getRendererOverrideListUI"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getRendererOverrideListUI"></a>
+<tt class="descname">getRendererOverrideListUI</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getRendererOverrideListUI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query for a list of the UI names for renderer overrides for a 3d viewport renderer. Currently only the Viewport 2renderer supports renderer overrides.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getRendererOverrideName"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getRendererOverrideName"></a>
+<tt class="descname">getRendererOverrideName</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getRendererOverrideName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set or get the override used for a 3d viewport renderer. The name provided should be the internal name for an override.  The ‘rendererOverrideList’ flag can be used to query for a list of available names. Currently only the Viewport 2renderer  supports renderer overrides. Setting an empty string will unset any currently active override.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getSceneRenderFilter"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getSceneRenderFilter"></a>
+<tt class="descname">getSceneRenderFilter</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getSceneRenderFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of a scene render filter</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getSelectionConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getSelectionConnection"></a>
+<tt class="descname">getSelectionConnection</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getSelectionConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of a selectionConnection object which the editor will synchronize with its own selection list.  As the user selects things in this editor, they will be selected in the selectionConnection object. If the object undergoes changes, the editor updates to show the change.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getSelectionHiliteDisplay"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getSelectionHiliteDisplay"></a>
+<tt class="descname">getSelectionHiliteDisplay</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getSelectionHiliteDisplay" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether the model panel will draw any selection hiliting on the objects in this window.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getShadows"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getShadows"></a>
+<tt class="descname">getShadows</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getShadows" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of hardware shadows in shaded mode.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getSmoothWireframe"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getSmoothWireframe"></a>
+<tt class="descname">getSmoothWireframe</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getSmoothWireframe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turns on or off smoothing of wireframe lines and points</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getSortTransparent"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getSortTransparent"></a>
+<tt class="descname">getSortTransparent</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getSortTransparent" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag turns on/off sorting of transparent objects during shaded mode refresh. Normally, objects are sorted according to their origin in camera space but when this flag is turned off they will be drawn according to their (depth-first traversal) order in the scene graph. This is a global flag that affects all model editors.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getStateString"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getStateString"></a>
+<tt class="descname">getStateString</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getStateString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query only flag.  Returns the MEL command that will edit an editor to match the current editor state. The returned command string uses the string variable $editorName in place of a specific name.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getStrokes"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getStrokes"></a>
+<tt class="descname">getStrokes</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getStrokes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of Paint Effects strokes for the view</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getSubdivSurfaces"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getSubdivSurfaces"></a>
+<tt class="descname">getSubdivSurfaces</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getSubdivSurfaces" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of subdivision surfaces for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getTextureAnisotropic"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getTextureAnisotropic"></a>
+<tt class="descname">getTextureAnisotropic</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getTextureAnisotropic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set whether to perform anisotropic texture filtering. Will work only if the anisotropic texture filtering extension is supported in OpenGL on the graphics system.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getTextureDisplay"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getTextureDisplay"></a>
+<tt class="descname">getTextureDisplay</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getTextureDisplay" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the type of blending to use for textures. The blend is performed between the destination fragment and the texture fragment. The source is usually the material color. Argument options are: modulate: multiply the destination and texture fragment decal: overwrite the destination with the texture fragment</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getTextureHilight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getTextureHilight"></a>
+<tt class="descname">getTextureHilight</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getTextureHilight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set whether to show specular hilighting when the display is in shaded textured mode.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getTextureMaxSize"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getTextureMaxSize"></a>
+<tt class="descname">getTextureMaxSize</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getTextureMaxSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set maximum texture size for hardware texturing.  The integer value must be a power of 2.  Recommended values are 128 or 256.  If the value specified is larger than the OpenGL maximim textures size for the graphics hardware it will be clamped to the OpenGL size.  If many large textures are used in a scene reducing this value improves performance.  On Impact texture memory is pinned in RAM so using large textures can cause reliability and performance problems. Again reducing this value will help. Software rendering does not use this value. This flag is obsolete as of Maya 6.5. The maxTextureResolution/mtr argument on the displayPref command should be used instead.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getTextureMemoryUsed"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getTextureMemoryUsed"></a>
+<tt class="descname">getTextureMemoryUsed</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getTextureMemoryUsed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the total number of bytes used by all texture maps.  This is typicly width*height*channels for all texture objects in the scene If the texture is mip mapped all mip map levels are included in the total though not never more than two level will be in use at one time</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getTextureSampling"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getTextureSampling"></a>
+<tt class="descname">getTextureSampling</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getTextureSampling" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the type of sampling to be used for texture display. The argument can be either: 1 : means to perform point sample2 : means to perform bilinear interpolation (default)</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getTextures"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getTextures"></a>
+<tt class="descname">getTextures</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getTextures" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of texture objects for the view</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getTranspInShadows"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getTranspInShadows"></a>
+<tt class="descname">getTranspInShadows</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getTranspInShadows" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set whether to enable display of transparency in shadows when using the hardware renderer. The default value is false.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getTransparencyAlgorithm"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getTransparencyAlgorithm"></a>
+<tt class="descname">getTransparencyAlgorithm</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getTransparencyAlgorithm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the transparency algorithm. The options are: 1) frontAndBackCull: Two pass front and back culling technique.2) perPolygonSort: Draw transparent polygons in back-to-front order technique.transparency pptions 1) and 2) are supported by the hardware renderer. Options 1) is supported by the interactive modeling viewports. The default value is frontAndBackCull.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getTwoSidedLighting"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getTwoSidedLighting"></a>
+<tt class="descname">getTwoSidedLighting</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getTwoSidedLighting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turns on or off two sided lighting.  This may be used with the -default flag.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getUseBaseRenderer"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getUseBaseRenderer"></a>
+<tt class="descname">getUseBaseRenderer</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getUseBaseRenderer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set whether to use the baserenderer when using the hardware renderer and in interactive display mode(-useInteractiveMode) The default value is false.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getUseColorIndex"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getUseColorIndex"></a>
+<tt class="descname">getUseColorIndex</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getUseColorIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether the model panel will attempt to use color index mode when possible.  Color index mode can provide a performance increase for point, bounding box, and wireframe display modes. This may be used with the -default flag.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getUseDefaultMaterial"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getUseDefaultMaterial"></a>
+<tt class="descname">getUseDefaultMaterial</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getUseDefaultMaterial" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether the model panel will draw all the shaded surfaces using the default material as opposed to using the material(s) currently assigned to the surfaces.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getUseInteractiveMode"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getUseInteractiveMode"></a>
+<tt class="descname">getUseInteractiveMode</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getUseInteractiveMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turns on or off the use of the special interaction settings during playback.  This flag may be used with the -default flag.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getUseRGBImagePlane"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getUseRGBImagePlane"></a>
+<tt class="descname">getUseRGBImagePlane</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getUseRGBImagePlane" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether the model panel will be forced into RGB mode when there is an image plane attached to the panel’s camera.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getUserNode"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getUserNode"></a>
+<tt class="descname">getUserNode</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getUserNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allows the user to associate a node name with the modelEditor. The value is automatically updated in the event the node is deleted or renamed.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getViewObjects"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getViewObjects"></a>
+<tt class="descname">getViewObjects</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getViewObjects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the name (if any) of the objectSet which contains the list of objects visible in the view if viewSelected is true and the list of objects being displayed does notcome from the active list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getViewSelected"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getViewSelected"></a>
+<tt class="descname">getViewSelected</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getViewSelected" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag turns on/off viewing of selected objects. When the flag is set to true, the currently active objects are captured and used as the list of objects to view.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getViewTransformName"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getViewTransformName"></a>
+<tt class="descname">getViewTransformName</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getViewTransformName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the view pipeline to be applied if color management is enabled in the current editor.                        Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getViewType"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getViewType"></a>
+<tt class="descname">getViewType</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getViewType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a string indicating the type of the model editor. For the default model editor, returns the empty string. For custom model editor types created via the API, returns the same string as is returned via the method MPx3dModelView::viewType().</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getWidth"></a>
+<tt class="descname">getWidth</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the width of the associated viewport in pixels.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getWireframeBackingStore"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getWireframeBackingStore"></a>
+<tt class="descname">getWireframeBackingStore</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getWireframeBackingStore" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether a backing store is used to optimization the drawing of active objects. This mode can provide a performance increase in wireframe mode for certain scenes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getWireframeOnShaded"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getWireframeOnShaded"></a>
+<tt class="descname">getWireframeOnShaded</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getWireframeOnShaded" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether the model panel will draw the wireframe on all shaded objects (if true) or only for active objects (if false).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.getXray"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.getXray"></a>
+<tt class="descname">getXray</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.getXray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turns on or off Xray mode.  This may be used with the -default flag.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.lockMainConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.lockMainConnection"></a>
+<tt class="descname">lockMainConnection</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.lockMainConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Locks the current list of objects within the mainConnection, so that only those objects are displayed within the editor. Further changes to the original mainConnection are ignored.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.noUndo"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.noUndo"></a>
+<tt class="descname">noUndo</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.noUndo" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag prevents some viewport operations (such as isolate select) from being added to the undo queue.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.pluginObjects"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.pluginObjects"></a>
+<tt class="descname">pluginObjects</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.pluginObjects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of plugin objects for the view. It depends on the plugin implementation whether to respect this flag.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.pluginShapes"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.pluginShapes"></a>
+<tt class="descname">pluginShapes</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.pluginShapes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of plugin shapes for the view. It depends on the plugin implementation whether to respect this flag.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.removeSelected"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.removeSelected"></a>
+<tt class="descname">removeSelected</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.removeSelected" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag causes the currently active objects to be removed from the list of objects visible in the view (if viewSelected is true).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setActiveComponentsXray"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setActiveComponentsXray"></a>
+<tt class="descname">setActiveComponentsXray</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setActiveComponentsXray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turns on or off Xray mode for active components.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setActiveCustomGeometry"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setActiveCustomGeometry"></a>
+<tt class="descname">setActiveCustomGeometry</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setActiveCustomGeometry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies an identifier for custom geometry to override the geometry to display. It is only enabled when a valid scene render filter is specified.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setActiveCustomLighSet"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setActiveCustomLighSet"></a>
+<tt class="descname">setActiveCustomLighSet</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setActiveCustomLighSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies an identifier for the light set to use with a scene render filter. It is only enabled when a valid scene render filter is specified.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setActiveCustomOverrideGeometry"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setActiveCustomOverrideGeometry"></a>
+<tt class="descname">setActiveCustomOverrideGeometry</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setActiveCustomOverrideGeometry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies an identifier for an override on the custom geometry for a scene render filter.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setActiveCustomRenderer"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setActiveCustomRenderer"></a>
+<tt class="descname">setActiveCustomRenderer</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setActiveCustomRenderer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies an identifier for custom renderer to use when a valid scene render filter is also specified.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setActiveOnly"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setActiveOnly"></a>
+<tt class="descname">setActiveOnly</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setActiveOnly" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether only active objects should appear shaded in shaded display.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setActiveShadingGraph"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setActiveShadingGraph"></a>
+<tt class="descname">setActiveShadingGraph</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setActiveShadingGraph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the shading graph to use to override material display. Only enabled when a valid scene render filter is specified.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setActiveView"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setActiveView"></a>
+<tt class="descname">setActiveView</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setActiveView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets this model editor to be the active view.  Returns true if successful.  On query this flag will return whether the view is the active view.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setAllObjects"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setAllObjects"></a>
+<tt class="descname">setAllObjects</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setAllObjects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of all objects for the view of the model editor. This excludes NURBS, CVs, hulls, grids and manipulators.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setBackfaceCulling"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setBackfaceCulling"></a>
+<tt class="descname">setBackfaceCulling</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setBackfaceCulling" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turns on or off backface culling for the whole view.  This setting overrides the culling settings of individual objects.  All objects draw in the view will be backface culled.  When backface culling is turned on, surfaces becomes invisible in areas where the normal is pointing away from the camera.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setBufferMode"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setBufferMode"></a>
+<tt class="descname">setBufferMode</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setBufferMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the graphic buffer mode.  Possible values are singleor double.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setBumpResolution"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setBumpResolution"></a>
+<tt class="descname">setBumpResolution</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setBumpResolution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the resolution for bakedbump map textures when using the hardware renderer. The default value is 512, 512 respectively.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setCamera"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setCamera"></a>
+<tt class="descname">setCamera</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setCamera" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change or query the name of the camera in model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setCameras"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setCameras"></a>
+<tt class="descname">setCameras</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setCameras" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of cameras for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setCmEnabled"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setCmEnabled"></a>
+<tt class="descname">setCmEnabled</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setCmEnabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on or off applying color management in the editor.  If set, the color management configuration set in the current editor is used.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setColorResolution"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setColorResolution"></a>
+<tt class="descname">setColorResolution</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setColorResolution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the resolution for bakedcolor textures when using the hardware renderer. The default value is 256, 256 respectively.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setControlVertices"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setControlVertices"></a>
+<tt class="descname">setControlVertices</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setControlVertices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of NURBS CVs for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setCullingOverride"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setCullingOverride"></a>
+<tt class="descname">setCullingOverride</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setCullingOverride" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set whether to override the culling attributes on objects when using the hardware renderer. The options are: none: Use the culling object attributes per object.doubleSided: Force all objects to be double sided.singleSided: Force all objects to be single sided.The default value is none.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setDefault"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setDefault"></a>
+<tt class="descname">setDefault</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setDefault" title="Permalink to this definition">¶</a></dt>
+<dd><p>Causes this command to modify the default value of this setting. Newly created model editors will inherit the values.  This flag may be used with the -interactive to set default interactive settings.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setDeformers"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setDeformers"></a>
+<tt class="descname">setDeformers</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setDeformers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of deformer objects for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setDimensions"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setDimensions"></a>
+<tt class="descname">setDimensions</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setDimensions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of dimension objects for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setDisplayAppearance"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setDisplayAppearance"></a>
+<tt class="descname">setDisplayAppearance</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setDisplayAppearance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the display appearance of the model panel.  Possible values are wireframe, points, boundingBox, smoothShaded, flatShaded.  This flag may be used with the -interactive and -default flags.  Note that only wireframe, points, and boundingBoxare valid for the interactive mode.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setDisplayLights"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setDisplayLights"></a>
+<tt class="descname">setDisplayLights</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setDisplayLights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the lighting for shaded mode.  Possible values are selected, active, all, default, none.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setDisplayTextures"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setDisplayTextures"></a>
+<tt class="descname">setDisplayTextures</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setDisplayTextures" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turns on or off display of textures in shaded mode</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setDocTag"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setDocTag"></a>
+<tt class="descname">setDocTag</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setDocTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Attaches a tag to the Maya editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setDynamicConstraints"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setDynamicConstraints"></a>
+<tt class="descname">setDynamicConstraints</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setDynamicConstraints" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of dynamicConstraints for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setDynamics"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setDynamics"></a>
+<tt class="descname">setDynamics</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setDynamics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of dynamics objects for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setEditorChanged"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setEditorChanged"></a>
+<tt class="descname">setEditorChanged</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setEditorChanged" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional script callback which is called when the editors options have changed.  This is useful in a situation where a scripted panel contains a modelEditor and wants to be notified when the contained editor changes its options.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setExposure"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setExposure"></a>
+<tt class="descname">setExposure</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setExposure" title="Permalink to this definition">¶</a></dt>
+<dd><p>The exposure value used by the color management of the current editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setFilter"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setFilter"></a>
+<tt class="descname">setFilter</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of an itemFilter object to be placed on this editor. This filters the information coming onto the main list of the editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setFluids"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setFluids"></a>
+<tt class="descname">setFluids</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setFluids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of fluids for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setFogColor"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setFogColor"></a>
+<tt class="descname">setFogColor</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setFogColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>The color used for hardware fogging.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setFogDensity"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setFogDensity"></a>
+<tt class="descname">setFogDensity</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setFogDensity" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines the density of hardware fogging.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setFogEnd"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setFogEnd"></a>
+<tt class="descname">setFogEnd</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setFogEnd" title="Permalink to this definition">¶</a></dt>
+<dd><p>The end location of hardware fogging.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setFogMode"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setFogMode"></a>
+<tt class="descname">setFogMode</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setFogMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>This determines the drop-off mode for fog. The possibilities are: linear: linear drop-offexponent: exponential drop-offexponent2: squared exponential drop-off</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setFogSource"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setFogSource"></a>
+<tt class="descname">setFogSource</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setFogSource" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the type of fog algorithm to use. If the argument is fragment(default) then fog is computed per pixel. If the argument is coordinatethen if the geometry has specified vertex fog coordinates, and the OpenGL extension for vertex fog is supported by the graphics system, then fog is computed per vertex.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setFogStart"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setFogStart"></a>
+<tt class="descname">setFogStart</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setFogStart" title="Permalink to this definition">¶</a></dt>
+<dd><p>The start location of hardware fogging.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setFogging"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setFogging"></a>
+<tt class="descname">setFogging</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setFogging" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set whether hardware fogging is enabled or not.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setFollicles"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setFollicles"></a>
+<tt class="descname">setFollicles</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setFollicles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of follicles for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setForceMainConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setForceMainConnection"></a>
+<tt class="descname">setForceMainConnection</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setForceMainConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of a selectionConnection object which the editor will use as its source of content.  The editor will only display items contained in the selectionConnection object. This is a variant of the -mainListConnection flag in that it will force a change even when the connection is locked. This flag is used to reduce the overhead when using the -unlockMainConnection , -mainListConnection, -lockMainConnection flags in immediate succession.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setGamma"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setGamma"></a>
+<tt class="descname">setGamma</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setGamma" title="Permalink to this definition">¶</a></dt>
+<dd><p>The gamma value used by the color management of the current editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setGrid"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setGrid"></a>
+<tt class="descname">setGrid</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setGrid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of the grid for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setHairSystems"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setHairSystems"></a>
+<tt class="descname">setHairSystems</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setHairSystems" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of hairSystems for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setHandles"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setHandles"></a>
+<tt class="descname">setHandles</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setHandles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of select handles for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setHeadsUpDisplay"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setHeadsUpDisplay"></a>
+<tt class="descname">setHeadsUpDisplay</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setHeadsUpDisplay" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether the model panel will draw any enabled heads up display     elements in this window (if true).  Currently this requires the HUD elements to be globally enabled.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setHighlightConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setHighlightConnection"></a>
+<tt class="descname">setHighlightConnection</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setHighlightConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of a selectionConnection object which the editor will synchronize with its highlight list.  Not all editors have a highlight list. For those that do, it is a secondary selection list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setHulls"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setHulls"></a>
+<tt class="descname">setHulls</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setHulls" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of NURBS hulls for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setIgnorePanZoom"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setIgnorePanZoom"></a>
+<tt class="descname">setIgnorePanZoom</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setIgnorePanZoom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether the model panel will ignore the 2D pan/zoom value to give an overview of the scene.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setIkHandles"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setIkHandles"></a>
+<tt class="descname">setIkHandles</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setIkHandles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of ik handles and end effectors for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setImagePlane"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setImagePlane"></a>
+<tt class="descname">setImagePlane</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setImagePlane" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of image plane for the view</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setInteractive"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setInteractive"></a>
+<tt class="descname">setInteractive</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setInteractive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Causes this command to modify the interactive refresh settings of the view.  In this way it is possible to change the behavior of the model editor during playback for improved performance.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setJointXray"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setJointXray"></a>
+<tt class="descname">setJointXray</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setJointXray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turns on or off Xray mode for joints.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setJoints"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setJoints"></a>
+<tt class="descname">setJoints</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setJoints" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of joints for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setLights"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setLights"></a>
+<tt class="descname">setLights</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setLights" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of lights for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setLineWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setLineWidth"></a>
+<tt class="descname">setLineWidth</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setLineWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set width of lines for display</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setLocators"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setLocators"></a>
+<tt class="descname">setLocators</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setLocators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of locator objects for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setLowQualityLighting"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setLowQualityLighting"></a>
+<tt class="descname">setLowQualityLighting</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setLowQualityLighting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set whether to use low quality lightingwhen using the hardware renderer. The default value is false.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setMainListConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setMainListConnection"></a>
+<tt class="descname">setMainListConnection</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setMainListConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of a selectionConnection object which the editor will use as its source of content.  The editor will only display items contained in the selectionConnection object.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setManipulators"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setManipulators"></a>
+<tt class="descname">setManipulators</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setManipulators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of manipulator objects for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setMaxConstantTransparency"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setMaxConstantTransparency"></a>
+<tt class="descname">setMaxConstantTransparency</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setMaxConstantTransparency" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the maximum constant transparency.  Setting this value remaps constant transparency values from the range [0.0, 1.0] to the range [0.0, maxConstantTransparency]. All transparency values are shifted linearly to the new range, so a fully transparency object (transparency 1.0) would appear with a transparency of maxConstantTransparency in the viewport, allowing highly transparent objects to be made visible.  This flag only affects constant (non-textured) transparent objects.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setNCloths"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setNCloths"></a>
+<tt class="descname">setNCloths</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setNCloths" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of nCloths for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setNParticles"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setNParticles"></a>
+<tt class="descname">setNParticles</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setNParticles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of nParticles for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setNRigids"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setNRigids"></a>
+<tt class="descname">setNRigids</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setNRigids" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of nRigids for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setNurbsCurves"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setNurbsCurves"></a>
+<tt class="descname">setNurbsCurves</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setNurbsCurves" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of nurbs curves for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setNurbsSurfaces"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setNurbsSurfaces"></a>
+<tt class="descname">setNurbsSurfaces</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setNurbsSurfaces" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of nurbs surfaces for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setObjectFilter"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setObjectFilter"></a>
+<tt class="descname">setObjectFilter</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setObjectFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set or query the current object filter name. An object filter is required to have already been registered.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setObjectFilterShowInHUD"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setObjectFilterShowInHUD"></a>
+<tt class="descname">setObjectFilterShowInHUD</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setObjectFilterShowInHUD" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether or not to display the object filter UI name in the heads up display when an object filter is active. This string is concatenated with the camera name.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setOcclusionCulling"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setOcclusionCulling"></a>
+<tt class="descname">setOcclusionCulling</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setOcclusionCulling" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set whether to enable occlusion culling testing when using the hardware renderer. The default value is false.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setParent"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setParent"></a>
+<tt class="descname">setParent</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setParent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the parent layout for this editor. This flag will only have an effect if the editor is currently un-parented.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setPivots"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setPivots"></a>
+<tt class="descname">setPivots</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setPivots" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of transform pivots for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setPlanes"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setPlanes"></a>
+<tt class="descname">setPlanes</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setPlanes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of sketch planes for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setPolymeshes"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setPolymeshes"></a>
+<tt class="descname">setPolymeshes</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setPolymeshes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of polygon meshes for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setRendererName"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setRendererName"></a>
+<tt class="descname">setRendererName</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setRendererName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set or get the renderer used for a 3d modeling viewport. The name provided should an internal name of a renderer. The ‘rendererList’ flag can be used to query for a list of available names. The default renderers available are : base_OpenGL_Renderer: The default OpenGL based renderer, and hwRender_OpenGL_Renderer: The high quality hardware renderer. The default renderer is base_OpenGL_Renderer. The high quality renderer is only supported on certain hardware configurations. See the hardware qualification charts for more details.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setRendererOverrideName"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setRendererOverrideName"></a>
+<tt class="descname">setRendererOverrideName</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setRendererOverrideName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set or get the override used for a 3d viewport renderer. The name provided should be the internal name for an override.  The ‘rendererOverrideList’ flag can be used to query for a list of available names. Currently only the Viewport 2renderer  supports renderer overrides. Setting an empty string will unset any currently active override.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setSceneRenderFilter"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setSceneRenderFilter"></a>
+<tt class="descname">setSceneRenderFilter</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setSceneRenderFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of a scene render filter</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setSelected"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setSelected"></a>
+<tt class="descname">setSelected</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setSelected" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag causes the currently active objects to be the only objects visible in the view (if viewSelected is true).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setSelectionConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setSelectionConnection"></a>
+<tt class="descname">setSelectionConnection</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setSelectionConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of a selectionConnection object which the editor will synchronize with its own selection list.  As the user selects things in this editor, they will be selected in the selectionConnection object. If the object undergoes changes, the editor updates to show the change.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setSelectionHiliteDisplay"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setSelectionHiliteDisplay"></a>
+<tt class="descname">setSelectionHiliteDisplay</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setSelectionHiliteDisplay" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether the model panel will draw any selection hiliting on the objects in this window.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setShadows"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setShadows"></a>
+<tt class="descname">setShadows</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setShadows" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of hardware shadows in shaded mode.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setSmoothWireframe"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setSmoothWireframe"></a>
+<tt class="descname">setSmoothWireframe</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setSmoothWireframe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turns on or off smoothing of wireframe lines and points</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setSortTransparent"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setSortTransparent"></a>
+<tt class="descname">setSortTransparent</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setSortTransparent" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag turns on/off sorting of transparent objects during shaded mode refresh. Normally, objects are sorted according to their origin in camera space but when this flag is turned off they will be drawn according to their (depth-first traversal) order in the scene graph. This is a global flag that affects all model editors.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setStrokes"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setStrokes"></a>
+<tt class="descname">setStrokes</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setStrokes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of Paint Effects strokes for the view</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setSubdivSurfaces"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setSubdivSurfaces"></a>
+<tt class="descname">setSubdivSurfaces</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setSubdivSurfaces" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of subdivision surfaces for the view of the model editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setTextureAnisotropic"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setTextureAnisotropic"></a>
+<tt class="descname">setTextureAnisotropic</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setTextureAnisotropic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set whether to perform anisotropic texture filtering. Will work only if the anisotropic texture filtering extension is supported in OpenGL on the graphics system.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setTextureDisplay"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setTextureDisplay"></a>
+<tt class="descname">setTextureDisplay</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setTextureDisplay" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the type of blending to use for textures. The blend is performed between the destination fragment and the texture fragment. The source is usually the material color. Argument options are: modulate: multiply the destination and texture fragment decal: overwrite the destination with the texture fragment</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setTextureHilight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setTextureHilight"></a>
+<tt class="descname">setTextureHilight</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setTextureHilight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set whether to show specular hilighting when the display is in shaded textured mode.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setTextureMaxSize"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setTextureMaxSize"></a>
+<tt class="descname">setTextureMaxSize</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setTextureMaxSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set maximum texture size for hardware texturing.  The integer value must be a power of 2.  Recommended values are 128 or 256.  If the value specified is larger than the OpenGL maximim textures size for the graphics hardware it will be clamped to the OpenGL size.  If many large textures are used in a scene reducing this value improves performance.  On Impact texture memory is pinned in RAM so using large textures can cause reliability and performance problems. Again reducing this value will help. Software rendering does not use this value. This flag is obsolete as of Maya 6.5. The maxTextureResolution/mtr argument on the displayPref command should be used instead.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setTextureSampling"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setTextureSampling"></a>
+<tt class="descname">setTextureSampling</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setTextureSampling" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the type of sampling to be used for texture display. The argument can be either: 1 : means to perform point sample2 : means to perform bilinear interpolation (default)</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setTextures"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setTextures"></a>
+<tt class="descname">setTextures</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setTextures" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn on/off the display of texture objects for the view</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setTranspInShadows"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setTranspInShadows"></a>
+<tt class="descname">setTranspInShadows</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setTranspInShadows" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set whether to enable display of transparency in shadows when using the hardware renderer. The default value is false.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setTransparencyAlgorithm"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setTransparencyAlgorithm"></a>
+<tt class="descname">setTransparencyAlgorithm</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setTransparencyAlgorithm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the transparency algorithm. The options are: 1) frontAndBackCull: Two pass front and back culling technique.2) perPolygonSort: Draw transparent polygons in back-to-front order technique.transparency pptions 1) and 2) are supported by the hardware renderer. Options 1) is supported by the interactive modeling viewports. The default value is frontAndBackCull.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setTwoSidedLighting"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setTwoSidedLighting"></a>
+<tt class="descname">setTwoSidedLighting</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setTwoSidedLighting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turns on or off two sided lighting.  This may be used with the -default flag.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setUseBaseRenderer"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setUseBaseRenderer"></a>
+<tt class="descname">setUseBaseRenderer</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setUseBaseRenderer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set whether to use the baserenderer when using the hardware renderer and in interactive display mode(-useInteractiveMode) The default value is false.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setUseColorIndex"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setUseColorIndex"></a>
+<tt class="descname">setUseColorIndex</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setUseColorIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether the model panel will attempt to use color index mode when possible.  Color index mode can provide a performance increase for point, bounding box, and wireframe display modes. This may be used with the -default flag.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setUseDefaultMaterial"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setUseDefaultMaterial"></a>
+<tt class="descname">setUseDefaultMaterial</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setUseDefaultMaterial" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether the model panel will draw all the shaded surfaces using the default material as opposed to using the material(s) currently assigned to the surfaces.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setUseInteractiveMode"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setUseInteractiveMode"></a>
+<tt class="descname">setUseInteractiveMode</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setUseInteractiveMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turns on or off the use of the special interaction settings during playback.  This flag may be used with the -default flag.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setUseRGBImagePlane"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setUseRGBImagePlane"></a>
+<tt class="descname">setUseRGBImagePlane</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setUseRGBImagePlane" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether the model panel will be forced into RGB mode when there is an image plane attached to the panel’s camera.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setUserNode"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setUserNode"></a>
+<tt class="descname">setUserNode</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setUserNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allows the user to associate a node name with the modelEditor. The value is automatically updated in the event the node is deleted or renamed.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setViewSelected"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setViewSelected"></a>
+<tt class="descname">setViewSelected</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setViewSelected" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag turns on/off viewing of selected objects. When the flag is set to true, the currently active objects are captured and used as the list of objects to view.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setViewTransformName"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setViewTransformName"></a>
+<tt class="descname">setViewTransformName</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setViewTransformName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the view pipeline to be applied if color management is enabled in the current editor.                        Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setWireframeBackingStore"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setWireframeBackingStore"></a>
+<tt class="descname">setWireframeBackingStore</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setWireframeBackingStore" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether a backing store is used to optimization the drawing of active objects. This mode can provide a performance increase in wireframe mode for certain scenes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setWireframeOnShaded"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setWireframeOnShaded"></a>
+<tt class="descname">setWireframeOnShaded</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setWireframeOnShaded" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets whether the model panel will draw the wireframe on all shaded objects (if true) or only for active objects (if false).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.setXray"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.setXray"></a>
+<tt class="descname">setXray</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.setXray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turns on or off Xray mode.  This may be used with the -default flag.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.toggleExposure"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.toggleExposure"></a>
+<tt class="descname">toggleExposure</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.toggleExposure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Toggles between the current and the default exposure value of the editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.toggleGamma"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.toggleGamma"></a>
+<tt class="descname">toggleGamma</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.toggleGamma" title="Permalink to this definition">¶</a></dt>
+<dd><p>Toggles between the current and the default gamma value of the editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.unParent"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.unParent"></a>
+<tt class="descname">unParent</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.unParent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies that the editor should be removed from its layout. This cannot be used with query.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.unlockMainConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.unlockMainConnection"></a>
+<tt class="descname">unlockMainConnection</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.unlockMainConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unlocks the mainConnection, effectively restoring the original mainConnection (if it is still available), and dynamic updates.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.updateColorMode"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.updateColorMode"></a>
+<tt class="descname">updateColorMode</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.updateColorMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Using this flag tells the model panel to check which color mode it should be in, and to switch accordingly.  This flag may be used to update a model panel after a camera image plane has been added or removed.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ModelEditor.updateMainConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ModelEditor.updateMainConnection"></a>
+<tt class="descname">updateMainConnection</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ModelEditor.updateMainConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Causes a locked mainConnection to be updated from the orginal mainConnection, but preserves the lock state.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.modelEditor</span></tt></p>
+</dd></dl>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.uitypes.MessageLine.html" title="previous chapter">pymel.core.uitypes.MessageLine</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.uitypes.ModelPanel.html" title="next chapter">pymel.core.uitypes.ModelPanel</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/classes/pymel.core.uitypes/pymel.core.uitypes.ModelEditor.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.uitypes.ModelPanel.html" title="pymel.core.uitypes.ModelPanel">next</a> |</li>
+<li class="right">
+<a href="pymel.core.uitypes.MessageLine.html" title="pymel.core.uitypes.MessageLine">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.uitypes.html">pymel.core.uitypes</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.uitypes/pymel.core.uitypes.ModelEditor.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:16:38 GMT -->
+</body></html>

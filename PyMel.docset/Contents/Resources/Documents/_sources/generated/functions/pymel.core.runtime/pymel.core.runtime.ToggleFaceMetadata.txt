@@ -1,0 +1,6 @@
+pymel.core.runtime.ToggleFaceMetadata
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ToggleFaceMetadata

@@ -1,0 +1,6 @@
+pymel.core.runtime.PasteVertexSkinWeights
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: PasteVertexSkinWeights

@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeSelectShadingGroupsAndMaterials
+============================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeSelectShadingGroupsAndMaterials

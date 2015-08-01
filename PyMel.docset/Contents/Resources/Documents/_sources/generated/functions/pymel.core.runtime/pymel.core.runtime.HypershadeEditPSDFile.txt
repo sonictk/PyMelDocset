@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeEditPSDFile
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeEditPSDFile

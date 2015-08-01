@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeDeleteDuplicateShadingNetworks
+===========================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeDeleteDuplicateShadingNetworks

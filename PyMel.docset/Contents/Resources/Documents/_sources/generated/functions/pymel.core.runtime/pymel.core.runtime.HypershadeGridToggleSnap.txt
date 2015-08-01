@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeGridToggleSnap
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeGridToggleSnap

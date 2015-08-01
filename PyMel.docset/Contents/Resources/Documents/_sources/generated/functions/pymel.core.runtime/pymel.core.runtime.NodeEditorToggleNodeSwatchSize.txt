@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorToggleNodeSwatchSize
+=================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorToggleNodeSwatchSize

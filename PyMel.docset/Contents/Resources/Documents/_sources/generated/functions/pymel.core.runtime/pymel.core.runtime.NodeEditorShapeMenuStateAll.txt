@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorShapeMenuStateAll
+==============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorShapeMenuStateAll

@@ -1,0 +1,6 @@
+pymel.core.runtime.CreateShrinkWrap
+===================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreateShrinkWrap

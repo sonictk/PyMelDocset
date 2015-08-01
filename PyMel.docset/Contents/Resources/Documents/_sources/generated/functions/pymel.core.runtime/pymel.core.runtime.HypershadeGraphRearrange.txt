@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeGraphRearrange
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeGraphRearrange

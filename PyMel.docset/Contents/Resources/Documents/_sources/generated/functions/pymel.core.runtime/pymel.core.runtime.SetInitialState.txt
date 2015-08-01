@@ -1,0 +1,6 @@
+pymel.core.runtime.SetInitialState
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SetInitialState

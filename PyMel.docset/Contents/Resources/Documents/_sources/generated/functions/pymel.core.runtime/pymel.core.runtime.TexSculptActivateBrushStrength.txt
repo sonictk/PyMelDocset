@@ -1,0 +1,6 @@
+pymel.core.runtime.TexSculptActivateBrushStrength
+=================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: TexSculptActivateBrushStrength

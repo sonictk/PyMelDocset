@@ -1,0 +1,690 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.uitypes/pymel.core.uitypes.ChannelBox.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:22:14 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.uitypes.ChannelBox — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.uitypes.html" rel="up" title="pymel.core.uitypes"/>
+<link href="pymel.core.uitypes.CheckBox.html" rel="next" title="pymel.core.uitypes.CheckBox"/>
+<link href="pymel.core.uitypes.Canvas.html" rel="prev" title="pymel.core.uitypes.Canvas"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.uitypes » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.uitypes.ChannelBox ¶ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ class ChannelBox ¶ 
+ class counterpart of mel function channelBox 
+ This command creates a channel box, which is sensitive to the active list. It displays certain attributes (channels) of the last node on the active list, and provides a two-way connection to keep the widget up to date. Note: when..." name="description"/><meta content="__PyMel_generated_classes_pymel_core_uitypes_pymel_core_uitypes_ChannelBox_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.uitypes.CheckBox.html" title="pymel.core.uitypes.CheckBox">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.uitypes.Canvas.html" title="pymel.core.uitypes.Canvas">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.uitypes.html">pymel.core.uitypes</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-uitypes-channelbox">
+<h1>pymel.core.uitypes.ChannelBox<a class="headerlink" href="#pymel-core-uitypes-channelbox" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img alt="Inheritance diagram of ChannelBox" class="inheritance" src="../../../_images/inheritance-0e3ce8c85387ea0b910ce8b6b89e1dd79e44bbaf.png" usemap="#inheritance4cfa1def50"/>
+<map id="inheritance4cfa1def50" name="inheritance4cfa1def50">
+<area alt="" coords="5,44,85,68" href="#pymel.core.uitypes.ChannelBox" id="node1" shape="rect" title="class counterpart of mel function `channelBox`"></area>
+<area alt="" coords="9,5,81,29" href="pymel.core.uitypes.PyUI.html#pymel.core.uitypes.PyUI" id="node2" shape="rect" title="PyUI"></area>
+</map>
+</p>
+<dl class="class">
+<dt id="pymel.core.uitypes.ChannelBox"><a name="//apple_ref/cpp/Class/pymel.core.uitypes.ChannelBox"></a>
+<em class="property">class </em><tt class="descname">ChannelBox</tt><a class="headerlink" href="#pymel.core.uitypes.ChannelBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>class counterpart of mel function <tt class="xref py py-obj docutils literal"><span class="pre">channelBox</span></tt></p>
+<p>This command creates a channel box, which is sensitive to the active list.  It displays certain attributes (channels) of the last node on the active list, and provides a two-way connection to keep the widget up to date. Note: when setting the color of attribute names, that color is only valid for its current Maya session; each subsequent session will display the default color for the attribute name(s) listed in the Channel Box. Any subsequent attributes that are added to the Channel Box will be affected by prior regular expressions in their current Maya session.</p>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.dragCallback"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.dragCallback"></a>
+<tt class="descname">dragCallback</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.dragCallback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a callback that is called when the middle mouse button is pressed.  The MEL version of the callback is of the form: global proc string[] callbackName(string $dragControl, int $x, int $y, int $mods) The proc returns a string array that is transferred to the drop site. By convention the first string in the array describes the user settable message type.  Controls that are application defined drag sources may ignore the callback. $mods allows testing for the key modifiers CTL and SHIFT. Possible values are 0 == No modifiers, 1 == SHIFT, 2 == CTL, 3 == CTL + SHIFT. In Python, it is similar, but there are two ways to specify the callback.  The recommended way is to pass a Python function object as the argument.  In that case, the Python callback should have the form: def callbackName( dragControl, x, y, modifiers ): The values of these arguments are the same as those for the MEL version above. The other way to specify the callback in Python is to specify a string to be executed.  In that case, the string will have the values substituted into it via the standard Python format operator.  The format values are passed in a dictionary with the keys dragControl, x, y, modifiers.  The dragControlvalue is a string and the other values are integers (eg the callback string could be print ‘%(dragControl)s %(x)d %(y)d %(modifiers)d’</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.dropCallback"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.dropCallback"></a>
+<tt class="descname">dropCallback</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.dropCallback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a callback that is called when a drag and drop operation is released above the drop site.  The MEL version of the callback is of the form: global proc callbackName(string $dragControl, string $dropControl, string $msgs[], int $x, int $y, int $type) The proc receives a string array that is transferred from the drag source. The first string in the msgs array describes the user defined message type. Controls that are application defined drop sites may ignore the callback. $type can have values of 1 == Move, 2 == Copy, 3 == Link. In Python, it is similar, but there are two ways to specify the callback.  The recommended way is to pass a Python function object as the argument.  In that case, the Python callback should have the form: def pythonDropTest( dragControl, dropControl, messages, x, y, dragType ): The values of these arguments are the same as those for the MEL version above. The other way to specify the callback in Python is to specify a string to be executed.  In that case, the string will have the values substituted into it via the standard Python format operator.  The format values are passed in a dictionary with the keys dragControl, dropControl, messages, x, y, type.  The dragControlvalue is a string and the other values are integers (eg the callback string could be print ‘%(dragControl)s %(dropControl)s %(messages)r %(x)d %(y)d %(type)d’</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.execute"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.execute"></a>
+<tt class="descname">execute</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.execute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Immediately executes the command string once for every cell (or every selected cell, if the boolean argument is TRUE) in the channel box, for every matching selected object (ie, for every object would be affected if you changed a cell value.)  Before the command is executed, #Ais substituted with the name of the attribute, and #Nwith the name of the node, and #Pwith the full path name of the node.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getAnnotation"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getAnnotation"></a>
+<tt class="descname">getAnnotation</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getAnnotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Annotate the control with an extra string value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getAttrBgColor"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getAttrBgColor"></a>
+<tt class="descname">getAttrBgColor</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getAttrBgColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Controls the background text color of specific attribute names. As with the foreground option, this text coloring also depends on the node name choice for the nodeRegex flag. Arguments correspond to the red, green, and blue color components. Each component ranges in value from 0.0 to 1.0. If attrRegex is unspecified then it will assume a value of *for a regular expression. The same idea simultaneously applies to the flag nodeRegex. Note: nodes that are renamed will have their node name coloring be affected in the channel box.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getAttrColor"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getAttrColor"></a>
+<tt class="descname">getAttrColor</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getAttrColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Controls the foreground text color of specific attribute names. This text coloring also depends on the node name choice for the nodeRegex flag. Arguments correspond to the red, green, and blue color components. Each component ranges in value from 0.0 to 1.0. If attrRegex is unspecified then it will assume a value of *for a regular expression. The same idea simultaneously applies to the flag nodeRegex. Note: nodes that are renamed will have their node name coloring be affected in the channel box.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getAttrFilter"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getAttrFilter"></a>
+<tt class="descname">getAttrFilter</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getAttrFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of an itemFilter object to be placed on the channel box. This filters the attributes displayed. A filter of 0can be used to reset the filter.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getAttrRegex"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getAttrRegex"></a>
+<tt class="descname">getAttrRegex</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getAttrRegex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies a valid regular expression to specify which attribute names should be selected for foreground text coloring. If attrRegex is unspecified then it will assume a value of *for a regular expression. The same idea simultaneously applies to the flag nodeRegex. The attrColor flag is required to be specified. Note: this regular expression will be treated as though it were case-insensitve</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getAttributeEditorMode"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getAttributeEditorMode"></a>
+<tt class="descname">getAttributeEditorMode</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getAttributeEditorMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Modifies what appears in the channel box for use in the attribute editor. Default is false. Queried, returns a boolean.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getBackgroundColor"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getBackgroundColor"></a>
+<tt class="descname">getBackgroundColor</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getBackgroundColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>The background color of the control. The arguments correspond to the red, green, and blue color components. Each component ranges in value from 0.0 to 1.0. When setting backgroundColor, the background is automatically enabled, unless enableBackground is also specified with a false value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getContainerAtTop"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getContainerAtTop"></a>
+<tt class="descname">getContainerAtTop</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getContainerAtTop" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag can be used to specify whether or not the container is drawn at the top of the channel box when a node in the container is selected.                    Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getDocTag"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getDocTag"></a>
+<tt class="descname">getDocTag</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getDocTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a documentation flag to the control.  The documentation flag has a directory structure like hierarchy. Eg. -dt render/multiLister/createNode/material</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getEnable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getEnable"></a>
+<tt class="descname">getEnable</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getEnable" title="Permalink to this definition">¶</a></dt>
+<dd><p>The enable state of the control.  By default, this flag is set to true and the control is enabled.  Specify false and the control will appear dimmed or greyed-out indicating it is disabled.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getEnableBackground"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getEnableBackground"></a>
+<tt class="descname">getEnableBackground</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getEnableBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables the background color of the control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getEnableLabelSelection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getEnableLabelSelection"></a>
+<tt class="descname">getEnableLabelSelection</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getEnableLabelSelection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables the selection of attributes in the channelBox when used in conjunction with -attributeEditorMode. Default is false.  Queried, returns a boolean.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getFieldWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getFieldWidth"></a>
+<tt class="descname">getFieldWidth</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getFieldWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional flag which is used to modify the width assigned to fields appearing in the channelBox.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getFixedAttrList"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getFixedAttrList"></a>
+<tt class="descname">getFixedAttrList</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getFixedAttrList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Forces the channel box to only display attributes with the specified names, in the order they are specified.  If an empty list is specified, then the channel box will revert to its default behaviour of listing all keyable attributes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getFullPathName"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getFullPathName"></a>
+<tt class="descname">getFullPathName</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getFullPathName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the full path name of the widget, which includes all the parents</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getHeight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getHeight"></a>
+<tt class="descname">getHeight</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>The height of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getHistoryObjectList"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getHistoryObjectList"></a>
+<tt class="descname">getHistoryObjectList</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getHistoryObjectList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of strings, the names of every INPUT node associated with an object on the main object list that is of the same type as the node displayed in the INPUT section of the channel box.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getHyperbolic"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getHyperbolic"></a>
+<tt class="descname">getHyperbolic</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getHyperbolic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines whether or not the distance that the mouse has been dragged should be interpreted as a linear or hyperbolic function.  The default is set to hyperbolic being false.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getIsObscured"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getIsObscured"></a>
+<tt class="descname">getIsObscured</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getIsObscured" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether the control can actually be seen by the user. The control will be obscured if its state is invisible, if it is blocked (entirely or partially) by some other control, if it or a parent layout is unmanaged, or if the control’s window is invisible or iconified.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getLabelWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getLabelWidth"></a>
+<tt class="descname">getLabelWidth</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getLabelWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional flag which is used to modify the width assigned to labels appearing in the channelBox.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getLongNames"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getLongNames"></a>
+<tt class="descname">getLongNames</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getLongNames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Controls whether long or short attribute names will be used in the interface.  Note that this flag is ignored if the -niceNames flag is set.  Default is short names. Queried, returns a boolean.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getMainListConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getMainListConnection"></a>
+<tt class="descname">getMainListConnection</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getMainListConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of a selectionConnection object which the editor will use as its source of content.  The channel box will only display the (last) item contained in the selectionConnection object. If a NULL string () is specified, then the channel box will revert to its default behaviour of working on the active list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getMainObjectList"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getMainObjectList"></a>
+<tt class="descname">getMainObjectList</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getMainObjectList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of strings, the names of every object on the active list that is the same type as the object displayed in the top (main) section of the channel box.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getManage"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getManage"></a>
+<tt class="descname">getManage</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getManage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Manage state of the control.  An unmanaged control is not visible, nor does it take up any screen real estate.  All controls are created managed by default.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getMaxHeight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getMaxHeight"></a>
+<tt class="descname">getMaxHeight</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getMaxHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional flag which is used to limit the height of the channelBox.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getMaxWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getMaxWidth"></a>
+<tt class="descname">getMaxWidth</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getMaxWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional flag which is used to limit the width of the channelBox.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getNiceNames"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getNiceNames"></a>
+<tt class="descname">getNiceNames</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getNiceNames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Controls whether the attribute names will be displayed in a more user-friendly, readable way.  When this is on, the longNames flag is ignored.  When this is off, attribute names will be displayed either long or short, according to the longNames flag. Default is on. Queried, returns a boolean.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getNodeRegex"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getNodeRegex"></a>
+<tt class="descname">getNodeRegex</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getNodeRegex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies a valid regular expression to specify which node names should (potentially) have their attributes selected for foreground text coloring. If nodeRegex is unspecified then it will assume a value of *’ for a regular expression. The same idea simultaneously applies to the flag attrRegex. The attrColor flag is required to be specified. Note: this regular expression will be treated as though it were case-insensitve Note: nodes in namespaces have regular expressions applied as though those nodes weren’t in namespaces</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getNumberOfPopupMenus"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getNumberOfPopupMenus"></a>
+<tt class="descname">getNumberOfPopupMenus</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getNumberOfPopupMenus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of popup menus attached to this control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getOutputObjectList"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getOutputObjectList"></a>
+<tt class="descname">getOutputObjectList</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getOutputObjectList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of strings, the names of every OUTPUT node associated an object on the main object list that is of the same type as the node displayed in the OUTPUT section of the channel box.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getPopupMenuArray"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getPopupMenuArray"></a>
+<tt class="descname">getPopupMenuArray</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getPopupMenuArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the names of all the popup menus attached to this control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getPrecision"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getPrecision"></a>
+<tt class="descname">getPrecision</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getPrecision" title="Permalink to this definition">¶</a></dt>
+<dd><p>Controls the number of digits to the right of the decimal point that will be displayed for float-valued channels. Default is 3.  Queried, returns an int.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getPreventOverride"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getPreventOverride"></a>
+<tt class="descname">getPreventOverride</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getPreventOverride" title="Permalink to this definition">¶</a></dt>
+<dd><p>If true, this flag disallows overriding the control’s attribute via the control’s right mouse button menu.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getSelectedHistoryAttributes"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getSelectedHistoryAttributes"></a>
+<tt class="descname">getSelectedHistoryAttributes</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getSelectedHistoryAttributes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of strings, the names of all the selected attributes in the INPUT section of the channel box.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getSelectedMainAttributes"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getSelectedMainAttributes"></a>
+<tt class="descname">getSelectedMainAttributes</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getSelectedMainAttributes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of strings, the names of all the selected attributes in the top section of the channel box.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getSelectedOutputAttributes"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getSelectedOutputAttributes"></a>
+<tt class="descname">getSelectedOutputAttributes</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getSelectedOutputAttributes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of strings, the names of all the selected attributes in the OUTPUT section of the channel box.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getSelectedShapeAttributes"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getSelectedShapeAttributes"></a>
+<tt class="descname">getSelectedShapeAttributes</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getSelectedShapeAttributes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of strings, the names of all the selected attributes in the middle (shape) section of the channel box.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getShapeObjectList"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getShapeObjectList"></a>
+<tt class="descname">getShapeObjectList</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getShapeObjectList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of strings, the names of every shape associated with an object on the main object list that is of the same type as the object displayed in the middle (shape) section of the channel box.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getShowNamespace"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getShowNamespace"></a>
+<tt class="descname">getShowNamespace</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getShowNamespace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Controls whether or not the namespace of an object is displayed if the object is not in the root namespace.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getShowTransforms"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getShowTransforms"></a>
+<tt class="descname">getShowTransforms</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getShowTransforms" title="Permalink to this definition">¶</a></dt>
+<dd><p>Controls whether this control will display transform attributes only, or all other attributes. False by default. Queried, returns a boolean.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getSpeed"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getSpeed"></a>
+<tt class="descname">getSpeed</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getSpeed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Controls the speed at which the attributes are changed based on the distance the mouse has been dragged.  Common settings for slow/medium/fast are 0.1/1.0/10.0 respectively.  The default is 1.0.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getUseManips"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getUseManips"></a>
+<tt class="descname">getUseManips</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getUseManips" title="Permalink to this definition">¶</a></dt>
+<dd><p>When you click on a field or label in the channel box, the tool switches to a manipulator that can change that value if you drag in the 3d view.  This flag controls the kind of manips.  Allowed values are none(self-explanatory), invisible(you won’t see anything, but dragging in the window will adjust any of the selected attributes), and standard(the same as invisible, except for scale, rotate, and translate, which will be represented by their usual manips.)</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getVisible"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getVisible"></a>
+<tt class="descname">getVisible</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getVisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>The visible state of the control.  A control is created visible by default.  Note that a control’s actual appearance is also dependent on the visible state of its parent layout(s).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getVisibleChangeCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getVisibleChangeCommand"></a>
+<tt class="descname">getVisibleChangeCommand</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getVisibleChangeCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command that gets executed when visible state of the control changes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.getWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.getWidth"></a>
+<tt class="descname">getWidth</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.getWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>The width of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.noBackground"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.noBackground"></a>
+<tt class="descname">noBackground</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.noBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear/reset the control’s background. Passing true means the background should not be drawn at all, false means the background should be drawn.  The state of this flag is inherited by children of this control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setAnnotation"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setAnnotation"></a>
+<tt class="descname">setAnnotation</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setAnnotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Annotate the control with an extra string value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setAttrBgColor"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setAttrBgColor"></a>
+<tt class="descname">setAttrBgColor</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setAttrBgColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Controls the background text color of specific attribute names. As with the foreground option, this text coloring also depends on the node name choice for the nodeRegex flag. Arguments correspond to the red, green, and blue color components. Each component ranges in value from 0.0 to 1.0. If attrRegex is unspecified then it will assume a value of *for a regular expression. The same idea simultaneously applies to the flag nodeRegex. Note: nodes that are renamed will have their node name coloring be affected in the channel box.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setAttrColor"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setAttrColor"></a>
+<tt class="descname">setAttrColor</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setAttrColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Controls the foreground text color of specific attribute names. This text coloring also depends on the node name choice for the nodeRegex flag. Arguments correspond to the red, green, and blue color components. Each component ranges in value from 0.0 to 1.0. If attrRegex is unspecified then it will assume a value of *for a regular expression. The same idea simultaneously applies to the flag nodeRegex. Note: nodes that are renamed will have their node name coloring be affected in the channel box.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setAttrFilter"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setAttrFilter"></a>
+<tt class="descname">setAttrFilter</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setAttrFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of an itemFilter object to be placed on the channel box. This filters the attributes displayed. A filter of 0can be used to reset the filter.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setAttrRegex"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setAttrRegex"></a>
+<tt class="descname">setAttrRegex</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setAttrRegex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies a valid regular expression to specify which attribute names should be selected for foreground text coloring. If attrRegex is unspecified then it will assume a value of *for a regular expression. The same idea simultaneously applies to the flag nodeRegex. The attrColor flag is required to be specified. Note: this regular expression will be treated as though it were case-insensitve</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setAttributeEditorMode"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setAttributeEditorMode"></a>
+<tt class="descname">setAttributeEditorMode</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setAttributeEditorMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Modifies what appears in the channel box for use in the attribute editor. Default is false. Queried, returns a boolean.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setBackgroundColor"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setBackgroundColor"></a>
+<tt class="descname">setBackgroundColor</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setBackgroundColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>The background color of the control. The arguments correspond to the red, green, and blue color components. Each component ranges in value from 0.0 to 1.0. When setting backgroundColor, the background is automatically enabled, unless enableBackground is also specified with a false value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setContainerAtTop"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setContainerAtTop"></a>
+<tt class="descname">setContainerAtTop</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setContainerAtTop" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag can be used to specify whether or not the container is drawn at the top of the channel box when a node in the container is selected.                    Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setDocTag"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setDocTag"></a>
+<tt class="descname">setDocTag</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setDocTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a documentation flag to the control.  The documentation flag has a directory structure like hierarchy. Eg. -dt render/multiLister/createNode/material</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setEnable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setEnable"></a>
+<tt class="descname">setEnable</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setEnable" title="Permalink to this definition">¶</a></dt>
+<dd><p>The enable state of the control.  By default, this flag is set to true and the control is enabled.  Specify false and the control will appear dimmed or greyed-out indicating it is disabled.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setEnableBackground"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setEnableBackground"></a>
+<tt class="descname">setEnableBackground</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setEnableBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables the background color of the control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setEnableLabelSelection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setEnableLabelSelection"></a>
+<tt class="descname">setEnableLabelSelection</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setEnableLabelSelection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables the selection of attributes in the channelBox when used in conjunction with -attributeEditorMode. Default is false.  Queried, returns a boolean.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setFieldWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setFieldWidth"></a>
+<tt class="descname">setFieldWidth</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setFieldWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional flag which is used to modify the width assigned to fields appearing in the channelBox.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setFixedAttrList"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setFixedAttrList"></a>
+<tt class="descname">setFixedAttrList</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setFixedAttrList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Forces the channel box to only display attributes with the specified names, in the order they are specified.  If an empty list is specified, then the channel box will revert to its default behaviour of listing all keyable attributes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setHeight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setHeight"></a>
+<tt class="descname">setHeight</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>The height of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setHyperbolic"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setHyperbolic"></a>
+<tt class="descname">setHyperbolic</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setHyperbolic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines whether or not the distance that the mouse has been dragged should be interpreted as a linear or hyperbolic function.  The default is set to hyperbolic being false.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setLabelWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setLabelWidth"></a>
+<tt class="descname">setLabelWidth</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setLabelWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional flag which is used to modify the width assigned to labels appearing in the channelBox.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setLongNames"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setLongNames"></a>
+<tt class="descname">setLongNames</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setLongNames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Controls whether long or short attribute names will be used in the interface.  Note that this flag is ignored if the -niceNames flag is set.  Default is short names. Queried, returns a boolean.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setMainListConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setMainListConnection"></a>
+<tt class="descname">setMainListConnection</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setMainListConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of a selectionConnection object which the editor will use as its source of content.  The channel box will only display the (last) item contained in the selectionConnection object. If a NULL string () is specified, then the channel box will revert to its default behaviour of working on the active list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setManage"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setManage"></a>
+<tt class="descname">setManage</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setManage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Manage state of the control.  An unmanaged control is not visible, nor does it take up any screen real estate.  All controls are created managed by default.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setMaxHeight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setMaxHeight"></a>
+<tt class="descname">setMaxHeight</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setMaxHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional flag which is used to limit the height of the channelBox.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setMaxWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setMaxWidth"></a>
+<tt class="descname">setMaxWidth</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setMaxWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>An optional flag which is used to limit the width of the channelBox.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setNiceNames"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setNiceNames"></a>
+<tt class="descname">setNiceNames</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setNiceNames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Controls whether the attribute names will be displayed in a more user-friendly, readable way.  When this is on, the longNames flag is ignored.  When this is off, attribute names will be displayed either long or short, according to the longNames flag. Default is on. Queried, returns a boolean.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setNodeRegex"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setNodeRegex"></a>
+<tt class="descname">setNodeRegex</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setNodeRegex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies a valid regular expression to specify which node names should (potentially) have their attributes selected for foreground text coloring. If nodeRegex is unspecified then it will assume a value of *’ for a regular expression. The same idea simultaneously applies to the flag attrRegex. The attrColor flag is required to be specified. Note: this regular expression will be treated as though it were case-insensitve Note: nodes in namespaces have regular expressions applied as though those nodes weren’t in namespaces</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setPrecision"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setPrecision"></a>
+<tt class="descname">setPrecision</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setPrecision" title="Permalink to this definition">¶</a></dt>
+<dd><p>Controls the number of digits to the right of the decimal point that will be displayed for float-valued channels. Default is 3.  Queried, returns an int.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setPreventOverride"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setPreventOverride"></a>
+<tt class="descname">setPreventOverride</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setPreventOverride" title="Permalink to this definition">¶</a></dt>
+<dd><p>If true, this flag disallows overriding the control’s attribute via the control’s right mouse button menu.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setShowNamespace"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setShowNamespace"></a>
+<tt class="descname">setShowNamespace</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setShowNamespace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Controls whether or not the namespace of an object is displayed if the object is not in the root namespace.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setShowTransforms"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setShowTransforms"></a>
+<tt class="descname">setShowTransforms</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setShowTransforms" title="Permalink to this definition">¶</a></dt>
+<dd><p>Controls whether this control will display transform attributes only, or all other attributes. False by default. Queried, returns a boolean.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setSpeed"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setSpeed"></a>
+<tt class="descname">setSpeed</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setSpeed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Controls the speed at which the attributes are changed based on the distance the mouse has been dragged.  Common settings for slow/medium/fast are 0.1/1.0/10.0 respectively.  The default is 1.0.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setUseManips"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setUseManips"></a>
+<tt class="descname">setUseManips</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setUseManips" title="Permalink to this definition">¶</a></dt>
+<dd><p>When you click on a field or label in the channel box, the tool switches to a manipulator that can change that value if you drag in the 3d view.  This flag controls the kind of manips.  Allowed values are none(self-explanatory), invisible(you won’t see anything, but dragging in the window will adjust any of the selected attributes), and standard(the same as invisible, except for scale, rotate, and translate, which will be represented by their usual manips.)</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setVisible"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setVisible"></a>
+<tt class="descname">setVisible</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setVisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>The visible state of the control.  A control is created visible by default.  Note that a control’s actual appearance is also dependent on the visible state of its parent layout(s).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setVisibleChangeCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setVisibleChangeCommand"></a>
+<tt class="descname">setVisibleChangeCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setVisibleChangeCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command that gets executed when visible state of the control changes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.setWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.setWidth"></a>
+<tt class="descname">setWidth</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.setWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>The width of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.takeFocus"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.takeFocus"></a>
+<tt class="descname">takeFocus</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.takeFocus" title="Permalink to this definition">¶</a></dt>
+<dd><p>causes the channel box to take over the keyboard focus, if it can.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ChannelBox.update"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ChannelBox.update"></a>
+<tt class="descname">update</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ChannelBox.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag can be used to force an update of the channel box display, for example after changing a display preference.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.channelBox</span></tt></p>
+</dd></dl>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.uitypes.Canvas.html" title="previous chapter">pymel.core.uitypes.Canvas</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.uitypes.CheckBox.html" title="next chapter">pymel.core.uitypes.CheckBox</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/classes/pymel.core.uitypes/pymel.core.uitypes.ChannelBox.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.uitypes.CheckBox.html" title="pymel.core.uitypes.CheckBox">next</a> |</li>
+<li class="right">
+<a href="pymel.core.uitypes.Canvas.html" title="pymel.core.uitypes.Canvas">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.uitypes.html">pymel.core.uitypes</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.uitypes/pymel.core.uitypes.ChannelBox.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:22:14 GMT -->
+</body></html>

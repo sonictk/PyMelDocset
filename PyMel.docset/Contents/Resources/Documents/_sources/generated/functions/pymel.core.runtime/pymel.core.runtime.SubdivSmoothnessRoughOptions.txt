@@ -1,0 +1,6 @@
+pymel.core.runtime.SubdivSmoothnessRoughOptions
+===============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SubdivSmoothnessRoughOptions

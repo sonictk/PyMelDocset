@@ -1,0 +1,6 @@
+pymel.core.runtime.ToggleMaterialLoadingDetailsVisibility
+=========================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ToggleMaterialLoadingDetailsVisibility

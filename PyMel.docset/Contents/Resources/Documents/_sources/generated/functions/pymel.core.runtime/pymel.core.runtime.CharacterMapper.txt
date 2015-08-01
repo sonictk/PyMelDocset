@@ -1,0 +1,6 @@
+pymel.core.runtime.CharacterMapper
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CharacterMapper

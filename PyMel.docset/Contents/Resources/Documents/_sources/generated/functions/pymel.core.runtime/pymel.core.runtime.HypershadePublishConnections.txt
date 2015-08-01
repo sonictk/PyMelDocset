@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadePublishConnections
+===============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadePublishConnections

@@ -1,0 +1,6 @@
+pymel.core.runtime.ToggleToolMessage
+====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ToggleToolMessage

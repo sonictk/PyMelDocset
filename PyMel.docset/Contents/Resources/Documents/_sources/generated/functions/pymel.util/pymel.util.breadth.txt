@@ -1,0 +1,6 @@
+pymel.util.breadth
+==================
+
+.. currentmodule:: pymel.util
+
+.. autofunction:: breadth

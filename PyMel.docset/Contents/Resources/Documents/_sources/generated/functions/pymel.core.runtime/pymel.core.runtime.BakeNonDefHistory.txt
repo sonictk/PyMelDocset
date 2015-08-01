@@ -1,0 +1,6 @@
+pymel.core.runtime.BakeNonDefHistory
+====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: BakeNonDefHistory

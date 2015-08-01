@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeOpenShaderballWindow
+=================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeOpenShaderballWindow

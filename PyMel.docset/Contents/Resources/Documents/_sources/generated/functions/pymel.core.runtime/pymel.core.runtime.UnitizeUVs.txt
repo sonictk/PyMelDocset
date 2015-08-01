@@ -1,0 +1,6 @@
+pymel.core.runtime.UnitizeUVs
+=============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: UnitizeUVs

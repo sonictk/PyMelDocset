@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeGraphMaterialsOnSelectedObjects
+============================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeGraphMaterialsOnSelectedObjects

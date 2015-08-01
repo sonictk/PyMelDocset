@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeShowAllAttrs
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeShowAllAttrs

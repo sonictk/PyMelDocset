@@ -1,0 +1,6 @@
+pymel.core.runtime.VolumeAxisOptions
+====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: VolumeAxisOptions

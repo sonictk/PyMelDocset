@@ -1,0 +1,6 @@
+pymel.core.runtime.CreateHairCache
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreateHairCache

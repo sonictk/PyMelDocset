@@ -1,0 +1,6 @@
+pymel.core.runtime.ProfilerToolCategoryView
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ProfilerToolCategoryView

@@ -1,0 +1,6 @@
+pymel.core.runtime.PolyExtrudeFaces
+===================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: PolyExtrudeFaces

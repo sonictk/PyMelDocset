@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorGraphUpstream
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorGraphUpstream

@@ -1,0 +1,6 @@
+pymel.core.runtime.ToggleEdgeMetadata
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ToggleEdgeMetadata

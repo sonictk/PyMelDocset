@@ -1,0 +1,6 @@
+pymel.core.runtime.ToggleCapsLockDisplay
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ToggleCapsLockDisplay

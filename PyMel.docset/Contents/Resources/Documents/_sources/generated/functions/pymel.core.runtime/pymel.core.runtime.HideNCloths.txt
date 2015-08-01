@@ -1,0 +1,6 @@
+pymel.core.runtime.HideNCloths
+==============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HideNCloths

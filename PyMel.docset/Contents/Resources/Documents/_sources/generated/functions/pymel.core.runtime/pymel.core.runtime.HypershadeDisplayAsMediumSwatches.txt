@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeDisplayAsMediumSwatches
+====================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeDisplayAsMediumSwatches

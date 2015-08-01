@@ -1,0 +1,6 @@
+pymel.core.runtime.RemoveInfluence
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: RemoveInfluence

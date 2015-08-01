@@ -1,0 +1,6 @@
+pymel.core.runtime.ResetWireOptions
+===================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ResetWireOptions

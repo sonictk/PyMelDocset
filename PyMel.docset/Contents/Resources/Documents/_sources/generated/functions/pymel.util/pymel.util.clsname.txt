@@ -1,0 +1,6 @@
+pymel.util.clsname
+==================
+
+.. currentmodule:: pymel.util
+
+.. autofunction:: clsname

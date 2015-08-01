@@ -1,0 +1,6 @@
+pymel.core.runtime.SaveScene
+============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SaveScene

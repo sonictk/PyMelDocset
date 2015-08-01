@@ -1,0 +1,6 @@
+pymel.core.runtime.SelectHullsMask
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SelectHullsMask

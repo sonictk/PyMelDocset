@@ -1,0 +1,6 @@
+pymel.core.runtime.ToggleOriginAxis
+===================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ToggleOriginAxis

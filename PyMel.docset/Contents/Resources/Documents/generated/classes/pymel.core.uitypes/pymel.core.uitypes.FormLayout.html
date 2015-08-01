@@ -1,0 +1,454 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.uitypes/pymel.core.uitypes.FormLayout.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:20:19 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.uitypes.FormLayout — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.uitypes.html" rel="up" title="pymel.core.uitypes"/>
+<link href="pymel.core.uitypes.FrameLayout.html" rel="next" title="pymel.core.uitypes.FrameLayout"/>
+<link href="pymel.core.uitypes.FontDialog.html" rel="prev" title="pymel.core.uitypes.FontDialog"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.uitypes » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.uitypes.FormLayout ¶ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ class FormLayout ( name=None , orientation='vertical' , spacing=2 , reversed=False , ratios=None , **kwargs ) ¶ 
+ class counterpart of mel function formLayout 
+ This command creates a form layout control. A form layout allows absolute and relative positioning of the controls that are its..." name="description"/><meta content="__PyMel_generated_classes_pymel_core_uitypes_pymel_core_uitypes_FormLayout_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.uitypes.FrameLayout.html" title="pymel.core.uitypes.FrameLayout">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.uitypes.FontDialog.html" title="pymel.core.uitypes.FontDialog">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.uitypes.html">pymel.core.uitypes</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-uitypes-formlayout">
+<h1>pymel.core.uitypes.FormLayout<a class="headerlink" href="#pymel-core-uitypes-formlayout" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img alt="Inheritance diagram of FormLayout" class="inheritance" src="../../../_images/inheritance-dd85a0cc30b3ef887bfeb281de6e20c143a921fe.png" usemap="#inheritance097fb001c8"/>
+<map id="inheritance097fb001c8" name="inheritance097fb001c8">
+<area alt="" coords="5,83,84,107" href="#pymel.core.uitypes.FormLayout" id="node1" shape="rect" title="class counterpart of mel function `formLayout`"></area>
+<area alt="" coords="8,44,80,68" href="pymel.core.uitypes.Layout.html#pymel.core.uitypes.Layout" id="node2" shape="rect" title="Layout"></area>
+<area alt="" coords="8,5,80,29" href="pymel.core.uitypes.PyUI.html#pymel.core.uitypes.PyUI" id="node3" shape="rect" title="PyUI"></area>
+</map>
+</p>
+<dl class="class">
+<dt id="pymel.core.uitypes.FormLayout"><a name="//apple_ref/cpp/Class/pymel.core.uitypes.FormLayout"></a>
+<em class="property">class </em><tt class="descname">FormLayout</tt><big>(</big><em>name=None</em>, <em>orientation='vertical'</em>, <em>spacing=2</em>, <em>reversed=False</em>, <em>ratios=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout" title="Permalink to this definition">¶</a></dt>
+<dd><p>class counterpart of mel function <tt class="xref py py-obj docutils literal"><span class="pre">formLayout</span></tt></p>
+<p>This command creates a form layout control. A form layout allows absolute and relative positioning of the controls that are its immediate children. Controls have four edges: top, left, bottom and right. There are only two directions that children can be positioned in, right-left and up-down. The attach flags take the direction of an attachment from the argument that names the edge to attach (the second argument). Any or all edges of a child may be attached. There are six ways to attach them: Attach to Form - Attaches an edge to the relevant side of the form layout. Thus -attachForm button3 leftwill attach the left edge of the button to the left edge of the form.Attach to Opposite Side of Form - Attaches an edge relative to the furthest side of the form layout.Attach to Another Control - Attaches an edge to the closest edge of the other control named.Attach to Opposite Side of Another Control - Attaches an edge relative to the furthest side of another control.Attach to Position - Attaches an edge to a position on the form layout.  The position is given as a fixed fraction of the -nd/numDivisions value and as this value defaults to 100 it is easiest to think of it as a percentage of the form’s size.Attach to Nothing - Attaches an edge to nothing. The size of the child control will determine this edge’s position.Each edge attachment may have an offset that acts to separate controls visually. There is no default positioning relationship so to have children appear in the form they must have at least one edge attached in each direction. Note:In the flag definitions the arguments follow these rules: controlmust be the name of an immediate child of the form layout.edgemust be one of top, left, bottom, or right.positionmay range from 0 to the number of divisions as specified with the -nd/numberOfDivisions flag and gives the fraction of the width of the form as a measurement. This normally means 0-100 so  positionmay be thought of as a percentage.offsetis an integer value in pixels.These are multi-use flags so any number of attachments may be made in a single command. Note:Avoid making control attachments that form a loop in control dependencies. For example: window; string $form = <tt class="xref py py-obj docutils literal"><span class="pre">formLayout</span></tt>; string $btn1 = <tt class="xref py py-obj docutils literal"><span class="pre">button</span></tt>; string $btn2 = <tt class="xref py py-obj docutils literal"><span class="pre">button</span></tt>; string $btn3 = <tt class="xref py py-obj docutils literal"><span class="pre">button</span></tt>;formLayout -edit-attachControl $btn2 top2 $btn1-attachControl $btn3 top2 $btn2-attachControl $btn1 right2 $btn3 $form;showWindow; $btn2 is attached to $btn1, $btn3 is attached to $btn2, and $btn1 is attached to $btn3. Thus, the placement of $btn1 is dependent on the placement of $btn3, which is dependent on the placement of $btn2, which is dependent on the placement of $btn1. The last control attachment will have created a loop in the dependencies. To prevent runtime errors, Maya will ignore this attachment and instead issue a warning that a cyclical control attachment has been detected in the script.</p>
+<dl class="attribute">
+<dt id="pymel.core.uitypes.FormLayout.HORIZONTAL"><a name="//apple_ref/cpp/Attribute/pymel.core.uitypes.FormLayout.HORIZONTAL"></a>
+<tt class="descname">HORIZONTAL</tt><em class="property"> = 0</em><a class="headerlink" href="#pymel.core.uitypes.FormLayout.HORIZONTAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.uitypes.FormLayout.Orientation"><a name="//apple_ref/cpp/Attribute/pymel.core.uitypes.FormLayout.Orientation"></a>
+<tt class="descname">Orientation</tt><em class="property"> = Enum( EnumValue('Orientation', 0, 'horizontal'), EnumValue('Orientation', 1, 'vertical'))</em><a class="headerlink" href="#pymel.core.uitypes.FormLayout.Orientation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.uitypes.FormLayout.VERTICAL"><a name="//apple_ref/cpp/Attribute/pymel.core.uitypes.FormLayout.VERTICAL"></a>
+<tt class="descname">VERTICAL</tt><em class="property"> = 1</em><a class="headerlink" href="#pymel.core.uitypes.FormLayout.VERTICAL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.attachControl"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.attachControl"></a>
+<tt class="descname">attachControl</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.attachControl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.attachForm"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.attachForm"></a>
+<tt class="descname">attachForm</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.attachForm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.attachNone"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.attachNone"></a>
+<tt class="descname">attachNone</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.attachNone" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.attachOppositeControl"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.attachOppositeControl"></a>
+<tt class="descname">attachOppositeControl</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.attachOppositeControl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Arguments are: control, edge, offset, control Valid edge values are: top| bottom| left| right. Attach a control to the opposite side of another control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.attachOppositeForm"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.attachOppositeForm"></a>
+<tt class="descname">attachOppositeForm</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.attachOppositeForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Arguments are: control, edge, offset. Valid edge values are: top| bottom| left| right. Attach a control to the opposite side of the form.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.attachPosition"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.attachPosition"></a>
+<tt class="descname">attachPosition</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.attachPosition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.dragCallback"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.dragCallback"></a>
+<tt class="descname">dragCallback</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.dragCallback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a callback that is called when the middle mouse button is pressed.  The MEL version of the callback is of the form: global proc string[] callbackName(string $dragControl, int $x, int $y, int $mods) The proc returns a string array that is transferred to the drop site. By convention the first string in the array describes the user settable message type.  Controls that are application defined drag sources may ignore the callback. $mods allows testing for the key modifiers CTL and SHIFT. Possible values are 0 == No modifiers, 1 == SHIFT, 2 == CTL, 3 == CTL + SHIFT. In Python, it is similar, but there are two ways to specify the callback.  The recommended way is to pass a Python function object as the argument.  In that case, the Python callback should have the form: def callbackName( dragControl, x, y, modifiers ): The values of these arguments are the same as those for the MEL version above. The other way to specify the callback in Python is to specify a string to be executed.  In that case, the string will have the values substituted into it via the standard Python format operator.  The format values are passed in a dictionary with the keys dragControl, x, y, modifiers.  The dragControlvalue is a string and the other values are integers (eg the callback string could be print ‘%(dragControl)s %(x)d %(y)d %(modifiers)d’</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.dropCallback"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.dropCallback"></a>
+<tt class="descname">dropCallback</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.dropCallback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a callback that is called when a drag and drop operation is released above the drop site.  The MEL version of the callback is of the form: global proc callbackName(string $dragControl, string $dropControl, string $msgs[], int $x, int $y, int $type) The proc receives a string array that is transferred from the drag source. The first string in the msgs array describes the user defined message type. Controls that are application defined drop sites may ignore the callback. $type can have values of 1 == Move, 2 == Copy, 3 == Link. In Python, it is similar, but there are two ways to specify the callback.  The recommended way is to pass a Python function object as the argument.  In that case, the Python callback should have the form: def pythonDropTest( dragControl, dropControl, messages, x, y, dragType ): The values of these arguments are the same as those for the MEL version above. The other way to specify the callback in Python is to specify a string to be executed.  In that case, the string will have the values substituted into it via the standard Python format operator.  The format values are passed in a dictionary with the keys dragControl, dropControl, messages, x, y, type.  The dragControlvalue is a string and the other values are integers (eg the callback string could be print ‘%(dragControl)s %(dropControl)s %(messages)r %(x)d %(y)d %(type)d’</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.flip"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.flip"></a>
+<tt class="descname">flip</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.flip" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flip the orientation of the layout</p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.getAnnotation"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.getAnnotation"></a>
+<tt class="descname">getAnnotation</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.getAnnotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Annotate the control with an extra string value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.getBackgroundColor"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.getBackgroundColor"></a>
+<tt class="descname">getBackgroundColor</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.getBackgroundColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>The background color of the control. The arguments correspond to the red, green, and blue color components. Each component ranges in value from 0.0 to 1.0. When setting backgroundColor, the background is automatically enabled, unless enableBackground is also specified with a false value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.getChildArray"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.getChildArray"></a>
+<tt class="descname">getChildArray</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.getChildArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a string array of the names of the layout’s immediate children.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.getDocTag"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.getDocTag"></a>
+<tt class="descname">getDocTag</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.getDocTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a documentation flag to the control.  The documentation flag has a directory structure like hierarchy. Eg. -dt render/multiLister/createNode/material</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.getEnable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.getEnable"></a>
+<tt class="descname">getEnable</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.getEnable" title="Permalink to this definition">¶</a></dt>
+<dd><p>The enable state of the control.  By default, this flag is set to true and the control is enabled.  Specify false and the control will appear dimmed or greyed-out indicating it is disabled.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.getEnableBackground"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.getEnableBackground"></a>
+<tt class="descname">getEnableBackground</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.getEnableBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables the background color of the control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.getFullPathName"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.getFullPathName"></a>
+<tt class="descname">getFullPathName</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.getFullPathName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the full path name of the widget, which includes all the parents</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.getHeight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.getHeight"></a>
+<tt class="descname">getHeight</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.getHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>The height of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.getIsObscured"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.getIsObscured"></a>
+<tt class="descname">getIsObscured</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.getIsObscured" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether the control can actually be seen by the user. The control will be obscured if its state is invisible, if it is blocked (entirely or partially) by some other control, if it or a parent layout is unmanaged, or if the control’s window is invisible or iconified.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.getManage"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.getManage"></a>
+<tt class="descname">getManage</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.getManage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Manage state of the control.  An unmanaged control is not visible, nor does it take up any screen real estate.  All controls are created managed by default.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.getNumberOfChildren"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.getNumberOfChildren"></a>
+<tt class="descname">getNumberOfChildren</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.getNumberOfChildren" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns in an int the number of immediate children of the layout.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.getNumberOfDivisions"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.getNumberOfDivisions"></a>
+<tt class="descname">getNumberOfDivisions</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.getNumberOfDivisions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify the number of horizontal and vertical divisions across the form. Value must be greater than 0.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.getNumberOfPopupMenus"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.getNumberOfPopupMenus"></a>
+<tt class="descname">getNumberOfPopupMenus</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.getNumberOfPopupMenus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of popup menus attached to this control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.getPopupMenuArray"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.getPopupMenuArray"></a>
+<tt class="descname">getPopupMenuArray</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.getPopupMenuArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the names of all the popup menus attached to this control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.getPreventOverride"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.getPreventOverride"></a>
+<tt class="descname">getPreventOverride</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.getPreventOverride" title="Permalink to this definition">¶</a></dt>
+<dd><p>If true, this flag disallows overriding the control’s attribute via the control’s right mouse button menu.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.getVisible"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.getVisible"></a>
+<tt class="descname">getVisible</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.getVisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>The visible state of the control.  A control is created visible by default.  Note that a control’s actual appearance is also dependent on the visible state of its parent layout(s).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.getVisibleChangeCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.getVisibleChangeCommand"></a>
+<tt class="descname">getVisibleChangeCommand</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.getVisibleChangeCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command that gets executed when visible state of the control changes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.getWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.getWidth"></a>
+<tt class="descname">getWidth</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.getWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>The width of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.hDistribute"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.hDistribute"></a>
+<tt class="descname">hDistribute</tt><big>(</big><em>*ratios</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.hDistribute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.noBackground"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.noBackground"></a>
+<tt class="descname">noBackground</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.noBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear/reset the control’s background. Passing true means the background should not be drawn at all, false means the background should be drawn.  The state of this flag is inherited by children of this control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.redistribute"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.redistribute"></a>
+<tt class="descname">redistribute</tt><big>(</big><em>*ratios</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.redistribute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Redistribute the child controls based on the ratios.
+If not ratios are given (or not enough), 1 will be used</p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.reset"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.reset"></a>
+<tt class="descname">reset</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.reset" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.reverse"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.reverse"></a>
+<tt class="descname">reverse</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.reverse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reverse the children order</p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.setAnnotation"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.setAnnotation"></a>
+<tt class="descname">setAnnotation</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.setAnnotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Annotate the control with an extra string value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.setBackgroundColor"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.setBackgroundColor"></a>
+<tt class="descname">setBackgroundColor</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.setBackgroundColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>The background color of the control. The arguments correspond to the red, green, and blue color components. Each component ranges in value from 0.0 to 1.0. When setting backgroundColor, the background is automatically enabled, unless enableBackground is also specified with a false value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.setDocTag"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.setDocTag"></a>
+<tt class="descname">setDocTag</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.setDocTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a documentation flag to the control.  The documentation flag has a directory structure like hierarchy. Eg. -dt render/multiLister/createNode/material</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.setEnable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.setEnable"></a>
+<tt class="descname">setEnable</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.setEnable" title="Permalink to this definition">¶</a></dt>
+<dd><p>The enable state of the control.  By default, this flag is set to true and the control is enabled.  Specify false and the control will appear dimmed or greyed-out indicating it is disabled.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.setEnableBackground"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.setEnableBackground"></a>
+<tt class="descname">setEnableBackground</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.setEnableBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables the background color of the control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.setHeight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.setHeight"></a>
+<tt class="descname">setHeight</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.setHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>The height of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.setManage"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.setManage"></a>
+<tt class="descname">setManage</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.setManage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Manage state of the control.  An unmanaged control is not visible, nor does it take up any screen real estate.  All controls are created managed by default.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.setNumberOfDivisions"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.setNumberOfDivisions"></a>
+<tt class="descname">setNumberOfDivisions</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.setNumberOfDivisions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify the number of horizontal and vertical divisions across the form. Value must be greater than 0.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.setPreventOverride"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.setPreventOverride"></a>
+<tt class="descname">setPreventOverride</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.setPreventOverride" title="Permalink to this definition">¶</a></dt>
+<dd><p>If true, this flag disallows overriding the control’s attribute via the control’s right mouse button menu.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.setVisible"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.setVisible"></a>
+<tt class="descname">setVisible</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.setVisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>The visible state of the control.  A control is created visible by default.  Note that a control’s actual appearance is also dependent on the visible state of its parent layout(s).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.setVisibleChangeCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.setVisibleChangeCommand"></a>
+<tt class="descname">setVisibleChangeCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.setVisibleChangeCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command that gets executed when visible state of the control changes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.setWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.setWidth"></a>
+<tt class="descname">setWidth</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.setWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>The width of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.formLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.FormLayout.vDistribute"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.FormLayout.vDistribute"></a>
+<tt class="descname">vDistribute</tt><big>(</big><em>*ratios</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.FormLayout.vDistribute" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.uitypes.FontDialog.html" title="previous chapter">pymel.core.uitypes.FontDialog</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.uitypes.FrameLayout.html" title="next chapter">pymel.core.uitypes.FrameLayout</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/classes/pymel.core.uitypes/pymel.core.uitypes.FormLayout.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.uitypes.FrameLayout.html" title="pymel.core.uitypes.FrameLayout">next</a> |</li>
+<li class="right">
+<a href="pymel.core.uitypes.FontDialog.html" title="pymel.core.uitypes.FontDialog">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.uitypes.html">pymel.core.uitypes</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.uitypes/pymel.core.uitypes.FormLayout.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:20:20 GMT -->
+</body></html>

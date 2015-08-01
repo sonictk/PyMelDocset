@@ -1,0 +1,6 @@
+pymel.core.runtime.HIKLiveConnectionTool
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HIKLiveConnectionTool

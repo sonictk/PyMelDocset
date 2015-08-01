@@ -1,0 +1,6 @@
+pymel.core.runtime.ProfilerToolThreadView
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ProfilerToolThreadView

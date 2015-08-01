@@ -1,0 +1,6 @@
+pymel.core.runtime.ImportSkinWeightMaps
+=======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ImportSkinWeightMaps

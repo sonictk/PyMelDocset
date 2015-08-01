@@ -1,0 +1,6 @@
+pymel.core.runtime.SculptMeshActivateBrushStrength
+==================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SculptMeshActivateBrushStrength

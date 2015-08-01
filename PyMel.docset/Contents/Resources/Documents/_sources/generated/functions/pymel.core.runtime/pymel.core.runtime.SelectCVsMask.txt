@@ -1,0 +1,6 @@
+pymel.core.runtime.SelectCVsMask
+================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SelectCVsMask

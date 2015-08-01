@@ -1,0 +1,6 @@
+pymel.core.runtime.PrevSkinPaintMode
+====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: PrevSkinPaintMode

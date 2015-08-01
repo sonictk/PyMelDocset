@@ -1,0 +1,6 @@
+pymel.core.runtime.CreateOceanWake
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreateOceanWake

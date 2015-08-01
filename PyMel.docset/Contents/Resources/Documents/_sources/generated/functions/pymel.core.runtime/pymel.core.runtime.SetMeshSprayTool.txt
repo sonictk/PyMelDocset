@@ -1,0 +1,6 @@
+pymel.core.runtime.SetMeshSprayTool
+===================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SetMeshSprayTool

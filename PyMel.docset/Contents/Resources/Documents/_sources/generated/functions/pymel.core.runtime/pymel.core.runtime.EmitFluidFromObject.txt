@@ -1,0 +1,6 @@
+pymel.core.runtime.EmitFluidFromObject
+======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: EmitFluidFromObject

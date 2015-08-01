@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeOpenCreateWindow
+=============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeOpenCreateWindow

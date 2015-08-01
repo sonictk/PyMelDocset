@@ -1,0 +1,6 @@
+pymel.core.runtime.FlipUVs
+==========================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: FlipUVs

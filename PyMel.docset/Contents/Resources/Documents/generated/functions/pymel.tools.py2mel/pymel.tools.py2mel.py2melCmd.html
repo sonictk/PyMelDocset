@@ -1,0 +1,263 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.tools.py2mel/pymel.tools.py2mel.py2melCmd.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:37:47 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.tools.py2mel.py2melCmd — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.tools.py2mel.html" rel="up" title="pymel.tools.py2mel"/>
+<link href="pymel.tools.py2mel.py2melProc.html" rel="next" title="pymel.tools.py2mel.py2melProc"/>
+<link href="pymel.tools.py2mel.isValidMelType.html" rel="prev" title="pymel.tools.py2mel.isValidMelType"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.tools.py2mel » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.tools.py2mel.py2melCmd ¶ 
+ 
+ 
+ py2melCmd ( pyObj , commandName=None , register=True , includeFlags=None , excludeFlags=[] , includeFlagArgs=None , excludeFlagArgs={} , nonUniqueName='warn' , invalidName='warn' ) ¶ 
+ Create a MEL command from a python function or class. 
+ A MEL command has two types of arguments: command arguments and flag..." name="description"/><meta content="__PyMel_generated_functions_pymel_tools_py2mel_pymel_tools_py2mel_py2melCmd_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.tools.py2mel.py2melProc.html" title="pymel.tools.py2mel.py2melProc">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.tools.py2mel.isValidMelType.html" title="pymel.tools.py2mel.isValidMelType">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.tools.py2mel.html">pymel.tools.py2mel</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-tools-py2mel-py2melcmd">
+<h1>pymel.tools.py2mel.py2melCmd<a class="headerlink" href="#pymel-tools-py2mel-py2melcmd" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.tools.py2mel.py2melCmd"><a name="//apple_ref/cpp/Function/pymel.tools.py2mel.py2melCmd"></a>
+<tt class="descname">py2melCmd</tt><big>(</big><em>pyObj</em>, <em>commandName=None</em>, <em>register=True</em>, <em>includeFlags=None</em>, <em>excludeFlags=[]</em>, <em>includeFlagArgs=None</em>, <em>excludeFlagArgs={}</em>, <em>nonUniqueName='warn'</em>, <em>invalidName='warn'</em><big>)</big><a class="headerlink" href="#pymel.tools.py2mel.py2melCmd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a MEL command from a python function or class.</p>
+<p>A MEL command has two types of arguments: command arguments and flag arguments.  In the case of passing a function, the function’s
+non-keyword arguments become the command arguments and the function’s keyword arguments become the flag arguments.
+for example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">def</span> <span class="nf">makeName</span><span class="p">(</span> <span class="n">first</span><span class="p">,</span> <span class="n">last</span><span class="p">,</span> <span class="n">middle</span><span class="o">=</span><span class="s">''</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">middle</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">first</span> <span class="o">+</span> <span class="s">' '</span> <span class="o">+</span> <span class="n">middle</span> <span class="o">+</span> <span class="s">' '</span> <span class="o">+</span> <span class="n">last</span>
+    <span class="k">return</span> <span class="n">first</span> <span class="o">+</span> <span class="s">' '</span> <span class="o">+</span> <span class="n">last</span>
+
+<span class="kn">import</span> <span class="nn">pymel</span> <span class="kn">as</span> <span class="nn">pm</span>
+<span class="kn">from</span> <span class="nn">pymel.tools.py2mel</span> <span class="kn">import</span> <span class="n">py2melCmd</span>
+<span class="n">cmd</span> <span class="o">=</span> <span class="n">py2melCmd</span><span class="p">(</span> <span class="n">makeName</span><span class="p">,</span> <span class="s">'makeNameCmd'</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">makeNameCmd</span><span class="p">(</span> <span class="s">'Homer'</span><span class="p">,</span> <span class="s">'Simpson'</span><span class="p">)</span>
+<span class="c"># Result: Homer Simpson #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">makeNameCmd</span><span class="p">(</span> <span class="s">'Homer'</span><span class="p">,</span> <span class="s">'Simpson'</span><span class="p">,</span> <span class="n">middle</span><span class="o">=</span><span class="s">'J.'</span><span class="p">)</span>
+<span class="c"># Result: Homer J. Simpson #</span>
+</pre></div>
+</div>
+<p>Of course, the real advantage of this tool is that now your python function is available from within MEL as a command:</p>
+<div class="highlight-python"><div class="highlight"><pre>makeNameCmd "Homer" "Simpson";
+// Result: Homer Simpson //
+makeNameCmd "Homer" "Simpson" -middle "J.";
+// Result: Homer J. Simpson //
+</pre></div>
+</div>
+<p>To remove the command, call the deregister method of the class returned by py2melCmd:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">cmd</span><span class="o">.</span><span class="n">deregister</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>This function attempts to automatically create short names (3 character max) based on the long names of the methods or arguments of the pass python object.
+It does this by looping through long names in alphabetical order and trying the following techniques until a unique short name is found:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><dl class="first docutils">
+<dt>by docstring (methods only): check the method docstring looking for something of the form <tt class="docutils literal"><span class="pre">shortname:</span> <span class="pre">xyz</span></tt>::</dt>
+<dd><dl class="first last docutils">
+<dt>class Foo():</dt>
+<dd><dl class="first last docutils">
+<dt>def bar():</dt>
+<dd><p class="first last">‘shortname: b’
+# do some things
+return</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+</dl>
+</li>
+<li><p class="first">by convention:  if the name uses under_scores or camelCase, use the first letter of each “word” to generate a short name up to 3 letters long</p>
+</li>
+<li><p class="first">first letter</p>
+</li>
+<li><p class="first">first two letters</p>
+</li>
+<li><p class="first">first three letters</p>
+</li>
+<li><p class="first">first two letters plus a unique digit</p>
+</li>
+</ol>
+</div></blockquote>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>if you edit the python object that is passed to this function it may result in short names changing!  for example, if you have a class like the following:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="k">class</span> <span class="nc">Foo</span><span class="p">():</span>
+    <span class="k">def</span> <span class="nf">bar</span><span class="p">():</span>
+        <span class="k">pass</span>
+</pre></div>
+</div>
+<p class="last"><tt class="docutils literal"><span class="pre">Foo.bar</span></tt> will be assigned the short flag name ‘b’. but if you later add the method <tt class="docutils literal"><span class="pre">Foo.baa</span></tt>, it will be assigned the short flag name ‘b’ and ‘bar’ will be given ‘ba’.
+<strong>The only way to be completely sure which short name is assigned is to use the docstring method described above.</strong></p>
+</div>
+<dl class="docutils">
+<dt>commandName <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>name given to the generated MEL command</dd>
+<dt>register <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>whether or not to automatically register the generated command.  If
+False, you will have to manually call the <tt class="xref py py-obj docutils literal"><span class="pre">register</span></tt> method of the
+returned <a class="reference internal" href="../../classes/pymel.tools.py2mel/pymel.tools.py2mel.WrapperCommand.html#pymel.tools.py2mel.WrapperCommand" title="pymel.tools.py2mel.WrapperCommand"><tt class="xref py py-obj docutils literal"><span class="pre">WrapperCommand</span></tt></a> instance</dd>
+<dt>includeFlags <span class="classifier-delimiter">:</span> <span class="classifier">list of str</span></dt>
+<dd>list of flags to include. if given, other flags will be ignored</dd>
+<dt>exludeFlags <span class="classifier-delimiter">:</span> <span class="classifier">list of str</span></dt>
+<dd>list of flags to exclude</dd>
+<dt>includeFlagArgs <span class="classifier-delimiter">:</span> <span class="classifier">dict from str to list of str</span></dt>
+<dd>for each flag, a list of arg names to include; if given, other args will
+be ignored</dd>
+<dt>excludeFlagArgs <span class="classifier-delimiter">:</span> <span class="classifier">dict from str to list of str</span></dt>
+<dd>for each flag, a list of arg names to exclude</dd>
+<dt>nonUniqueName <span class="classifier-delimiter">:</span> <span class="classifier">‘force’, ‘warn’, ‘skip’, or ‘error’</span></dt>
+<dd>what to do if a flag name is not unique</dd>
+<dt>invalidName: ‘force’, ‘warn’, ‘skip’, or ‘error’</dt>
+<dd>what to do if a flag name is invalid</dd>
+</dl>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.tools.py2mel.isValidMelType.html" title="previous chapter">pymel.tools.py2mel.isValidMelType</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.tools.py2mel.py2melProc.html" title="next chapter">pymel.tools.py2mel.py2melProc</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.tools.py2mel/pymel.tools.py2mel.py2melCmd.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.tools.py2mel.py2melProc.html" title="pymel.tools.py2mel.py2melProc">next</a> |</li>
+<li class="right">
+<a href="pymel.tools.py2mel.isValidMelType.html" title="pymel.tools.py2mel.isValidMelType">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.tools.py2mel.html">pymel.tools.py2mel</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.tools.py2mel/pymel.tools.py2mel.py2melCmd.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:37:47 GMT -->
+</body></html>

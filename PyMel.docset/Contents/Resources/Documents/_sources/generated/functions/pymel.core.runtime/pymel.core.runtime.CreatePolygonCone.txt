@@ -1,0 +1,6 @@
+pymel.core.runtime.CreatePolygonCone
+====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreatePolygonCone

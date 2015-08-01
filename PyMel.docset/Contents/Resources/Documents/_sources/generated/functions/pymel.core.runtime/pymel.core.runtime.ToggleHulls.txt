@@ -1,0 +1,6 @@
+pymel.core.runtime.ToggleHulls
+==============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ToggleHulls

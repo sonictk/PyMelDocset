@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeToggleShowNamespace
+================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeToggleShowNamespace

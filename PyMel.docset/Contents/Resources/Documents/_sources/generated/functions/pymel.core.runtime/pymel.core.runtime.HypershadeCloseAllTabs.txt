@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeCloseAllTabs
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeCloseAllTabs

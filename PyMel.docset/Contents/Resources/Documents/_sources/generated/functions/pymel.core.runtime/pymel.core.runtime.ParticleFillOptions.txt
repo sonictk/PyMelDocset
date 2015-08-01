@@ -1,0 +1,6 @@
+pymel.core.runtime.ParticleFillOptions
+======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ParticleFillOptions

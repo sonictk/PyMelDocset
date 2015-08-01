@@ -1,0 +1,572 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.general/pymel.core.general.colorManagementPrefs.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:22:49 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.general.colorManagementPrefs — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.general.html" rel="up" title="pymel.core.general"/>
+<link href="pymel.core.general.commandEcho.html" rel="next" title="pymel.core.general.commandEcho"/>
+<link href="pymel.core.general.colorManagementFileRules.html" rel="prev" title="pymel.core.general.colorManagementFileRules"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.general » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.general.colorManagementPrefs ¶ 
+ 
+ 
+ colorManagementPrefs ( *args , **kwargs ) ¶ 
+ This command allows querying and editing the color management global data in a scene. It also allows for setting the
+view transform and rendering space which automatically configures the color processing in the enabled views.
+In query mode, return type is..." name="description"/><meta content="__PyMel_generated_functions_pymel_core_general_pymel_core_general_colorManagementPrefs_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.general.commandEcho.html" title="pymel.core.general.commandEcho">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.general.colorManagementFileRules.html" title="pymel.core.general.colorManagementFileRules">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.general.html">pymel.core.general</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-general-colormanagementprefs">
+<h1>pymel.core.general.colorManagementPrefs<a class="headerlink" href="#pymel-core-general-colormanagementprefs" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.core.general.colorManagementPrefs"><a name="//apple_ref/cpp/Function/pymel.core.general.colorManagementPrefs"></a>
+<tt class="descname">colorManagementPrefs</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.general.colorManagementPrefs" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command allows querying and editing the color management global data in a scene.  It also allows for setting the
+view transform and rendering space which automatically configures the color processing in the enabled views.
+In query mode, return type is based on queried flag.</p>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">cmConfigFileEnabled</span></tt> / <tt class="docutils literal"><span class="pre">cfe</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Turn on or off applying an OCIO configuration file.  If set, the color management configuration set in the preferences is used.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">cmEnabled</span></tt> / <tt class="docutils literal"><span class="pre">cme</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Turn on or off color management in general.  If set, the color management configuration set in the preferences is used.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">colorManagePots</span></tt> / <tt class="docutils literal"><span class="pre">cmp</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Turn on or off color management of color pots in the UI.  If set, colors in color pots are taken to be in rendering space, and are displayed after being
+transformed by the view transform set in the preferences.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">colorManagedNodes</span></tt> / <tt class="docutils literal"><span class="pre">cmn</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Gets the names of all nodes that apply color management to bring pixels from an input color space to the rendering space. Examples include file texture node.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">colorManagementSDKVersion</span></tt> / <tt class="docutils literal"><span class="pre">cmv</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Obtain the version of the color management SDK used by Maya.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">configFilePath</span></tt> / <tt class="docutils literal"><span class="pre">cfp</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>The configuration file to be used, if color management is enabled.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">defaultInputSpaceName</span></tt> / <tt class="docutils literal"><span class="pre">din</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>This flag is obsolete.  See the colorManagementFileRules command for more information.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">equalsToPolicyFile</span></tt> / <tt class="docutils literal"><span class="pre">etp</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Query if the current loaded policy settings is the same with the settings described in the policy file which is the argument of the command.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">exportPolicy</span></tt> / <tt class="docutils literal"><span class="pre">epy</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Export the color management parameters to policy file</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">inputSpaceNames</span></tt> / <tt class="docutils literal"><span class="pre">iss</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns the list of available input color spaces. Used to populate the input color spaces UI popup.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">loadPolicy</span></tt> / <tt class="docutils literal"><span class="pre">lpy</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Load the color management policy file. This file overides the color management settings.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">loadedDefaultInputSpaceName</span></tt> / <tt class="docutils literal"><span class="pre">ldn</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>This flag is obsolete.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">loadedOutputTransformName</span></tt> / <tt class="docutils literal"><span class="pre">lon</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Gets the loaded output transform.  Used by file open, import, and reference to check for missing color spaces or transforms.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">loadedRenderingSpaceName</span></tt> / <tt class="docutils literal"><span class="pre">lrn</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Gets the loaded rendering space.  Used by file open, import, and reference to check for missing color spaces or transforms.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">loadedViewTransformName</span></tt> / <tt class="docutils literal"><span class="pre">lvn</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Gets the loaded view transform.  Used by file open, import, and reference to check for missing color spaces or transforms.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">missingColorSpaceNodes</span></tt> / <tt class="docutils literal"><span class="pre">mcn</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Gets the names of the nodes that have color spaces not defined in the selected transform collection.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">ocioRulesEnabled</span></tt> / <tt class="docutils literal"><span class="pre">ore</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Turn on or off the use of colorspace assignment rules from the OCIO library.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">outputTarget</span></tt> / <tt class="docutils literal"><span class="pre">ott</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Indicates to which output the outputTransformEnabled or the outputTransformName flags are to be applied. Valid values are rendereror playblast.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">outputTransformEnabled</span></tt> / <tt class="docutils literal"><span class="pre">ote</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Turn on or off applying the output transform for out of viewport renders. If set, the output transform set in the preferences is used.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">outputTransformName</span></tt> / <tt class="docutils literal"><span class="pre">otn</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>The output transform to be applied for out of viewport renders.  Disables output use view transform mode.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">outputTransformNames</span></tt> / <tt class="docutils literal"><span class="pre">ots</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns the list of available output transforms.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">outputUseViewTransform</span></tt> / <tt class="docutils literal"><span class="pre">ovt</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Turns use view transform mode on.  In this mode, the output transform is set to match the view transform.  To turn the mode off, set an output transform using the
+outputTransformName flag.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">policyFileName</span></tt> / <tt class="docutils literal"><span class="pre">pfn</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Set the policy file name</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">popupOnError</span></tt> / <tt class="docutils literal"><span class="pre">poe</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Turn on or off displaying a modal popup on error (as well as the normal script editor reporting of the error), for this invocation of the command.  Default is
+off.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">renderingSpaceName</span></tt> / <tt class="docutils literal"><span class="pre">rsn</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">The color space to be used during rendering.  This is the source color space to the viewing transform, for color managed viewers and color managed UI controls,
+and the destination color space for color managed input pixels.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">renderingSpaceNames</span></tt> / <tt class="docutils literal"><span class="pre">rss</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns the list of available rendering spaces.  Used to populate the color management preference UI popup.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">restoreDefaults</span></tt> / <tt class="docutils literal"><span class="pre">rde</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Restore the color management settings to their default value.                                     Flag can have multiple arguments, passed either as a tuple or a
+list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">viewTransformName</span></tt> / <tt class="docutils literal"><span class="pre">vtn</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>The view transform to be applied by color managed viewers and color managed UI controls.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">viewTransformNames</span></tt> / <tt class="docutils literal"><span class="pre">vts</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns the list of available view transforms.  Used to populate the color management preference UI popup.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.colorManagementPrefs</span></tt></p>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.general.colorManagementFileRules.html" title="previous chapter">pymel.core.general.colorManagementFileRules</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.general.commandEcho.html" title="next chapter">pymel.core.general.commandEcho</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.core.general/pymel.core.general.colorManagementPrefs.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.general.commandEcho.html" title="pymel.core.general.commandEcho">next</a> |</li>
+<li class="right">
+<a href="pymel.core.general.colorManagementFileRules.html" title="pymel.core.general.colorManagementFileRules">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.general.html">pymel.core.general</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.general/pymel.core.general.colorManagementPrefs.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:22:50 GMT -->
+</body></html>

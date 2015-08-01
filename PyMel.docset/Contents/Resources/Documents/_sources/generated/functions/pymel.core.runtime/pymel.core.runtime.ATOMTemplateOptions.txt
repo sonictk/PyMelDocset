@@ -1,0 +1,6 @@
+pymel.core.runtime.ATOMTemplateOptions
+======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ATOMTemplateOptions

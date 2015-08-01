@@ -1,0 +1,6 @@
+pymel.core.runtime.setDynStartState
+===================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: setDynStartState

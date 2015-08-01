@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeToggleAttrFilter
+=============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeToggleAttrFilter

@@ -1,0 +1,309 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.windows/pymel.core.windows.iconTextRadioCollection.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:31:07 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.windows.iconTextRadioCollection — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.windows.html" rel="up" title="pymel.core.windows"/>
+<link href="pymel.core.windows.iconTextScrollList.html" rel="next" title="pymel.core.windows.iconTextScrollList"/>
+<link href="pymel.core.windows.iconTextRadioButton.html" rel="prev" title="pymel.core.windows.iconTextRadioButton"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.windows » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.windows.iconTextRadioCollection ¶ 
+ 
+ 
+ iconTextRadioCollection ( *args , **kwargs ) ¶ 
+ This command creates a cluster for iconTextRadioButtons. Clusters will be parented to the current default layout if no
+parent is specified with the -p/parent flag. As children of the layout they will be deleted when the layout is deleted.
+Clusters..." name="description"/><meta content="__PyMel_generated_functions_pymel_core_windows_pymel_core_windows_iconTextRadioCollection_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.windows.iconTextScrollList.html" title="pymel.core.windows.iconTextScrollList">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.windows.iconTextRadioButton.html" title="pymel.core.windows.iconTextRadioButton">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.windows.html">pymel.core.windows</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-windows-icontextradiocollection">
+<h1>pymel.core.windows.iconTextRadioCollection<a class="headerlink" href="#pymel-core-windows-icontextradiocollection" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.core.windows.iconTextRadioCollection"><a name="//apple_ref/cpp/Function/pymel.core.windows.iconTextRadioCollection"></a>
+<tt class="descname">iconTextRadioCollection</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.windows.iconTextRadioCollection" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command creates a cluster for iconTextRadioButtons.  Clusters will be parented to the current default layout if no
+parent is specified with the -p/parent flag. As children of the layout they will be deleted when the layout is deleted.
+Clusters may also span more than one window if the -g/global flag is used. In this case the cluster has no parent so
+must be explicitly deleted with the ‘deleteUI’ command.</p>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">collectionItemArray</span></tt> / <tt class="docutils literal"><span class="pre">cia</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Returns a string list giving the long names of all the items in this collection.                          Flag can have multiple arguments, passed either as a
+tuple or a list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">defineTemplate</span></tt> / <tt class="docutils literal"><span class="pre">dt</span></tt></td>
+<td><em>unicode</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">disableCommands</span></tt> / <tt class="docutils literal"><span class="pre">dcm</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Allows a particular iconTextRadioButton in the collection to be selected without invoking the commands attached to the -cc/changeCommand, -onc/onCommand, or
+-ofc/offCommand flags. This flag is only meaningful when used in conjuction with the -edit and -select flags.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">exists</span></tt> / <tt class="docutils literal"><span class="pre">ex</span></tt></td>
+<td><em>bool</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">gl</span></tt> / <tt class="docutils literal"><span class="pre">gl</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set the collection to have no parent layout.  If the collection has a parent layout then it will be deleted with that layout, otherwise if it is specified to be
+global it must be explicitly deleted.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">numberOfCollectionItems</span></tt> / <tt class="docutils literal"><span class="pre">nci</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns the number of items that are in this collection.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">parent</span></tt> / <tt class="docutils literal"><span class="pre">p</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Set the specified layout to be the parent layout of the cluster.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">select</span></tt> / <tt class="docutils literal"><span class="pre">sl</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Select the specified collection item.  If queried will return the name of the currently selected collection item.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">useTemplate</span></tt> / <tt class="docutils literal"><span class="pre">ut</span></tt></td>
+<td><em>unicode</em></td>
+<td> </td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"> </td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.iconTextRadioCollection</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">window</span><span class="p">(</span> <span class="n">tlc</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span> <span class="p">)</span>
+<span class="c"># Result: ui.Window('window1') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">columnLayout</span><span class="p">(</span> <span class="n">adj</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: ui.ColumnLayout('window1|columnLayout47') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">iconTextRadioCollection</span><span class="p">(</span> <span class="s">'itRadCollection'</span> <span class="p">)</span>
+<span class="c"># Result: ui.IconTextRadioCollection('window1|columnLayout47|itRadCollection') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">iconTextRadioButton</span><span class="p">(</span> <span class="n">st</span><span class="o">=</span><span class="s">'textOnly'</span><span class="p">,</span> <span class="n">i1</span><span class="o">=</span><span class="s">'sphere.png'</span><span class="p">,</span> <span class="n">l</span><span class="o">=</span><span class="s">'sphere'</span> <span class="p">)</span>
+<span class="c"># Result: ui.IconTextRadioButton('window1|columnLayout47|iconTextRadioButton5') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">iconTextRadioButton</span><span class="p">(</span> <span class="n">st</span><span class="o">=</span><span class="s">'iconOnly'</span><span class="p">,</span> <span class="n">i1</span><span class="o">=</span><span class="s">'spotlight.png'</span><span class="p">,</span> <span class="n">l</span><span class="o">=</span><span class="s">'spotlight'</span> <span class="p">)</span>
+<span class="c"># Result: ui.IconTextRadioButton('window1|columnLayout47|iconTextRadioButton6') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">iconTextRadioButton</span><span class="p">(</span> <span class="n">st</span><span class="o">=</span><span class="s">'iconAndTextHorizontal'</span><span class="p">,</span> <span class="n">i1</span><span class="o">=</span><span class="s">'cone.png'</span><span class="p">,</span> <span class="n">l</span><span class="o">=</span><span class="s">'cone'</span> <span class="p">)</span>
+<span class="c"># Result: ui.IconTextRadioButton('window1|columnLayout47|iconTextRadioButton7') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">iconTextRadioButton</span><span class="p">(</span> <span class="n">st</span><span class="o">=</span><span class="s">'iconAndTextVertical'</span><span class="p">,</span> <span class="n">i1</span><span class="o">=</span><span class="s">'cube.png'</span><span class="p">,</span> <span class="n">l</span><span class="o">=</span><span class="s">'cube'</span> <span class="p">)</span>
+<span class="c"># Result: ui.IconTextRadioButton('window1|columnLayout47|iconTextRadioButton8') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">showWindow</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.windows.iconTextRadioButton.html" title="previous chapter">pymel.core.windows.iconTextRadioButton</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.windows.iconTextScrollList.html" title="next chapter">pymel.core.windows.iconTextScrollList</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.core.windows/pymel.core.windows.iconTextRadioCollection.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.windows.iconTextScrollList.html" title="pymel.core.windows.iconTextScrollList">next</a> |</li>
+<li class="right">
+<a href="pymel.core.windows.iconTextRadioButton.html" title="pymel.core.windows.iconTextRadioButton">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.windows.html">pymel.core.windows</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.windows/pymel.core.windows.iconTextRadioCollection.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:31:07 GMT -->
+</body></html>

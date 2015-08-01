@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeSortByName
+=======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeSortByName

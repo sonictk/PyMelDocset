@@ -1,0 +1,6 @@
+pymel.core.runtime.CreateNURBSTorusOptions
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreateNURBSTorusOptions

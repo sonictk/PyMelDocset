@@ -1,0 +1,1119 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.general/pymel.core.general.ls.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:32:33 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.general.ls — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.general.html" rel="up" title="pymel.core.general"/>
+<link href="pymel.core.general.makeIdentity.html" rel="next" title="pymel.core.general.makeIdentity"/>
+<link href="pymel.core.general.lockNode.html" rel="prev" title="pymel.core.general.lockNode"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.general » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.general.ls ¶ 
+ 
+ 
+ ls ( *args , **kwargs ) ¶ 
+ The lscommand returns the names (and optionally the type names) of objects in the scene. The most common use of lsis to
+filter or match objects based on their name (using wildcards) or based on their type. By default lswill match any object
+in the scene but it can also be used to filter or..." name="description"/><meta content="__PyMel_generated_functions_pymel_core_general_pymel_core_general_ls_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.general.makeIdentity.html" title="pymel.core.general.makeIdentity">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.general.lockNode.html" title="pymel.core.general.lockNode">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.general.html">pymel.core.general</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-general-ls">
+<h1>pymel.core.general.ls<a class="headerlink" href="#pymel-core-general-ls" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.core.general.ls"><a name="//apple_ref/cpp/Function/pymel.core.general.ls"></a>
+<tt class="descname">ls</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.general.ls" title="Permalink to this definition">¶</a></dt>
+<dd><p>The lscommand returns the names (and optionally the type names) of objects in the scene. The most common use of lsis to
+filter or match objects based on their name (using wildcards) or based on their type. By default lswill match any object
+in the scene but it can also be used to filter or list the selected objects when used in conjunction with the -selection
+flag. If type names are requested, using the showType flag, they will be interleaved with object names so the result
+will be pairs of object, typevalues. Internal nodes (for example itemFilter nodes) are typically filtered so that only
+scene objects are returned. However, using a wildcard will cause all the nodes matching the wild card to show up,
+including internal nodes.  For example, ls *will list all nodes whether internal or not. When Maya is in relativeNames
+mode, the lscommand will return names relativeto the current namespace and ls *will list from the the current
+namespace. For more details, please refer to the -relativeNamesflag of the namespacecommand. The command may also be
+passed node UUIDs instead of names/paths, and can return UUIDs instead of names via the -uuid flag.</p>
+<dl class="docutils">
+<dt>Modifications:</dt>
+<dd><ul class="first last">
+<li><p class="first">Returns PyNode objects, not “names” - all flags which do nothing but modify
+the string name of returned objects are ignored (ie, ‘long’); note that
+the ‘allPaths’ flag DOES have an effect, as PyNode objects are aware of
+their dag paths (ie, two different instances of the same object will result
+in two unique PyNodes)</p>
+</li>
+<li><p class="first">Added new keyword: ‘editable’ - this will return the inverse set of the readOnly flag. i.e. non-read-only nodes</p>
+</li>
+<li><p class="first">Added new keyword: ‘regex’ - pass a valid regular expression string, compiled regex pattern, or list thereof.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">group</span><span class="p">(</span><span class="s">'top'</span><span class="p">)</span>
+<span class="go">nt.Transform(u'group1')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">duplicate</span><span class="p">(</span><span class="s">'group1'</span><span class="p">)</span>
+<span class="go">[nt.Transform(u'group2')]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">group</span><span class="p">(</span><span class="s">'group2'</span><span class="p">)</span>
+<span class="go">nt.Transform(u'group3')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ls</span><span class="p">(</span><span class="n">regex</span><span class="o">=</span><span class="s">'group\d+\|top'</span><span class="p">)</span> <span class="c"># don't forget to escape pipes `|`</span>
+<span class="go">[nt.Transform(u'group1|top'), nt.Transform(u'group2|top')]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ls</span><span class="p">(</span><span class="n">regex</span><span class="o">=</span><span class="s">'group\d+\|top.*'</span><span class="p">)</span>
+<span class="go">[nt.Transform(u'group1|top'), nt.Camera(u'group1|top|topShape'), nt.Transform(u'group2|top'), nt.Camera(u'group2|top|topShape')]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ls</span><span class="p">(</span><span class="n">regex</span><span class="o">=</span><span class="s">'group\d+\|top.*'</span><span class="p">,</span> <span class="n">cameras</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="go">[nt.Camera(u'group2|top|topShape'), nt.Camera(u'group1|top|topShape')]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ls</span><span class="p">(</span><span class="n">regex</span><span class="o">=</span><span class="s">'\|group\d+\|top.*'</span><span class="p">,</span> <span class="n">cameras</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c"># add a leading pipe to search for full path</span>
+<span class="go">[nt.Camera(u'group1|top|topShape')]</span>
+</pre></div>
+</div>
+<p>The regular expression will be used to search the full DAG path, starting from the right, in a similar fashion to how globs currently work.
+Technically speaking, your regular expression string is used like this:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span> <span class="s">'(\||^)'</span> <span class="o">+</span> <span class="n">yourRegexStr</span> <span class="o">+</span> <span class="s">'$'</span><span class="p">,</span> <span class="n">fullNodePath</span> <span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">rtype:</th><td class="field-body"><a class="reference internal" href="../../classes/pymel.core.general/pymel.core.general.PyNode.html#pymel.core.general.PyNode" title="pymel.core.general.PyNode"><tt class="xref py py-obj docutils literal"><span class="pre">PyNode</span></tt></a> list</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">absoluteName</span></tt> / <tt class="docutils literal"><span class="pre">an</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This flag can be used in conjunction with the showNamespace flag to specify that the namespace(s) returned by the command be in absolute namespace format. The
+absolute name of the namespace is a full namespace path, starting from the root namespace :and including all parent namespaces.  For example :ns:ballis an
+absolute namespace name while ns:ballis not. The absolute namespace name is invariant and is not affected by the current namespace or relative namespace modes.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">allPaths</span></tt> / <tt class="docutils literal"><span class="pre">ap</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List all paths to nodes in DAG. This flag only works if -dagis also specified or if an object name is supplied.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">assemblies</span></tt> / <tt class="docutils literal"><span class="pre">assemblies</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List top level transform Dag objects</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">cameras</span></tt> / <tt class="docutils literal"><span class="pre">ca</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List camera shapes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">containerType</span></tt> / <tt class="docutils literal"><span class="pre">ct</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List containers with the specified user-defined type. This flag cannot be used in conjunction with the type or exactType flag.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">containers</span></tt> / <tt class="docutils literal"><span class="pre">con</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List containers. Includes both standard containers as well as other types of containers such as dagContainers.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">dagObjects</span></tt> / <tt class="docutils literal"><span class="pre">dag</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List Dag objects of any type. If object name arguments are passed to the command then this flag will list all Dag objects below the specified object(s).</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">defaultNodes</span></tt> / <tt class="docutils literal"><span class="pre">dn</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns default nodes. A default node is one that Maya creates automatically and does not get saved out with the scene, although some of its attribute values may.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">dependencyNodes</span></tt> / <tt class="docutils literal"><span class="pre">dep</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List dependency nodes. (including Dag objects)</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">exactType</span></tt> / <tt class="docutils literal"><span class="pre">et</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">List all objects of the specified type, but notobjects that are descendents of that type. This flag can appear multiple times on the command line. Note: the type
+passed to this flag is the same type name returned from the showType flag. This flag cannot be used in conjunction with the type or excludeType flag.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">excludeType</span></tt> / <tt class="docutils literal"><span class="pre">ext</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">List all objects that are not of the specified type. This flag can appear multiple times on the command line. Note: the type passed to this flag is the same type
+name returned from the showType flag. This flag cannot be used in conjunction with the type or exactType flag.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">flatten</span></tt> / <tt class="docutils literal"><span class="pre">fl</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Flattens the returned list of objects so that each component is identified individually.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">geometry</span></tt> / <tt class="docutils literal"><span class="pre">g</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List geometric Dag objects.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">ghost</span></tt> / <tt class="docutils literal"><span class="pre">gh</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List ghosting objects.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">head</span></tt> / <tt class="docutils literal"><span class="pre">hd</span></tt></td>
+<td><em>int</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This flag  specifies the maximum number of elements to be returned from the beginning of the list of items. Note: each type flag will return at most this many
+items so if multiple type flags are specified then the number of items returned can be greater than this amount.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">hilite</span></tt> / <tt class="docutils literal"><span class="pre">hl</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List objects that are currently hilited for component selection.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">intermediateObjects</span></tt> / <tt class="docutils literal"><span class="pre">io</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List only intermediate dag nodes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">invisible</span></tt> / <tt class="docutils literal"><span class="pre">iv</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List only invisible dag nodes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">leaf</span></tt> / <tt class="docutils literal"><span class="pre">lf</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List all leaf nodes in Dag. This flag is a modifier and must be used in conjunction with the -dag flag.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">lights</span></tt> / <tt class="docutils literal"><span class="pre">lt</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List light shapes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">live</span></tt> / <tt class="docutils literal"><span class="pre">lv</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List objects that are currently live.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">lockedNodes</span></tt> / <tt class="docutils literal"><span class="pre">ln</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns locked nodes, which cannot be deleted or renamed. However, their status may change.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">long</span></tt> / <tt class="docutils literal"><span class="pre">l</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Return full path names for Dag objects. By default the shortest unique name is returned.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">materials</span></tt> / <tt class="docutils literal"><span class="pre">mat</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List materials or shading groups.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">modified</span></tt> / <tt class="docutils literal"><span class="pre">mod</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>When this flag is set, only nodes modified since the last save will be returned.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">noIntermediate</span></tt> / <tt class="docutils literal"><span class="pre">ni</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List only non intermediate dag nodes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">nodeTypes</span></tt> / <tt class="docutils literal"><span class="pre">nt</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Lists all registered node types.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">objectsOnly</span></tt> / <tt class="docutils literal"><span class="pre">o</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>When this flag is set only object names will be returned and components/attributes will be ignored.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">orderedSelection</span></tt> / <tt class="docutils literal"><span class="pre">os</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">List objects and components that are currently selected in their order of selection.  This flag depends on the value of the -tso/trackSelectionOrder flag of the
+selectPref command.  If that flag is not enabled than this flag will return the same thing as the -sl/selection flag would.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">partitions</span></tt> / <tt class="docutils literal"><span class="pre">pr</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List partitions.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">persistentNodes</span></tt> / <tt class="docutils literal"><span class="pre">pn</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Returns persistent nodes, which are nodes that stay in the Maya session after a file new. These are a special class of default nodes that do not get reset on file
+new. Ex: itemFilter and selectionListOperator nodes.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">planes</span></tt> / <tt class="docutils literal"><span class="pre">pl</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List construction plane shapes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">preSelectHilite</span></tt> / <tt class="docutils literal"><span class="pre">psh</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List components that are currently hilited for pre-selection.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">readOnly</span></tt> / <tt class="docutils literal"><span class="pre">ro</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns referenced nodes. Referenced nodes are read only. NOTE: Obsolete. Please use -referencedNodes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">recursive</span></tt> / <tt class="docutils literal"><span class="pre">r</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">When set to true, this command will look for name matches in all namespaces. When set to false, this command will only look for matches in namespaces that are
+requested (e.g. by specifying a name containing the ‘:’... ns1:pSphere1).</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">referencedNodes</span></tt> / <tt class="docutils literal"><span class="pre">rn</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns referenced nodes. Referenced nodes are read only.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">references</span></tt> / <tt class="docutils literal"><span class="pre">rf</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List references associated with files. Excludes special reference nodes such as the sharedReferenceNode and unknown reference nodes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">renderGlobals</span></tt> / <tt class="docutils literal"><span class="pre">rg</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List render globals.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">renderQualities</span></tt> / <tt class="docutils literal"><span class="pre">rq</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List named render qualities.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">renderResolutions</span></tt> / <tt class="docutils literal"><span class="pre">rr</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List render resolutions.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">renderSetups</span></tt> / <tt class="docutils literal"><span class="pre">rs</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Alias for -renderGlobals.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">selection</span></tt> / <tt class="docutils literal"><span class="pre">sl</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List objects that are currently selected.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">sets</span></tt> / <tt class="docutils literal"><span class="pre">set</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List sets.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">shapes</span></tt> / <tt class="docutils literal"><span class="pre">s</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List shape objects.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">shortNames</span></tt> / <tt class="docutils literal"><span class="pre">sn</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Return short attribute names. By default long attribute names are returned.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">showNamespace</span></tt> / <tt class="docutils literal"><span class="pre">sns</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Show the namespace of each object after the object name. This flag cannot be used in conjunction with the showType flag.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">showType</span></tt> / <tt class="docutils literal"><span class="pre">st</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List the type of each object after its name.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">tail</span></tt> / <tt class="docutils literal"><span class="pre">tl</span></tt></td>
+<td><em>int</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This flag specifies the maximum number of elements to be returned from the end of the list of items. Note: each    type flag will return at most this many items
+so if multiple type flags are specified then the number of items returned can be greater than this amount</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">templated</span></tt> / <tt class="docutils literal"><span class="pre">tm</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List only templated dag nodes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">textures</span></tt> / <tt class="docutils literal"><span class="pre">tex</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List textures.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">transforms</span></tt> / <tt class="docutils literal"><span class="pre">tr</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List transform objects.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">type</span></tt> / <tt class="docutils literal"><span class="pre">typ</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">List all objects of the specified type. This flag can appear multiple times on the command line. Note: the type passed to this flag is the same type name returned
+from the showType flag. Note: some selection items in Maya do not have a specific object/data type associated with them and will return untypedwhen listed with
+this flag. This flag cannot be used in conjunction with the exactType or excludeType flag.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">undeletable</span></tt> / <tt class="docutils literal"><span class="pre">ud</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns nodes that cannot be deleted (which includes locked nodes). These nodes also cannot be renamed.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">untemplated</span></tt> / <tt class="docutils literal"><span class="pre">ut</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List only un-templated dag nodes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">uuid</span></tt> / <tt class="docutils literal"><span class="pre">uid</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Return node UUIDs instead of names. Note that there are no UUID paths- combining this flag with e.g. the -long flag will not result in a path formed of node
+UUIDs.                       Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">visible</span></tt> / <tt class="docutils literal"><span class="pre">v</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List only visible dag nodes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.ls</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+
+<span class="c"># create some objects to operate on and select them all.</span>
+<span class="c"># Note that there are two objects named circle1;</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span> <span class="n">n</span><span class="o">=</span><span class="s">'circle1'</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'circle1'), nt.MakeNurbCircle(u'makeNurbCircle1')] #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">group</span><span class="p">()</span>
+<span class="c"># Result: nt.Transform(u'group1') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span> <span class="n">n</span><span class="o">=</span><span class="s">'circle1'</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'|circle1'), nt.MakeNurbCircle(u'makeNurbCircle2')] #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">sphere</span><span class="p">(</span> <span class="n">n</span><span class="o">=</span><span class="s">'sphere1'</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'sphere1'), nt.MakeNurbSphere(u'makeNurbSphere1')] #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">group</span><span class="p">()</span>
+<span class="c"># Result: nt.Transform(u'group2') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">instance</span><span class="p">()</span>
+<span class="c"># Result: [nt.Transform(u'group3')] #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">select</span><span class="p">(</span> <span class="n">ado</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+
+<span class="c"># list all objects</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">()</span>
+<span class="c"># Result: [nt.Time(u'time1'), nt.SequenceManager(u'sequenceManager1'), nt.Partition(u'renderPartition'), nt.RenderGlobalsList(u'renderGlobalsList1'), nt.DefaultLightList(u'defaultLightList1'), nt.DefaultShaderList(u'defaultShaderList1'), nt.PostProcessList(u'postProcessList1'), nt.DefaultRenderUtilityList(u'defaultRenderUtilityList1'), nt.DefaultRenderingList(u'defaultRenderingList1'), nt.LightList(u'lightList1'), nt.DefaultTextureList(u'defaultTextureList1'), nt.Lambert(u'lambert1'), nt.ParticleCloud(u'particleCloud1'), nt.ShadingEngine(u'initialShadingGroup'), nt.ShadingEngine(u'initialParticleSE'), nt.MaterialInfo(u'initialMaterialInfo'), nt.ShaderGlow(u'shaderGlow1'), nt.Dof(u'dof1'), nt.RenderGlobals(u'defaultRenderGlobals'), nt.RenderQuality(u'defaultRenderQuality'), nt.Resolution(u'defaultResolution'), nt.ObjectSet(u'defaultLightSet'), nt.ObjectSet(u'defaultObjectSet'), nt.ViewColorManager(u'defaultViewColorManager'), nt.HardwareRenderGlobals(u'hardwareRenderGlobals'), nt.HardwareRenderingGlobals(u'hardwareRenderingGlobals'), nt.Partition(u'characterPartition'), nt.HwRenderGlobals(u'defaultHardwareRenderGlobals'), nt.IkSystem(u'ikSystem'), nt.HyperGraphInfo(u'hyperGraphInfo'), nt.HyperLayout(u'hyperGraphLayout'), nt.GlobalCacheControl(u'globalCacheControl'), nt.DynController(u'dynController1'), nt.StrokeGlobals(u'strokeGlobals'), nt.Transform(u'persp'), nt.Camera(u'perspShape'), nt.Transform(u'top'), nt.Camera(u'topShape'), nt.Transform(u'front'), nt.Camera(u'frontShape'), nt.Transform(u'side'), nt.Camera(u'sideShape'), nt.LightLinker(u'lightLinker1'), nt.ObjectMultiFilter(u'CustomGPUCacheFilter'), nt.ObjectTypeFilter(u'objectTypeFilter74'), nt.ObjectMultiFilter(u'layersFilter'), nt.ObjectTypeFilter(u'objectTypeFilter75'), nt.ObjectMultiFilter(u'animLayersFilter'), nt.ObjectTypeFilter(u'objectTypeFilter76'), nt.ObjectMultiFilter(u'notAnimLayersFilter'), nt.ObjectTypeFilter(u'objectTypeFilter77'), nt.ObjectMultiFilter(u'defaultRenderLayerFilter'), nt.ObjectNameFilter(u'objectNameFilter4'), nt.ObjectMultiFilter(u'renderLayerFilter'), nt.ObjectTypeFilter(u'objectTypeFilter78'), nt.ObjectScriptFilter(u'objectScriptFilter10'), nt.ObjectMultiFilter(u'renderingSetsFilter'), nt.ObjectTypeFilter(u'objectTypeFilter79'), nt.ObjectMultiFilter(u'relationshipPanel1LeftAttrFilter'), nt.ObjectMultiFilter(u'relationshipPanel1RightAttrFilter'), nt.DisplayLayerManager(u'layerManager'), nt.DisplayLayer(u'defaultLayer'), nt.RenderLayerManager(u'renderLayerManager'), nt.RenderLayer(u'defaultRenderLayer'), nt.MakeNurbCircle(u'makeNurbCircle1'), nt.Transform(u'group1|circle1'), nt.NurbsCurve(u'group1|circle1|circle1Shape'), nt.Transform(u'group1'), nt.MakeNurbCircle(u'makeNurbCircle2'), nt.Transform(u'|circle1'), nt.NurbsCurve(u'|circle1|circle1Shape'), nt.MakeNurbSphere(u'makeNurbSphere1'), nt.Transform(u'group2|sphere1'), nt.NurbsSurface(u'group2|sphere1|sphere1Shape'), nt.Transform(u'group2'), nt.Transform(u'group3')] #</span>
+
+<span class="c"># List all selected objects</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span> <span class="n">selection</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'group1'), nt.Transform(u'|circle1'), nt.Transform(u'group2'), nt.Transform(u'group3')] #</span>
+
+<span class="c"># List all hilited objects</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span> <span class="n">hilite</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [] #</span>
+
+<span class="c"># List last selected object</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span> <span class="n">selection</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">tail</span><span class="o">=</span><span class="mi">1</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'group3')] #</span>
+
+<span class="c"># List all objects named "sphere1". Note that since sphere1 is</span>
+<span class="c"># instanced, the command below lists only the first instance.</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span> <span class="s">'sphere1'</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'group2|sphere1')] #</span>
+
+<span class="c"># To list all instances of sphere1, use the -ap/allPaths flag.</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span> <span class="s">'sphere1'</span><span class="p">,</span> <span class="n">ap</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'group2|sphere1'), nt.Transform(u'group3|sphere1')] #</span>
+
+<span class="c"># List all selected objects named "group*"</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span> <span class="s">'group*'</span><span class="p">,</span> <span class="n">sl</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'group1'), nt.Transform(u'group2'), nt.Transform(u'group3')] #</span>
+
+<span class="c"># List all geometry, lights and cameras in the DAG.</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span> <span class="n">geometry</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">lights</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">cameras</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [nt.NurbsCurve(u'|circle1|circle1Shape'), nt.NurbsCurve(u'group1|circle1|circle1Shape'), nt.NurbsSurface(u'group2|sphere1|sphere1Shape'), nt.Camera(u'frontShape'), nt.Camera(u'perspShape'), nt.Camera(u'sideShape'), nt.Camera(u'topShape')] #</span>
+
+<span class="c"># List all shapes in the dag.</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span> <span class="n">shapes</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [nt.NurbsCurve(u'|circle1|circle1Shape'), nt.NurbsCurve(u'group1|circle1|circle1Shape'), nt.Camera(u'frontShape'), nt.Camera(u'perspShape'), nt.Camera(u'sideShape'), nt.NurbsSurface(u'group2|sphere1|sphere1Shape'), nt.Camera(u'topShape')] #</span>
+
+<span class="c"># One thing to note is that it is better to always use the</span>
+<span class="c"># -l/long flag when listing nodes without any filter. This is</span>
+<span class="c"># because there may be two nodes with the same name (in this</span>
+<span class="c"># example, circle1). 'ls' will list the names of all the objects</span>
+<span class="c"># in the scene. Objects with the same name need a qualified</span>
+<span class="c"># path name which uniquely identifies the object. A command</span>
+<span class="c"># to select all objects such as "select `ls`" will fail because</span>
+<span class="c"># the object lookup can't resolve which "circle1" object is</span>
+<span class="c"># intended. To select all objects, you need the following:</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span><span class="n">sl</span><span class="o">=</span><span class="bp">True</span><span class="p">))</span>
+
+<span class="c"># When trying to find a list of all objects of a specific</span>
+<span class="c"># type, one approach might be to list all objects and then</span>
+<span class="c"># use the nodeType command to then filter the list. As in:</span>
+<span class="n">allObjects</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span><span class="n">l</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="n">allObjects</span><span class="p">:</span>
+   <span class="k">if</span> <span class="n">pm</span><span class="o">.</span><span class="n">nodeType</span><span class="p">(</span><span class="n">obj</span><span class="p">)</span> <span class="o">==</span> <span class="s">'surfaceShape'</span><span class="p">:</span>
+     <span class="k">print</span> <span class="n">obj</span>
+
+<span class="c"># The problem with this is that 'nodeType' returns the</span>
+<span class="c"># most derived type of the node. In this example, "surfaceShape"</span>
+<span class="c"># is a base type for nurbsSurface so nothing will be printed.</span>
+<span class="c"># To do this properly, the -typ/type flag should be used</span>
+<span class="c"># to list objects of a specific type as in:</span>
+<span class="n">allObjects</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s">'surfaceShape'</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">obj</span> <span class="ow">in</span> <span class="n">allObjects</span><span class="p">:</span>
+    <span class="k">print</span> <span class="n">obj</span>
+
+<span class="c"># List all geometry shapes and their types</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span> <span class="nb">type</span><span class="o">=</span><span class="s">'geometryShape'</span><span class="p">,</span> <span class="n">showType</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [nt.NurbsCurve(u'|circle1|circle1Shape'), u'nurbsCurve', nt.NurbsCurve(u'group1|circle1|circle1Shape'), u'nurbsCurve', nt.NurbsSurface(u'group2|sphere1|sphere1Shape'), u'nurbsSurface'] #</span>
+
+<span class="c"># List all paths to all leaf nodes in the DAG</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span> <span class="n">dag</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">lf</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">ap</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Camera(u'perspShape'), nt.Camera(u'topShape'), nt.Camera(u'frontShape'), nt.Camera(u'sideShape'), nt.NurbsCurve(u'group1|circle1|circle1Shape'), nt.NurbsCurve(u'|circle1|circle1Shape'), nt.NurbsSurface(u'group2|sphere1|sphere1Shape'), nt.NurbsSurface(u'group3|sphere1|sphere1Shape')] #</span>
+
+<span class="c"># List all nodes below the selected node</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span> <span class="n">dag</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">ap</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">sl</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'group1'), nt.Transform(u'group1|circle1'), nt.NurbsCurve(u'group1|circle1|circle1Shape'), nt.Transform(u'|circle1'), nt.NurbsCurve(u'|circle1|circle1Shape'), nt.Transform(u'group2'), nt.Transform(u'group2|sphere1'), nt.Transform(u'group3|sphere1'), nt.NurbsSurface(u'group2|sphere1|sphere1Shape'), nt.NurbsSurface(u'group3|sphere1|sphere1Shape'), nt.Transform(u'group3')] #</span>
+
+<span class="c"># List all dag nodes that are read-only (i.e. referenced nodes)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span> <span class="n">dag</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">ro</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [] #</span>
+
+<span class="c"># List all ghosting objects</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span> <span class="n">ghost</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [] #</span>
+
+<span class="c"># List reference nodes associated with specific files</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span> <span class="n">references</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [] #</span>
+
+<span class="c"># List all reference nodes, including unknown and shared reference nodes</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span> <span class="nb">type</span><span class="o">=</span><span class="s">'reference'</span> <span class="p">)</span>
+<span class="c"># Result: [] #</span>
+
+
+<span class="c"># Select some components and then get the list in both selected and numeric order</span>
+<span class="n">obj1</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">polySphere</span><span class="p">(</span> <span class="n">sx</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">sy</span><span class="o">=</span><span class="mi">20</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">select</span><span class="p">(</span> <span class="n">clear</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">selectPref</span><span class="p">(</span> <span class="n">trackSelectionOrder</span><span class="o">=</span><span class="mi">1</span> <span class="p">)</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">select</span><span class="p">(</span> <span class="n">obj1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="s">".f[100]"</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">select</span><span class="p">(</span> <span class="p">(</span><span class="n">obj1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="s">".f[50:55]"</span><span class="p">),</span> <span class="n">add</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">select</span><span class="p">(</span> <span class="p">(</span><span class="n">obj1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="s">".f[0]"</span><span class="p">),</span> <span class="n">add</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">select</span><span class="p">(</span> <span class="p">(</span><span class="n">obj1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">+</span><span class="s">".f[56:60]"</span><span class="p">),</span> <span class="n">add</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+
+<span class="c"># regular -selection flag returns the components in compacted numeric order.</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span> <span class="n">selection</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [MeshFace(u'pSphereShape1.f[0]'), MeshFace(u'pSphereShape1.f[50:60]'), MeshFace(u'pSphereShape1.f[100]')] #</span>
+
+<span class="c"># -orderedSelection flag returns the components in the order that we selected them.</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span> <span class="n">orderedSelection</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [MeshFace(u'pSphereShape1.f[100]'), MeshFace(u'pSphereShape1.f[50:55]'), MeshFace(u'pSphereShape1.f[0]'), MeshFace(u'pSphereShape1.f[56:60]')] #</span>
+
+<span class="c"># turn off tracking when we are done</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">selectPref</span><span class="p">(</span> <span class="n">trackSelectionOrder</span><span class="o">=</span><span class="mi">0</span> <span class="p">)</span>
+
+<span class="c"># init some namespace</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">add</span><span class="o">=</span><span class="s">"A:B:C"</span> <span class="p">)</span>
+<span class="c"># Result: u'A:B:C' #</span>
+
+<span class="c"># add object into namespace</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="nb">set</span><span class="o">=</span><span class="s">":A:B"</span> <span class="p">)</span>
+<span class="c"># Result: u'A:B' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polySphere</span><span class="p">(</span> <span class="n">name</span><span class="o">=</span><span class="s">"obj1"</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'A:B:obj1'), nt.PolySphere(u'A:B:polySphere1')] #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="nb">set</span><span class="o">=</span><span class="s">":A:B:C"</span> <span class="p">)</span>
+<span class="c"># Result: u'A:B:C' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polySphere</span><span class="p">(</span> <span class="n">name</span><span class="o">=</span><span class="s">"obj1"</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'A:B:C:obj1'), nt.PolySphere(u'A:B:C:polySphere1')] #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polySphere</span><span class="p">(</span> <span class="n">name</span><span class="o">=</span><span class="s">"obj2"</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'A:B:C:obj2'), nt.PolySphere(u'A:B:C:polySphere2')] #</span>
+
+
+<span class="c"># The current Namespace is ":A:B:C" and relative mode is off</span>
+<span class="c"># List all objects and their namespace in the scene</span>
+<span class="c"># If the object is in the root namespace, then return root ":"</span>
+<span class="c"># Note that the results shown below have been elided (...) for documentation purposes.</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span> <span class="n">showNamespace</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="p">[</span><span class="s">u'time1'</span><span class="p">,</span> <span class="s">u':'</span><span class="p">,</span> <span class="s">u'sequenceManager1'</span><span class="p">,</span> <span class="s">u':'</span><span class="p">,</span> <span class="s">u'renderPartition'</span><span class="p">,</span> <span class="s">u':'</span><span class="p">,</span> <span class="p">(</span><span class="o">...</span><span class="p">),</span> <span class="s">u'A:B:obj1'</span><span class="p">,</span> <span class="s">u'A:B'</span><span class="p">,</span> <span class="s">u'A:B:C:obj1'</span><span class="p">,</span> <span class="s">u'A:B:C'</span><span class="p">,</span> <span class="s">u'A:B:C:obj2'</span><span class="p">,</span> <span class="s">u'A:B:C'</span><span class="p">]</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">select</span><span class="p">(</span> <span class="s">":A:B:obj1"</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">select</span><span class="p">(</span> <span class="s">":A:B:C:obj2"</span><span class="p">,</span> <span class="n">add</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+
+
+<span class="c"># List namespace of all objects named "obj1"</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span> <span class="s">"obj1"</span><span class="p">,</span> <span class="n">showNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">recursive</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="p">[</span><span class="s">u'A:B:obj1'</span><span class="p">,</span> <span class="s">u'A:B'</span><span class="p">,</span> <span class="s">u'A:B:C:obj1'</span><span class="p">,</span> <span class="s">u'A:B:C'</span><span class="p">]</span>
+
+<span class="c"># List both name and namespace of each selected object</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span> <span class="n">showNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">selection</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="p">[</span><span class="s">u'A:B:obj1'</span><span class="p">,</span> <span class="s">u'A:B'</span><span class="p">,</span> <span class="s">u'A:B:C:obj2'</span><span class="p">,</span> <span class="s">u'A:B:C'</span><span class="p">]</span>
+
+<span class="c"># set current Namespace</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="nb">set</span><span class="o">=</span><span class="s">":A:B"</span> <span class="p">)</span>
+
+<span class="c"># enable relative mode</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespae</span><span class="p">(</span> <span class="n">relativeNames</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+
+<span class="c"># Now the current Namespace is ":A:B" and relative mode is on</span>
+<span class="c"># Note that the name of the current namespace is "" in relative mode</span>
+<span class="c"># List both name and namespace of each selected objects</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span> <span class="n">showNamespace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">selection</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="p">[</span><span class="s">u'obj1'</span><span class="p">,</span> <span class="s">u''</span><span class="p">,</span> <span class="s">u'C:obj2'</span><span class="p">,</span> <span class="s">u'C'</span><span class="p">]</span>
+
+<span class="c">#make a new scene modify the transform of the camera perspective, play with the timeline and modified the camera's shape</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">file</span><span class="p">(</span><span class="n">force</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">new</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">setAttr</span><span class="p">(</span><span class="s">'persp.translateX'</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">currentTime</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">setAttr</span><span class="p">(</span><span class="s">'perspShape.horizontalFilmAperture'</span><span class="p">,</span> <span class="mi">16</span><span class="p">)</span>
+
+<span class="c">#list all modified objects of type camera and type time</span>
+<span class="n">allObjects</span><span class="o">=</span><span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="p">[</span><span class="s">'camera'</span><span class="p">,</span><span class="s">'time'</span><span class="p">],</span> <span class="n">modified</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="k">print</span> <span class="n">allObjects</span>
+<span class="c"># Result: [u'perspShape', u'time1']</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span><span class="n">modified</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="c"># Result: [u'persp', u'perspShape', u'time1']</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">ls</span><span class="p">(</span><span class="n">modified</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">excludeType</span><span class="o">=</span><span class="s">'camera'</span><span class="p">)</span>
+<span class="c"># Result: [u'persp', u'time1']</span>
+</pre></div>
+</div>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.general.lockNode.html" title="previous chapter">pymel.core.general.lockNode</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.general.makeIdentity.html" title="next chapter">pymel.core.general.makeIdentity</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.core.general/pymel.core.general.ls.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.general.makeIdentity.html" title="pymel.core.general.makeIdentity">next</a> |</li>
+<li class="right">
+<a href="pymel.core.general.lockNode.html" title="pymel.core.general.lockNode">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.general.html">pymel.core.general</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.general/pymel.core.general.ls.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:32:34 GMT -->
+</body></html>

@@ -1,0 +1,6 @@
+pymel.core.runtime.ConvertToFrozen
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ConvertToFrozen

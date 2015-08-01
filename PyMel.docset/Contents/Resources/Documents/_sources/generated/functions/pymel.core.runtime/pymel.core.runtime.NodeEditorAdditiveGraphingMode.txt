@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorAdditiveGraphingMode
+=================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorAdditiveGraphingMode

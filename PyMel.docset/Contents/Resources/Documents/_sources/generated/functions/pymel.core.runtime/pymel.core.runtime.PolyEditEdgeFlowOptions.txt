@@ -1,0 +1,6 @@
+pymel.core.runtime.PolyEditEdgeFlowOptions
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: PolyEditEdgeFlowOptions

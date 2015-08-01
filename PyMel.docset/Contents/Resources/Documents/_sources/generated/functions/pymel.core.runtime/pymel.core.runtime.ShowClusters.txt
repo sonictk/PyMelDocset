@@ -1,0 +1,6 @@
+pymel.core.runtime.ShowClusters
+===============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ShowClusters

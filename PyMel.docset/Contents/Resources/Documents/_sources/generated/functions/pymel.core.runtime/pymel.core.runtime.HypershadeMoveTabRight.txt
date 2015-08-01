@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeMoveTabRight
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeMoveTabRight

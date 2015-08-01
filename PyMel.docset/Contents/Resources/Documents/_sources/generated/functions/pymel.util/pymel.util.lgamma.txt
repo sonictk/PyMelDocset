@@ -1,0 +1,6 @@
+pymel.util.lgamma
+=================
+
+.. currentmodule:: pymel.util
+
+.. autofunction:: lgamma

@@ -1,0 +1,6 @@
+pymel.core.runtime.OutlinerExpandAllItems
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: OutlinerExpandAllItems

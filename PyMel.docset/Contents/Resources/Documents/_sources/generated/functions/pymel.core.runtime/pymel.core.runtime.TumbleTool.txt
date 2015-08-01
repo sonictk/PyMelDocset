@@ -1,0 +1,6 @@
+pymel.core.runtime.TumbleTool
+=============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: TumbleTool

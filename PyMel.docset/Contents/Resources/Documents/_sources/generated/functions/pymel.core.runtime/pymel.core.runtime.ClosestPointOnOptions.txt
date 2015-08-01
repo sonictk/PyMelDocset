@@ -1,0 +1,6 @@
+pymel.core.runtime.ClosestPointOnOptions
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ClosestPointOnOptions

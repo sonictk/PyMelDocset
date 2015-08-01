@@ -1,0 +1,6 @@
+pymel.core.runtime.SetKeyRotate
+===============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SetKeyRotate

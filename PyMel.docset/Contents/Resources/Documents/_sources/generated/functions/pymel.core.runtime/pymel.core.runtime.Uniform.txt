@@ -1,0 +1,6 @@
+pymel.core.runtime.Uniform
+==========================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: Uniform

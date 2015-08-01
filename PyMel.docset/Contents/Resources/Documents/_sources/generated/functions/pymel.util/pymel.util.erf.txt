@@ -1,0 +1,6 @@
+pymel.util.erf
+==============
+
+.. currentmodule:: pymel.util
+
+.. autofunction:: erf

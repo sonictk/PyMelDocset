@@ -1,0 +1,6 @@
+pymel.core.runtime.VisualizeMetadataOptions
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: VisualizeMetadataOptions

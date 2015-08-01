@@ -1,0 +1,6 @@
+pymel.core.runtime.RefineSelectedComponents
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: RefineSelectedComponents

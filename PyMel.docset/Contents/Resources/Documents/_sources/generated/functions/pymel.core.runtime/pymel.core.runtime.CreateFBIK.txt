@@ -1,0 +1,6 @@
+pymel.core.runtime.CreateFBIK
+=============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreateFBIK

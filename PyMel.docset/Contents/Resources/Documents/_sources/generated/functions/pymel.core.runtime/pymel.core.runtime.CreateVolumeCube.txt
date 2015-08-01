@@ -1,0 +1,6 @@
+pymel.core.runtime.CreateVolumeCube
+===================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreateVolumeCube

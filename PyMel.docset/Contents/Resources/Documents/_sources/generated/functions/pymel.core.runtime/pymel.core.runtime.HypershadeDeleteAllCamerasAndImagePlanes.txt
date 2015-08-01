@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeDeleteAllCamerasAndImagePlanes
+===========================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeDeleteAllCamerasAndImagePlanes

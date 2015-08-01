@@ -1,0 +1,6 @@
+pymel.core.runtime.GoToMaxFrame
+===============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: GoToMaxFrame

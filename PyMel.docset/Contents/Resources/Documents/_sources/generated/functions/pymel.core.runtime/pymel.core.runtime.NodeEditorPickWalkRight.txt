@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorPickWalkRight
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorPickWalkRight

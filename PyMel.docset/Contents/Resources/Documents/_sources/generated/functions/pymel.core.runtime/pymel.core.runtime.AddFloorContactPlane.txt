@@ -1,0 +1,6 @@
+pymel.core.runtime.AddFloorContactPlane
+=======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: AddFloorContactPlane

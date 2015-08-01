@@ -1,0 +1,6 @@
+pymel.core.runtime.SurfaceBooleanSubtractToolOptions
+====================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SurfaceBooleanSubtractToolOptions

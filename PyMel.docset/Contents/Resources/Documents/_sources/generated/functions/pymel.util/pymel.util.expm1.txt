@@ -1,0 +1,6 @@
+pymel.util.expm1
+================
+
+.. currentmodule:: pymel.util
+
+.. autofunction:: expm1

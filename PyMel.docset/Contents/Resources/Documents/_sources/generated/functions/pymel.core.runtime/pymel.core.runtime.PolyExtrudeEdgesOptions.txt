@@ -1,0 +1,6 @@
+pymel.core.runtime.PolyExtrudeEdgesOptions
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: PolyExtrudeEdgesOptions

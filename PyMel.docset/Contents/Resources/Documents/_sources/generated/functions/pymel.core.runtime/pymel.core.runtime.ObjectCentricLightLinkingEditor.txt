@@ -1,0 +1,6 @@
+pymel.core.runtime.ObjectCentricLightLinkingEditor
+==================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ObjectCentricLightLinkingEditor

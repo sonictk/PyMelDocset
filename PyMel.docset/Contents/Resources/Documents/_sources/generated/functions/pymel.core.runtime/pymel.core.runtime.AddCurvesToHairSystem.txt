@@ -1,0 +1,6 @@
+pymel.core.runtime.AddCurvesToHairSystem
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: AddCurvesToHairSystem

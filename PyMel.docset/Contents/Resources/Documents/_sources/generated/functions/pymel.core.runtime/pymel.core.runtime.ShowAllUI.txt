@@ -1,0 +1,6 @@
+pymel.core.runtime.ShowAllUI
+============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ShowAllUI

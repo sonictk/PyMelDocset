@@ -1,0 +1,6 @@
+pymel.core.runtime.SetMeshRepeatTool
+====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SetMeshRepeatTool

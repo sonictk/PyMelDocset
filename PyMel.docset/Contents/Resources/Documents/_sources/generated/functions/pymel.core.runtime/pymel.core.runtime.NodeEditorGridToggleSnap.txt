@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorGridToggleSnap
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorGridToggleSnap

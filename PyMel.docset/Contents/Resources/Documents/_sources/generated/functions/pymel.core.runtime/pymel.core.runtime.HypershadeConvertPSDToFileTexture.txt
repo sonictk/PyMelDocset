@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeConvertPSDToFileTexture
+====================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeConvertPSDToFileTexture

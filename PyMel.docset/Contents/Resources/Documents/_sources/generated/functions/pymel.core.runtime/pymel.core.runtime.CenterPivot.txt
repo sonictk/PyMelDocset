@@ -1,0 +1,6 @@
+pymel.core.runtime.CenterPivot
+==============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CenterPivot

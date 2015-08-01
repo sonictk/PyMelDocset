@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeCollapseAsset
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeCollapseAsset

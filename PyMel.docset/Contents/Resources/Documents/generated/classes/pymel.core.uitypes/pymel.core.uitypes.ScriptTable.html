@@ -1,0 +1,646 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.uitypes/pymel.core.uitypes.ScriptTable.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:19:02 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.uitypes.ScriptTable — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.uitypes.html" rel="up" title="pymel.core.uitypes"/>
+<link href="pymel.core.uitypes.ScriptedPanel.html" rel="next" title="pymel.core.uitypes.ScriptedPanel"/>
+<link href="pymel.core.uitypes.RowLayout.html" rel="prev" title="pymel.core.uitypes.RowLayout"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.uitypes » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.uitypes.ScriptTable ¶ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ class ScriptTable ¶ 
+ class counterpart of mel function scriptTable 
+ This command creates/edits/queries the script table control. 
+ 
+ 
+ afterCellChangedCmd ( val=True , **kwargs ) ¶ 
+ Sets the script to call after the value of a cell has been changed. The procedure is called with 2 integer..." name="description"/><meta content="__PyMel_generated_classes_pymel_core_uitypes_pymel_core_uitypes_ScriptTable_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.uitypes.ScriptedPanel.html" title="pymel.core.uitypes.ScriptedPanel">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.uitypes.RowLayout.html" title="pymel.core.uitypes.RowLayout">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.uitypes.html">pymel.core.uitypes</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-uitypes-scripttable">
+<h1>pymel.core.uitypes.ScriptTable<a class="headerlink" href="#pymel-core-uitypes-scripttable" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img alt="Inheritance diagram of ScriptTable" class="inheritance" src="../../../_images/inheritance-dd4026e591be51fa512171dd36817a33588c53f6.png" usemap="#inheritancea9bb001c4a"/>
+<map id="inheritancea9bb001c4a" name="inheritancea9bb001c4a">
+<area alt="" coords="6,5,78,29" href="pymel.core.uitypes.PyUI.html#pymel.core.uitypes.PyUI" id="node1" shape="rect" title="PyUI"></area>
+<area alt="" coords="5,44,79,68" href="#pymel.core.uitypes.ScriptTable" id="node2" shape="rect" title="class counterpart of mel function `scriptTable`"></area>
+</map>
+</p>
+<dl class="class">
+<dt id="pymel.core.uitypes.ScriptTable"><a name="//apple_ref/cpp/Class/pymel.core.uitypes.ScriptTable"></a>
+<em class="property">class </em><tt class="descname">ScriptTable</tt><a class="headerlink" href="#pymel.core.uitypes.ScriptTable" title="Permalink to this definition">¶</a></dt>
+<dd><p>class counterpart of mel function <tt class="xref py py-obj docutils literal"><span class="pre">scriptTable</span></tt></p>
+<p>This command creates/edits/queries the script table control.</p>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.afterCellChangedCmd"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.afterCellChangedCmd"></a>
+<tt class="descname">afterCellChangedCmd</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.afterCellChangedCmd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the script to call after the value of a cell has been changed. The procedure is called with 2 integer arguments specifying the row and column for which the value was changed. The 3rd argument is the string which was entered into that cell. The procedure does not need to return any value. The row and column numbers passed in are 1-based (i.e. (1,1) is the upper left cell). The procedure should be of the form: global proc procedureName(int $row, int $column, string $value)</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.cellBackgroundColorCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.cellBackgroundColorCommand"></a>
+<tt class="descname">cellBackgroundColorCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.cellBackgroundColorCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the script to call when it requires the background color of a cell. The procedure is called with 2 integer arguments specifying the row and column for which the value is required. The procedure should return an array of ints which is the RGB color value for the cell. The row and column numbers passed in are 1-based (i.e. (1,1) is the upper left cell). The procedure should be of the form: global proc int[] procedureName(int $row, int $column) { return {255,0,0}; // return Red as cell background color }</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.cellChangedCmd"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.cellChangedCmd"></a>
+<tt class="descname">cellChangedCmd</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.cellChangedCmd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the script to call when somebody has changed the value of a cell. The procedure is called with 2 integer arguments specifying the row and column for which the value was changed. The 3rd argument is the string which was entered into that cell. The procedure should return an integer value which indicates whether that value should be accepted (return 1 if yes, and 0 if no). The row and column numbers passed in are 1-based (i.e. (1,1) is the upper left cell). The procedure should be of the form: global proc int procedureName(int $row, int $column, string $value)</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.cellForegroundColorCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.cellForegroundColorCommand"></a>
+<tt class="descname">cellForegroundColorCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.cellForegroundColorCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the script to call when it requires the foreground color of a cell. The procedure is called with 2 integer arguments specifying the row and column for which the value is required. The procedure should return an array of ints which is the RGB color value for the cell. The row and column numbers passed in are 1-based (i.e. (1,1) is the upper left cell). The procedure should be of the form: global proc int[] procedureName(int $row, int $column) { return {0,0,0}; // return Black as Text color }</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.clearRow"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.clearRow"></a>
+<tt class="descname">clearRow</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.clearRow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear the contents for all the cells on the specified row. Any procedure specified by the -gcc flag will be called to populate the cleared cells The row number is 1-based (i.e. the first row is 1 not 0).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.clearTable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.clearTable"></a>
+<tt class="descname">clearTable</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.clearTable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clears the contents of all the cells in the table. Any procedure specified by the -gcc flag will be called to populate the cleared cells</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.columnFilter"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.columnFilter"></a>
+<tt class="descname">columnFilter</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.columnFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filter the specified column with the string value provided. Set filter to columns 0 will apply the filter to all columns. The filter is case insensitive and support wildcards. Wildcard Matching: Wildcard matching is much simpler than full regexps and has only four features: c    Any character represents itself apart from those mentioned below. Thus c matches the character c. ?     Matches any single character. It is the same as . in full regexps. *   Matches zero or more of any characters. It is the same as .* in full regexps. [...]    Sets of characters can be represented in square brackets, similar to full regexps. Within the character class, backslash has no special meaning. (i.e. you can search for MyValuewith y*uor ??Val??or [MyThe]Valueor any letters in MyValueThe column number is 1-based (i.e. the first row is 1 not 0).                         Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.columnWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.columnWidth"></a>
+<tt class="descname">columnWidth</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.columnWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the width of the specified column The column number is 1-based (ie. the first column is 1 not 0).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.deleteRow"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.deleteRow"></a>
+<tt class="descname">deleteRow</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.deleteRow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete the specified row The row number is 1-based (i.e. the first row is 1 not 0).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.dragCallback"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.dragCallback"></a>
+<tt class="descname">dragCallback</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.dragCallback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a callback that is called when the middle mouse button is pressed.  The MEL version of the callback is of the form: global proc string[] callbackName(string $dragControl, int $x, int $y, int $mods) The proc returns a string array that is transferred to the drop site. By convention the first string in the array describes the user settable message type.  Controls that are application defined drag sources may ignore the callback. $mods allows testing for the key modifiers CTL and SHIFT. Possible values are 0 == No modifiers, 1 == SHIFT, 2 == CTL, 3 == CTL + SHIFT. In Python, it is similar, but there are two ways to specify the callback.  The recommended way is to pass a Python function object as the argument.  In that case, the Python callback should have the form: def callbackName( dragControl, x, y, modifiers ): The values of these arguments are the same as those for the MEL version above. The other way to specify the callback in Python is to specify a string to be executed.  In that case, the string will have the values substituted into it via the standard Python format operator.  The format values are passed in a dictionary with the keys dragControl, x, y, modifiers.  The dragControlvalue is a string and the other values are integers (eg the callback string could be print ‘%(dragControl)s %(x)d %(y)d %(modifiers)d’</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.dropCallback"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.dropCallback"></a>
+<tt class="descname">dropCallback</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.dropCallback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a callback that is called when a drag and drop operation is released above the drop site.  The MEL version of the callback is of the form: global proc callbackName(string $dragControl, string $dropControl, string $msgs[], int $x, int $y, int $type) The proc receives a string array that is transferred from the drag source. The first string in the msgs array describes the user defined message type. Controls that are application defined drop sites may ignore the callback. $type can have values of 1 == Move, 2 == Copy, 3 == Link. In Python, it is similar, but there are two ways to specify the callback.  The recommended way is to pass a Python function object as the argument.  In that case, the Python callback should have the form: def pythonDropTest( dragControl, dropControl, messages, x, y, dragType ): The values of these arguments are the same as those for the MEL version above. The other way to specify the callback in Python is to specify a string to be executed.  In that case, the string will have the values substituted into it via the standard Python format operator.  The format values are passed in a dictionary with the keys dragControl, dropControl, messages, x, y, type.  The dragControlvalue is a string and the other values are integers (eg the callback string could be print ‘%(dragControl)s %(dropControl)s %(messages)r %(x)d %(y)d %(type)d’</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getAnnotation"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getAnnotation"></a>
+<tt class="descname">getAnnotation</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getAnnotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Annotate the control with an extra string value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getBackgroundColor"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getBackgroundColor"></a>
+<tt class="descname">getBackgroundColor</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getBackgroundColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>The background color of the control. The arguments correspond to the red, green, and blue color components. Each component ranges in value from 0.0 to 1.0. When setting backgroundColor, the background is automatically enabled, unless enableBackground is also specified with a false value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getCellCmd"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getCellCmd"></a>
+<tt class="descname">getCellCmd</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getCellCmd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the script to call when it requires the contents of a cell. The procedure is called with 2 integer arguments specifying the row and column for which the value is required. The procedure should return a string which is the value for the cell. The row and column numbers passed in are 1-based (ie. (1,1) is the upper left cell). The procedure should be of the form: global proc string procedureName(int $row, int $column)</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getCellIndex"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getCellIndex"></a>
+<tt class="descname">getCellIndex</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getCellIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>used with cellValue , to give the index of row and column This flag and its argument must be passed to the command before the -q flag (see examples).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getCellValue"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getCellValue"></a>
+<tt class="descname">getCellValue</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getCellValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>query and set the cell value on the table by the index of row and column referred in flag -cellIndex.In edit mode, if flag -multiEditEnabled is True and any cell is selected, the flag -cellIndex is not used and the selected cells will be changed.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getColumns"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getColumns"></a>
+<tt class="descname">getColumns</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getColumns" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the number of columns in the table</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getDocTag"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getDocTag"></a>
+<tt class="descname">getDocTag</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getDocTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a documentation flag to the control.  The documentation flag has a directory structure like hierarchy. Eg. -dt render/multiLister/createNode/material</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getEditable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getEditable"></a>
+<tt class="descname">getEditable</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getEditable" title="Permalink to this definition">¶</a></dt>
+<dd><p>The edit state of the table. By default, this flag is set to true, and the table can be edited. If false, then the table is ‘read only’ and cannot be typed into.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getEnable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getEnable"></a>
+<tt class="descname">getEnable</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getEnable" title="Permalink to this definition">¶</a></dt>
+<dd><p>The enable state of the control.  By default, this flag is set to true and the control is enabled.  Specify false and the control will appear dimmed or greyed-out indicating it is disabled.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getEnableBackground"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getEnableBackground"></a>
+<tt class="descname">getEnableBackground</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getEnableBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables the background color of the control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getExcludingHeaders"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getExcludingHeaders"></a>
+<tt class="descname">getExcludingHeaders</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getExcludingHeaders" title="Permalink to this definition">¶</a></dt>
+<dd><p>when querying the count for the rows or the columns , the number returned will not include the headers</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getFullPathName"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getFullPathName"></a>
+<tt class="descname">getFullPathName</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getFullPathName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the full path name of the widget, which includes all the parents</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getHeight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getHeight"></a>
+<tt class="descname">getHeight</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>The height of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getIsObscured"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getIsObscured"></a>
+<tt class="descname">getIsObscured</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getIsObscured" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether the control can actually be seen by the user. The control will be obscured if its state is invisible, if it is blocked (entirely or partially) by some other control, if it or a parent layout is unmanaged, or if the control’s window is invisible or iconified.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getManage"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getManage"></a>
+<tt class="descname">getManage</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getManage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Manage state of the control.  An unmanaged control is not visible, nor does it take up any screen real estate.  All controls are created managed by default.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getMultiEditEnabled"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getMultiEditEnabled"></a>
+<tt class="descname">getMultiEditEnabled</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getMultiEditEnabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>True: scriptTable support multi-editing function</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getNumberOfPopupMenus"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getNumberOfPopupMenus"></a>
+<tt class="descname">getNumberOfPopupMenus</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getNumberOfPopupMenus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of popup menus attached to this control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getPopupMenuArray"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getPopupMenuArray"></a>
+<tt class="descname">getPopupMenuArray</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getPopupMenuArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the names of all the popup menus attached to this control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getPreventOverride"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getPreventOverride"></a>
+<tt class="descname">getPreventOverride</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getPreventOverride" title="Permalink to this definition">¶</a></dt>
+<dd><p>If true, this flag disallows overriding the control’s attribute via the control’s right mouse button menu.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getRowHeight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getRowHeight"></a>
+<tt class="descname">getRowHeight</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getRowHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the height for each row in the scriptTable</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getRows"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getRows"></a>
+<tt class="descname">getRows</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getRows" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the number of rows in the table</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getSelectedCells"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getSelectedCells"></a>
+<tt class="descname">getSelectedCells</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getSelectedCells" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select the cells or return  the cells currently selected. This returns a list of indices, the first of each pair is the row, the second is the column, repeated for each cell selected The returned cell numbers are 1-based (ie. the first row is 1 not 0, the first column is 1 not 0).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getSelectedColumns"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getSelectedColumns"></a>
+<tt class="descname">getSelectedColumns</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getSelectedColumns" title="Permalink to this definition">¶</a></dt>
+<dd><p>select the columns or return the columns currently selected. This returns a list of indices of each column completely selected The returned column numbers are 1-based</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getSelectedRow"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getSelectedRow"></a>
+<tt class="descname">getSelectedRow</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getSelectedRow" title="Permalink to this definition">¶</a></dt>
+<dd><p>The current row selected. The returned row number is 1-based (ie. the first row is 1 not 0).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getSelectedRows"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getSelectedRows"></a>
+<tt class="descname">getSelectedRows</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getSelectedRows" title="Permalink to this definition">¶</a></dt>
+<dd><p>In edit mode, select the rows given as argument. In query mode, return a list of indices of completely selected rows. The row numbers are 1-based</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getSelectionBehavior"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getSelectionBehavior"></a>
+<tt class="descname">getSelectionBehavior</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getSelectionBehavior" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the selection behavior, valid values are from 0 to 2 (inclusive) 0 - Selecting single items. 1 - Selecting only rows. 2 - Selecting only columns.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getSelectionMode"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getSelectionMode"></a>
+<tt class="descname">getSelectionMode</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getSelectionMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the selection Mode, valid values are from 0 to 4 (inclusive)0 - Items cannot be selected.1 - When the user selects an item, any already-selected item becomes unselected, and the user cannot unselect the selected item by clicking on it.2 - When the user selects an item in the usual way, the selection status of that item is toggled and the other items are left alone. Multiple items can be toggled by dragging the mouse over them.3 - When the user selects an item in the usual way, the selection is cleared and the new item selected. However, if the user presses the Ctrl key when clicking on an item, the clicked item gets toggled and all other items are left untouched. If the user presses the Shift key while clicking on an item, all items between the current item and the clicked item are selected or unselected, depending on the state of the clicked item. Multiple items can be selected by dragging the mouse over them.4 - When the user selects an item in the usual way, the selection is cleared and the new item selected. However, if the user presses the Shift key while clicking on an item, all items between the current item and the clicked item are selected or unselected, depending on the state of the clicked item.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getSortEnabled"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getSortEnabled"></a>
+<tt class="descname">getSortEnabled</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getSortEnabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>enable scriptTable sorted by column default value is false and the whole row will be sorted</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getUnderPointerColumn"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getUnderPointerColumn"></a>
+<tt class="descname">getUnderPointerColumn</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getUnderPointerColumn" title="Permalink to this definition">¶</a></dt>
+<dd><p>The column under the pointer. The returned column number is 1-based (i.e. the first column is 1 not 0).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getUnderPointerRow"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getUnderPointerRow"></a>
+<tt class="descname">getUnderPointerRow</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getUnderPointerRow" title="Permalink to this definition">¶</a></dt>
+<dd><p>The row under the pointer. The returned row number is 1-based (i.e. the first row is 1 not 0).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getUseDoubleClickEdit"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getUseDoubleClickEdit"></a>
+<tt class="descname">getUseDoubleClickEdit</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getUseDoubleClickEdit" title="Permalink to this definition">¶</a></dt>
+<dd><p>this controls the cell edit modeFalse: Click in the cell to select (in Row selection, the last cell of the row is edited, in Column selection, the last cell of the column is edited)(default) True:  Clicked in cell is edited when double-clicked only</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getVisible"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getVisible"></a>
+<tt class="descname">getVisible</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getVisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>The visible state of the control.  A control is created visible by default.  Note that a control’s actual appearance is also dependent on the visible state of its parent layout(s).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getVisibleChangeCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getVisibleChangeCommand"></a>
+<tt class="descname">getVisibleChangeCommand</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getVisibleChangeCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command that gets executed when visible state of the control changes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.getWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.getWidth"></a>
+<tt class="descname">getWidth</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.getWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>The width of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.insertRow"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.insertRow"></a>
+<tt class="descname">insertRow</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.insertRow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insert an empty row before the specified row. Any procedure specified by the -gcc flag will be called to populate the new new cells. The row number is 1-based (i.e. the first row is 1 not 0).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.label"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.label"></a>
+<tt class="descname">label</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.label" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the label of the specified column. The column number is 1-based (ie. the first column is 1 not 0).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.noBackground"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.noBackground"></a>
+<tt class="descname">noBackground</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.noBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear/reset the control’s background. Passing true means the background should not be drawn at all, false means the background should be drawn.  The state of this flag is inherited by children of this control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.rowsRemovedCmd"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.rowsRemovedCmd"></a>
+<tt class="descname">rowsRemovedCmd</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.rowsRemovedCmd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the script to call after rows are removed by pressing ‘delete’ or ‘backspace’ key. The procedure is called with one argument specifying that selected rows have been removed. The rows passed in are 1-based. The procedure should be of the form: global proc procedureName(int $rows[])</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.rowsToBeRemovedCmd"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.rowsToBeRemovedCmd"></a>
+<tt class="descname">rowsToBeRemovedCmd</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.rowsToBeRemovedCmd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the script to call when ‘delete’ or ‘backspace’ key is pressed. The procedure is called with one argument specifying the selected rows to be removed. The procedure should return an integer value which indicates whether the selected rows should be removed (return 1 if yes, and 0 if no). The rows passed in are 1-based. The procedure should be of the form: global proc int procedureName(int $rows[])</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.selectionChangedCmd"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.selectionChangedCmd"></a>
+<tt class="descname">selectionChangedCmd</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.selectionChangedCmd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the script to call when a complete selection operation triggered by the user has occurred successfully. The script does not pass any parameters and does not need to return any value (i.e. It is simply a notification mechanism).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setAnnotation"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setAnnotation"></a>
+<tt class="descname">setAnnotation</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setAnnotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Annotate the control with an extra string value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setBackgroundColor"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setBackgroundColor"></a>
+<tt class="descname">setBackgroundColor</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setBackgroundColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>The background color of the control. The arguments correspond to the red, green, and blue color components. Each component ranges in value from 0.0 to 1.0. When setting backgroundColor, the background is automatically enabled, unless enableBackground is also specified with a false value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setCellIndex"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setCellIndex"></a>
+<tt class="descname">setCellIndex</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setCellIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>used with cellValue , to give the index of row and column This flag and its argument must be passed to the command before the -q flag (see examples).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setCellValue"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setCellValue"></a>
+<tt class="descname">setCellValue</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setCellValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>query and set the cell value on the table by the index of row and column referred in flag -cellIndex.In edit mode, if flag -multiEditEnabled is True and any cell is selected, the flag -cellIndex is not used and the selected cells will be changed.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setColumns"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setColumns"></a>
+<tt class="descname">setColumns</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setColumns" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the number of columns in the table</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setDocTag"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setDocTag"></a>
+<tt class="descname">setDocTag</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setDocTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a documentation flag to the control.  The documentation flag has a directory structure like hierarchy. Eg. -dt render/multiLister/createNode/material</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setEditable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setEditable"></a>
+<tt class="descname">setEditable</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setEditable" title="Permalink to this definition">¶</a></dt>
+<dd><p>The edit state of the table. By default, this flag is set to true, and the table can be edited. If false, then the table is ‘read only’ and cannot be typed into.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setEnable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setEnable"></a>
+<tt class="descname">setEnable</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setEnable" title="Permalink to this definition">¶</a></dt>
+<dd><p>The enable state of the control.  By default, this flag is set to true and the control is enabled.  Specify false and the control will appear dimmed or greyed-out indicating it is disabled.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setEnableBackground"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setEnableBackground"></a>
+<tt class="descname">setEnableBackground</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setEnableBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables the background color of the control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setHeight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setHeight"></a>
+<tt class="descname">setHeight</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>The height of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setManage"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setManage"></a>
+<tt class="descname">setManage</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setManage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Manage state of the control.  An unmanaged control is not visible, nor does it take up any screen real estate.  All controls are created managed by default.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setMultiEditEnabled"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setMultiEditEnabled"></a>
+<tt class="descname">setMultiEditEnabled</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setMultiEditEnabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>True: scriptTable support multi-editing function</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setPreventOverride"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setPreventOverride"></a>
+<tt class="descname">setPreventOverride</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setPreventOverride" title="Permalink to this definition">¶</a></dt>
+<dd><p>If true, this flag disallows overriding the control’s attribute via the control’s right mouse button menu.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setRowHeight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setRowHeight"></a>
+<tt class="descname">setRowHeight</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setRowHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the height for each row in the scriptTable</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setRows"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setRows"></a>
+<tt class="descname">setRows</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setRows" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the number of rows in the table</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setSelectedCells"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setSelectedCells"></a>
+<tt class="descname">setSelectedCells</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setSelectedCells" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select the cells or return  the cells currently selected. This returns a list of indices, the first of each pair is the row, the second is the column, repeated for each cell selected The returned cell numbers are 1-based (ie. the first row is 1 not 0, the first column is 1 not 0).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setSelectedColumns"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setSelectedColumns"></a>
+<tt class="descname">setSelectedColumns</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setSelectedColumns" title="Permalink to this definition">¶</a></dt>
+<dd><p>select the columns or return the columns currently selected. This returns a list of indices of each column completely selected The returned column numbers are 1-based</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setSelectedRows"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setSelectedRows"></a>
+<tt class="descname">setSelectedRows</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setSelectedRows" title="Permalink to this definition">¶</a></dt>
+<dd><p>In edit mode, select the rows given as argument. In query mode, return a list of indices of completely selected rows. The row numbers are 1-based</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setSelectionBehavior"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setSelectionBehavior"></a>
+<tt class="descname">setSelectionBehavior</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setSelectionBehavior" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the selection behavior, valid values are from 0 to 2 (inclusive) 0 - Selecting single items. 1 - Selecting only rows. 2 - Selecting only columns.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setSelectionMode"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setSelectionMode"></a>
+<tt class="descname">setSelectionMode</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setSelectionMode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the selection Mode, valid values are from 0 to 4 (inclusive)0 - Items cannot be selected.1 - When the user selects an item, any already-selected item becomes unselected, and the user cannot unselect the selected item by clicking on it.2 - When the user selects an item in the usual way, the selection status of that item is toggled and the other items are left alone. Multiple items can be toggled by dragging the mouse over them.3 - When the user selects an item in the usual way, the selection is cleared and the new item selected. However, if the user presses the Ctrl key when clicking on an item, the clicked item gets toggled and all other items are left untouched. If the user presses the Shift key while clicking on an item, all items between the current item and the clicked item are selected or unselected, depending on the state of the clicked item. Multiple items can be selected by dragging the mouse over them.4 - When the user selects an item in the usual way, the selection is cleared and the new item selected. However, if the user presses the Shift key while clicking on an item, all items between the current item and the clicked item are selected or unselected, depending on the state of the clicked item.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setSortEnabled"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setSortEnabled"></a>
+<tt class="descname">setSortEnabled</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setSortEnabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>enable scriptTable sorted by column default value is false and the whole row will be sorted</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setUseDoubleClickEdit"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setUseDoubleClickEdit"></a>
+<tt class="descname">setUseDoubleClickEdit</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setUseDoubleClickEdit" title="Permalink to this definition">¶</a></dt>
+<dd><p>this controls the cell edit modeFalse: Click in the cell to select (in Row selection, the last cell of the row is edited, in Column selection, the last cell of the column is edited)(default) True:  Clicked in cell is edited when double-clicked only</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setVisible"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setVisible"></a>
+<tt class="descname">setVisible</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setVisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>The visible state of the control.  A control is created visible by default.  Note that a control’s actual appearance is also dependent on the visible state of its parent layout(s).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setVisibleChangeCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setVisibleChangeCommand"></a>
+<tt class="descname">setVisibleChangeCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setVisibleChangeCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command that gets executed when visible state of the control changes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.ScriptTable.setWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.ScriptTable.setWidth"></a>
+<tt class="descname">setWidth</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.ScriptTable.setWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>The width of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.scriptTable</span></tt></p>
+</dd></dl>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.uitypes.RowLayout.html" title="previous chapter">pymel.core.uitypes.RowLayout</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.uitypes.ScriptedPanel.html" title="next chapter">pymel.core.uitypes.ScriptedPanel</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/classes/pymel.core.uitypes/pymel.core.uitypes.ScriptTable.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.uitypes.ScriptedPanel.html" title="pymel.core.uitypes.ScriptedPanel">next</a> |</li>
+<li class="right">
+<a href="pymel.core.uitypes.RowLayout.html" title="pymel.core.uitypes.RowLayout">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.uitypes.html">pymel.core.uitypes</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.uitypes/pymel.core.uitypes.ScriptTable.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:19:03 GMT -->
+</body></html>

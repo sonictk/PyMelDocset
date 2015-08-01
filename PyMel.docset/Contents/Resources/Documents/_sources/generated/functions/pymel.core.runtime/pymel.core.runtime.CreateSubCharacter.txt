@@ -1,0 +1,6 @@
+pymel.core.runtime.CreateSubCharacter
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreateSubCharacter

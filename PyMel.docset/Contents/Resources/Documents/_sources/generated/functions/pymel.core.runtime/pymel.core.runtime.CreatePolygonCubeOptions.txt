@@ -1,0 +1,6 @@
+pymel.core.runtime.CreatePolygonCubeOptions
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreatePolygonCubeOptions

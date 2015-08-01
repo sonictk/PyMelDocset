@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeSelectUpStream
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeSelectUpStream

@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorToggleZoomIn
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorToggleZoomIn

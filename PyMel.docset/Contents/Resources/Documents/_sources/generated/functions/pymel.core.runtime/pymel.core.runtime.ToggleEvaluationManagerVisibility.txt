@@ -1,0 +1,6 @@
+pymel.core.runtime.ToggleEvaluationManagerVisibility
+====================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ToggleEvaluationManagerVisibility

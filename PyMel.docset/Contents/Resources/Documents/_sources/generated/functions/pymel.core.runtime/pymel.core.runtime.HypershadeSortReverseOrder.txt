@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeSortReverseOrder
+=============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeSortReverseOrder

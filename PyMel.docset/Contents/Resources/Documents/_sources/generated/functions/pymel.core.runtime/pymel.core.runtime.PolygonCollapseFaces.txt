@@ -1,0 +1,6 @@
+pymel.core.runtime.PolygonCollapseFaces
+=======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: PolygonCollapseFaces

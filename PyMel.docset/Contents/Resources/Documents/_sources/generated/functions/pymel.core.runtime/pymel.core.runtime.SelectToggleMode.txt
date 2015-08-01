@@ -1,0 +1,6 @@
+pymel.core.runtime.SelectToggleMode
+===================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SelectToggleMode

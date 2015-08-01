@@ -1,0 +1,11 @@
+pymel.util.ChangedKey
+=====================
+
+.. currentmodule:: pymel.util
+
+.. inheritance-diagram:: ChangedKey
+    :parts: 1
+
+.. autoclass:: ChangedKey
+    :members:
+    :undoc-members:

@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeAutoSizeNodes
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeAutoSizeNodes

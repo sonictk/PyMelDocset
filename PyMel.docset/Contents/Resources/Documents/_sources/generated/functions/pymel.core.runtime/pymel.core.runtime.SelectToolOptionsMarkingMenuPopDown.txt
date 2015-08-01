@@ -1,0 +1,6 @@
+pymel.core.runtime.SelectToolOptionsMarkingMenuPopDown
+======================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SelectToolOptionsMarkingMenuPopDown

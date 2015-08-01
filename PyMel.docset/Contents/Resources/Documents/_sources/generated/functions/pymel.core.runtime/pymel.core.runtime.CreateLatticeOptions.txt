@@ -1,0 +1,6 @@
+pymel.core.runtime.CreateLatticeOptions
+=======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreateLatticeOptions

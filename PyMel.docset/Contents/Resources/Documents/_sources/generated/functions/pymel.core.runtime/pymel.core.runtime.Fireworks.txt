@@ -1,0 +1,6 @@
+pymel.core.runtime.Fireworks
+============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: Fireworks

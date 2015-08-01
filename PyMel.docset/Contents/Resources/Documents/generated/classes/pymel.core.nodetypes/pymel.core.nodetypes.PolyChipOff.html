@@ -1,0 +1,809 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.nodetypes/pymel.core.nodetypes.PolyChipOff.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:21:26 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.nodetypes.PolyChipOff — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.nodetypes.html" rel="up" title="pymel.core.nodetypes"/>
+<link href="pymel.core.nodetypes.PolyCloseBorder.html" rel="next" title="pymel.core.nodetypes.PolyCloseBorder"/>
+<link href="pymel.core.nodetypes.PolyCBoolOp.html" rel="prev" title="pymel.core.nodetypes.PolyCBoolOp"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.nodetypes » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.nodetypes.PolyChipOff ¶ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ class PolyChipOff ( *args , **kwargs ) ¶ 
+ class counterpart of mel function polyChipOff 
+ Extract facets. Faces can be extracted separately or together, and manipulations can be performed either in world or object space. 
+ 
+ 
+ MAttrClass = Enum( EnumValue('MAttrClass', 1,..." name="description"/><meta content="__PyMel_generated_classes_pymel_core_nodetypes_pymel_core_nodetypes_PolyChipOff_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.nodetypes.PolyCloseBorder.html" title="pymel.core.nodetypes.PolyCloseBorder">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.nodetypes.PolyCBoolOp.html" title="pymel.core.nodetypes.PolyCBoolOp">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.nodetypes.html">pymel.core.nodetypes</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-nodetypes-polychipoff">
+<h1>pymel.core.nodetypes.PolyChipOff<a class="headerlink" href="#pymel-core-nodetypes-polychipoff" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img alt="Inheritance diagram of PolyChipOff" class="inheritance" src="../../../_images/inheritance-aee2b9e35831dce2030a12bd07beb30bab8c3f52.png" usemap="#inheritance6eb35cffe7"/>
+<map id="inheritance6eb35cffe7" name="inheritance6eb35cffe7">
+<area alt="" coords="17,83,101,107" href="pymel.core.nodetypes.DependNode.html#pymel.core.nodetypes.DependNode" id="node1" shape="rect" title="DependNode"></area>
+<area alt="" coords="23,121,95,145" href="pymel.core.nodetypes.PolyBase.html#pymel.core.nodetypes.PolyBase" id="node3" shape="rect" title="PolyBase"></area>
+<area alt="" coords="23,44,95,68" href="../pymel.core.general/pymel.core.general.PyNode.html#pymel.core.general.PyNode" id="node2" shape="rect" title="Abstract class that is base for all pymel nodes classes."></area>
+<area alt="" coords="19,160,99,184" href="pymel.core.nodetypes.PolyModifier.html#pymel.core.nodetypes.PolyModifier" id="node6" shape="rect" title="PolyModifier"></area>
+<area alt="" coords="20,353,98,377" href="#pymel.core.nodetypes.PolyChipOff" id="node4" shape="rect" title="class counterpart of mel function `polyChipOff`"></area>
+<area alt="" coords="13,315,105,339" href="pymel.core.nodetypes.PolyMoveFace.html#pymel.core.nodetypes.PolyMoveFace" id="node5" shape="rect" title="PolyMoveFace"></area>
+<area alt="" coords="5,199,113,223" href="pymel.core.nodetypes.PolyModifierWorld.html#pymel.core.nodetypes.PolyModifierWorld" id="node7" shape="rect" title="PolyModifierWorld"></area>
+<area alt="" coords="10,237,108,261" href="pymel.core.nodetypes.PolyMoveVertex.html#pymel.core.nodetypes.PolyMoveVertex" id="node9" shape="rect" title="class counterpart of mel function `polyMoveVertex`"></area>
+<area alt="" coords="13,276,106,300" href="pymel.core.nodetypes.PolyMoveEdge.html#pymel.core.nodetypes.PolyMoveEdge" id="node8" shape="rect" title="class counterpart of mel function `polyMoveEdge`"></area>
+<area alt="" coords="15,5,103,29" href="../pymel.util.utilitytypes/pymel.util.utilitytypes.ProxyUnicode.html#pymel.util.utilitytypes.ProxyUnicode" id="node10" shape="rect" title="ProxyUnicode"></area>
+</map>
+</p>
+<dl class="class">
+<dt id="pymel.core.nodetypes.PolyChipOff"><a name="//apple_ref/cpp/Class/pymel.core.nodetypes.PolyChipOff"></a>
+<em class="property">class </em><tt class="descname">PolyChipOff</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff" title="Permalink to this definition">¶</a></dt>
+<dd><p>class counterpart of mel function <tt class="xref py py-obj docutils literal"><span class="pre">polyChipOff</span></tt></p>
+<p>Extract facets. Faces can be extracted separately or together, and manipulations can be performed either in world or object space.</p>
+<dl class="attribute">
+<dt id="pymel.core.nodetypes.PolyChipOff.MAttrClass"><a name="//apple_ref/cpp/Attribute/pymel.core.nodetypes.PolyChipOff.MAttrClass"></a>
+<tt class="descname">MAttrClass</tt><em class="property"> = Enum( EnumValue('MAttrClass', 1, 'localDynamicAttr'), EnumValue('MAttrClass', 2, 'normalAttr'), EnumValue('MAttrClass', 3, 'extensionAttr'), EnumValue('MAttrClass', 4, 'invalidAttr'))</em><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.MAttrClass" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.nodetypes.PolyChipOff.MdgTimerMetric"><a name="//apple_ref/cpp/Attribute/pymel.core.nodetypes.PolyChipOff.MdgTimerMetric"></a>
+<tt class="descname">MdgTimerMetric</tt><em class="property"> = Enum( EnumValue('MdgTimerMetric', 0, 'metric_callback'), EnumValue('MdgTimerMetric', 1, 'metric_compute'), EnumValue('MdgTimerMetric', 2, 'metric_dirty'), EnumValue('MdgTimerMetric', 3, 'metric_draw'), EnumValue('MdgTimerMetric', 4, 'metric_fetch'), EnumValue('MdgTimerMetric', 5, 'metric_callbackViaAPI'), EnumValue('MdgTimerMetric', 6, 'metric_callbackNotViaAPI'), EnumValue('MdgTimerMetric', 7, 'metric_computeDuringCallback'), EnumValue('MdgTimerMetric', 8, 'metric_computeNotDuringCallback'), EnumValue('MdgTimerMetric', 9, 'metrics'))</em><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.MdgTimerMetric" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.nodetypes.PolyChipOff.MdgTimerState"><a name="//apple_ref/cpp/Attribute/pymel.core.nodetypes.PolyChipOff.MdgTimerState"></a>
+<tt class="descname">MdgTimerState</tt><em class="property"> = Enum( EnumValue('MdgTimerState', 0, 'off'), EnumValue('MdgTimerState', 1, 'on'), EnumValue('MdgTimerState', 2, 'uninitialized'), EnumValue('MdgTimerState', 3, 'invalidState'))</em><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.MdgTimerState" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.nodetypes.PolyChipOff.MdgTimerType"><a name="//apple_ref/cpp/Attribute/pymel.core.nodetypes.PolyChipOff.MdgTimerType"></a>
+<tt class="descname">MdgTimerType</tt><em class="property"> = Enum( EnumValue('MdgTimerType', 0, 'type_self'), EnumValue('MdgTimerType', 1, 'type_inclusive'), EnumValue('MdgTimerType', 2, 'type_count'), EnumValue('MdgTimerType', 3, 'types'))</em><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.MdgTimerType" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.caching"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.caching"></a>
+<tt class="descname">caching</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.caching" title="Permalink to this definition">¶</a></dt>
+<dd><p>Toggle caching for all attributes so that no recomputation is needed</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getAttraction"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getAttraction"></a>
+<tt class="descname">getAttraction</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getAttraction" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the attraction, related to magnet. C: Default is 0.0. The range is [-2.0, 2.0]. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getConstructionHistory"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getConstructionHistory"></a>
+<tt class="descname">getConstructionHistory</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getConstructionHistory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turn the construction history on or off (where applicable). If construction history is on then the corresponding node will be inserted into the history chain for the mesh. If construction history is off then the operation will be performed directly on the object. Note:If the object already has construction history then this flag is ignored and the node will always be inserted into the history chain.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getDuplicate"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getDuplicate"></a>
+<tt class="descname">getDuplicate</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getDuplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>If on, facets are duplicated, otherwise original facets are removed. C: Default is on. Q: When queried, this flag returns an int.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getGravity"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getGravity"></a>
+<tt class="descname">getGravity</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getGravity" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the gravity vector. C: Default is 0.0 -1.0 0.0. Q: When queried, this flag returns a float[3].</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getGravityX"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getGravityX"></a>
+<tt class="descname">getGravityX</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getGravityX" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies X for the gravity vector. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getGravityY"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getGravityY"></a>
+<tt class="descname">getGravityY</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getGravityY" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies Y for the gravity vector. C: Default is -1.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getGravityZ"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getGravityZ"></a>
+<tt class="descname">getGravityZ</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getGravityZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies Z for the gravity vector. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getKeepFacesTogether"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getKeepFacesTogether"></a>
+<tt class="descname">getKeepFacesTogether</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getKeepFacesTogether" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies how to chip off facets. If on, facets are pulled together (connected ones stay connected), otherwise they are pulled independentely. C: Default is on. Q: When queried, this flag returns an int.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getLocalDirection"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getLocalDirection"></a>
+<tt class="descname">getLocalDirection</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getLocalDirection" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the local slant axis (see local rotation). C: Default is 0.0 0.0 1.0. Q: When queried, this flag returns a float[3].</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getLocalDirectionX"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getLocalDirectionX"></a>
+<tt class="descname">getLocalDirectionX</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getLocalDirectionX" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies X for the local slant axis. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getLocalDirectionY"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getLocalDirectionY"></a>
+<tt class="descname">getLocalDirectionY</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getLocalDirectionY" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies Y for the local slant axis. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getLocalDirectionZ"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getLocalDirectionZ"></a>
+<tt class="descname">getLocalDirectionZ</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getLocalDirectionZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies Y for the local slant axis. C: Default is 1.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getLocalRotate"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getLocalRotate"></a>
+<tt class="descname">getLocalRotate</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getLocalRotate" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the local rotations : (slantRot, slantRoll, twistRot). C: Default is 0.0 0.0 0.0. Q: When queried, this flag returns a float[3]. Local rotation (slantRot, slantRoll, twistRot).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getLocalRotateX"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getLocalRotateX"></a>
+<tt class="descname">getLocalRotateX</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getLocalRotateX" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies local rotation X angle (Slant Rot around slantAxis). C: Default is 0.0. The range is [0, 360]. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getLocalRotateY"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getLocalRotateY"></a>
+<tt class="descname">getLocalRotateY</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getLocalRotateY" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies local rotation Y angle (Slant Roll of slantAxis). C: Default is 0.0. The range is [0, 180]. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getLocalRotateZ"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getLocalRotateZ"></a>
+<tt class="descname">getLocalRotateZ</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getLocalRotateZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies local rotation Z angle (Twist around normal). C: Default is 0.0. The range is [0, 360]. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getLocalScale"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getLocalScale"></a>
+<tt class="descname">getLocalScale</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getLocalScale" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the local scaling vector. C: Default is 1.0 1.0 1.0. Q: When queried, this flag returns a float[3].</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getLocalScaleX"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getLocalScaleX"></a>
+<tt class="descname">getLocalScaleX</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getLocalScaleX" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies X for local scaling vector. C: Default is 1.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getLocalScaleY"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getLocalScaleY"></a>
+<tt class="descname">getLocalScaleY</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getLocalScaleY" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies Y for local scaling vector. C: Default is 1.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getLocalScaleZ"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getLocalScaleZ"></a>
+<tt class="descname">getLocalScaleZ</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getLocalScaleZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies Z for local scaling vector : Flattening. C: Default is 1.0. The range is [0.0, 1.0]. Q: When queried, this flag returns a float. Dynamic Values</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getLocalTranslate"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getLocalTranslate"></a>
+<tt class="descname">getLocalTranslate</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getLocalTranslate" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the local translation vector. C: Default is 0.0 0.0 0.0. Q: When queried, this flag returns a float[3].</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getLocalTranslateX"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getLocalTranslateX"></a>
+<tt class="descname">getLocalTranslateX</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getLocalTranslateX" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the X local translation vector. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getLocalTranslateY"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getLocalTranslateY"></a>
+<tt class="descname">getLocalTranslateY</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getLocalTranslateY" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the Y local translation vector. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getLocalTranslateZ"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getLocalTranslateZ"></a>
+<tt class="descname">getLocalTranslateZ</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getLocalTranslateZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the Z local translation vector. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getMagnX"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getMagnX"></a>
+<tt class="descname">getMagnX</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getMagnX" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies X for the magnet vector. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getMagnY"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getMagnY"></a>
+<tt class="descname">getMagnY</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getMagnY" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies Y for the magnet vector. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getMagnZ"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getMagnZ"></a>
+<tt class="descname">getMagnZ</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getMagnZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies Z for the magnet vector. C: Default is 0.0. Q: When queried, this flag returns a float.                       Common flags</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getMagnet"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getMagnet"></a>
+<tt class="descname">getMagnet</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getMagnet" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the magnet vector. C: Default is 0.0 0.0 0.0. Q: When queried, this flag returns a float[3].</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getNodeState"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getNodeState"></a>
+<tt class="descname">getNodeState</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getNodeState" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines how to evaluate the node. 0: Normal1: PassThrough2: Blocking3: Internally disabled. Will return to Normal state when enabled4: Internally disabled. Will return to PassThrough state when enabled5: Internally disabled. Will return to Blocking state when enabledFlag can have multiple arguments, passed either as a tuple or a list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getOffset"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getOffset"></a>
+<tt class="descname">getOffset</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getOffset" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the local offset. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getPivot"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getPivot"></a>
+<tt class="descname">getPivot</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getPivot" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the pivot for scaling and rotation. C: Default is 0.0 0.0 0.0. Q: When queried, this flag returns a float[3].</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getPivotX"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getPivotX"></a>
+<tt class="descname">getPivotX</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getPivotX" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the X pivot for scaling and rotation. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getPivotY"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getPivotY"></a>
+<tt class="descname">getPivotY</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getPivotY" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the Y pivot for scaling and rotation. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getPivotZ"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getPivotZ"></a>
+<tt class="descname">getPivotZ</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getPivotZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the Z pivot for scaling and rotation. C: Default is 0.0. Q: When queried, this flag returns a float. Local Values</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getRandom"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getRandom"></a>
+<tt class="descname">getRandom</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getRandom" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the random value for all parameters. C: Default is 0.0. The range is [-10.0, 10.0]. Q: When queried, this flag returns a float. Global Values</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getRotate"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getRotate"></a>
+<tt class="descname">getRotate</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getRotate" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the rotation angles around X, Y, Z. C: Default is 0.0 0.0 0.0. Q: When queried, this flag returns a float[3].</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getRotateX"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getRotateX"></a>
+<tt class="descname">getRotateX</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getRotateX" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the rotation angle around X. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getRotateY"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getRotateY"></a>
+<tt class="descname">getRotateY</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getRotateY" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the rotation angle around Y. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getRotateZ"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getRotateZ"></a>
+<tt class="descname">getRotateZ</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getRotateZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the rotation angle around Z. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getScale"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getScale"></a>
+<tt class="descname">getScale</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getScale" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the scaling vector. C: Default is 1.0 1.0 1.0. Q: When queried, this flag returns a float[3].</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getScaleX"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getScaleX"></a>
+<tt class="descname">getScaleX</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getScaleX" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies X for scaling vector. C: Default is 1.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getScaleY"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getScaleY"></a>
+<tt class="descname">getScaleY</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getScaleY" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies Y for scaling vector. C: Default is 1.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getScaleZ"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getScaleZ"></a>
+<tt class="descname">getScaleZ</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getScaleZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies Z for scaling vector. C: Default is 1.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getTranslate"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getTranslate"></a>
+<tt class="descname">getTranslate</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getTranslate" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the translation vector. C: Default is 0.0 0.0 0.0. Q: When queried, this flag returns a float[3].</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getTranslateX"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getTranslateX"></a>
+<tt class="descname">getTranslateX</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getTranslateX" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the X translation vector. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getTranslateY"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getTranslateY"></a>
+<tt class="descname">getTranslateY</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getTranslateY" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the Y translation vector. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getTranslateZ"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getTranslateZ"></a>
+<tt class="descname">getTranslateZ</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getTranslateZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the Z translation vector. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getWeight"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getWeight"></a>
+<tt class="descname">getWeight</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getWeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the weight, related to gravity. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.getWorldSpace"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.getWorldSpace"></a>
+<tt class="descname">getWorldSpace</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.getWorldSpace" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies which reference to use. If on: all geometrical values are taken in world reference. If off: all geometrical values are taken in object reference. C: Default is off. Q: When queried, this flag returns an int.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setAttraction"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setAttraction"></a>
+<tt class="descname">setAttraction</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setAttraction" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the attraction, related to magnet. C: Default is 0.0. The range is [-2.0, 2.0]. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setDuplicate"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setDuplicate"></a>
+<tt class="descname">setDuplicate</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setDuplicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>If on, facets are duplicated, otherwise original facets are removed. C: Default is on. Q: When queried, this flag returns an int.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setGravity"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setGravity"></a>
+<tt class="descname">setGravity</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setGravity" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the gravity vector. C: Default is 0.0 -1.0 0.0. Q: When queried, this flag returns a float[3].</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setGravityX"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setGravityX"></a>
+<tt class="descname">setGravityX</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setGravityX" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies X for the gravity vector. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setGravityY"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setGravityY"></a>
+<tt class="descname">setGravityY</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setGravityY" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies Y for the gravity vector. C: Default is -1.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setGravityZ"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setGravityZ"></a>
+<tt class="descname">setGravityZ</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setGravityZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies Z for the gravity vector. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setKeepFacesTogether"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setKeepFacesTogether"></a>
+<tt class="descname">setKeepFacesTogether</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setKeepFacesTogether" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies how to chip off facets. If on, facets are pulled together (connected ones stay connected), otherwise they are pulled independentely. C: Default is on. Q: When queried, this flag returns an int.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setLocalDirection"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setLocalDirection"></a>
+<tt class="descname">setLocalDirection</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setLocalDirection" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the local slant axis (see local rotation). C: Default is 0.0 0.0 1.0. Q: When queried, this flag returns a float[3].</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setLocalDirectionX"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setLocalDirectionX"></a>
+<tt class="descname">setLocalDirectionX</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setLocalDirectionX" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies X for the local slant axis. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setLocalDirectionY"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setLocalDirectionY"></a>
+<tt class="descname">setLocalDirectionY</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setLocalDirectionY" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies Y for the local slant axis. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setLocalDirectionZ"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setLocalDirectionZ"></a>
+<tt class="descname">setLocalDirectionZ</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setLocalDirectionZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies Y for the local slant axis. C: Default is 1.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setLocalRotate"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setLocalRotate"></a>
+<tt class="descname">setLocalRotate</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setLocalRotate" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the local rotations : (slantRot, slantRoll, twistRot). C: Default is 0.0 0.0 0.0. Q: When queried, this flag returns a float[3]. Local rotation (slantRot, slantRoll, twistRot).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setLocalRotateX"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setLocalRotateX"></a>
+<tt class="descname">setLocalRotateX</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setLocalRotateX" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies local rotation X angle (Slant Rot around slantAxis). C: Default is 0.0. The range is [0, 360]. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setLocalRotateY"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setLocalRotateY"></a>
+<tt class="descname">setLocalRotateY</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setLocalRotateY" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies local rotation Y angle (Slant Roll of slantAxis). C: Default is 0.0. The range is [0, 180]. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setLocalRotateZ"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setLocalRotateZ"></a>
+<tt class="descname">setLocalRotateZ</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setLocalRotateZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies local rotation Z angle (Twist around normal). C: Default is 0.0. The range is [0, 360]. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setLocalScale"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setLocalScale"></a>
+<tt class="descname">setLocalScale</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setLocalScale" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the local scaling vector. C: Default is 1.0 1.0 1.0. Q: When queried, this flag returns a float[3].</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setLocalScaleX"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setLocalScaleX"></a>
+<tt class="descname">setLocalScaleX</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setLocalScaleX" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies X for local scaling vector. C: Default is 1.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setLocalScaleY"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setLocalScaleY"></a>
+<tt class="descname">setLocalScaleY</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setLocalScaleY" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies Y for local scaling vector. C: Default is 1.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setLocalScaleZ"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setLocalScaleZ"></a>
+<tt class="descname">setLocalScaleZ</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setLocalScaleZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies Z for local scaling vector : Flattening. C: Default is 1.0. The range is [0.0, 1.0]. Q: When queried, this flag returns a float. Dynamic Values</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setLocalTranslate"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setLocalTranslate"></a>
+<tt class="descname">setLocalTranslate</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setLocalTranslate" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the local translation vector. C: Default is 0.0 0.0 0.0. Q: When queried, this flag returns a float[3].</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setLocalTranslateX"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setLocalTranslateX"></a>
+<tt class="descname">setLocalTranslateX</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setLocalTranslateX" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the X local translation vector. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setLocalTranslateY"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setLocalTranslateY"></a>
+<tt class="descname">setLocalTranslateY</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setLocalTranslateY" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the Y local translation vector. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setLocalTranslateZ"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setLocalTranslateZ"></a>
+<tt class="descname">setLocalTranslateZ</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setLocalTranslateZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the Z local translation vector. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setMagnX"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setMagnX"></a>
+<tt class="descname">setMagnX</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setMagnX" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies X for the magnet vector. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setMagnY"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setMagnY"></a>
+<tt class="descname">setMagnY</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setMagnY" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies Y for the magnet vector. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setMagnZ"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setMagnZ"></a>
+<tt class="descname">setMagnZ</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setMagnZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies Z for the magnet vector. C: Default is 0.0. Q: When queried, this flag returns a float.                       Common flags</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setMagnet"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setMagnet"></a>
+<tt class="descname">setMagnet</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setMagnet" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the magnet vector. C: Default is 0.0 0.0 0.0. Q: When queried, this flag returns a float[3].</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setNodeState"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setNodeState"></a>
+<tt class="descname">setNodeState</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setNodeState" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines how to evaluate the node. 0: Normal1: PassThrough2: Blocking3: Internally disabled. Will return to Normal state when enabled4: Internally disabled. Will return to PassThrough state when enabled5: Internally disabled. Will return to Blocking state when enabledFlag can have multiple arguments, passed either as a tuple or a list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setOffset"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setOffset"></a>
+<tt class="descname">setOffset</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setOffset" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the local offset. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setPivot"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setPivot"></a>
+<tt class="descname">setPivot</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setPivot" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the pivot for scaling and rotation. C: Default is 0.0 0.0 0.0. Q: When queried, this flag returns a float[3].</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setPivotX"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setPivotX"></a>
+<tt class="descname">setPivotX</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setPivotX" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the X pivot for scaling and rotation. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setPivotY"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setPivotY"></a>
+<tt class="descname">setPivotY</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setPivotY" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the Y pivot for scaling and rotation. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setPivotZ"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setPivotZ"></a>
+<tt class="descname">setPivotZ</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setPivotZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the Z pivot for scaling and rotation. C: Default is 0.0. Q: When queried, this flag returns a float. Local Values</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setRandom"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setRandom"></a>
+<tt class="descname">setRandom</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setRandom" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the random value for all parameters. C: Default is 0.0. The range is [-10.0, 10.0]. Q: When queried, this flag returns a float. Global Values</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setRotate"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setRotate"></a>
+<tt class="descname">setRotate</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setRotate" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the rotation angles around X, Y, Z. C: Default is 0.0 0.0 0.0. Q: When queried, this flag returns a float[3].</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setRotateX"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setRotateX"></a>
+<tt class="descname">setRotateX</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setRotateX" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the rotation angle around X. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setRotateY"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setRotateY"></a>
+<tt class="descname">setRotateY</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setRotateY" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the rotation angle around Y. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setRotateZ"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setRotateZ"></a>
+<tt class="descname">setRotateZ</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setRotateZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the rotation angle around Z. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setScale"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setScale"></a>
+<tt class="descname">setScale</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setScale" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the scaling vector. C: Default is 1.0 1.0 1.0. Q: When queried, this flag returns a float[3].</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setScaleX"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setScaleX"></a>
+<tt class="descname">setScaleX</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setScaleX" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies X for scaling vector. C: Default is 1.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setScaleY"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setScaleY"></a>
+<tt class="descname">setScaleY</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setScaleY" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies Y for scaling vector. C: Default is 1.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setScaleZ"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setScaleZ"></a>
+<tt class="descname">setScaleZ</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setScaleZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies Z for scaling vector. C: Default is 1.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setTranslate"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setTranslate"></a>
+<tt class="descname">setTranslate</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setTranslate" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the translation vector. C: Default is 0.0 0.0 0.0. Q: When queried, this flag returns a float[3].</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setTranslateX"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setTranslateX"></a>
+<tt class="descname">setTranslateX</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setTranslateX" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the X translation vector. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setTranslateY"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setTranslateY"></a>
+<tt class="descname">setTranslateY</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setTranslateY" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the Y translation vector. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setTranslateZ"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setTranslateZ"></a>
+<tt class="descname">setTranslateZ</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setTranslateZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the Z translation vector. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setWeight"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setWeight"></a>
+<tt class="descname">setWeight</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setWeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies the weight, related to gravity. C: Default is 0.0. Q: When queried, this flag returns a float.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.PolyChipOff.setWorldSpace"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.PolyChipOff.setWorldSpace"></a>
+<tt class="descname">setWorldSpace</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.PolyChipOff.setWorldSpace" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag specifies which reference to use. If on: all geometrical values are taken in world reference. If off: all geometrical values are taken in object reference. C: Default is off. Q: When queried, this flag returns an int.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyChipOff</span></tt></p>
+</dd></dl>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.nodetypes.PolyCBoolOp.html" title="previous chapter">pymel.core.nodetypes.PolyCBoolOp</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.nodetypes.PolyCloseBorder.html" title="next chapter">pymel.core.nodetypes.PolyCloseBorder</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/classes/pymel.core.nodetypes/pymel.core.nodetypes.PolyChipOff.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.nodetypes.PolyCloseBorder.html" title="pymel.core.nodetypes.PolyCloseBorder">next</a> |</li>
+<li class="right">
+<a href="pymel.core.nodetypes.PolyCBoolOp.html" title="pymel.core.nodetypes.PolyCBoolOp">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.nodetypes.html">pymel.core.nodetypes</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.nodetypes/pymel.core.nodetypes.PolyChipOff.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:21:27 GMT -->
+</body></html>

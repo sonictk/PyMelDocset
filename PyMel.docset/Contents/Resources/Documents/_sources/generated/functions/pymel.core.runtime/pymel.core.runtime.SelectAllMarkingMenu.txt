@@ -1,0 +1,6 @@
+pymel.core.runtime.SelectAllMarkingMenu
+=======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SelectAllMarkingMenu

@@ -1,0 +1,6 @@
+pymel.core.runtime.ShowMeshFreezeToolOptions
+============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ShowMeshFreezeToolOptions

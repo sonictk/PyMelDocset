@@ -1,0 +1,6 @@
+pymel.core.runtime.ToggleUseDefaultMaterial
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ToggleUseDefaultMaterial

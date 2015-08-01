@@ -1,0 +1,6 @@
+pymel.core.runtime.ShowMeshGrabUVToolOptions
+============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ShowMeshGrabUVToolOptions

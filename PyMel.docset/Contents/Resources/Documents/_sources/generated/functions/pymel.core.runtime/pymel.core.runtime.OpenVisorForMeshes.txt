@@ -1,0 +1,6 @@
+pymel.core.runtime.OpenVisorForMeshes
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: OpenVisorForMeshes

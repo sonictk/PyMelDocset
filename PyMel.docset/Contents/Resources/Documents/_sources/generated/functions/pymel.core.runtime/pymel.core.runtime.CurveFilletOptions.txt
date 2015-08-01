@@ -1,0 +1,6 @@
+pymel.core.runtime.CurveFilletOptions
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CurveFilletOptions

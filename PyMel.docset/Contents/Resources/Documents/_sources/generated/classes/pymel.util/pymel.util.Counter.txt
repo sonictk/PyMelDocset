@@ -1,0 +1,11 @@
+pymel.util.Counter
+==================
+
+.. currentmodule:: pymel.util
+
+.. inheritance-diagram:: Counter
+    :parts: 1
+
+.. autoclass:: Counter
+    :members:
+    :undoc-members:

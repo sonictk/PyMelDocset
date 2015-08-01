@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorUnpinSelected
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorUnpinSelected

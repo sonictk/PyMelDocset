@@ -1,0 +1,6 @@
+pymel.core.runtime.PolyExtrudeVerticesOptions
+=============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: PolyExtrudeVerticesOptions

@@ -1,0 +1,6 @@
+pymel.util.axis
+===============
+
+.. currentmodule:: pymel.util
+
+.. autofunction:: axis

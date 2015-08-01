@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorToggleZoomOut
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorToggleZoomOut

@@ -1,0 +1,6 @@
+pymel.core.runtime.ExtendFluidOptions
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ExtendFluidOptions

@@ -1,0 +1,1202 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.general/pymel.core.general.PyNode.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:18:37 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.general.PyNode — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.general.html" rel="up" title="pymel.core.general"/>
+<link href="pymel.core.general.Scene.html" rel="next" title="pymel.core.general.Scene"/>
+<link href="pymel.core.general.ProxySlice.html" rel="prev" title="pymel.core.general.ProxySlice"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.general » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.general.PyNode ¶ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ class PyNode ( *args , **kwargs ) ¶ 
+ Abstract class that is base for all pymel nodes classes. 
+ The names of nodes and attributes can be passed to this class, and the appropriate subclass will be determined. 
+ &gt;&gt;&gt; PyNode ( 'persp' ) 
+ nt.Transform(u'persp') 
+ &gt;&gt;&gt;..." name="description"/><meta content="__PyMel_generated_classes_pymel_core_general_pymel_core_general_PyNode_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.general.Scene.html" title="pymel.core.general.Scene">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.general.ProxySlice.html" title="pymel.core.general.ProxySlice">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.general.html">pymel.core.general</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-general-pynode">
+<h1>pymel.core.general.PyNode<a class="headerlink" href="#pymel-core-general-pynode" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img alt="Inheritance diagram of PyNode" class="inheritance" src="../../../_images/inheritance-d408bcb4e916cc7a7d77cd599ca3314d72cce738.png" usemap="#inheritanceac42855610"/>
+<map id="inheritanceac42855610" name="inheritanceac42855610">
+<area alt="" coords="5,5,93,29" href="../pymel.util.utilitytypes/pymel.util.utilitytypes.ProxyUnicode.html#pymel.util.utilitytypes.ProxyUnicode" id="node1" shape="rect" title="ProxyUnicode"></area>
+<area alt="" coords="13,44,85,68" href="#pymel.core.general.PyNode" id="node2" shape="rect" title="Abstract class that is base for all pymel nodes classes."></area>
+</map>
+</p>
+<dl class="class">
+<dt id="pymel.core.general.PyNode"><a name="//apple_ref/cpp/Class/pymel.core.general.PyNode"></a>
+<em class="property">class </em><tt class="descname">PyNode</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.general.PyNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Abstract class that is base for all pymel nodes classes.</p>
+<p>The names of nodes and attributes can be passed to this class, and the appropriate subclass will be determined.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">PyNode</span><span class="p">(</span><span class="s">'persp'</span><span class="p">)</span>
+<span class="go">nt.Transform(u'persp')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">PyNode</span><span class="p">(</span><span class="s">'persp.tx'</span><span class="p">)</span>
+<span class="go">Attribute(u'persp.translateX')</span>
+</pre></div>
+</div>
+<p>If the passed node or attribute does not exist an error will be raised.</p>
+<dl class="method">
+<dt id="pymel.core.general.PyNode.addPrefix"><a name="//apple_ref/cpp/Method/pymel.core.general.PyNode.addPrefix"></a>
+<tt class="descname">addPrefix</tt><big>(</big><em>prefix</em><big>)</big><a class="headerlink" href="#pymel.core.general.PyNode.addPrefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the object’s name with a prefix added to the beginning of the name</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">other.NameParser</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.general.PyNode.connections"><a name="//apple_ref/cpp/Method/pymel.core.general.PyNode.connections"></a>
+<tt class="descname">connections</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.general.PyNode.connections" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command returns a list of all attributes/objects of a specified type that are connected to the given object(s). If
+no objects are specified then the command lists the connections on selected nodes.</p>
+<dl class="docutils">
+<dt>Modifications:</dt>
+<dd><ul class="first last">
+<li><p class="first">returns an empty list when the result is None</p>
+</li>
+<li><dl class="first docutils">
+<dt>returns an empty list (with a warning) when the arg is an empty list, tuple,</dt>
+<dd><p class="first last">set, or frozenset, making it’s behavior consistent with when None is
+passed, or no args and nothing is selected (would formerly raise a
+TypeError)</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">When ‘connections’ flag is True, the attribute pairs are returned in a 2D-array:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">[[</span><span class="s">'checker1.outColor'</span><span class="p">,</span> <span class="s">'lambert1.color'</span><span class="p">],</span> <span class="p">[</span><span class="s">'checker1.color1'</span><span class="p">,</span> <span class="s">'fractal1.outColor'</span><span class="p">]]</span>
+</pre></div>
+</div>
+</li>
+<li><dl class="first docutils">
+<dt>added sourceFirst keyword arg. when sourceFirst is true and connections is also true,</dt>
+<dd><p class="first last">the paired list of plugs is returned in (source,destination) order instead of (thisnode,othernode) order.
+this puts the pairs in the order that disconnectAttr and connectAttr expect.</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">added ability to pass a list of types</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">rtype:</th><td class="field-body"><a class="reference internal" href="#pymel.core.general.PyNode" title="pymel.core.general.PyNode"><tt class="xref py py-obj docutils literal"><span class="pre">PyNode</span></tt></a> list</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">connections</span></tt> / <tt class="docutils literal"><span class="pre">c</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>If true, return both attributes involved in the connection. The one on the specified object is given first.  Default false.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">destination</span></tt> / <tt class="docutils literal"><span class="pre">d</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Give the attributes/objects that are on the destinationside of connection to the given object.  Default true.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">exactType</span></tt> / <tt class="docutils literal"><span class="pre">et</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>When set to true, -t/type only considers node of this exact type. Otherwise, derived types are also taken into account.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">plugs</span></tt> / <tt class="docutils literal"><span class="pre">p</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>If true, return the connected attribute names; if false, return the connected object names only.  Default false;</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">shapes</span></tt> / <tt class="docutils literal"><span class="pre">sh</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Actually return the shape name instead of the transform when the shape is selected.  Default false.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">skipConversionNodes</span></tt> / <tt class="docutils literal"><span class="pre">scn</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">If true, skip over unit conversion nodes and return the node connected to the conversion node on the other side.  Default false.
+Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">source</span></tt> / <tt class="docutils literal"><span class="pre">s</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Give the attributes/objects that are on the sourceside of connection to the given object.  Default true.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">type</span></tt> / <tt class="docutils literal"><span class="pre">t</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>If specified, only take objects of a specified type.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.listConnections</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">sphere</span><span class="p">(</span> <span class="n">ch</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="s">'BALL'</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'BALL'), nt.MakeNurbSphere(u'makeNurbSphere1')] #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">setKeyframe</span><span class="p">()</span>
+<span class="c"># Result: 10 #</span>
+<span class="c"># List all connections to BALL</span>
+<span class="nb">list</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">listConnections</span><span class="p">(</span><span class="s">'BALL'</span><span class="p">)</span>
+<span class="c"># List only incoming connections from BALL.tx</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">listConnections</span><span class="p">(</span> <span class="s">'BALL.tx'</span><span class="p">,</span> <span class="n">d</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [nt.AnimCurveTL(u'BALL_translateX')] #</span>
+<span class="c"># List connections from BALL to nodes of type 'transform'</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">listConnections</span><span class="p">(</span> <span class="n">t</span><span class="o">=</span><span class="s">'transform'</span> <span class="p">)</span>
+<span class="c"># Result: [] #</span>
+<span class="c"># List connections on BALL, ignoring unit conversion nodes</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">listConnections</span><span class="p">(</span> <span class="s">'BALL'</span><span class="p">,</span> <span class="n">scn</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [nt.AnimCurveTU(u'BALL_visibility'), nt.AnimCurveTL(u'BALL_translateX'), nt.AnimCurveTL(u'BALL_translateY'), nt.AnimCurveTL(u'BALL_translateZ'), nt.AnimCurveTA(u'BALL_rotateX'), nt.AnimCurveTA(u'BALL_rotateY'), nt.AnimCurveTA(u'BALL_rotateZ'), nt.AnimCurveTU(u'BALL_scaleX'), nt.AnimCurveTU(u'BALL_scaleY'), nt.AnimCurveTU(u'BALL_scaleZ')] #</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.general.PyNode.deselect"><a name="//apple_ref/cpp/Method/pymel.core.general.PyNode.deselect"></a>
+<tt class="descname">deselect</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.general.PyNode.deselect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.general.PyNode.exists"><a name="//apple_ref/cpp/Method/pymel.core.general.PyNode.exists"></a>
+<tt class="descname">exists</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.general.PyNode.exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>objExists</p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.general.PyNode.future"><a name="//apple_ref/cpp/Method/pymel.core.general.PyNode.future"></a>
+<tt class="descname">future</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.general.PyNode.future" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Modifications:</dt>
+<dd><ul class="first last">
+<li><p class="first">returns an empty list when the result is None</p>
+</li>
+<li><p class="first">added a much needed ‘type’ filter</p>
+</li>
+<li><p class="first">added an ‘exactType’ filter (if both ‘exactType’ and ‘type’ are present, ‘type’ is ignored)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">rtype:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">DependNode</span></tt> list</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.general.PyNode.history"><a name="//apple_ref/cpp/Method/pymel.core.general.PyNode.history"></a>
+<tt class="descname">history</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.general.PyNode.history" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command traverses backwards or forwards in the graph from the specified node and returns all of the nodes whose
+construction history it passes through. The construction history consists of connections to specific attributes of a
+node defined as the creators and results of the node’s main data, eg. the curve for a Nurbs Curve node. For information
+on history connections through specific plugs use the listConnectionscommand first to find where the history begins then
+use this command on the resulting node.</p>
+<dl class="docutils">
+<dt>Modifications:</dt>
+<dd><ul class="first last">
+<li><p class="first">returns an empty list when the result is None</p>
+</li>
+<li><dl class="first docutils">
+<dt>raises a RuntimeError when the arg is an empty list, tuple, set, or</dt>
+<dd><p class="first last">frozenset, making it’s behavior consistent with when None is passed, or
+no args and nothing is selected (would formerly raise a TypeError)</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">added a much needed ‘type’ filter</p>
+</li>
+<li><p class="first">added an ‘exactType’ filter (if both ‘exactType’ and ‘type’ are present, ‘type’ is ignored)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">rtype:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">DependNode</span></tt> list</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">allConnections</span></tt> / <tt class="docutils literal"><span class="pre">ac</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">If specified, the traversal that searches for the history or future will not restrict its traversal across nodes to only dependent plugs. Thus it will reach all
+upstream nodes (or all downstream nodes for f/future).</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">allFuture</span></tt> / <tt class="docutils literal"><span class="pre">af</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">If listing the future, list all of it. Otherwise if a shape has an attribute that represents its output geometry data, and that plug is connected, only list the
+future history downstream from that connection.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">allGraphs</span></tt> / <tt class="docutils literal"><span class="pre">ag</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>This flag is obsolete and has no effect.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">breadthFirst</span></tt> / <tt class="docutils literal"><span class="pre">bf</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">The breadth first traversal will return the closest nodes in the traversal first. The depth first traversal will follow a complete path away from the node, then
+return to any other paths from the node. Default is depth first.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">future</span></tt> / <tt class="docutils literal"><span class="pre">f</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List the future instead of the history.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">futureLocalAttr</span></tt> / <tt class="docutils literal"><span class="pre">fl</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This flag allows querying of the local-space future-related attribute(s) on shape nodes.                          Flag can have multiple arguments, passed either
+as a tuple or a list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">futureWorldAttr</span></tt> / <tt class="docutils literal"><span class="pre">fw</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>This flag allows querying of the world-space future-related attribute(s) on shape nodes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">groupLevels</span></tt> / <tt class="docutils literal"><span class="pre">gl</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>The node names are grouped depending on the level.  1 is the lead, the rest are grouped with it.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">historyAttr</span></tt> / <tt class="docutils literal"><span class="pre">ha</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>This flag allows querying of the attribute where history connects on shape nodes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">interestLevel</span></tt> / <tt class="docutils literal"><span class="pre">il</span></tt></td>
+<td><em>int</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">If this flag is set, only nodes whose historicallyInteresting attribute value is not less than the value will be listed. The historicallyInteresting attribute is
+0 on nodes which are not of interest to non-programmers.  1 for the TDs, 2 for the users.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">leaf</span></tt> / <tt class="docutils literal"><span class="pre">lf</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>If transform is selected, show history for its leaf shape. Default is true.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">levels</span></tt> / <tt class="docutils literal"><span class="pre">lv</span></tt></td>
+<td><em>int</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Levels deep to traverse. Setting the number of levels to 0 means do all levels. All levels is the default.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">pruneDagObjects</span></tt> / <tt class="docutils literal"><span class="pre">pdo</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>If this flag is set, prune at dag objects.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.listHistory</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">curve</span><span class="p">(</span> <span class="n">d</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="p">[(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">),(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">),(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)],</span> <span class="n">k</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">n</span><span class="o">=</span><span class="s">"snake"</span> <span class="p">)</span>
+<span class="c"># Result: nt.Transform(u'snake') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">instance</span><span class="p">(</span> <span class="n">n</span><span class="o">=</span><span class="s">"rattler"</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'rattler')] #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">revolve</span><span class="p">(</span> <span class="s">'rattler'</span><span class="p">,</span> <span class="n">ch</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="s">"charmer"</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'charmer'), nt.Revolve(u'revolve1')] #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">revolve</span><span class="p">(</span> <span class="s">'snake'</span><span class="p">,</span> <span class="n">ch</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="s">"medusa"</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'medusa'), nt.Revolve(u'revolve2')] #</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">listHistory</span><span class="p">()</span>
+<span class="c"># Result: [nt.NurbsSurface(u'medusaShape'), nt.Revolve(u'revolve2'), nt.NurbsCurve(u'snake|snakeShape')] #</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">listHistory</span><span class="p">(</span> <span class="s">'charmer'</span> <span class="p">)</span>
+<span class="c"># Result: [nt.NurbsSurface(u'charmerShape'), nt.Revolve(u'revolve1'), nt.NurbsCurve(u'rattler|snakeShape')] #</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">listHistory</span><span class="p">(</span> <span class="s">'medusa'</span><span class="p">,</span> <span class="n">lv</span><span class="o">=</span><span class="mi">1</span> <span class="p">)</span>
+<span class="c"># Result: [nt.NurbsSurface(u'medusaShape'), nt.Revolve(u'revolve2')] #</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">listHistory</span><span class="p">(</span> <span class="s">'medusa'</span><span class="p">,</span> <span class="n">future</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [nt.NurbsSurface(u'medusaShape'), nt.ShadingEngine(u'initialShadingGroup')] #</span>
+
+<span class="c"># If you just list the curve's future you get both directions</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">listHistory</span><span class="p">(</span> <span class="s">'curveShape1'</span><span class="p">,</span> <span class="n">future</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="p">[</span><span class="s">u'snake|curveShape1'</span><span class="p">,</span> <span class="s">u'revolve2'</span><span class="p">,</span> <span class="s">u'medusaShape'</span><span class="p">,</span> <span class="s">u'revolve1'</span><span class="p">,</span> <span class="s">u'charmerShape'</span><span class="p">]</span>
+
+<span class="c"># To follow only one history you'll need to follow the path you</span>
+<span class="c"># want first, then add the node you started at if so desired since</span>
+<span class="c"># it will not be included (here snake|curveShape1 won't list).</span>
+
+<span class="c"># List the future of the first curve</span>
+<span class="n">hist</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">listConnections</span><span class="p">(</span><span class="s">'curveShape1.ws[0]'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">listHistory</span><span class="p">(</span> <span class="n">hist</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">future</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="p">[</span><span class="s">u'revolve2'</span><span class="p">,</span> <span class="s">u'medusaShape'</span><span class="p">]</span>
+
+<span class="c"># List the future of the second curve</span>
+<span class="n">hist</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">listConnections</span><span class="p">(</span><span class="s">'curveShape1.ws[1]'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">listHistory</span><span class="p">(</span> <span class="n">hist</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">future</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="p">[</span><span class="s">u'revolve1'</span><span class="p">,</span> <span class="s">u'charmerShape'</span><span class="p">]</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">listHistory</span><span class="p">(</span> <span class="n">leaf</span><span class="o">=</span><span class="mi">0</span> <span class="p">)</span>
+<span class="p">[</span><span class="s">u'medusa'</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.general.PyNode.listConnections"><a name="//apple_ref/cpp/Method/pymel.core.general.PyNode.listConnections"></a>
+<tt class="descname">listConnections</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.general.PyNode.listConnections" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command returns a list of all attributes/objects of a specified type that are connected to the given object(s). If
+no objects are specified then the command lists the connections on selected nodes.</p>
+<dl class="docutils">
+<dt>Modifications:</dt>
+<dd><ul class="first last">
+<li><p class="first">returns an empty list when the result is None</p>
+</li>
+<li><dl class="first docutils">
+<dt>returns an empty list (with a warning) when the arg is an empty list, tuple,</dt>
+<dd><p class="first last">set, or frozenset, making it’s behavior consistent with when None is
+passed, or no args and nothing is selected (would formerly raise a
+TypeError)</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">When ‘connections’ flag is True, the attribute pairs are returned in a 2D-array:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="p">[[</span><span class="s">'checker1.outColor'</span><span class="p">,</span> <span class="s">'lambert1.color'</span><span class="p">],</span> <span class="p">[</span><span class="s">'checker1.color1'</span><span class="p">,</span> <span class="s">'fractal1.outColor'</span><span class="p">]]</span>
+</pre></div>
+</div>
+</li>
+<li><dl class="first docutils">
+<dt>added sourceFirst keyword arg. when sourceFirst is true and connections is also true,</dt>
+<dd><p class="first last">the paired list of plugs is returned in (source,destination) order instead of (thisnode,othernode) order.
+this puts the pairs in the order that disconnectAttr and connectAttr expect.</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">added ability to pass a list of types</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">rtype:</th><td class="field-body"><a class="reference internal" href="#pymel.core.general.PyNode" title="pymel.core.general.PyNode"><tt class="xref py py-obj docutils literal"><span class="pre">PyNode</span></tt></a> list</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">connections</span></tt> / <tt class="docutils literal"><span class="pre">c</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>If true, return both attributes involved in the connection. The one on the specified object is given first.  Default false.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">destination</span></tt> / <tt class="docutils literal"><span class="pre">d</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Give the attributes/objects that are on the destinationside of connection to the given object.  Default true.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">exactType</span></tt> / <tt class="docutils literal"><span class="pre">et</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>When set to true, -t/type only considers node of this exact type. Otherwise, derived types are also taken into account.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">plugs</span></tt> / <tt class="docutils literal"><span class="pre">p</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>If true, return the connected attribute names; if false, return the connected object names only.  Default false;</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">shapes</span></tt> / <tt class="docutils literal"><span class="pre">sh</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Actually return the shape name instead of the transform when the shape is selected.  Default false.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">skipConversionNodes</span></tt> / <tt class="docutils literal"><span class="pre">scn</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">If true, skip over unit conversion nodes and return the node connected to the conversion node on the other side.  Default false.
+Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">source</span></tt> / <tt class="docutils literal"><span class="pre">s</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Give the attributes/objects that are on the sourceside of connection to the given object.  Default true.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">type</span></tt> / <tt class="docutils literal"><span class="pre">t</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>If specified, only take objects of a specified type.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.listConnections</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">sphere</span><span class="p">(</span> <span class="n">ch</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="s">'BALL'</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'BALL'), nt.MakeNurbSphere(u'makeNurbSphere1')] #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">setKeyframe</span><span class="p">()</span>
+<span class="c"># Result: 10 #</span>
+<span class="c"># List all connections to BALL</span>
+<span class="nb">list</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">listConnections</span><span class="p">(</span><span class="s">'BALL'</span><span class="p">)</span>
+<span class="c"># List only incoming connections from BALL.tx</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">listConnections</span><span class="p">(</span> <span class="s">'BALL.tx'</span><span class="p">,</span> <span class="n">d</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [nt.AnimCurveTL(u'BALL_translateX')] #</span>
+<span class="c"># List connections from BALL to nodes of type 'transform'</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">listConnections</span><span class="p">(</span> <span class="n">t</span><span class="o">=</span><span class="s">'transform'</span> <span class="p">)</span>
+<span class="c"># Result: [] #</span>
+<span class="c"># List connections on BALL, ignoring unit conversion nodes</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">listConnections</span><span class="p">(</span> <span class="s">'BALL'</span><span class="p">,</span> <span class="n">scn</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [nt.AnimCurveTU(u'BALL_visibility'), nt.AnimCurveTL(u'BALL_translateX'), nt.AnimCurveTL(u'BALL_translateY'), nt.AnimCurveTL(u'BALL_translateZ'), nt.AnimCurveTA(u'BALL_rotateX'), nt.AnimCurveTA(u'BALL_rotateY'), nt.AnimCurveTA(u'BALL_rotateZ'), nt.AnimCurveTU(u'BALL_scaleX'), nt.AnimCurveTU(u'BALL_scaleY'), nt.AnimCurveTU(u'BALL_scaleZ')] #</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.general.PyNode.listFuture"><a name="//apple_ref/cpp/Method/pymel.core.general.PyNode.listFuture"></a>
+<tt class="descname">listFuture</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.general.PyNode.listFuture" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>Modifications:</dt>
+<dd><ul class="first last">
+<li><p class="first">returns an empty list when the result is None</p>
+</li>
+<li><p class="first">added a much needed ‘type’ filter</p>
+</li>
+<li><p class="first">added an ‘exactType’ filter (if both ‘exactType’ and ‘type’ are present, ‘type’ is ignored)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">rtype:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">DependNode</span></tt> list</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.general.PyNode.listHistory"><a name="//apple_ref/cpp/Method/pymel.core.general.PyNode.listHistory"></a>
+<tt class="descname">listHistory</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.general.PyNode.listHistory" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command traverses backwards or forwards in the graph from the specified node and returns all of the nodes whose
+construction history it passes through. The construction history consists of connections to specific attributes of a
+node defined as the creators and results of the node’s main data, eg. the curve for a Nurbs Curve node. For information
+on history connections through specific plugs use the listConnectionscommand first to find where the history begins then
+use this command on the resulting node.</p>
+<dl class="docutils">
+<dt>Modifications:</dt>
+<dd><ul class="first last">
+<li><p class="first">returns an empty list when the result is None</p>
+</li>
+<li><dl class="first docutils">
+<dt>raises a RuntimeError when the arg is an empty list, tuple, set, or</dt>
+<dd><p class="first last">frozenset, making it’s behavior consistent with when None is passed, or
+no args and nothing is selected (would formerly raise a TypeError)</p>
+</dd>
+</dl>
+</li>
+<li><p class="first">added a much needed ‘type’ filter</p>
+</li>
+<li><p class="first">added an ‘exactType’ filter (if both ‘exactType’ and ‘type’ are present, ‘type’ is ignored)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">rtype:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">DependNode</span></tt> list</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">allConnections</span></tt> / <tt class="docutils literal"><span class="pre">ac</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">If specified, the traversal that searches for the history or future will not restrict its traversal across nodes to only dependent plugs. Thus it will reach all
+upstream nodes (or all downstream nodes for f/future).</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">allFuture</span></tt> / <tt class="docutils literal"><span class="pre">af</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">If listing the future, list all of it. Otherwise if a shape has an attribute that represents its output geometry data, and that plug is connected, only list the
+future history downstream from that connection.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">allGraphs</span></tt> / <tt class="docutils literal"><span class="pre">ag</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>This flag is obsolete and has no effect.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">breadthFirst</span></tt> / <tt class="docutils literal"><span class="pre">bf</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">The breadth first traversal will return the closest nodes in the traversal first. The depth first traversal will follow a complete path away from the node, then
+return to any other paths from the node. Default is depth first.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">future</span></tt> / <tt class="docutils literal"><span class="pre">f</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List the future instead of the history.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">futureLocalAttr</span></tt> / <tt class="docutils literal"><span class="pre">fl</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This flag allows querying of the local-space future-related attribute(s) on shape nodes.                          Flag can have multiple arguments, passed either
+as a tuple or a list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">futureWorldAttr</span></tt> / <tt class="docutils literal"><span class="pre">fw</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>This flag allows querying of the world-space future-related attribute(s) on shape nodes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">groupLevels</span></tt> / <tt class="docutils literal"><span class="pre">gl</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>The node names are grouped depending on the level.  1 is the lead, the rest are grouped with it.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">historyAttr</span></tt> / <tt class="docutils literal"><span class="pre">ha</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>This flag allows querying of the attribute where history connects on shape nodes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">interestLevel</span></tt> / <tt class="docutils literal"><span class="pre">il</span></tt></td>
+<td><em>int</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">If this flag is set, only nodes whose historicallyInteresting attribute value is not less than the value will be listed. The historicallyInteresting attribute is
+0 on nodes which are not of interest to non-programmers.  1 for the TDs, 2 for the users.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">leaf</span></tt> / <tt class="docutils literal"><span class="pre">lf</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>If transform is selected, show history for its leaf shape. Default is true.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">levels</span></tt> / <tt class="docutils literal"><span class="pre">lv</span></tt></td>
+<td><em>int</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Levels deep to traverse. Setting the number of levels to 0 means do all levels. All levels is the default.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">pruneDagObjects</span></tt> / <tt class="docutils literal"><span class="pre">pdo</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>If this flag is set, prune at dag objects.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.listHistory</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">curve</span><span class="p">(</span> <span class="n">d</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="p">[(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">),(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">),(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)],</span> <span class="n">k</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">n</span><span class="o">=</span><span class="s">"snake"</span> <span class="p">)</span>
+<span class="c"># Result: nt.Transform(u'snake') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">instance</span><span class="p">(</span> <span class="n">n</span><span class="o">=</span><span class="s">"rattler"</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'rattler')] #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">revolve</span><span class="p">(</span> <span class="s">'rattler'</span><span class="p">,</span> <span class="n">ch</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="s">"charmer"</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'charmer'), nt.Revolve(u'revolve1')] #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">revolve</span><span class="p">(</span> <span class="s">'snake'</span><span class="p">,</span> <span class="n">ch</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="s">"medusa"</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'medusa'), nt.Revolve(u'revolve2')] #</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">listHistory</span><span class="p">()</span>
+<span class="c"># Result: [nt.NurbsSurface(u'medusaShape'), nt.Revolve(u'revolve2'), nt.NurbsCurve(u'snake|snakeShape')] #</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">listHistory</span><span class="p">(</span> <span class="s">'charmer'</span> <span class="p">)</span>
+<span class="c"># Result: [nt.NurbsSurface(u'charmerShape'), nt.Revolve(u'revolve1'), nt.NurbsCurve(u'rattler|snakeShape')] #</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">listHistory</span><span class="p">(</span> <span class="s">'medusa'</span><span class="p">,</span> <span class="n">lv</span><span class="o">=</span><span class="mi">1</span> <span class="p">)</span>
+<span class="c"># Result: [nt.NurbsSurface(u'medusaShape'), nt.Revolve(u'revolve2')] #</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">listHistory</span><span class="p">(</span> <span class="s">'medusa'</span><span class="p">,</span> <span class="n">future</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [nt.NurbsSurface(u'medusaShape'), nt.ShadingEngine(u'initialShadingGroup')] #</span>
+
+<span class="c"># If you just list the curve's future you get both directions</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">listHistory</span><span class="p">(</span> <span class="s">'curveShape1'</span><span class="p">,</span> <span class="n">future</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="p">[</span><span class="s">u'snake|curveShape1'</span><span class="p">,</span> <span class="s">u'revolve2'</span><span class="p">,</span> <span class="s">u'medusaShape'</span><span class="p">,</span> <span class="s">u'revolve1'</span><span class="p">,</span> <span class="s">u'charmerShape'</span><span class="p">]</span>
+
+<span class="c"># To follow only one history you'll need to follow the path you</span>
+<span class="c"># want first, then add the node you started at if so desired since</span>
+<span class="c"># it will not be included (here snake|curveShape1 won't list).</span>
+
+<span class="c"># List the future of the first curve</span>
+<span class="n">hist</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">listConnections</span><span class="p">(</span><span class="s">'curveShape1.ws[0]'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">listHistory</span><span class="p">(</span> <span class="n">hist</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">future</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="p">[</span><span class="s">u'revolve2'</span><span class="p">,</span> <span class="s">u'medusaShape'</span><span class="p">]</span>
+
+<span class="c"># List the future of the second curve</span>
+<span class="n">hist</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">listConnections</span><span class="p">(</span><span class="s">'curveShape1.ws[1]'</span><span class="p">,</span><span class="n">c</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">listHistory</span><span class="p">(</span> <span class="n">hist</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">future</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="p">[</span><span class="s">u'revolve1'</span><span class="p">,</span> <span class="s">u'charmerShape'</span><span class="p">]</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">listHistory</span><span class="p">(</span> <span class="n">leaf</span><span class="o">=</span><span class="mi">0</span> <span class="p">)</span>
+<span class="p">[</span><span class="s">u'medusa'</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.general.PyNode.listSets"><a name="//apple_ref/cpp/Method/pymel.core.general.PyNode.listSets"></a>
+<tt class="descname">listSets</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.general.PyNode.listSets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns list of sets this object belongs</p>
+<p>listSets -o $this</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">‘PyNode’ list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.general.PyNode.namespaceList"><a name="//apple_ref/cpp/Method/pymel.core.general.PyNode.namespaceList"></a>
+<tt class="descname">namespaceList</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.general.PyNode.namespaceList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Useful for cascading references.  Returns all of the namespaces of the calling object as a list</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">unicode</span></tt> list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.general.PyNode.nodeType"><a name="//apple_ref/cpp/Method/pymel.core.general.PyNode.nodeType"></a>
+<tt class="descname">nodeType</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.general.PyNode.nodeType" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.general.PyNode.objExists"><a name="//apple_ref/cpp/Method/pymel.core.general.PyNode.objExists"></a>
+<tt class="descname">objExists</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.general.PyNode.objExists" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.general.PyNode.select"><a name="//apple_ref/cpp/Method/pymel.core.general.PyNode.select"></a>
+<tt class="descname">select</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.general.PyNode.select" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.general.PyNode.stripNamespace"><a name="//apple_ref/cpp/Method/pymel.core.general.PyNode.stripNamespace"></a>
+<tt class="descname">stripNamespace</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.general.PyNode.stripNamespace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the object’s name with its namespace removed.  The calling instance is unaffected.
+The optional levels keyword specifies how many levels of cascading namespaces to strip, starting with the topmost (leftmost).
+The default is 0 which will remove all namespaces.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">other.NameParser</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.general.PyNode.swapNamespace"><a name="//apple_ref/cpp/Method/pymel.core.general.PyNode.swapNamespace"></a>
+<tt class="descname">swapNamespace</tt><big>(</big><em>prefix</em><big>)</big><a class="headerlink" href="#pymel.core.general.PyNode.swapNamespace" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the object’s name with its current namespace replaced with the provided one.
+The calling instance is unaffected.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">other.NameParser</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.general.ProxySlice.html" title="previous chapter">pymel.core.general.ProxySlice</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.general.Scene.html" title="next chapter">pymel.core.general.Scene</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/classes/pymel.core.general/pymel.core.general.PyNode.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.general.Scene.html" title="pymel.core.general.Scene">next</a> |</li>
+<li class="right">
+<a href="pymel.core.general.ProxySlice.html" title="pymel.core.general.ProxySlice">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.general.html">pymel.core.general</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.general/pymel.core.general.PyNode.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:18:38 GMT -->
+</body></html>

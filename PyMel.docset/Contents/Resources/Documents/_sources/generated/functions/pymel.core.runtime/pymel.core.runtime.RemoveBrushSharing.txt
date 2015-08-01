@@ -1,0 +1,6 @@
+pymel.core.runtime.RemoveBrushSharing
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: RemoveBrushSharing

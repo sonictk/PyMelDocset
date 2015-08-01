@@ -1,0 +1,6 @@
+pymel.core.runtime.PokePolygonOptions
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: PokePolygonOptions

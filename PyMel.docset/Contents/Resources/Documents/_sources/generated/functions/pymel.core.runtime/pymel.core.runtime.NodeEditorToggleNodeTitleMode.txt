@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorToggleNodeTitleMode
+================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorToggleNodeTitleMode

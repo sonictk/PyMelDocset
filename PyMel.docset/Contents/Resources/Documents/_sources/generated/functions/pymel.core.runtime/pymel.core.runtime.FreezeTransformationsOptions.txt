@@ -1,0 +1,6 @@
+pymel.core.runtime.FreezeTransformationsOptions
+===============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: FreezeTransformationsOptions

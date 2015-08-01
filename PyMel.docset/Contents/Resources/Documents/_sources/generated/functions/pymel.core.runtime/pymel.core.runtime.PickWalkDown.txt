@@ -1,0 +1,6 @@
+pymel.core.runtime.PickWalkDown
+===============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: PickWalkDown

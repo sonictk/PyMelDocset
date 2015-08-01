@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorGraphRearrange
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorGraphRearrange

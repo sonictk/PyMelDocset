@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeIncreaseTraversalDepth
+===================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeIncreaseTraversalDepth

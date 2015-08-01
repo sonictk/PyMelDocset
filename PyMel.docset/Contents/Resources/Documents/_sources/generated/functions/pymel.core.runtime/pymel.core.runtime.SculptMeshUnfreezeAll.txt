@@ -1,0 +1,6 @@
+pymel.core.runtime.SculptMeshUnfreezeAll
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SculptMeshUnfreezeAll

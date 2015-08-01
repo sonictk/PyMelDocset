@@ -1,0 +1,409 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.datatypes/pymel.core.datatypes.Matrix.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:16:28 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.datatypes.Matrix — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.datatypes.html" rel="up" title="pymel.core.datatypes"/>
+<link href="pymel.core.datatypes.MatrixN.html" rel="next" title="pymel.core.datatypes.MatrixN"/>
+<link href="pymel.core.datatypes.FloatVector.html" rel="prev" title="pymel.core.datatypes.FloatVector"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.datatypes » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.datatypes.Matrix ¶ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ class Matrix ( *args , **kwargs ) ¶ 
+ A 4x4 transformation matrix based on api Matrix 
+ &gt;&gt;&gt; from pymel.all import * 
+ &gt;&gt;&gt; import pymel.core.datatypes as dt 
+ &gt;&gt;&gt; 
+ &gt;&gt;&gt; i = dt . Matrix () 
+ &gt;&gt;&gt; print i . formated () 
+ [[1.0, 0.0, 0.0, 0.0], 
+ [0.0,..." name="description"/><meta content="__PyMel_generated_classes_pymel_core_datatypes_pymel_core_datatypes_Matrix_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.datatypes.MatrixN.html" title="pymel.core.datatypes.MatrixN">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.datatypes.FloatVector.html" title="pymel.core.datatypes.FloatVector">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.datatypes.html">pymel.core.datatypes</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-datatypes-matrix">
+<h1>pymel.core.datatypes.Matrix<a class="headerlink" href="#pymel-core-datatypes-matrix" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img alt="Inheritance diagram of Matrix" class="inheritance" src="../../../_images/inheritance-382c7b6d2d82f89a22f512f38833152a4179fcf6.png" usemap="#inheritance3cc9bec1b9"/>
+<map id="inheritance3cc9bec1b9" name="inheritance3cc9bec1b9">
+<area alt="" coords="5,5,77,29" href="../pymel.util.arrays/pymel.util.arrays.Array.html#pymel.util.arrays.Array" id="node1" shape="rect" title="A generic n-dimensional array class using nested lists for storage."></area>
+<area alt="" coords="5,44,77,68" href="../pymel.util.arrays/pymel.util.arrays.MatrixN.html#pymel.util.arrays.MatrixN" id="node4" shape="rect" title="A generic size MatrixN class, basically a 2 dimensional Array."></area>
+<area alt="" coords="48,83,120,107" href="#pymel.core.datatypes.Matrix" id="node3" shape="rect" title="A 4x4 transformation matrix based on api Matrix"></area>
+</map>
+</p>
+<dl class="class">
+<dt id="pymel.core.datatypes.Matrix"><a name="//apple_ref/cpp/Class/pymel.core.datatypes.Matrix"></a>
+<em class="property">class </em><tt class="descname">Matrix</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.datatypes.Matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>A 4x4 transformation matrix based on api Matrix</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pymel.all</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pymel.core.datatypes</span> <span class="kn">as</span> <span class="nn">dt</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">i</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">Matrix</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">i</span><span class="o">.</span><span class="n">formated</span><span class="p">()</span>
+<span class="go">[[1.0, 0.0, 0.0, 0.0],</span>
+<span class="go"> [0.0, 1.0, 0.0, 0.0],</span>
+<span class="go"> [0.0, 0.0, 1.0, 0.0],</span>
+<span class="go"> [0.0, 0.0, 0.0, 1.0]]</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="n">dt</span><span class="o">.</span><span class="n">Matrix</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">v</span><span class="o">.</span><span class="n">formated</span><span class="p">()</span>
+<span class="go">[[1.0, 2.0, 3.0, 0.0],</span>
+<span class="go"> [1.0, 2.0, 3.0, 0.0],</span>
+<span class="go"> [1.0, 2.0, 3.0, 0.0],</span>
+<span class="go"> [1.0, 2.0, 3.0, 0.0]]</span>
+</pre></div>
+</div>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.a00"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.a00"></a>
+<tt class="descname">a00</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.a00" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.a01"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.a01"></a>
+<tt class="descname">a01</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.a01" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.a02"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.a02"></a>
+<tt class="descname">a02</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.a02" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.a03"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.a03"></a>
+<tt class="descname">a03</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.a03" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.a10"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.a10"></a>
+<tt class="descname">a10</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.a10" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.a11"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.a11"></a>
+<tt class="descname">a11</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.a11" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.a12"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.a12"></a>
+<tt class="descname">a12</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.a12" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.a13"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.a13"></a>
+<tt class="descname">a13</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.a13" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.a20"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.a20"></a>
+<tt class="descname">a20</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.a20" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.a21"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.a21"></a>
+<tt class="descname">a21</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.a21" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.a22"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.a22"></a>
+<tt class="descname">a22</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.a22" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.a23"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.a23"></a>
+<tt class="descname">a23</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.a23" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.a30"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.a30"></a>
+<tt class="descname">a30</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.a30" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.a31"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.a31"></a>
+<tt class="descname">a31</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.a31" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.a32"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.a32"></a>
+<tt class="descname">a32</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.a32" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.a33"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.a33"></a>
+<tt class="descname">a33</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.a33" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.datatypes.Matrix.adjoint"><a name="//apple_ref/cpp/Method/pymel.core.datatypes.Matrix.adjoint"></a>
+<tt class="descname">adjoint</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.datatypes.Matrix.adjoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the adjoint (adjugate) Matrix</p>
+</dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.apicls"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.apicls"></a>
+<tt class="descname">apicls</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.apicls" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <tt class="xref py py-class docutils literal"><span class="pre">MMatrix</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.datatypes.Matrix.asMatrix"><a name="//apple_ref/cpp/Method/pymel.core.datatypes.Matrix.asMatrix"></a>
+<tt class="descname">asMatrix</tt><big>(</big><em>percent=None</em><big>)</big><a class="headerlink" href="#pymel.core.datatypes.Matrix.asMatrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>The matrix representation for this Matrix/TransformationMatrix/Quaternion/EulerRotation instance</p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.datatypes.Matrix.assign"><a name="//apple_ref/cpp/Method/pymel.core.datatypes.Matrix.assign"></a>
+<tt class="descname">assign</tt><big>(</big><em>value</em><big>)</big><a class="headerlink" href="#pymel.core.datatypes.Matrix.assign" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.datatypes.Matrix.blend"><a name="//apple_ref/cpp/Method/pymel.core.datatypes.Matrix.blend"></a>
+<tt class="descname">blend</tt><big>(</big><em>other</em>, <em>weight=0.5</em><big>)</big><a class="headerlink" href="#pymel.core.datatypes.Matrix.blend" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a 0.0-1.0 scalar weight blend between self and other Matrix,
+blend mixes Matrix as transformation matrices</p>
+</dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.cnames"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.cnames"></a>
+<tt class="descname">cnames</tt><em class="property"> = ('a00', 'a01', 'a02', 'a03', 'a10', 'a11', 'a12', 'a13', 'a20', 'a21', 'a22', 'a23', 'a30', 'a31', 'a32', 'a33')</em><a class="headerlink" href="#pymel.core.datatypes.Matrix.cnames" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.data"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.data"></a>
+<tt class="descname">data</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.data" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Matrix/FloatMatrix/TransformationMatrix/Quaternion/EulerRotation data</p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.datatypes.Matrix.det"><a name="//apple_ref/cpp/Method/pymel.core.datatypes.Matrix.det"></a>
+<tt class="descname">det</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.datatypes.Matrix.det" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the determinant of this Matrix instance</p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.datatypes.Matrix.det3x3"><a name="//apple_ref/cpp/Method/pymel.core.datatypes.Matrix.det3x3"></a>
+<tt class="descname">det3x3</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.datatypes.Matrix.det3x3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the determinant of the upper left 3x3 submatrix of this Matrix instance,
+it’s the same as doing det(m[0:3, 0:3])</p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.datatypes.Matrix.det4x4"><a name="//apple_ref/cpp/Method/pymel.core.datatypes.Matrix.det4x4"></a>
+<tt class="descname">det4x4</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.datatypes.Matrix.det4x4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the 4x4 determinant of this Matrix instance</p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.datatypes.Matrix.get"><a name="//apple_ref/cpp/Method/pymel.core.datatypes.Matrix.get"></a>
+<tt class="descname">get</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.datatypes.Matrix.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wrap the Matrix api get method</p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.datatypes.Matrix.homogenize"><a name="//apple_ref/cpp/Method/pymel.core.datatypes.Matrix.homogenize"></a>
+<tt class="descname">homogenize</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.datatypes.Matrix.homogenize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a homogenized version of the Matrix</p>
+</dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.identity"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.identity"></a>
+<tt class="descname">identity</tt><em class="property"> = Matrix([[1.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 1.0]])</em><a class="headerlink" href="#pymel.core.datatypes.Matrix.identity" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.datatypes.Matrix.inverse"><a name="//apple_ref/cpp/Method/pymel.core.datatypes.Matrix.inverse"></a>
+<tt class="descname">inverse</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.datatypes.Matrix.inverse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the inverse Matrix</p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.datatypes.Matrix.isEquivalent"><a name="//apple_ref/cpp/Method/pymel.core.datatypes.Matrix.isEquivalent"></a>
+<tt class="descname">isEquivalent</tt><big>(</big><em>other</em>, <em>tol=1e-10</em><big>)</big><a class="headerlink" href="#pymel.core.datatypes.Matrix.isEquivalent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns true if both arguments considered as Matrix are equal within the specified tolerance</p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.datatypes.Matrix.isSingular"><a name="//apple_ref/cpp/Method/pymel.core.datatypes.Matrix.isSingular"></a>
+<tt class="descname">isSingular</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.datatypes.Matrix.isSingular" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if the given Matrix is singular</p>
+</dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.matrix"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.matrix"></a>
+<tt class="descname">matrix</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.matrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Matrix representation for this Matrix/TransformationMatrix/Quaternion/EulerRotation instance</p>
+</dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.ndim"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.ndim"></a>
+<tt class="descname">ndim</tt><em class="property"> = 2</em><a class="headerlink" href="#pymel.core.datatypes.Matrix.ndim" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.rotate"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.rotate"></a>
+<tt class="descname">rotate</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.rotate" title="Permalink to this definition">¶</a></dt>
+<dd><p>The rotation expressed in this Matrix, in transform space</p>
+</dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.scale"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.scale"></a>
+<tt class="descname">scale</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.scale" title="Permalink to this definition">¶</a></dt>
+<dd><p>The scale expressed in this Matrix, in transform space</p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.datatypes.Matrix.setToIdentity"><a name="//apple_ref/cpp/Method/pymel.core.datatypes.Matrix.setToIdentity"></a>
+<tt class="descname">setToIdentity</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.datatypes.Matrix.setToIdentity" title="Permalink to this definition">¶</a></dt>
+<dd><p>m.setToIdentity() &lt;==&gt; m = a * b
+Sets MatrixN to the identity matrix</p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.datatypes.Matrix.setToProduct"><a name="//apple_ref/cpp/Method/pymel.core.datatypes.Matrix.setToProduct"></a>
+<tt class="descname">setToProduct</tt><big>(</big><em>left</em>, <em>right</em><big>)</big><a class="headerlink" href="#pymel.core.datatypes.Matrix.setToProduct" title="Permalink to this definition">¶</a></dt>
+<dd><p>m.setToProduct(a, b) &lt;==&gt; m = a * b
+Sets MatrixN to the result of the product of MatrixN a and MatrixN b</p>
+</dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.shape"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.shape"></a>
+<tt class="descname">shape</tt><em class="property"> = (4, 4)</em><a class="headerlink" href="#pymel.core.datatypes.Matrix.shape" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.size"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.size"></a>
+<tt class="descname">size</tt><em class="property"> = 16</em><a class="headerlink" href="#pymel.core.datatypes.Matrix.size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.datatypes.Matrix.translate"><a name="//apple_ref/cpp/Attribute/pymel.core.datatypes.Matrix.translate"></a>
+<tt class="descname">translate</tt><a class="headerlink" href="#pymel.core.datatypes.Matrix.translate" title="Permalink to this definition">¶</a></dt>
+<dd><p>The translation expressed in this Matrix, in transform space</p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.datatypes.Matrix.transpose"><a name="//apple_ref/cpp/Method/pymel.core.datatypes.Matrix.transpose"></a>
+<tt class="descname">transpose</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.datatypes.Matrix.transpose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the transposed Matrix</p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.datatypes.Matrix.weighted"><a name="//apple_ref/cpp/Method/pymel.core.datatypes.Matrix.weighted"></a>
+<tt class="descname">weighted</tt><big>(</big><em>weight</em><big>)</big><a class="headerlink" href="#pymel.core.datatypes.Matrix.weighted" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a 0.0-1.0 scalar weighted blend between identity and self</p>
+</dd></dl>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.datatypes.FloatVector.html" title="previous chapter">pymel.core.datatypes.FloatVector</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.datatypes.MatrixN.html" title="next chapter">pymel.core.datatypes.MatrixN</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/classes/pymel.core.datatypes/pymel.core.datatypes.Matrix.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.datatypes.MatrixN.html" title="pymel.core.datatypes.MatrixN">next</a> |</li>
+<li class="right">
+<a href="pymel.core.datatypes.FloatVector.html" title="pymel.core.datatypes.FloatVector">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.datatypes.html">pymel.core.datatypes</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.datatypes/pymel.core.datatypes.Matrix.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:16:28 GMT -->
+</body></html>

@@ -1,0 +1,6 @@
+pymel.core.runtime.AssignOfflineFileFromRefEd
+=============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: AssignOfflineFileFromRefEd

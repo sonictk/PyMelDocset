@@ -1,0 +1,6 @@
+pymel.core.runtime.OutTangentClamped
+====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: OutTangentClamped

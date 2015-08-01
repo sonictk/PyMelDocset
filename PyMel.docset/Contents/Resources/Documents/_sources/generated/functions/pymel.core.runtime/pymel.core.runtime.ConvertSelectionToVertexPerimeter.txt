@@ -1,0 +1,6 @@
+pymel.core.runtime.ConvertSelectionToVertexPerimeter
+====================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ConvertSelectionToVertexPerimeter

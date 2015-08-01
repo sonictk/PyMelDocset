@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorToggleNodeSelectedPins
+===================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorToggleNodeSelectedPins

@@ -1,0 +1,6 @@
+pymel.core.runtime.DecreaseGammaFine
+====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: DecreaseGammaFine

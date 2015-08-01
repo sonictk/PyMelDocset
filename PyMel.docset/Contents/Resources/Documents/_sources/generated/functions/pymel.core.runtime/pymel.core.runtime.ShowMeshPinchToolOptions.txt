@@ -1,0 +1,6 @@
+pymel.core.runtime.ShowMeshPinchToolOptions
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ShowMeshPinchToolOptions

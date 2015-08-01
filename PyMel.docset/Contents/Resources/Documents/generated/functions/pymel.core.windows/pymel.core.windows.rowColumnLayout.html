@@ -1,0 +1,794 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.windows/pymel.core.windows.rowColumnLayout.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:38:46 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.windows.rowColumnLayout — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.windows.html" rel="up" title="pymel.core.windows"/>
+<link href="pymel.core.windows.rowLayout.html" rel="next" title="pymel.core.windows.rowLayout"/>
+<link href="pymel.core.windows.renderWindowEditor.html" rel="prev" title="pymel.core.windows.renderWindowEditor"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.windows » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.windows.rowColumnLayout ¶ 
+ 
+ 
+ rowColumnLayout ( *args , **kwargs ) ¶ 
+ This command creates a rowColumn layout. A rowColumn layout positions children in either a row or column format. A
+column layout, specified with the -nc/numberOfColumnsflag, allows you set text alignment, attachments and offsets for
+each column in the layout. Every..." name="description"/><meta content="__PyMel_generated_functions_pymel_core_windows_pymel_core_windows_rowColumnLayout_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.windows.rowLayout.html" title="pymel.core.windows.rowLayout">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.windows.renderWindowEditor.html" title="pymel.core.windows.renderWindowEditor">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.windows.html">pymel.core.windows</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-windows-rowcolumnlayout">
+<h1>pymel.core.windows.rowColumnLayout<a class="headerlink" href="#pymel-core-windows-rowcolumnlayout" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.core.windows.rowColumnLayout"><a name="//apple_ref/cpp/Function/pymel.core.windows.rowColumnLayout"></a>
+<tt class="descname">rowColumnLayout</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.windows.rowColumnLayout" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command creates a rowColumn layout. A rowColumn layout positions children in either a row or column format. A
+column layout, specified with the -nc/numberOfColumnsflag, allows you set text alignment, attachments and offsets for
+each column in the layout. Every member of a column will have the same alignment, attachment and offsets.  Likewise the
+row format, specified by the -nr/numberOfRowsflag, allows setting of these attributes for each row in the layout. Every
+member of a row will have the same attributes. The layout must be either a row or column format. This layout does not
+support both, or the specification of attributes on an individual child basis. Some flags only make sense for one of
+either the row format or the column format.  For example the -rh/rowHeightflag can only be specified in row format. In
+column format the row height is determined by the tallest child in the row, plus offsets.</p>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">annotation</span></tt> / <tt class="docutils literal"><span class="pre">ann</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Annotate the control with an extra string value.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">backgroundColor</span></tt> / <tt class="docutils literal"><span class="pre">bgc</span></tt></td>
+<td><em>float, float, float</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">The background color of the control. The arguments correspond to the red, green, and blue color components. Each component ranges in value from 0.0 to 1.0. When
+setting backgroundColor, the background is automatically enabled, unless enableBackground is also specified with a false value.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">childArray</span></tt> / <tt class="docutils literal"><span class="pre">ca</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns a string array of the names of the layout’s immediate children.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">columnAlign</span></tt> / <tt class="docutils literal"><span class="pre">cal</span></tt></td>
+<td><em>int, unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Alignment for text and pixmaps in the specified column.  Values are: left, rightand center.  Only valid for column format, ie. number of columns specified with
+-nc/numberOfColumnsflag.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">columnAttach</span></tt> / <tt class="docutils literal"><span class="pre">cat</span></tt></td>
+<td><em>int, unicode, int</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">The attachements and offsets for the children in the specified column.  The first argument is the 1-based column index.  The second argument is the attachment,
+valid values are left, rightand both.  The third argument must be greater than 0 and specifies the offset.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">columnOffset</span></tt> / <tt class="docutils literal"><span class="pre">co</span></tt></td>
+<td><em>int, unicode, int</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">The attachment offset for the specified column.  The first argument is the 1-based column index.  The second argument is the attachment, valid values are left,
+rightand both.  The third argument must be greater than 0 and specifies the offset.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">columnSpacing</span></tt> / <tt class="docutils literal"><span class="pre">cs</span></tt></td>
+<td><em>int, int</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">The space between columns in pixels.  In column format this flag specifies that the space be to the left of the given column.  In row format it specifies the
+space between all columns, however a valid column index is still required.  The first argument is the 1-based column index.  The second argument must be greater
+than 0 and specifies the spacing.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">columnWidth</span></tt> / <tt class="docutils literal"><span class="pre">cw</span></tt></td>
+<td><em>int, int</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Width of a column. This flag is valid only in column format.  The column width must be greater than 0.  The first argument is the 1-based column index.  The
+second argument must be greater than 0 and specifies the column width.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">defineTemplate</span></tt> / <tt class="docutils literal"><span class="pre">dt</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Puts a command in a mode where any other flags and args are parsed and added to the command template specified in the argument. They will be used as default
+arguments in any subsequent invocations of the command when templateName is set as the current template.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">docTag</span></tt> / <tt class="docutils literal"><span class="pre">dtg</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Add a documentation flag to the control.  The documentation flag has a directory structure like hierarchy. Eg. -dt render/multiLister/createNode/material</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">dragCallback</span></tt> / <tt class="docutils literal"><span class="pre">dgc</span></tt></td>
+<td><em>script</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Adds a callback that is called when the middle mouse button is pressed.  The MEL version of the callback is of the form: global proc string[] callbackName(string
+$dragControl, int $x, int $y, int $mods) The proc returns a string array that is transferred to the drop site. By convention the first string in the array
+describes the user settable message type.  Controls that are application defined drag sources may ignore the callback. $mods allows testing for the key modifiers
+CTL and SHIFT. Possible values are 0 == No modifiers, 1 == SHIFT, 2 == CTL, 3 == CTL + SHIFT. In Python, it is similar, but there are two ways to specify the
+callback.  The recommended way is to pass a Python function object as the argument.  In that case, the Python callback should have the form: def callbackName(
+dragControl, x, y, modifiers ): The values of these arguments are the same as those for the MEL version above. The other way to specify the callback in Python is
+to specify a string to be executed.  In that case, the string will have the values substituted into it via the standard Python format operator.  The format values
+are passed in a dictionary with the keys dragControl, x, y, modifiers.  The dragControlvalue is a string and the other values are integers (eg the callback string
+could be print ‘%(dragControl)s %(x)d %(y)d %(modifiers)d’</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">dropCallback</span></tt> / <tt class="docutils literal"><span class="pre">dpc</span></tt></td>
+<td><em>script</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Adds a callback that is called when a drag and drop operation is released above the drop site.  The MEL version of the callback is of the form: global proc
+callbackName(string $dragControl, string $dropControl, string $msgs[], int $x, int $y, int $type) The proc receives a string array that is transferred from the
+drag source. The first string in the msgs array describes the user defined message type. Controls that are application defined drop sites may ignore the callback.
+$type can have values of 1 == Move, 2 == Copy, 3 == Link. In Python, it is similar, but there are two ways to specify the callback.  The recommended way is to
+pass a Python function object as the argument.  In that case, the Python callback should have the form: def pythonDropTest( dragControl, dropControl, messages, x,
+y, dragType ): The values of these arguments are the same as those for the MEL version above. The other way to specify the callback in Python is to specify a
+string to be executed.  In that case, the string will have the values substituted into it via the standard Python format operator.  The format values are passed
+in a dictionary with the keys dragControl, dropControl, messages, x, y, type.  The dragControlvalue is a string and the other values are integers (eg the callback
+string could be print ‘%(dragControl)s %(dropControl)s %(messages)r %(x)d %(y)d %(type)d’</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">enable</span></tt> / <tt class="docutils literal"><span class="pre">en</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">The enable state of the control.  By default, this flag is set to true and the control is enabled.  Specify false and the control will appear dimmed or greyed-out
+indicating it is disabled.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">enableBackground</span></tt> / <tt class="docutils literal"><span class="pre">ebg</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Enables the background color of the control.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">exists</span></tt> / <tt class="docutils literal"><span class="pre">ex</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns true|false depending upon whether the specified object exists.  Other flags are ignored.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">fullPathName</span></tt> / <tt class="docutils literal"><span class="pre">fpn</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Return the full path name of the widget, which includes all the parents</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">height</span></tt> / <tt class="docutils literal"><span class="pre">h</span></tt></td>
+<td><em>int</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>The height of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">isObscured</span></tt> / <tt class="docutils literal"><span class="pre">io</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Return whether the control can actually be seen by the user. The control will be obscured if its state is invisible, if it is blocked (entirely or partially) by
+some other control, if it or a parent layout is unmanaged, or if the control’s window is invisible or iconified.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">manage</span></tt> / <tt class="docutils literal"><span class="pre">m</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Manage state of the control.  An unmanaged control is not visible, nor does it take up any screen real estate.  All controls are created managed by default.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">noBackground</span></tt> / <tt class="docutils literal"><span class="pre">nbg</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Clear/reset the control’s background. Passing true means the background should not be drawn at all, false means the background should be drawn.  The state of this
+flag is inherited by children of this control.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">numberOfChildren</span></tt> / <tt class="docutils literal"><span class="pre">nch</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns in an int the number of immediate children of the layout.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">numberOfColumns</span></tt> / <tt class="docutils literal"><span class="pre">nc</span></tt></td>
+<td><em>int</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Number of columns. This flag is mutually exclusive to the -nr/numRowsflag.  Either one or the other can be specified.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">numberOfPopupMenus</span></tt> / <tt class="docutils literal"><span class="pre">npm</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Return the number of popup menus attached to this control.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">numberOfRows</span></tt> / <tt class="docutils literal"><span class="pre">nr</span></tt></td>
+<td><em>int</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Number of rows. This flag is mutually exclusive to the -nc/numColumnsflag. Either one or the other can be specified.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">parent</span></tt> / <tt class="docutils literal"><span class="pre">p</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>The parent layout for this control.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">popupMenuArray</span></tt> / <tt class="docutils literal"><span class="pre">pma</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Return the names of all the popup menus attached to this control.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">preventOverride</span></tt> / <tt class="docutils literal"><span class="pre">po</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>If true, this flag disallows overriding the control’s attribute via the control’s right mouse button menu.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">rowAlign</span></tt> / <tt class="docutils literal"><span class="pre">ral</span></tt></td>
+<td><em>int, unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Alignment for text and pixmaps in the specified row. Values are: left, rightand center.  Only valid for row format, ie. number of rows specified with
+-nr/numberOfRowsflag.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">rowAttach</span></tt> / <tt class="docutils literal"><span class="pre">rat</span></tt></td>
+<td><em>int, unicode, int</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">The attachements and offsets for the children in the specified row.  The first argument is the 1-based row index.  The second argument is the attachment, valid
+values are top, bottomand both.  The third argument must be greater than 0 and specifies the offset.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">rowHeight</span></tt> / <tt class="docutils literal"><span class="pre">rh</span></tt></td>
+<td><em>int, int</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Height of a row. This flag is only valid in row format. The row height must be greater than 0. The first argument is the 1-based row index.  The second argument
+must be greater than 0 and specifies the row height.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">rowOffset</span></tt> / <tt class="docutils literal"><span class="pre">ro</span></tt></td>
+<td><em>int, unicode, int</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">The attachment offset for the specified row.  The first argument is the 1-based row index.  The second argument is the attachment, valid values are top, bottomand
+both.  The third argument must be greater than 0 and specifies the offset.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">rowSpacing</span></tt> / <tt class="docutils literal"><span class="pre">rs</span></tt></td>
+<td><em>int, int</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">The space between rows, in pixels.  In row format this specifies the space above the specified row.  In column format it specifies the space between all rows,
+however a valid row index is still required.  The first argument is the 1-based row index.  The second argument must be greater than 0 and specifies the spacing.
+Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">useTemplate</span></tt> / <tt class="docutils literal"><span class="pre">ut</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Force the command to use a command template other than the current one.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">visible</span></tt> / <tt class="docutils literal"><span class="pre">vis</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">The visible state of the control.  A control is created visible by default.  Note that a control’s actual appearance is also dependent on the visible state of its
+parent layout(s).</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">visibleChangeCommand</span></tt> / <tt class="docutils literal"><span class="pre">vcc</span></tt></td>
+<td><em>script</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Command that gets executed when visible state of the control changes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">width</span></tt> / <tt class="docutils literal"><span class="pre">w</span></tt></td>
+<td><em>int</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>The width of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.rowColumnLayout</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+
+<span class="c">#    The following script will position the buttons in a single column.</span>
+<span class="c">#</span>
+<span class="c">#    +----+</span>
+<span class="c">#    | b1 |</span>
+<span class="c">#    +----+</span>
+<span class="c">#    +----+</span>
+<span class="c">#    | b2 |</span>
+<span class="c">#    +----+</span>
+<span class="c">#    +----+</span>
+<span class="c">#    | b3 |</span>
+<span class="c">#    +----+</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">window</span><span class="p">()</span>
+<span class="c"># Result: ui.Window('window1') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">rowColumnLayout</span><span class="p">(</span> <span class="n">numberOfColumns</span><span class="o">=</span><span class="mi">1</span> <span class="p">)</span>
+<span class="c"># Result: ui.RowColumnLayout('window1|rowColumnLayout1') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">button</span><span class="p">()</span>
+<span class="c"># Result: ui.Button('window1|rowColumnLayout1|button68') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">button</span><span class="p">()</span>
+<span class="c"># Result: ui.Button('window1|rowColumnLayout1|button69') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">button</span><span class="p">()</span>
+<span class="c"># Result: ui.Button('window1|rowColumnLayout1|button70') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">showWindow</span><span class="p">()</span>
+
+<span class="c">#    The following script will position the buttons in a single row.</span>
+<span class="c">#</span>
+<span class="c">#    +----++----++----+</span>
+<span class="c">#    | b1 || b2 || b3 |</span>
+<span class="c">#    +----++----++----+</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">window</span><span class="p">()</span>
+<span class="c"># Result: ui.Window('window2') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">rowColumnLayout</span><span class="p">(</span> <span class="n">numberOfRows</span><span class="o">=</span><span class="mi">1</span> <span class="p">)</span>
+<span class="c"># Result: ui.RowColumnLayout('window2|rowColumnLayout2') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">button</span><span class="p">()</span>
+<span class="c"># Result: ui.Button('window2|rowColumnLayout2|button71') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">button</span><span class="p">()</span>
+<span class="c"># Result: ui.Button('window2|rowColumnLayout2|button72') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">button</span><span class="p">()</span>
+<span class="c"># Result: ui.Button('window2|rowColumnLayout2|button73') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">showWindow</span><span class="p">()</span>
+
+<span class="c">#    The following script will position the buttons in 3 columns, each</span>
+<span class="c">#    column a different width.</span>
+<span class="c">#</span>
+<span class="c">#    +----++--------++------------+</span>
+<span class="c">#    | b1 ||   b2   ||     b3     |</span>
+<span class="c">#    +----++--------++------------+</span>
+<span class="c">#    +----++--------++------------+</span>
+<span class="c">#    | b4 ||   b5   ||     b6     |</span>
+<span class="c">#    +----++--------++------------+</span>
+<span class="c">#    +----+</span>
+<span class="c">#    | b7 |</span>
+<span class="c">#    +----+</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">window</span><span class="p">()</span>
+<span class="c"># Result: ui.Window('window3') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">rowColumnLayout</span><span class="p">(</span> <span class="n">numberOfColumns</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">columnWidth</span><span class="o">=</span><span class="p">[(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">60</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">80</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">100</span><span class="p">)]</span> <span class="p">)</span>
+<span class="c"># Result: ui.RowColumnLayout('window3|rowColumnLayout3') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">button</span><span class="p">()</span>
+<span class="c"># Result: ui.Button('window3|rowColumnLayout3|button74') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">button</span><span class="p">()</span>
+<span class="c"># Result: ui.Button('window3|rowColumnLayout3|button75') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">button</span><span class="p">()</span>
+<span class="c"># Result: ui.Button('window3|rowColumnLayout3|button76') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">button</span><span class="p">()</span>
+<span class="c"># Result: ui.Button('window3|rowColumnLayout3|button77') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">button</span><span class="p">()</span>
+<span class="c"># Result: ui.Button('window3|rowColumnLayout3|button78') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">button</span><span class="p">()</span>
+<span class="c"># Result: ui.Button('window3|rowColumnLayout3|button79') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">button</span><span class="p">()</span>
+<span class="c"># Result: ui.Button('window3|rowColumnLayout3|button80') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">showWindow</span><span class="p">()</span>
+
+<span class="c">#    The following script will position the buttons in 2 rows, each</span>
+<span class="c">#    row a different height.</span>
+<span class="c">#</span>
+<span class="c">#    +----++----++----++----+</span>
+<span class="c">#    | b1 || b3 || b5 || b7 |</span>
+<span class="c">#    +----++----++----++----+</span>
+<span class="c">#    +----++----++----+</span>
+<span class="c">#    |    ||    ||    |</span>
+<span class="c">#    | b2 || b4 || b6 |</span>
+<span class="c">#    |    ||    ||    |</span>
+<span class="c">#    +----++----++----+</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">window</span><span class="p">()</span>
+<span class="c"># Result: ui.Window('window4') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">rowColumnLayout</span><span class="p">(</span> <span class="n">numberOfRows</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">rowHeight</span><span class="o">=</span><span class="p">[(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">30</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">60</span><span class="p">)]</span> <span class="p">)</span>
+<span class="c"># Result: ui.RowColumnLayout('window4|rowColumnLayout4') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">button</span><span class="p">()</span>
+<span class="c"># Result: ui.Button('window4|rowColumnLayout4|button81') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">button</span><span class="p">()</span>
+<span class="c"># Result: ui.Button('window4|rowColumnLayout4|button82') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">button</span><span class="p">()</span>
+<span class="c"># Result: ui.Button('window4|rowColumnLayout4|button83') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">button</span><span class="p">()</span>
+<span class="c"># Result: ui.Button('window4|rowColumnLayout4|button84') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">button</span><span class="p">()</span>
+<span class="c"># Result: ui.Button('window4|rowColumnLayout4|button85') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">button</span><span class="p">()</span>
+<span class="c"># Result: ui.Button('window4|rowColumnLayout4|button86') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">button</span><span class="p">()</span>
+<span class="c"># Result: ui.Button('window4|rowColumnLayout4|button87') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">showWindow</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.windows.renderWindowEditor.html" title="previous chapter">pymel.core.windows.renderWindowEditor</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.windows.rowLayout.html" title="next chapter">pymel.core.windows.rowLayout</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.core.windows/pymel.core.windows.rowColumnLayout.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.windows.rowLayout.html" title="pymel.core.windows.rowLayout">next</a> |</li>
+<li class="right">
+<a href="pymel.core.windows.renderWindowEditor.html" title="pymel.core.windows.renderWindowEditor">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.windows.html">pymel.core.windows</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.windows/pymel.core.windows.rowColumnLayout.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:38:46 GMT -->
+</body></html>

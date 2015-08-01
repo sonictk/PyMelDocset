@@ -1,0 +1,6 @@
+pymel.core.runtime.TextureCentricUVLinkingEditor
+================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: TextureCentricUVLinkingEditor

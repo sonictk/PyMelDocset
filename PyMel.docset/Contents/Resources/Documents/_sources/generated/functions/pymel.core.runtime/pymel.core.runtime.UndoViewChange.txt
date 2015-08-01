@@ -1,0 +1,6 @@
+pymel.core.runtime.UndoViewChange
+=================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: UndoViewChange

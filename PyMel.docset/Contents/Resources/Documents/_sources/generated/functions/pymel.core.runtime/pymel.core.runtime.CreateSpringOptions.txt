@@ -1,0 +1,6 @@
+pymel.core.runtime.CreateSpringOptions
+======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreateSpringOptions

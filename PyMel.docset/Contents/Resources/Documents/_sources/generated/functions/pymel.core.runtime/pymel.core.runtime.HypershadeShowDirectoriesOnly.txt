@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeShowDirectoriesOnly
+================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeShowDirectoriesOnly

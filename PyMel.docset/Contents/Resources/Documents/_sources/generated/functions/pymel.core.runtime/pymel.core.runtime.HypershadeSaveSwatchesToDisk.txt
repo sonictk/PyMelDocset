@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeSaveSwatchesToDisk
+===============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeSaveSwatchesToDisk

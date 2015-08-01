@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorPickWalkUp
+=======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorPickWalkUp

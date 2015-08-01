@@ -1,0 +1,6 @@
+pymel.core.runtime.ExtrudeEdge
+==============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ExtrudeEdge

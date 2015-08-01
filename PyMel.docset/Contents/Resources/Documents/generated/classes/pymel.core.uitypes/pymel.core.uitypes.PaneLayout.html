@@ -1,0 +1,503 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.uitypes/pymel.core.uitypes.PaneLayout.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:26:37 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.uitypes.PaneLayout — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.uitypes.html" rel="up" title="pymel.core.uitypes"/>
+<link href="pymel.core.uitypes.Panel.html" rel="next" title="pymel.core.uitypes.Panel"/>
+<link href="pymel.core.uitypes.PalettePort.html" rel="prev" title="pymel.core.uitypes.PalettePort"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.uitypes » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.uitypes.PaneLayout ¶ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ class PaneLayout ¶ 
+ class counterpart of mel function paneLayout 
+ This command creates a pane layout. A pane layout may have any number of children but at any one time only certain children may be visible, as determined by the current layout configuration. For example a horizontally split..." name="description"/><meta content="__PyMel_generated_classes_pymel_core_uitypes_pymel_core_uitypes_PaneLayout_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.uitypes.Panel.html" title="pymel.core.uitypes.Panel">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.uitypes.PalettePort.html" title="pymel.core.uitypes.PalettePort">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.uitypes.html">pymel.core.uitypes</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-uitypes-panelayout">
+<h1>pymel.core.uitypes.PaneLayout<a class="headerlink" href="#pymel-core-uitypes-panelayout" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img alt="Inheritance diagram of PaneLayout" class="inheritance" src="../../../_images/inheritance-568cb48afb298c522c027d7a36a0189a91d7e9b1.png" usemap="#inheritance4faa3e83bf"/>
+<map id="inheritance4faa3e83bf" name="inheritance4faa3e83bf">
+<area alt="" coords="8,44,80,68" href="pymel.core.uitypes.Layout.html#pymel.core.uitypes.Layout" id="node1" shape="rect" title="Layout"></area>
+<area alt="" coords="5,83,84,107" href="#pymel.core.uitypes.PaneLayout" id="node3" shape="rect" title="class counterpart of mel function `paneLayout`"></area>
+<area alt="" coords="8,5,80,29" href="pymel.core.uitypes.PyUI.html#pymel.core.uitypes.PyUI" id="node2" shape="rect" title="PyUI"></area>
+</map>
+</p>
+<dl class="class">
+<dt id="pymel.core.uitypes.PaneLayout"><a name="//apple_ref/cpp/Class/pymel.core.uitypes.PaneLayout"></a>
+<em class="property">class </em><tt class="descname">PaneLayout</tt><a class="headerlink" href="#pymel.core.uitypes.PaneLayout" title="Permalink to this definition">¶</a></dt>
+<dd><p>class counterpart of mel function <tt class="xref py py-obj docutils literal"><span class="pre">paneLayout</span></tt></p>
+<p>This command creates a pane layout.  A pane layout may have any number of children but at any one time only certain children may be visible, as determined by the current layout configuration.  For example a horizontally split pane shows only two children, one on top of the other and a visible separator between the two.  The separator may be moved to vary the size of each pane.  Various other pane configurations are available and all display a moveable separator that define the size of each pane in the layout.</p>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.dragCallback"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.dragCallback"></a>
+<tt class="descname">dragCallback</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.dragCallback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a callback that is called when the middle mouse button is pressed.  The MEL version of the callback is of the form: global proc string[] callbackName(string $dragControl, int $x, int $y, int $mods) The proc returns a string array that is transferred to the drop site. By convention the first string in the array describes the user settable message type.  Controls that are application defined drag sources may ignore the callback. $mods allows testing for the key modifiers CTL and SHIFT. Possible values are 0 == No modifiers, 1 == SHIFT, 2 == CTL, 3 == CTL + SHIFT. In Python, it is similar, but there are two ways to specify the callback.  The recommended way is to pass a Python function object as the argument.  In that case, the Python callback should have the form: def callbackName( dragControl, x, y, modifiers ): The values of these arguments are the same as those for the MEL version above. The other way to specify the callback in Python is to specify a string to be executed.  In that case, the string will have the values substituted into it via the standard Python format operator.  The format values are passed in a dictionary with the keys dragControl, x, y, modifiers.  The dragControlvalue is a string and the other values are integers (eg the callback string could be print ‘%(dragControl)s %(x)d %(y)d %(modifiers)d’</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.dropCallback"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.dropCallback"></a>
+<tt class="descname">dropCallback</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.dropCallback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a callback that is called when a drag and drop operation is released above the drop site.  The MEL version of the callback is of the form: global proc callbackName(string $dragControl, string $dropControl, string $msgs[], int $x, int $y, int $type) The proc receives a string array that is transferred from the drag source. The first string in the msgs array describes the user defined message type. Controls that are application defined drop sites may ignore the callback. $type can have values of 1 == Move, 2 == Copy, 3 == Link. In Python, it is similar, but there are two ways to specify the callback.  The recommended way is to pass a Python function object as the argument.  In that case, the Python callback should have the form: def pythonDropTest( dragControl, dropControl, messages, x, y, dragType ): The values of these arguments are the same as those for the MEL version above. The other way to specify the callback in Python is to specify a string to be executed.  In that case, the string will have the values substituted into it via the standard Python format operator.  The format values are passed in a dictionary with the keys dragControl, dropControl, messages, x, y, type.  The dragControlvalue is a string and the other values are integers (eg the callback string could be print ‘%(dragControl)s %(dropControl)s %(messages)r %(x)d %(y)d %(type)d’</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getActiveFrameThickness"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getActiveFrameThickness"></a>
+<tt class="descname">getActiveFrameThickness</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getActiveFrameThickness" title="Permalink to this definition">¶</a></dt>
+<dd><p>The thickness of the frame drawn around the active frame. Specify an integer value greater than or equal to 0.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getActivePane"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getActivePane"></a>
+<tt class="descname">getActivePane</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getActivePane" title="Permalink to this definition">¶</a></dt>
+<dd><p>The active pane has a colored border surrounding it.  Only one pane may be active at any one time.  Using either of the flags -ap/activePaneor -api/activePaneIndexwill automatically deactivate the previously active pane.  The argument is the full or short name of the child control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getActivePaneIndex"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getActivePaneIndex"></a>
+<tt class="descname">getActivePaneIndex</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getActivePaneIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>The active pane index.  The active pane has a colored border surrounding it.  Only one pane may be active at any one time.  Using either of the flags -ap/activePaneor -api/activePaneIndexwill automatically deactivate the previously active pane.  The argument is an integer value ranging from 1 to 4.  Panes for any particular configuration are numbered clockwise beginning with the pane in the top left corner of the layout.  If any other index is specified then the current active pane is deactivated.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getAnnotation"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getAnnotation"></a>
+<tt class="descname">getAnnotation</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getAnnotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Annotate the control with an extra string value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getBackgroundColor"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getBackgroundColor"></a>
+<tt class="descname">getBackgroundColor</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getBackgroundColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>The background color of the control. The arguments correspond to the red, green, and blue color components. Each component ranges in value from 0.0 to 1.0. When setting backgroundColor, the background is automatically enabled, unless enableBackground is also specified with a false value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getChildArray"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getChildArray"></a>
+<tt class="descname">getChildArray</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getChildArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a string array of the names of the layout’s immediate children.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getConfiguration"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getConfiguration"></a>
+<tt class="descname">getConfiguration</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getConfiguration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the layout configuration for the panes.  Valid values are: single, horizontal2, vertical2, horizontal3, vertical3, top3, left3, bottom3, right3, horizontal4, vertical4, top4, left4, bottom4, right4, quad</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getDocTag"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getDocTag"></a>
+<tt class="descname">getDocTag</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getDocTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a documentation flag to the control.  The documentation flag has a directory structure like hierarchy. Eg. -dt render/multiLister/createNode/material</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getEnable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getEnable"></a>
+<tt class="descname">getEnable</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getEnable" title="Permalink to this definition">¶</a></dt>
+<dd><p>The enable state of the control.  By default, this flag is set to true and the control is enabled.  Specify false and the control will appear dimmed or greyed-out indicating it is disabled.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getEnableBackground"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getEnableBackground"></a>
+<tt class="descname">getEnableBackground</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getEnableBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables the background color of the control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getFullPathName"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getFullPathName"></a>
+<tt class="descname">getFullPathName</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getFullPathName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the full path name of the widget, which includes all the parents</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getHeight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getHeight"></a>
+<tt class="descname">getHeight</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>The height of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getIsObscured"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getIsObscured"></a>
+<tt class="descname">getIsObscured</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getIsObscured" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether the control can actually be seen by the user. The control will be obscured if its state is invisible, if it is blocked (entirely or partially) by some other control, if it or a parent layout is unmanaged, or if the control’s window is invisible or iconified.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getManage"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getManage"></a>
+<tt class="descname">getManage</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getManage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Manage state of the control.  An unmanaged control is not visible, nor does it take up any screen real estate.  All controls are created managed by default.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getNumberOfChildren"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getNumberOfChildren"></a>
+<tt class="descname">getNumberOfChildren</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getNumberOfChildren" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns in an int the number of immediate children of the layout.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getNumberOfPopupMenus"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getNumberOfPopupMenus"></a>
+<tt class="descname">getNumberOfPopupMenus</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getNumberOfPopupMenus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of popup menus attached to this control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getNumberOfVisiblePanes"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getNumberOfVisiblePanes"></a>
+<tt class="descname">getNumberOfVisiblePanes</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getNumberOfVisiblePanes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of panes visible for the present configuration.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getPane1"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getPane1"></a>
+<tt class="descname">getPane1</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getPane1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getPane2"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getPane2"></a>
+<tt class="descname">getPane2</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getPane2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getPane3"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getPane3"></a>
+<tt class="descname">getPane3</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getPane3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getPane4"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getPane4"></a>
+<tt class="descname">getPane4</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getPane4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the name of the control in the respective pane.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getPaneSize"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getPaneSize"></a>
+<tt class="descname">getPaneSize</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getPaneSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>The size of a pane in the current pane layout configuration.  The first argument specifies the pane index and is an integer value ranging from 1 to 4.  Panes for any particular configuration are numbered clockwise beginning with the pane in the top left corner of the layout.  The width and height of the pane are specified by the last two arguments.  Both are integer values and they indicate the percentage of the total pane layout size rather that the number of pixels.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getPaneUnderPointer"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getPaneUnderPointer"></a>
+<tt class="descname">getPaneUnderPointer</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getPaneUnderPointer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the name of the child occupying the pane that the pointer is currently over.  An empty string is returned if the pointer is not over a pane.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getPopupMenuArray"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getPopupMenuArray"></a>
+<tt class="descname">getPopupMenuArray</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getPopupMenuArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the names of all the popup menus attached to this control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getPreventOverride"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getPreventOverride"></a>
+<tt class="descname">getPreventOverride</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getPreventOverride" title="Permalink to this definition">¶</a></dt>
+<dd><p>If true, this flag disallows overriding the control’s attribute via the control’s right mouse button menu.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getSeparatorThickness"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getSeparatorThickness"></a>
+<tt class="descname">getSeparatorThickness</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getSeparatorThickness" title="Permalink to this definition">¶</a></dt>
+<dd><p>The thickness of the separators between the panes. Specify an integer value greater than 0. This flag has no effect on Windows systems.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getVisible"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getVisible"></a>
+<tt class="descname">getVisible</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getVisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>The visible state of the control.  A control is created visible by default.  Note that a control’s actual appearance is also dependent on the visible state of its parent layout(s).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getVisibleChangeCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getVisibleChangeCommand"></a>
+<tt class="descname">getVisibleChangeCommand</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getVisibleChangeCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command that gets executed when visible state of the control changes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.getWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.getWidth"></a>
+<tt class="descname">getWidth</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.getWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>The width of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.noBackground"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.noBackground"></a>
+<tt class="descname">noBackground</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.noBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear/reset the control’s background. Passing true means the background should not be drawn at all, false means the background should be drawn.  The state of this flag is inherited by children of this control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.separatorMovedCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.separatorMovedCommand"></a>
+<tt class="descname">separatorMovedCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.separatorMovedCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command executed when the pane separators are moved.                         Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.setActiveFrameThickness"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.setActiveFrameThickness"></a>
+<tt class="descname">setActiveFrameThickness</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.setActiveFrameThickness" title="Permalink to this definition">¶</a></dt>
+<dd><p>The thickness of the frame drawn around the active frame. Specify an integer value greater than or equal to 0.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.setActivePane"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.setActivePane"></a>
+<tt class="descname">setActivePane</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.setActivePane" title="Permalink to this definition">¶</a></dt>
+<dd><p>The active pane has a colored border surrounding it.  Only one pane may be active at any one time.  Using either of the flags -ap/activePaneor -api/activePaneIndexwill automatically deactivate the previously active pane.  The argument is the full or short name of the child control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.setActivePaneIndex"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.setActivePaneIndex"></a>
+<tt class="descname">setActivePaneIndex</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.setActivePaneIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>The active pane index.  The active pane has a colored border surrounding it.  Only one pane may be active at any one time.  Using either of the flags -ap/activePaneor -api/activePaneIndexwill automatically deactivate the previously active pane.  The argument is an integer value ranging from 1 to 4.  Panes for any particular configuration are numbered clockwise beginning with the pane in the top left corner of the layout.  If any other index is specified then the current active pane is deactivated.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.setAnnotation"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.setAnnotation"></a>
+<tt class="descname">setAnnotation</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.setAnnotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Annotate the control with an extra string value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.setBackgroundColor"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.setBackgroundColor"></a>
+<tt class="descname">setBackgroundColor</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.setBackgroundColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>The background color of the control. The arguments correspond to the red, green, and blue color components. Each component ranges in value from 0.0 to 1.0. When setting backgroundColor, the background is automatically enabled, unless enableBackground is also specified with a false value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.setConfiguration"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.setConfiguration"></a>
+<tt class="descname">setConfiguration</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.setConfiguration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the layout configuration for the panes.  Valid values are: single, horizontal2, vertical2, horizontal3, vertical3, top3, left3, bottom3, right3, horizontal4, vertical4, top4, left4, bottom4, right4, quad</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.setDocTag"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.setDocTag"></a>
+<tt class="descname">setDocTag</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.setDocTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a documentation flag to the control.  The documentation flag has a directory structure like hierarchy. Eg. -dt render/multiLister/createNode/material</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.setEnable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.setEnable"></a>
+<tt class="descname">setEnable</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.setEnable" title="Permalink to this definition">¶</a></dt>
+<dd><p>The enable state of the control.  By default, this flag is set to true and the control is enabled.  Specify false and the control will appear dimmed or greyed-out indicating it is disabled.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.setEnableBackground"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.setEnableBackground"></a>
+<tt class="descname">setEnableBackground</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.setEnableBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables the background color of the control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.setHeight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.setHeight"></a>
+<tt class="descname">setHeight</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.setHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>The height of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.setManage"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.setManage"></a>
+<tt class="descname">setManage</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.setManage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Manage state of the control.  An unmanaged control is not visible, nor does it take up any screen real estate.  All controls are created managed by default.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.setPane"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.setPane"></a>
+<tt class="descname">setPane</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.setPane" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag allows you to put a child of this layout in a particular pane.  The first argument is the full or short name of the control.  The second argument is an integer value ranging from 1 to 4.  Panes for any particular configuration are numbered clockwise beginning with the pane in the top left corner of the layout.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.setPaneSize"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.setPaneSize"></a>
+<tt class="descname">setPaneSize</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.setPaneSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>The size of a pane in the current pane layout configuration.  The first argument specifies the pane index and is an integer value ranging from 1 to 4.  Panes for any particular configuration are numbered clockwise beginning with the pane in the top left corner of the layout.  The width and height of the pane are specified by the last two arguments.  Both are integer values and they indicate the percentage of the total pane layout size rather that the number of pixels.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.setPreventOverride"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.setPreventOverride"></a>
+<tt class="descname">setPreventOverride</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.setPreventOverride" title="Permalink to this definition">¶</a></dt>
+<dd><p>If true, this flag disallows overriding the control’s attribute via the control’s right mouse button menu.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.setSeparatorThickness"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.setSeparatorThickness"></a>
+<tt class="descname">setSeparatorThickness</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.setSeparatorThickness" title="Permalink to this definition">¶</a></dt>
+<dd><p>The thickness of the separators between the panes. Specify an integer value greater than 0. This flag has no effect on Windows systems.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.setVisible"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.setVisible"></a>
+<tt class="descname">setVisible</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.setVisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>The visible state of the control.  A control is created visible by default.  Note that a control’s actual appearance is also dependent on the visible state of its parent layout(s).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.setVisibleChangeCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.setVisibleChangeCommand"></a>
+<tt class="descname">setVisibleChangeCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.setVisibleChangeCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command that gets executed when visible state of the control changes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.setWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.setWidth"></a>
+<tt class="descname">setWidth</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.setWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>The width of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.staticHeightPane"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.staticHeightPane"></a>
+<tt class="descname">staticHeightPane</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.staticHeightPane" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set a pane to have a static height, i.e. its height will not change when the layout is dynamically resized. Only one pane can be set to have a static height at one time. This state will be retained even if another child is switched into the pane. Specify 0 to set a pane back to the default state. Any state will be lost if the pane configuration is changed.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.PaneLayout.staticWidthPane"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.PaneLayout.staticWidthPane"></a>
+<tt class="descname">staticWidthPane</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.PaneLayout.staticWidthPane" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set a pane to have a static width, i.e. its width will not change when the layout is dynamically resized. Only one pane can be set to have a static width at one time. This state will be retained even if another child is switched into the pane. Specify 0 to set a pane back to the default state. Any state will be lost if the pane configuration is changed.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.paneLayout</span></tt></p>
+</dd></dl>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.uitypes.PalettePort.html" title="previous chapter">pymel.core.uitypes.PalettePort</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.uitypes.Panel.html" title="next chapter">pymel.core.uitypes.Panel</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/classes/pymel.core.uitypes/pymel.core.uitypes.PaneLayout.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.uitypes.Panel.html" title="pymel.core.uitypes.Panel">next</a> |</li>
+<li class="right">
+<a href="pymel.core.uitypes.PalettePort.html" title="pymel.core.uitypes.PalettePort">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.uitypes.html">pymel.core.uitypes</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.uitypes/pymel.core.uitypes.PaneLayout.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:26:37 GMT -->
+</body></html>

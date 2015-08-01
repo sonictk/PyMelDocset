@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorToggleUseAssetsAndPublishedAttributes
+==================================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorToggleUseAssetsAndPublishedAttributes

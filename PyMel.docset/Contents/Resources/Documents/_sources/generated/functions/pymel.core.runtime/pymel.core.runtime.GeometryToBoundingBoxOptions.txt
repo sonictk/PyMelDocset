@@ -1,0 +1,6 @@
+pymel.core.runtime.GeometryToBoundingBoxOptions
+===============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: GeometryToBoundingBoxOptions

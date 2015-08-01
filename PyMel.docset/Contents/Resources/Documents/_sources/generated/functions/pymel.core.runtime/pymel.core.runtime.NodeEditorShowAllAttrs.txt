@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorShowAllAttrs
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorShowAllAttrs

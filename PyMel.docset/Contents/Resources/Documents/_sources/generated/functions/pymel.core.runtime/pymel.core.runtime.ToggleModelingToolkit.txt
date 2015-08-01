@@ -1,0 +1,6 @@
+pymel.core.runtime.ToggleModelingToolkit
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ToggleModelingToolkit

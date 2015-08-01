@@ -1,0 +1,243 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.animation/pymel.core.animation.movIn.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:34:30 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.animation.movIn — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.animation.html" rel="up" title="pymel.core.animation"/>
+<link href="pymel.core.animation.movOut.html" rel="next" title="pymel.core.animation.movOut"/>
+<link href="pymel.core.animation.mirrorJoint.html" rel="prev" title="pymel.core.animation.mirrorJoint"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.animation » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.animation.movIn ¶ 
+ 
+ 
+ movIn ( *args , **kwargs ) ¶ 
+ Imports a .mov file into animation curves connected to the listed attributes. The attribute must be writable, since an
+animation curve will be created and connected to the attribute. If an animation curve already is connected to the
+attribute, the imported data is pasted onto that..." name="description"/><meta content="__PyMel_generated_functions_pymel_core_animation_pymel_core_animation_movIn_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.animation.movOut.html" title="pymel.core.animation.movOut">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.animation.mirrorJoint.html" title="pymel.core.animation.mirrorJoint">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.animation.html">pymel.core.animation</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-animation-movin">
+<h1>pymel.core.animation.movIn<a class="headerlink" href="#pymel-core-animation-movin" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.core.animation.movIn"><a name="//apple_ref/cpp/Function/pymel.core.animation.movIn"></a>
+<tt class="descname">movIn</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.animation.movIn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Imports a .mov file into animation curves connected to  the listed attributes. The attribute must be writable, since an
+animation curve will be created and connected to the attribute. If an animation curve already is connected to the
+attribute, the imported data is pasted onto that curve. The starting time used for the .mov file importation is the
+current time when the command is executed. Valid attribute types are numeric attributes; time attributes; linear
+attributes; angular attributes; compound attributes made of the types listed previously; and multi attributes composed
+of the types listed previously. If an unsuppoted attribute type is requested, the command will fail and no data will be
+imported. It is important that your user units are set to the same units used in the .mov file, otherwise linear and
+angular values will be incorrect. To export a .mov file, use the movOut command.</p>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">file</span></tt> / <tt class="docutils literal"><span class="pre">f</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>The name of the .mov file. If no extension is used, a .mov will be added.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">startTime</span></tt> / <tt class="docutils literal"><span class="pre">st</span></tt></td>
+<td><em>time</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">The default start time for importing the .mov file is the current time. The startTime option sets the starting time for the .mov data in the current time unit.
+Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.movIn</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">sphere</span><span class="p">(</span> <span class="n">n</span><span class="o">=</span><span class="s">'sph'</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'sph'), nt.MakeNurbSphere(u'makeNurbSphere1')] #</span>
+
+<span class="c">#    Start importing the data at time 45;</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">currentTime</span><span class="p">(</span> <span class="mi">45</span> <span class="p">)</span>
+<span class="c"># Result: 45.0 #</span>
+
+<span class="c">#    Read in rotation, translation, and scale information from the</span>
+<span class="c">#    test.mov file into the sphere. The order of data in the test.mov</span>
+<span class="c">#    file must be: rx, ry, rz, tx, ty, tz.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">movIn</span><span class="p">(</span> <span class="s">'sph.r'</span><span class="p">,</span> <span class="s">'sph.t'</span><span class="p">,</span> <span class="n">f</span><span class="o">=</span><span class="s">'sphereMotion.mov'</span> <span class="p">)</span>
+
+<span class="c">#    An equivalent way of importing data into the sphere.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">movIn</span><span class="p">(</span> <span class="s">'sph.rx'</span><span class="p">,</span> <span class="s">'sph.ry'</span><span class="p">,</span> <span class="s">'sph.rz'</span><span class="p">,</span> <span class="s">'sph.tx'</span><span class="p">,</span> <span class="s">'sph.ty'</span><span class="p">,</span> <span class="s">'sph.tz'</span><span class="p">,</span> <span class="n">f</span><span class="o">=</span><span class="s">'sphereMotion.mov'</span> <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.animation.mirrorJoint.html" title="previous chapter">pymel.core.animation.mirrorJoint</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.animation.movOut.html" title="next chapter">pymel.core.animation.movOut</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.core.animation/pymel.core.animation.movIn.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.animation.movOut.html" title="pymel.core.animation.movOut">next</a> |</li>
+<li class="right">
+<a href="pymel.core.animation.mirrorJoint.html" title="pymel.core.animation.mirrorJoint">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.animation.html">pymel.core.animation</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.animation/pymel.core.animation.movIn.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:34:30 GMT -->
+</body></html>

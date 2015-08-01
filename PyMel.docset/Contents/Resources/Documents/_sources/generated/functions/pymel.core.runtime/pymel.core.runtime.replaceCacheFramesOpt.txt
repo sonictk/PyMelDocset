@@ -1,0 +1,6 @@
+pymel.core.runtime.replaceCacheFramesOpt
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: replaceCacheFramesOpt

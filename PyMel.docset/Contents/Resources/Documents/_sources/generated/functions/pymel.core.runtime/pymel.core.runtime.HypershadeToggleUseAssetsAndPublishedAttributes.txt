@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeToggleUseAssetsAndPublishedAttributes
+==================================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeToggleUseAssetsAndPublishedAttributes

@@ -1,0 +1,6 @@
+pymel.core.runtime.ApplySettingsToLastStroke
+============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ApplySettingsToLastStroke

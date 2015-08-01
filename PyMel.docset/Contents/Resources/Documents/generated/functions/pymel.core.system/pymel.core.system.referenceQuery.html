@@ -1,0 +1,622 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.system/pymel.core.system.referenceQuery.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:38:05 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.system.referenceQuery — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.system.html" rel="up" title="pymel.core.system"/>
+<link href="pymel.core.system.rehash.html" rel="next" title="pymel.core.system.rehash"/>
+<link href="pymel.core.system.referenceEdit.html" rel="prev" title="pymel.core.system.referenceEdit"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.system » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.system.referenceQuery ¶ 
+ 
+ 
+ referenceQuery ( *args , **kwargs ) ¶ 
+ Use this command to find out information about references and referenced nodes. A valid target is either a reference
+node, a reference file, or a referenced node. Some flags don’t require a target, see flag descriptions for more
+information on what effect this..." name="description"/><meta content="__PyMel_generated_functions_pymel_core_system_pymel_core_system_referenceQuery_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.system.rehash.html" title="pymel.core.system.rehash">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.system.referenceEdit.html" title="pymel.core.system.referenceEdit">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.system.html">pymel.core.system</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-system-referencequery">
+<h1>pymel.core.system.referenceQuery<a class="headerlink" href="#pymel-core-system-referencequery" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.core.system.referenceQuery"><a name="//apple_ref/cpp/Function/pymel.core.system.referenceQuery"></a>
+<tt class="descname">referenceQuery</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.system.referenceQuery" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use this command to find out information about references and referenced nodes. A valid target is either a reference
+node, a reference file, or a referenced node. Some flags don’t require a target, see flag descriptions for more
+information on what effect this has. When a scene contains multiple levels of file references, those edits which affect
+a nested reference may be stored on several different reference nodes. For example: A.ma has a reference to B.ma which
+has a reference to C.ma which contains a poly sphere (pSphere1). If you were to open B.ma and translate the sphere, an
+edit would be stored on CRN which refers to a node named C:pSphere1. If you were then to open A.ma and parent the
+sphere, an edit would be stored on BRN which refers to a node named B:C:pSphere1. It is important to note that when
+querying edits which affect a nested reference, the edits will be returned in the same format that they were applied. In
+the above example, opening A.ma and querying all edits which affect C.ma, would return two edits a parent edit affecting
+B:C:pSphere1, and a setAttr edit affecting C:pSphere1. Since there is currently no node named C:pSphere1 (only
+B:C:pSphere1) care will have to be taken when interpreting the returned information. The same care should be taken when
+referenced DAG nodes have been parented or instanced. Continuing with the previous example, let’s say that you were to
+open A.ma and, instead of simply parenting pSphere1, you were to instance it. While A.ma is open, B:C:pSphere1may now be
+an amibiguous name, replaced by <a href="#id1"><span class="problematic" id="id2">|</span></a>B:C:pSphere1and group1|B:C:pSphere1. However querying the edits which affect C.ma would
+still return a setAttr edit affecting C:pSphere1since it was applied prior to B:C:pSphere1 being instanced. Some tips:
+1. Use the ‘-topReference’ flag to query only those edits which were applied    from the currently open file. 2. Use the
+‘-onReferenceNode’ flag to limit the results to those edits where    are stored on a given reference node. You can then
+use various string    manipulation techniques to extrapolate the current name of any affected    nodes.</p>
+<dl class="docutils">
+<dt>Modifications:</dt>
+<dd><ul class="first last simple">
+<li>When queried for ‘es/editStrings’, returned a list of ReferenceEdit objects</li>
+<li>By default, returns all edits. If neither of successfulEdits or
+failedEdits is given, they both default to True. If only one is given,
+the other defaults to the opposite value.</li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">child</span></tt> / <tt class="docutils literal"><span class="pre">ch</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This flag modifies the ‘-rfn/-referenceNode’ and ‘-f/-filename’ flags to indicate the the children of the target reference will be returned. Returns a string
+array.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">dagPath</span></tt> / <tt class="docutils literal"><span class="pre">dp</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This flag modifies the ‘-n/-nodes’ flag to indicate that the names of any dag objects returned will include as much of the dag path as is necessary to make the
+names unique. If this flag is not present, the names returned will not include any dag paths.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">editAttrs</span></tt> / <tt class="docutils literal"><span class="pre">ea</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Returns string array. A main flag used to query the edits that have been applied to the target. Only the names of the attributes involved in the reference edit
+will be returned. If an edit involves multiple attributes (e.g. connectAttredits) the nodes will be returned as separate, consecutive entries in the string array.
+A valid target is either a reference node, a reference file, or a referenced node. If a referenced node is specified, only those edits which affect that node will
+be returned. If a reference file or reference node is specified any edit which affects a node in that reference will be returned. If no target is specified all
+edits are returned. This command can be used on both loaded and unloaded references. By default it will return all the edits, formatted as MEL commands, which
+apply to the target. This flag can be used in combination with the ‘-ea/-editAttrs’ flag to indicate that the names of both the involved nodes and attributes will
+be returned in the format ‘node.attribute’.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">editCommand</span></tt> / <tt class="docutils literal"><span class="pre">ec</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This is a secondary flag used to indicate which type of reference edits should be considered by the command. If this flag is not specified all edit types will be
+included. This flag requires a string parameter. Valid values are: addAttr, connectAttr, deleteAttr, disconnectAttr, parent, setAttr, lockand unlock. In some
+contexts, this flag may be specified more than once to specify multiple edit types to consider.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">editNodes</span></tt> / <tt class="docutils literal"><span class="pre">en</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Returns string array. A main flag used to query the edits that have been applied to the target. Only the names of the nodes involved in the reference edit will be
+returned. If an edit involves multiple nodes (e.g. connectAttredits) the nodes will be returned as separate, consecutive entries in the string array. A valid
+target is either a reference node, a reference file, or a referenced node. If a referenced node is specified, only those edits which affect that node will be
+returned. If a reference file or reference node is specified any edit which affects a node in that reference will be returned. If no target is specified all edits
+are returned. This command can be used on both loaded and unloaded references. By default it will return all the edits, formatted as MEL commands, which apply to
+the target. This flag can be used in combination with the ‘-ea/-editAttrs’ flag to indicate that the names of both the involved nodes and attributes will be
+returned in the format ‘node.attribute’.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">editStrings</span></tt> / <tt class="docutils literal"><span class="pre">es</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Returns string array. A main flag used to query the edits that have been applied to the target. The edit will be returned as a valid MEL command. A valid target
+is either a reference node, a reference file, or a referenced node. If a referenced node is specified, only those edits which affect that node will be returned.
+If a reference file or reference node is specified any edit which affects a node in that reference will be returned. If no target is specified all edits are
+returned. This command can be used on both loaded and unloaded references. By default it will return all the edits, formatted as MEL commands, which apply to the
+target. This flag cannot be used with either the ‘-en/-editNodes’ or ‘-ea/-editAttrs’ flags.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">failedEdits</span></tt> / <tt class="docutils literal"><span class="pre">fld</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This is a secondary flag used to indicate whether or not failed edits should be acted on (e.g. queried, removed, etc...). A failed edit is an edit which could not
+be successfully applied the last time its reference was loaded. An edit can fail for a variety of reasons (e.g. the referenced node to which it applies was
+removed from the referenced file). By default failed edits will not be acted on.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">filename</span></tt> / <tt class="docutils literal"><span class="pre">f</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns string. A main flag used to query the filename associated with the target reference.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">isExportEdits</span></tt> / <tt class="docutils literal"><span class="pre">iee</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns a boolean indicating whether the specified reference node or file name is an edits file (created with the Export Edits feature)</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">isLoaded</span></tt> / <tt class="docutils literal"><span class="pre">il</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns a boolean indicating whether the specified reference node or file name refers to a loaded or unloaded reference.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">isNodeReferenced</span></tt> / <tt class="docutils literal"><span class="pre">inr</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Returns boolean. A main flag used to determine whether or not the target node comes from a referenced file. true if the target node comes from a referenced file,
+false if not.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">isPreviewOnly</span></tt> / <tt class="docutils literal"><span class="pre">ipo</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns boolean. This flag is used to determine whether or not the target reference node is only a preview reference node.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">liveEdits</span></tt> / <tt class="docutils literal"><span class="pre">le</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Specifies that the edits should be returned based on the live edits database. Only valid when used in conjunction with the editStrings flag.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">namespace</span></tt> / <tt class="docutils literal"><span class="pre">ns</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Returns string. This flag returns the full namespace path of the target reference, starting from the root namespace :. It can be combined with the shortName flag
+to return just the base name of the namespace.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">nodes</span></tt> / <tt class="docutils literal"><span class="pre">n</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns string array. A main flag used to query the contents of the target reference.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">onReferenceNode</span></tt> / <tt class="docutils literal"><span class="pre">orn</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This is a secondary flag used to indicate that only those edits which are stored on the indicated reference node should be considered. This flag only supports
+multiple uses when specified with the exportEditscommand.                                          Flag can have multiple arguments, passed either as a tuple or a
+list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">parent</span></tt> / <tt class="docutils literal"><span class="pre">p</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>This flag modifies the ‘-rfn/-referenceNode’ and ‘-f/-filename’ flags to indicate the the parent of the target reference will be returned.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">parentNamespace</span></tt> / <tt class="docutils literal"><span class="pre">pns</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>A main flag used to query and return the parent namespace of the target reference.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">referenceNode</span></tt> / <tt class="docutils literal"><span class="pre">rfn</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns string. A main flag used to query the reference node associated with the target reference.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">shortName</span></tt> / <tt class="docutils literal"><span class="pre">shn</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This flag modifies the ‘-f/-filename’ and ‘-ns/-namespace’ flags. Used with the ‘-f/-filename’ flag indicates that the file name returned will be the short name
+(i.e. just a file name without any directory paths). If this flag is not present, the full name and directory path will be returned. Used with the
+‘-ns/-namespace’ flag indicates that the namespace returned will be the base name of the namespace. (i.e. the base name of the full namespace path :AAA:BBB:CCCis
+CCC</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">showDagPath</span></tt> / <tt class="docutils literal"><span class="pre">sdp</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Shows/hides the full dag path for edits. If false only displays the node-name of reference edits. Must be used with the -editNodes, -editStrings or -editAttrs
+flag.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">showNamespace</span></tt> / <tt class="docutils literal"><span class="pre">sns</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Shows/hides the namespaces on nodes in the reference edits. Must be used with the -editNodes, -editStrings or -editAttrs flag</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">successfulEdits</span></tt> / <tt class="docutils literal"><span class="pre">scs</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This is a secondary flag used to indicate whether or not successful edits should be acted on (e.g. queried, removed, etc...). A successful edit is any edit which
+was successfully applied the last time its reference was loaded. By default successful edits will be acted on.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">topReference</span></tt> / <tt class="docutils literal"><span class="pre">tr</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>This flag modifies the ‘-rfn/-referenceNode’ flag to indicate the top level ancestral reference of the target reference will be returned.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">unresolvedName</span></tt> / <tt class="docutils literal"><span class="pre">un</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This flag modifies the ‘-f/-filename’ flag to indicate that the file name returned will be unresolved (i.e. it will be the path originally specified when the file
+was loaded into Maya; this path may contain environment variables and may not exist on disk). If this flag is not present, the resolved name will     be returned.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">withoutCopyNumber</span></tt> / <tt class="docutils literal"><span class="pre">wcn</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This flag modifies the ‘-f/-filename’ flag to indicate that the file name returned will not have a copy number (e.g. ‘{1}’) appended to the end. If this flag is
+not present, the file name returned may have a copy number appended to the end.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.referenceQuery</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+
+<span class="c"># Build a sample scene:</span>
+<span class="c"># main scene contains a reference to mid.ma.</span>
+<span class="c"># mid.ma contains a reference to bot.ma.</span>
+<span class="c"># Create bot.ma with a poly sphere.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polySphere</span><span class="p">()</span>
+<span class="c"># Result: [nt.Transform(u'pSphere1'), nt.PolySphere(u'polySphere1')] #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">file</span><span class="p">(</span> <span class="n">rename</span><span class="o">=</span><span class="s">'bot.ma'</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">file</span><span class="p">(</span> <span class="n">f</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s">'mayaAscii'</span><span class="p">)</span>
+<span class="c"># Create mid.ma with a poly cone.</span>
+<span class="c"># Reference bot.ma into mid.ma and group</span>
+<span class="c"># the sphere in bot.ma</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">file</span><span class="p">(</span> <span class="n">f</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">new</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">file</span><span class="p">(</span> <span class="s">'bot.ma'</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span><span class="n">ns</span><span class="o">=</span><span class="s">'bot'</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polyCone</span><span class="p">()</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">group</span><span class="p">(</span> <span class="s">'bot:pSphere1'</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">file</span><span class="p">(</span> <span class="n">rename</span><span class="o">=</span><span class="s">'mid.ma'</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">file</span><span class="p">(</span> <span class="n">f</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">s</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s">'mayaAscii'</span><span class="p">)</span>
+<span class="c"># Create a poly plane.</span>
+<span class="c"># Reference mid.ma into the main scene,</span>
+<span class="c"># move the cone in mid.ma, and connect</span>
+<span class="c"># the plane to the sphere in bot.ma.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">file</span><span class="p">(</span> <span class="n">f</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">new</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">file</span><span class="p">(</span> <span class="s">'mid.ma'</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">ns</span><span class="o">=</span><span class="s">'mid'</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">select</span><span class="p">(</span> <span class="s">'mid:pCone1'</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">move</span><span class="p">(</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polyPlane</span><span class="p">()</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">connectAttr</span><span class="p">(</span> <span class="s">'pPlane1.ty'</span><span class="p">,</span> <span class="s">'mid:bot:polySphere1.radius'</span> <span class="p">)</span>
+<span class="c"># Now perform some queries:</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">referenceQuery</span><span class="p">(</span> <span class="s">'midRN'</span><span class="p">,</span><span class="n">filename</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: C:/Documents and Settings/user/My Documents/maya/projects/default/scenes/mid.ma</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">referenceQuery</span><span class="p">(</span> <span class="s">'mid:pCone1'</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">shortName</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: mid.ma</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">referenceQuery</span><span class="p">(</span> <span class="s">'mid:botRN'</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: C:/Documents and Settings/user/My Documents/maya/projects/default/scenes/mid.ma</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">referenceQuery</span><span class="p">(</span> <span class="s">'mid.ma'</span><span class="p">,</span> <span class="n">referenceNode</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: midRN</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">referenceQuery</span><span class="p">(</span> <span class="s">'C:/Documents and Settings/user/My Documents/maya/projects/default/scenes/bot.ma'</span><span class="p">,</span> <span class="n">referenceNode</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="c"># Result: mid:botRN</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">referenceQuery</span><span class="p">(</span> <span class="s">'bot.ma'</span><span class="p">,</span> <span class="n">referenceNode</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: midRN</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">referenceQuery</span><span class="p">(</span> <span class="s">'bot.ma'</span><span class="p">,</span> <span class="n">referenceNode</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">topReference</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: midRN</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">referenceQuery</span><span class="p">(</span> <span class="s">'mid:botRN'</span><span class="p">,</span><span class="n">nodes</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="p">[</span><span class="s">u'mid:bot:pPlane1'</span><span class="p">,</span> <span class="s">u'mid:bot:pPlaneShape1'</span><span class="p">,</span> <span class="s">u'mid:bot:outputCloth1'</span><span class="p">,</span> <span class="s">u'mid:bot:nCloth1'</span><span class="p">,</span> <span class="s">u'mid:bot:nClothShape1'</span><span class="p">,</span> <span class="s">u'mid:bot:dynamicConstraint1'</span><span class="p">,</span> <span class="s">u'mid:bot:dynamicConstraintShape1'</span><span class="p">,</span> <span class="s">u'mid:bot:nurbsSphere1'</span><span class="p">,</span> <span class="s">u'mid:bot:nurbsSphereShape1'</span><span class="p">,</span> <span class="s">u'mid:bot:pSphere1'</span><span class="p">,</span> <span class="s">u'mid:bot:pSphereShape1'</span><span class="p">,</span> <span class="s">u'mid:bot:lightLinker1'</span><span class="p">,</span> <span class="s">u'mid:bot:layerManager'</span><span class="p">,</span> <span class="s">u'mid:bot:defaultLayer'</span><span class="p">,</span> <span class="s">u'mid:bot:renderLayerManager'</span><span class="p">,</span> <span class="s">u'mid:bot:defaultRenderLayer'</span><span class="p">,</span> <span class="s">u'mid:bot:polyPlane1'</span><span class="p">,</span> <span class="s">u'mid:bot:nucleus1'</span><span class="p">,</span> <span class="s">u'mid:bot:nComponent1'</span><span class="p">,</span> <span class="s">u'mid:bot:uiConfigurationScriptNode'</span><span class="p">,</span> <span class="s">u'mid:bot:sceneConfigurationScriptNode'</span><span class="p">,</span> <span class="s">u'mid:bot:nClothShape1Cache1Start'</span><span class="p">,</span> <span class="s">u'mid:bot:cacheBlend1'</span><span class="p">,</span> <span class="s">u'mid:bot:nClothShape1Cache2'</span><span class="p">,</span> <span class="s">u'mid:bot:nClothShape1Cache1End'</span><span class="p">,</span> <span class="s">u'mid:bot:makeNurbSphere1'</span><span class="p">,</span> <span class="s">u'mid:bot:polySphere1'</span><span class="p">]</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">referenceQuery</span><span class="p">(</span> <span class="s">'pPlane1'</span><span class="p">,</span> <span class="n">isNodeReferenced</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: 0</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">referenceQuery</span><span class="p">(</span> <span class="s">'mid:pCone1'</span><span class="p">,</span> <span class="n">isNodeReferenced</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: 1</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">referenceQuery</span><span class="p">(</span> <span class="s">'mid:botRN'</span><span class="p">,</span> <span class="n">parentNamespace</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: mid</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">referenceQuery</span><span class="p">(</span> <span class="s">'mid:bot:pSphere1'</span><span class="p">,</span> <span class="n">parentNamespace</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: mid</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">referenceQuery</span><span class="p">(</span> <span class="s">'C:/Documents and Settings/user/My Documents/maya/projects/default/scenes/bot.ma'</span><span class="p">,</span> <span class="n">parentNamespace</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: mid</span>
+<span class="k">print</span> <span class="n">pm</span><span class="o">.</span><span class="n">referenceQuery</span><span class="p">(</span> <span class="s">'bot.ma'</span><span class="p">,</span> <span class="n">namespace</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: :mid:bot</span>
+<span class="k">print</span> <span class="n">pm</span><span class="o">.</span><span class="n">referenceQuery</span><span class="p">(</span> <span class="s">'mid:botRN'</span><span class="p">,</span> <span class="n">namespace</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: :mid:bot</span>
+<span class="k">print</span> <span class="n">pm</span><span class="o">.</span><span class="n">referenceQuery</span><span class="p">(</span> <span class="s">'bot.ma'</span><span class="p">,</span> <span class="n">namespace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">shortName</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: bot</span>
+<span class="k">print</span> <span class="n">pm</span><span class="o">.</span><span class="n">referenceQuery</span><span class="p">(</span> <span class="s">'mid.ma'</span><span class="p">,</span> <span class="n">namespace</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: :mid</span>
+<span class="k">print</span> <span class="n">pm</span><span class="o">.</span><span class="n">referenceQuery</span><span class="p">(</span> <span class="s">'mid.ma'</span><span class="p">,</span> <span class="n">namespace</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">shortName</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: mid</span>
+</pre></div>
+</div>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.system.referenceEdit.html" title="previous chapter">pymel.core.system.referenceEdit</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.system.rehash.html" title="next chapter">pymel.core.system.rehash</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.core.system/pymel.core.system.referenceQuery.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.system.rehash.html" title="pymel.core.system.rehash">next</a> |</li>
+<li class="right">
+<a href="pymel.core.system.referenceEdit.html" title="pymel.core.system.referenceEdit">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.system.html">pymel.core.system</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.system/pymel.core.system.referenceQuery.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:38:05 GMT -->
+</body></html>

@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeConvertToFileTextureOptionBox
+==========================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeConvertToFileTextureOptionBox

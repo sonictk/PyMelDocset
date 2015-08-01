@@ -1,0 +1,6 @@
+pymel.core.runtime.TangentsPlateau
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: TangentsPlateau

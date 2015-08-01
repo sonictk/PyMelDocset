@@ -1,0 +1,6 @@
+pymel.core.runtime.ShowMeshKnifeToolOptions
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ShowMeshKnifeToolOptions

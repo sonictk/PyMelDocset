@@ -1,0 +1,6 @@
+pymel.core.runtime.ModifyUVVectorPress
+======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ModifyUVVectorPress

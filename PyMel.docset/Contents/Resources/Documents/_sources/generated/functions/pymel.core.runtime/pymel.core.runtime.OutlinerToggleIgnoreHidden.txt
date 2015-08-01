@@ -1,0 +1,6 @@
+pymel.core.runtime.OutlinerToggleIgnoreHidden
+=============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: OutlinerToggleIgnoreHidden

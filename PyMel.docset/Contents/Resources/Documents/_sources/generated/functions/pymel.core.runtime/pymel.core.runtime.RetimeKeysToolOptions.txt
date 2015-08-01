@@ -1,0 +1,6 @@
+pymel.core.runtime.RetimeKeysToolOptions
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: RetimeKeysToolOptions

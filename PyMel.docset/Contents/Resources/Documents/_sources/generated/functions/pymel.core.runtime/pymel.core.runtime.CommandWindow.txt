@@ -1,0 +1,6 @@
+pymel.core.runtime.CommandWindow
+================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CommandWindow

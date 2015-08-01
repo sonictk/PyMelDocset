@@ -1,0 +1,6 @@
+pymel.core.runtime.OutlinerToggleDAGOnly
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: OutlinerToggleDAGOnly

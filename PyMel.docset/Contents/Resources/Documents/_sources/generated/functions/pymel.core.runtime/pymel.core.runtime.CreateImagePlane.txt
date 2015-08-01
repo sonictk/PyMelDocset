@@ -1,0 +1,6 @@
+pymel.core.runtime.CreateImagePlane
+===================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreateImagePlane

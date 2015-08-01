@@ -1,0 +1,6 @@
+pymel.core.runtime.CreateSubdivRegion
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreateSubdivRegion

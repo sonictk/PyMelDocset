@@ -1,0 +1,6 @@
+pymel.core.runtime.SurfaceFlowOptions
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SurfaceFlowOptions

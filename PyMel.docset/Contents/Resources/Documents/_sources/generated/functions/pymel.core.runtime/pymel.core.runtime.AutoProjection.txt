@@ -1,0 +1,6 @@
+pymel.core.runtime.AutoProjection
+=================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: AutoProjection

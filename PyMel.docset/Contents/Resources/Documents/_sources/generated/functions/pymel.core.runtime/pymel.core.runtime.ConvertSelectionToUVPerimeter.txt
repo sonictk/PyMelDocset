@@ -1,0 +1,6 @@
+pymel.core.runtime.ConvertSelectionToUVPerimeter
+================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ConvertSelectionToUVPerimeter

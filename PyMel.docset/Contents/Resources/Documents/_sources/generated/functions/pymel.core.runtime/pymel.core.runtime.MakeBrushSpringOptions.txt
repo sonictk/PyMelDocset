@@ -1,0 +1,6 @@
+pymel.core.runtime.MakeBrushSpringOptions
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: MakeBrushSpringOptions

@@ -1,0 +1,432 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.modeling/pymel.core.modeling.polyColorSet.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:36:35 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.modeling.polyColorSet — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.modeling.html" rel="up" title="pymel.core.modeling"/>
+<link href="pymel.core.modeling.polyCompare.html" rel="next" title="pymel.core.modeling.polyCompare"/>
+<link href="pymel.core.modeling.polyColorPerVertex.html" rel="prev" title="pymel.core.modeling.polyColorPerVertex"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.modeling » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.modeling.polyColorSet ¶ 
+ 
+ 
+ polyColorSet ( *args , **kwargs ) ¶ 
+ Command to do the following to color sets: - delete an existing color set. - rename an existing color
+set. - create a new empty color set. - set the current color set to a pre-existing color set. - modify
+sharing between instances of per-instance color sets - query the..." name="description"/><meta content="__PyMel_generated_functions_pymel_core_modeling_pymel_core_modeling_polyColorSet_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.modeling.polyCompare.html" title="pymel.core.modeling.polyCompare">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.modeling.polyColorPerVertex.html" title="pymel.core.modeling.polyColorPerVertex">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.modeling.html">pymel.core.modeling</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-modeling-polycolorset">
+<h1>pymel.core.modeling.polyColorSet<a class="headerlink" href="#pymel-core-modeling-polycolorset" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.core.modeling.polyColorSet"><a name="//apple_ref/cpp/Function/pymel.core.modeling.polyColorSet"></a>
+<tt class="descname">polyColorSet</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.modeling.polyColorSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command to do the following to color sets:         - delete an existing color set.         - rename an existing color
+set.     - create a new empty color set.         - set the current color set to a pre-existing color set.     - modify
+sharing between instances of per-instance color sets     - query the current color set.     - query the names of all
+color sets.         - query the name(s) along with representation value(s)       or clamped value(s) of all color sets
+- query the representation value or clamped value of the current color set</p>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">allColorSets</span></tt> / <tt class="docutils literal"><span class="pre">acs</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>This flag when used in a query will return a list of all of the color set names</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">clamped</span></tt> / <tt class="docutils literal"><span class="pre">cla</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>This flag specifies if the color set will truncate any value that is outside 0 to 1 range.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">colorSet</span></tt> / <tt class="docutils literal"><span class="pre">cs</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Specifies the name of the color set that this command needs to work on. This flag has to be specified for this command to do anything meaningful other than query
+the current color set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">copy</span></tt> / <tt class="docutils literal"><span class="pre">cp</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This flag when used will result in the copying of the color set corresponding to name specified with the colorSet flag to the colorSet corresponding to the name
+specified with the newcolorSet flag</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">create</span></tt> / <tt class="docutils literal"><span class="pre">cr</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This flag when used will result in the creation of an empty color set corresponding to the name specified with the colorSet flag. If a color set with that name
+already exists, then no new color set will be created.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">currentColorSet</span></tt> / <tt class="docutils literal"><span class="pre">ccs</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This flag when used will set the current color set that the object needs to work on, to be the color set corresponding to the name specified with the colorSet
+flag. This does require that a colorSet with the specified name exist. When queried, this returns the current color set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">currentPerInstanceSet</span></tt> / <tt class="docutils literal"><span class="pre">cpi</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This is a query-only flag for use when the current color set is a per-instance color set family. This returns the member of the set family that corresponds to the
+currently select instance.                                     Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">delete</span></tt> / <tt class="docutils literal"><span class="pre">d</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>This flag when used will result in the deletion of the color set corresponding to the name specified with the colorSet flag.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">newColorSet</span></tt> / <tt class="docutils literal"><span class="pre">nc</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Specifies the name that the color set corresponding to the name specified with the colorSet flag, needs to be renamed to.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">perInstance</span></tt> / <tt class="docutils literal"><span class="pre">pi</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This flag can be used in conjunction with the create flag to indicate whether or not the color set is per-instance. When you create a per-instance color set, the
+set will be applied as shared between all selected instances of the shape unless the unshared flag is used. The perInstance flag can be used in query mode with
+the currentColorSet or allColorSets flag to indicate that the set family names (i.e. not containing instance identifiers) will be returned by the query. In query
+mode, this flag can accept a value.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">rename</span></tt> / <tt class="docutils literal"><span class="pre">rn</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This flag when used will result in the renaming of the color set corresponding to the name specified with the colorSet flag to the name specified using the
+newColorSet flag.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">representation</span></tt> / <tt class="docutils literal"><span class="pre">rpt</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>This flag corresponds to the color channels to used, for example A(alpha only), RGB, and RGBA.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">shareInstances</span></tt> / <tt class="docutils literal"><span class="pre">si</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This flag is used to modify the sharing of per-instance color sets within a given color set family so that all selected instances share the specified set. In
+query mode, it returns a list of the instances that share the set specified by the colorSet flag.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">unshared</span></tt> / <tt class="docutils literal"><span class="pre">us</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This flag can be used in conjunction with the create and perInstance flags to indicate that the newly created per-instance set should be created with a separate
+set per instance.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.polyColorSet</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+
+<span class="c"># To set the current color set to be "color2".</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polyColorSet</span><span class="p">(</span><span class="n">currentColorSet</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">colorSet</span><span class="o">=</span> <span class="s">'color2'</span> <span class="p">)</span>
+<span class="c"># To query the current color set.</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polyColorSet</span><span class="p">(</span> <span class="n">query</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">currentColorSet</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># To create a per-instance color set family with one set member</span>
+<span class="c"># per selected instance.</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polyColorSet</span><span class="p">(</span><span class="n">create</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span><span class="n">colorSet</span><span class="o">=</span><span class="s">'perInst'</span><span class="p">,</span><span class="n">perInstance</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span><span class="n">unshared</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="c"># To create a per-instance color set family with one set member</span>
+<span class="c"># for all selected instances.</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polyColorSet</span><span class="p">(</span><span class="n">create</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span><span class="n">colorSet</span><span class="o">=</span><span class="s">'perInst'</span><span class="p">,</span><span class="n">perInstance</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="c"># To rename a currently existing color set from "color3" to "color4".</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polyColorSet</span><span class="p">(</span> <span class="n">rename</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">colorSet</span><span class="o">=</span> <span class="s">'color3'</span><span class="p">,</span> <span class="n">newColorSet</span><span class="o">=</span> <span class="s">'color4'</span> <span class="p">)</span>
+<span class="c"># Rename the current color set (if any) to "color3".</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polyColorSet</span><span class="p">(</span> <span class="n">rename</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">newColorSet</span><span class="o">=</span> <span class="s">'color3'</span><span class="p">)</span>
+<span class="c"># To delete a currently existing color set "color3".</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polyColorSet</span><span class="p">(</span> <span class="n">delete</span><span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">colorSet</span><span class="o">=</span> <span class="s">'color3'</span><span class="p">)</span>
+<span class="c"># To delete the current color set (if any)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polyColorSet</span><span class="p">(</span> <span class="n">delete</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Copy values of color set "color1" to "color2"</span>
+<span class="c"># Note if the second color set exist it will be overwriten by</span>
+<span class="c"># the copy. Leaving the destination color blank and the command</span>
+<span class="c"># will generate a new unique name based on the source name.</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polyColorSet</span><span class="p">(</span> <span class="n">copy</span><span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">colorSet</span><span class="o">=</span><span class="s">'color1'</span><span class="p">,</span> <span class="n">newColorSet</span> <span class="o">=</span><span class="s">'color2'</span><span class="p">)</span>
+<span class="c"># Copy values of the current color set to "color2"</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polyColorSet</span><span class="p">(</span> <span class="n">copy</span><span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">newColorSet</span><span class="o">=</span><span class="s">'color2'</span><span class="p">)</span>
+<span class="c"># Make a copy of "color1" to a new color set. The</span>
+<span class="c"># name of which is automatically generated and returned.</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polyColorSet</span><span class="p">(</span> <span class="n">copy</span><span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">colorSet</span><span class="o">=</span><span class="s">'color1'</span> <span class="p">)</span>
+<span class="c"># Create a new empty color set</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polyColorSet</span><span class="p">(</span> <span class="n">create</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">colorSet</span><span class="o">=</span><span class="s">'newColor'</span><span class="p">)</span>
+<span class="c"># To query all of the color sets</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polyColorSet</span><span class="p">(</span> <span class="n">query</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">allColorSets</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># To query all of the color set names and their representation values</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polyColorSet</span><span class="p">(</span> <span class="n">query</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">allColorSets</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">representation</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># To query the clamped value of the current color set</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polyColorSet</span><span class="p">(</span> <span class="n">query</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">currentColorSet</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">clamped</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.modeling.polyColorPerVertex.html" title="previous chapter">pymel.core.modeling.polyColorPerVertex</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.modeling.polyCompare.html" title="next chapter">pymel.core.modeling.polyCompare</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.core.modeling/pymel.core.modeling.polyColorSet.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.modeling.polyCompare.html" title="pymel.core.modeling.polyCompare">next</a> |</li>
+<li class="right">
+<a href="pymel.core.modeling.polyColorPerVertex.html" title="pymel.core.modeling.polyColorPerVertex">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.modeling.html">pymel.core.modeling</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.modeling/pymel.core.modeling.polyColorSet.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:36:36 GMT -->
+</body></html>

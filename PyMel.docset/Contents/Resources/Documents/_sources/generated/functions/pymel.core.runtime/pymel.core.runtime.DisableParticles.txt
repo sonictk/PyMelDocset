@@ -1,0 +1,6 @@
+pymel.core.runtime.DisableParticles
+===================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: DisableParticles

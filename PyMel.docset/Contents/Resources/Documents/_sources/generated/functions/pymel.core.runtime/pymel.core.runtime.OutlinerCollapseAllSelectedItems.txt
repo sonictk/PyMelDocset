@@ -1,0 +1,6 @@
+pymel.core.runtime.OutlinerCollapseAllSelectedItems
+===================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: OutlinerCollapseAllSelectedItems

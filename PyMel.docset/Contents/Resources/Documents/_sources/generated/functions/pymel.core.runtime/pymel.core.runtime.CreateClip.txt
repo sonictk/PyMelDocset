@@ -1,0 +1,6 @@
+pymel.core.runtime.CreateClip
+=============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreateClip

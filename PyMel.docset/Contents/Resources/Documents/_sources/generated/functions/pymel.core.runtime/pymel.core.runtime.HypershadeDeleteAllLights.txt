@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeDeleteAllLights
+============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeDeleteAllLights

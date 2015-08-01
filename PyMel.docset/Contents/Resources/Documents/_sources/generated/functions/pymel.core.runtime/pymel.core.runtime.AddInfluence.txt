@@ -1,0 +1,6 @@
+pymel.core.runtime.AddInfluence
+===============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: AddInfluence

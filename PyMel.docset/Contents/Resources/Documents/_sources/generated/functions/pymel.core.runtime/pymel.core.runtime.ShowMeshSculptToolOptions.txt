@@ -1,0 +1,6 @@
+pymel.core.runtime.ShowMeshSculptToolOptions
+============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ShowMeshSculptToolOptions

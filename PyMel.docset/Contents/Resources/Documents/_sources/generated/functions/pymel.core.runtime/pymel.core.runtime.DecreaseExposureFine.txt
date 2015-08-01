@@ -1,0 +1,6 @@
+pymel.core.runtime.DecreaseExposureFine
+=======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: DecreaseExposureFine

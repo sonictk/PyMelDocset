@@ -1,0 +1,336 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.windows/pymel.core.windows.setParent.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:39:49 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.windows.setParent — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.windows.html" rel="up" title="pymel.core.windows"/>
+<link href="pymel.core.windows.setStartupMessage.html" rel="next" title="pymel.core.windows.setStartupMessage"/>
+<link href="pymel.core.windows.setNodeTypeFlag.html" rel="prev" title="pymel.core.windows.setNodeTypeFlag"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.windows » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.windows.setParent ¶ 
+ 
+ 
+ setParent ( *args , **kwargs ) ¶ 
+ This command changes the default parent to be the specified parent. Two special parents are | which indicates the top
+level layout of the window hierarchy, or ..which indicates one level up in the hierarchy. Trying to move above the top
+level has no effect. A control must be..." name="description"/><meta content="__PyMel_generated_functions_pymel_core_windows_pymel_core_windows_setParent_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.windows.setStartupMessage.html" title="pymel.core.windows.setStartupMessage">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.windows.setNodeTypeFlag.html" title="pymel.core.windows.setNodeTypeFlag">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.windows.html">pymel.core.windows</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-windows-setparent">
+<h1>pymel.core.windows.setParent<a class="headerlink" href="#pymel-core-windows-setparent" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.core.windows.setParent"><a name="//apple_ref/cpp/Function/pymel.core.windows.setParent"></a>
+<tt class="descname">setParent</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.windows.setParent" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command changes the default parent to be the specified parent. Two special parents are <a href="#id1"><span class="problematic" id="id2">|</span></a>which indicates the top
+level layout of the window hierarchy, or ..which indicates one level up in the hierarchy. Trying to move above the top
+level has no effect. A control must be parented to a control layout.  A control layout may be parented to another
+control layout or a window.  A menu may be parented to a window or a menu bar layout.  For all of these cases the
+setParentcommand (with no flags) will indicate the current default parent. A menu item must be parented to a menu.  To
+specify the default menu parent use the command setParent -m/menu.  Note that all menu item objects created using the
+-sm/subMenumay also be treated as menu objects. The default parent is ignored by any object that explicitly sets the
+-p/parentflag when it is created.</p>
+<dl class="docutils">
+<dt>Modifications</dt>
+<dd><ul class="first last simple">
+<li>returns None object instead of the string ‘NONE’</li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">defineTemplate</span></tt> / <tt class="docutils literal"><span class="pre">dt</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Put a command in a mode where any other flags and args are parsed and added to the command template with the given name. They will be used as default arguments in
+any subsequent invocations of the command when templateName is set as the current template.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">menu</span></tt> / <tt class="docutils literal"><span class="pre">m</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Parent menu for menu items.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">topLevel</span></tt> / <tt class="docutils literal"><span class="pre">top</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Move to the top level layout in the hierarchy. Equivalent to use</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">upLevel</span></tt> / <tt class="docutils literal"><span class="pre">u</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Move up one level in the hierarchy. Equivalent to use ..</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">useTemplate</span></tt> / <tt class="docutils literal"><span class="pre">ut</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Will force the command to use a command template given by the name other than the current one.                    Flag can have multiple arguments, passed either
+as a tuple or a list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.setParent</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+
+<span class="c">#  Create a window with a menu bar and two menu bar layouts.</span>
+<span class="c">#</span>
+<span class="n">window</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">window</span><span class="p">(</span><span class="n">menuBar</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">widthHeight</span><span class="o">=</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span> <span class="p">)</span>
+<span class="n">fileMenu</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">menu</span><span class="p">(</span> <span class="n">label</span><span class="o">=</span><span class="s">'File'</span><span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">menuItem</span><span class="p">(</span> <span class="n">label</span><span class="o">=</span><span class="s">'Open'</span> <span class="p">)</span>
+<span class="c"># Result: ui.CommandMenuItem('window1|menu67|menuItem985') #</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">paneLayout</span><span class="p">(</span> <span class="n">configuration</span><span class="o">=</span><span class="s">'vertical2'</span> <span class="p">)</span>
+<span class="c"># Result: ui.PaneLayout('window1|paneLayout15') #</span>
+
+<span class="n">leftMenuBarLayout</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">menuBarLayout</span><span class="p">()</span>
+<span class="n">leftMenu</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">menu</span><span class="p">(</span> <span class="n">label</span><span class="o">=</span><span class="s">'Left'</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">menuItem</span><span class="p">(</span> <span class="n">label</span><span class="o">=</span><span class="s">'One'</span> <span class="p">)</span>
+<span class="c"># Result: ui.CommandMenuItem('window1|paneLayout15|menuBarLayout4|menu68|menuItem986') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span> <span class="s">'..'</span> <span class="p">)</span>
+<span class="c"># Result: u'window1|paneLayout15' #</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">menuBarLayout</span><span class="p">()</span>
+<span class="c"># Result: ui.MenuBarLayout('window1|paneLayout15|menuBarLayout5') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">menu</span><span class="p">(</span> <span class="n">label</span><span class="o">=</span><span class="s">'Right'</span> <span class="p">)</span>
+<span class="c"># Result: ui.Menu('window1|paneLayout15|menuBarLayout5|menu69') #</span>
+<span class="n">rightSubMenu</span> <span class="o">=</span> <span class="n">pm</span><span class="o">.</span><span class="n">menuItem</span><span class="p">(</span><span class="n">subMenu</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'Colors'</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span> <span class="s">'..'</span> <span class="p">)</span>
+<span class="c"># Result: u'window1|paneLayout15' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">showWindow</span><span class="p">(</span> <span class="n">window</span> <span class="p">)</span>
+
+<span class="c">#  Add item to the "File" menu.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span> <span class="n">fileMenu</span><span class="p">,</span> <span class="n">menu</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: u'window1|menu67' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">menuItem</span><span class="p">(</span> <span class="n">label</span><span class="o">=</span><span class="s">'Save'</span> <span class="p">)</span>
+<span class="c"># Result: ui.CommandMenuItem('window1|menu67|menuItem988') #</span>
+
+<span class="c">#  Add item to the "Left" menu, explicitly ignore default parent</span>
+<span class="c">#    by setting -p/parent flag.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">menuItem</span><span class="p">(</span> <span class="n">parent</span><span class="o">=</span><span class="n">leftMenu</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'Two'</span> <span class="p">)</span>
+<span class="c"># Result: ui.CommandMenuItem('window1|paneLayout15|menuBarLayout4|menu68|menuItem989') #</span>
+
+<span class="c">#  Add more items to the "File" menu because it is still the</span>
+<span class="c">#    default parent.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">menuItem</span><span class="p">(</span> <span class="n">divider</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: ui.CommandMenuItem('window1|menu67|menuItem990') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">menuItem</span><span class="p">(</span> <span class="n">label</span><span class="o">=</span><span class="s">'Close'</span> <span class="p">)</span>
+<span class="c"># Result: ui.CommandMenuItem('window1|menu67|menuItem991') #</span>
+
+<span class="c">#  Add another menu to the left menu bar layout.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span> <span class="n">leftMenuBarLayout</span> <span class="p">)</span>
+<span class="c"># Result: u'window1|paneLayout15|menuBarLayout4' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">menu</span><span class="p">(</span> <span class="n">label</span><span class="o">=</span><span class="s">'Middle'</span> <span class="p">)</span>
+<span class="c"># Result: ui.Menu('window1|paneLayout15|menuBarLayout4|menu70') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">menuItem</span><span class="p">(</span> <span class="n">label</span><span class="o">=</span><span class="s">'Three'</span> <span class="p">)</span>
+<span class="c"># Result: ui.CommandMenuItem('window1|paneLayout15|menuBarLayout4|menu70|menuItem992') #</span>
+
+<span class="c">#  Add items to right sub menu.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">setParent</span><span class="p">(</span> <span class="n">rightSubMenu</span><span class="p">,</span> <span class="n">menu</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: u'window1|paneLayout15|menuBarLayout5|menu69|menuItem987' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">menuItem</span><span class="p">(</span> <span class="n">label</span><span class="o">=</span><span class="s">'Red'</span> <span class="p">)</span>
+<span class="c"># Result: ui.CommandMenuItem('window1|paneLayout15|menuBarLayout5|menu69|menuItem987|menuItem993') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">menuItem</span><span class="p">(</span> <span class="n">label</span><span class="o">=</span><span class="s">'Blue'</span> <span class="p">)</span>
+<span class="c"># Result: ui.CommandMenuItem('window1|paneLayout15|menuBarLayout5|menu69|menuItem987|menuItem994') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">menuItem</span><span class="p">(</span> <span class="n">label</span><span class="o">=</span><span class="s">'Green'</span> <span class="p">)</span>
+<span class="c"># Result: ui.CommandMenuItem('window1|paneLayout15|menuBarLayout5|menu69|menuItem987|menuItem995') #</span>
+</pre></div>
+</div>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.windows.setNodeTypeFlag.html" title="previous chapter">pymel.core.windows.setNodeTypeFlag</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.windows.setStartupMessage.html" title="next chapter">pymel.core.windows.setStartupMessage</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.core.windows/pymel.core.windows.setParent.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.windows.setStartupMessage.html" title="pymel.core.windows.setStartupMessage">next</a> |</li>
+<li class="right">
+<a href="pymel.core.windows.setNodeTypeFlag.html" title="pymel.core.windows.setNodeTypeFlag">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.windows.html">pymel.core.windows</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.windows/pymel.core.windows.setParent.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:39:49 GMT -->
+</body></html>

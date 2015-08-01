@@ -1,0 +1,6 @@
+pymel.core.runtime.AddFaceDivisionsOptions
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: AddFaceDivisionsOptions

@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeShapeMenuStateNoShapes
+===================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeShapeMenuStateNoShapes

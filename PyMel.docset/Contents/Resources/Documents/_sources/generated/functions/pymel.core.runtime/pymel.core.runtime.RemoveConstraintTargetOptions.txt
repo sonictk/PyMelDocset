@@ -1,0 +1,6 @@
+pymel.core.runtime.RemoveConstraintTargetOptions
+================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: RemoveConstraintTargetOptions

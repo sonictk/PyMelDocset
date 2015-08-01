@@ -1,0 +1,6 @@
+pymel.core.runtime.SculptMeshInvertFreeze
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SculptMeshInvertFreeze

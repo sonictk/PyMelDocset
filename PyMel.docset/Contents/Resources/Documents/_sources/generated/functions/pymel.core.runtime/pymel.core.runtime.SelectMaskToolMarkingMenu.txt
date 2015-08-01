@@ -1,0 +1,6 @@
+pymel.core.runtime.SelectMaskToolMarkingMenu
+============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SelectMaskToolMarkingMenu

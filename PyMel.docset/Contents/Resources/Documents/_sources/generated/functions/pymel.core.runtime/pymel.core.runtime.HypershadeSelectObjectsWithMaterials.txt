@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeSelectObjectsWithMaterials
+=======================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeSelectObjectsWithMaterials

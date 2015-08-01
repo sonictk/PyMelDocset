@@ -1,0 +1,6 @@
+pymel.core.runtime.SetMeshScrapeTool
+====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SetMeshScrapeTool

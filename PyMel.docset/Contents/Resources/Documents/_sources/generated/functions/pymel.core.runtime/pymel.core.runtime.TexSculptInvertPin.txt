@@ -1,0 +1,6 @@
+pymel.core.runtime.TexSculptInvertPin
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: TexSculptInvertPin

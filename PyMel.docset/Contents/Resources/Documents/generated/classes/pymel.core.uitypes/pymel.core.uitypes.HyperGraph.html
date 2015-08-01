@@ -1,0 +1,966 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.uitypes/pymel.core.uitypes.HyperGraph.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:18:11 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.uitypes.HyperGraph — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.uitypes.html" rel="up" title="pymel.core.uitypes"/>
+<link href="pymel.core.uitypes.HyperPanel.html" rel="next" title="pymel.core.uitypes.HyperPanel"/>
+<link href="pymel.core.uitypes.HelpLine.html" rel="prev" title="pymel.core.uitypes.HelpLine"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.uitypes » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.uitypes.HyperGraph ¶ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ class HyperGraph ¶ 
+ class counterpart of mel function hyperGraph 
+ The following is an overview of the basic features of the hypergraph. A more detailed description is given in the user manuals. The hypergraph provides the user with the ability to view and edit the maya scene graph. The..." name="description"/><meta content="__PyMel_generated_classes_pymel_core_uitypes_pymel_core_uitypes_HyperGraph_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.uitypes.HyperPanel.html" title="pymel.core.uitypes.HyperPanel">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.uitypes.HelpLine.html" title="pymel.core.uitypes.HelpLine">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.uitypes.html">pymel.core.uitypes</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-uitypes-hypergraph">
+<h1>pymel.core.uitypes.HyperGraph<a class="headerlink" href="#pymel-core-uitypes-hypergraph" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img alt="Inheritance diagram of HyperGraph" class="inheritance" src="../../../_images/inheritance-bb0683a7391a7b25167f133894108b0c23609433.png" usemap="#inheritance58295c6558"/>
+<map id="inheritance58295c6558" name="inheritance58295c6558">
+<area alt="" coords="5,44,85,68" href="#pymel.core.uitypes.HyperGraph" id="node1" shape="rect" title="class counterpart of mel function `hyperGraph`"></area>
+<area alt="" coords="9,5,81,29" href="pymel.core.uitypes.PyUI.html#pymel.core.uitypes.PyUI" id="node2" shape="rect" title="PyUI"></area>
+</map>
+</p>
+<dl class="class">
+<dt id="pymel.core.uitypes.HyperGraph"><a name="//apple_ref/cpp/Class/pymel.core.uitypes.HyperGraph"></a>
+<em class="property">class </em><tt class="descname">HyperGraph</tt><a class="headerlink" href="#pymel.core.uitypes.HyperGraph" title="Permalink to this definition">¶</a></dt>
+<dd><p>class counterpart of mel function <tt class="xref py py-obj docutils literal"><span class="pre">hyperGraph</span></tt></p>
+<p>The following is an overview of the basic features of the hypergraph. A more detailed description is given in the user manuals. The hypergraph provides the user with the ability to view and edit the maya scene graph.  The hypergraph supports two types of graphs: the DAG or scene hierarchy and the dependency graph. The default view of the hypergraph editor is the DAG view. The user can show the dependency graph for a collection of nodes by first selecting the nodes and navigating to the dependency graph using one of the graph options.  The user can save any view by setting a bookmark to that view.  The user can also show previous views using the view options provided. The hypergraph supports a simple editing mechanism for editing hierarchy in the DAG view and connections in dependency graph view. In the DAG  view, the user can reparent or reorder nodes in the graph using drag-and-drop. In the dependency graph view, the user can select connections and delete them or make new connections by dragging and dropping nodes or existing connections. The hypergraph supports two layout modes in the DAG view: automatic and freeform.  In automatic mode, the graph nodes are automatically positioned according to the layout preferences.  In freeform mode, the user can position nodes manually.  The node position is saved in the scene. A background image can be placed behind DG or DAG in freeform mode. This can be used as a template for positioning nodes in a user-defined layout. Nodes in the DAG view can be expanded or collapsed.  The state is saved in the scene.  The performance of the graph drawing will increase as hierarchies are collapsed. In addition to hierachy relationships, the hypergraph can show expression, constraint and deformation relationships in the DAG. These can be enabled/disabled through the options provided.  There are also additional filters for showing shape nodes and invisible nodes.  The amount of detail show may affect the speed of the display of the graph. Most of the UI features of the hypergraph are addressable through the hypergraph command-line interface.  The available command-line options are described in the next section.</p>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.addBookmark"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.addBookmark"></a>
+<tt class="descname">addBookmark</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.addBookmark" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a bookmark for the current hypergraph view.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.addDependGraph"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.addDependGraph"></a>
+<tt class="descname">addDependGraph</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.addDependGraph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a dependency graph starting at the named node to the view</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.addDependNode"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.addDependNode"></a>
+<tt class="descname">addDependNode</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.addDependNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a dependency node to the dependency graph view</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.attributeEditor"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.attributeEditor"></a>
+<tt class="descname">attributeEditor</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.attributeEditor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Launches attribute editor on selected node.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.clear"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.clear"></a>
+<tt class="descname">clear</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clears the current hypergraph view and deletes the graph UI. (see also -rebuild flag)</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.collapseContainer"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.collapseContainer"></a>
+<tt class="descname">collapseContainer</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.collapseContainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collapses containers selected in DG graph.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.connectionDrawStyle"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.connectionDrawStyle"></a>
+<tt class="descname">connectionDrawStyle</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.connectionDrawStyle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify how connections between nodes should be drawn. Valid values are center(draws connection lines from the center of one node to the center of the other) and side(draws connection lines from the right side of the source node to the left side of the destination node). The default is center. This flag does not apply to Hypershade graphs, which are always drawn with the sideconnection draw style.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.deleteBookmark"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.deleteBookmark"></a>
+<tt class="descname">deleteBookmark</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.deleteBookmark" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete the bookmark with the corresponding node name.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.dependGraph"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.dependGraph"></a>
+<tt class="descname">dependGraph</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.dependGraph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Displays dependency graph iterated from specified node.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.dependNode"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.dependNode"></a>
+<tt class="descname">dependNode</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.dependNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Displays dependency node in view.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.down"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.down"></a>
+<tt class="descname">down</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.down" title="Permalink to this definition">¶</a></dt>
+<dd><p>Navigate down to the dependency graph containing the current selection. Shows upstream and downstream connections.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.downstream"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.downstream"></a>
+<tt class="descname">downstream</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.downstream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show downstream dependency graph of selected node(s).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.dragAndDropBehaviorCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.dragAndDropBehaviorCommand"></a>
+<tt class="descname">dragAndDropBehaviorCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.dragAndDropBehaviorCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mel proc called when a drag and drop onto a hyperGraph node has occurred. Proc signature is procName (string $editor, string $sourceNode, string $destinationNode).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.edgeDblClickCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.edgeDblClickCommand"></a>
+<tt class="descname">edgeDblClickCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.edgeDblClickCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mel proc called when an edge is double clicked.  Proc signature is procName (string $editor, string $edge).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.edgeDimmedDblClickCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.edgeDimmedDblClickCommand"></a>
+<tt class="descname">edgeDimmedDblClickCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.edgeDimmedDblClickCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mel proc called when a dimmed edge is double clicked.  Proc signature is procName (string $editor, string $edge).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.enableAutomaticLayout"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.enableAutomaticLayout"></a>
+<tt class="descname">enableAutomaticLayout</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.enableAutomaticLayout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rebuild the graph if a node is added or removed from the graph via drag and drop or dg messages. Default is true.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.expandContainer"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.expandContainer"></a>
+<tt class="descname">expandContainer</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.expandContainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Expands containers selected in DG graph.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.filterDetail"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.filterDetail"></a>
+<tt class="descname">filterDetail</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.filterDetail" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag is obsolete. Use the showConstraints, showExpressions, showDeformer, showInvisible, showShapes and showUnderworld flags instead.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.focusCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.focusCommand"></a>
+<tt class="descname">focusCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.focusCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mel proc to be run when the mouse is clicked in the hyper graph. Primarily of use in setting the window focus.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.fold"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.fold"></a>
+<tt class="descname">fold</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.fold" title="Permalink to this definition">¶</a></dt>
+<dd><p>Folds (Collapses) selected object.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.forceRefresh"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.forceRefresh"></a>
+<tt class="descname">forceRefresh</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.forceRefresh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Forces the hypergraph to refresh (redraw) its contents.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.frame"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.frame"></a>
+<tt class="descname">frame</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.frame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Frames the selected objects</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.frameBranch"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.frameBranch"></a>
+<tt class="descname">frameBranch</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.frameBranch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Frames the the branch from the selected node on downward.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.frameGraph"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.frameGraph"></a>
+<tt class="descname">frameGraph</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.frameGraph" title="Permalink to this definition">¶</a></dt>
+<dd><p>Frames the entire graph.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.frameHierarchy"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.frameHierarchy"></a>
+<tt class="descname">frameHierarchy</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.frameHierarchy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Frames the hierarchy that contains the selected node.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getAnimateTransition"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getAnimateTransition"></a>
+<tt class="descname">getAnimateTransition</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getAnimateTransition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turns animate transitions off and on.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getBookmarkName"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getBookmarkName"></a>
+<tt class="descname">getBookmarkName</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getBookmarkName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the bookmark name for the most recently created bookmark.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getControl"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getControl"></a>
+<tt class="descname">getControl</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getControl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query only. Returns the top level control for this editor. Usually used for getting a parent to attach popup menus. Caution: It is possible, at times, for an editor to exist without a control. This flag returns NONEif no control is present.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getDocTag"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getDocTag"></a>
+<tt class="descname">getDocTag</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getDocTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Attaches a tag to the Maya editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getDropNode"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getDropNode"></a>
+<tt class="descname">getDropNode</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getDropNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the name of the source node in a drag and drop connection, when called during processing of a drop.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getDropTargetNode"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getDropTargetNode"></a>
+<tt class="descname">getDropTargetNode</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getDropTargetNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the name of the destination node in a drag and drop connection, when called during processing of a drop.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getFeedbackGadget"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getFeedbackGadget"></a>
+<tt class="descname">getFeedbackGadget</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getFeedbackGadget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the name of the current gadget.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getFeedbackNode"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getFeedbackNode"></a>
+<tt class="descname">getFeedbackNode</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getFeedbackNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the name of the current feedback or highlight node.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getFilter"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getFilter"></a>
+<tt class="descname">getFilter</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of an itemFilter object to be placed on this editor. This filters the information coming onto the main list of the editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getForceMainConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getForceMainConnection"></a>
+<tt class="descname">getForceMainConnection</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getForceMainConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of a selectionConnection object which the editor will use as its source of content.  The editor will only display items contained in the selectionConnection object. This is a variant of the -mainListConnection flag in that it will force a change even when the connection is locked. This flag is used to reduce the overhead when using the -unlockMainConnection , -mainListConnection, -lockMainConnection flags in immediate succession.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getFreeform"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getFreeform"></a>
+<tt class="descname">getFreeform</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getFreeform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable freeform layout mode.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getFromAttr"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getFromAttr"></a>
+<tt class="descname">getFromAttr</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getFromAttr" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the name of the source attribute in a drag and drop connection, when called during processing of a drop.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getGetNodeList"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getGetNodeList"></a>
+<tt class="descname">getGetNodeList</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getGetNodeList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a string array that represents a list of all the nodes in the graph.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getGetNodePosition"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getGetNodePosition"></a>
+<tt class="descname">getGetNodePosition</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getGetNodePosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the position of a specified node in x,y graph coords. This flag and its argument must be passed to the command before the -q flag (see examples).       In query mode, this flag can accept a value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getGraphLayoutStyle"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getGraphLayoutStyle"></a>
+<tt class="descname">getGraphLayoutStyle</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getGraphLayoutStyle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Selects the graph layout style : circularLayout|hierarchicalLayout|orthogonalLayout|symmetricLayout|treeLayout</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getGraphType"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getGraphType"></a>
+<tt class="descname">getGraphType</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getGraphType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the type name of the current graph in the view (either DAG or DG).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getHighlightConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getHighlightConnection"></a>
+<tt class="descname">getHighlightConnection</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getHighlightConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of a selectionConnection object which the editor will synchronize with its highlight list.  Not all editors have a highlight list. For those that do, it is a secondary selection list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getIconSize"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getIconSize"></a>
+<tt class="descname">getIconSize</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getIconSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set or query the icon size for this hyper graph editor. The currently allowed icon sizes are small, mediumand large.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getImage"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getImage"></a>
+<tt class="descname">getImage</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getImage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify background image to be loaded from the project image directory.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getImageEnabled"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getImageEnabled"></a>
+<tt class="descname">getImageEnabled</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getImageEnabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable display of a loaded background image (Freeform DAG view or DG view)</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getImageForContainer"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getImageForContainer"></a>
+<tt class="descname">getImageForContainer</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getImageForContainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify that the following flags work on selected containers instead of the whole image: -imageScale,-imagePosition, fitImageToWidth, -fitImageToHeight, -image</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getImagePosition"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getImagePosition"></a>
+<tt class="descname">getImagePosition</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getImagePosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Position of the background image.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getImageScale"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getImageScale"></a>
+<tt class="descname">getImageScale</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getImageScale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uniform scale of the background image.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getIsHotkeyTarget"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getIsHotkeyTarget"></a>
+<tt class="descname">getIsHotkeyTarget</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getIsHotkeyTarget" title="Permalink to this definition">¶</a></dt>
+<dd><p>For internal use.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getMainListConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getMainListConnection"></a>
+<tt class="descname">getMainListConnection</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getMainListConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of a selectionConnection object which the editor will use as its source of content.  The editor will only display items contained in the selectionConnection object.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getMergeConnections"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getMergeConnections"></a>
+<tt class="descname">getMergeConnections</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getMergeConnections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Merge groups of connections into ‘fat’ connections.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getOpaqueContainers"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getOpaqueContainers"></a>
+<tt class="descname">getOpaqueContainers</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getOpaqueContainers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets expanded container background opacity.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getOrientation"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getOrientation"></a>
+<tt class="descname">getOrientation</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getOrientation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Selects orientation style of graph: horiz|vert</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getPanel"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getPanel"></a>
+<tt class="descname">getPanel</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getPanel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the panel that the editor belongs to.  By default if an editor is created in the create callback of a scripted panel it will belong to that panel.  If an editor doesn’t belong to a panel it will be deleted when the window that it is in is deleted.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getRange"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getRange"></a>
+<tt class="descname">getRange</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getRange" title="Permalink to this definition">¶</a></dt>
+<dd><p>Limits the display of nodes to only those within the range. There are two float values expected, the first the lower threshold of the range and the second the upper threshold of the range. The values are absolute timing values, not percentages.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getSelectionConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getSelectionConnection"></a>
+<tt class="descname">getSelectionConnection</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getSelectionConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of a selectionConnection object which the editor will synchronize with its own selection list.  As the user selects things in this editor, they will be selected in the selectionConnection object. If the object undergoes changes, the editor updates to show the change.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getShowConnectionFromSelected"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getShowConnectionFromSelected"></a>
+<tt class="descname">getShowConnectionFromSelected</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getShowConnectionFromSelected" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the connects (constraints, expresions, and deformers - see showConstraints for example) leaving from selected nodes. This can be combined with showConnectionToSelected to show both arrive and leaving connects. If both flags are false then all the connections will be shown.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getShowConnectionToSelected"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getShowConnectionToSelected"></a>
+<tt class="descname">getShowConnectionToSelected</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getShowConnectionToSelected" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the connects (constraints, expresions, and deformers - see showConstraints for example) arriving at selected nodes. This can be combined with showConnectionFromSelected to show both arrive and leaving connects. If both flags are false then all the connections will be shown.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getShowConstraints"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getShowConstraints"></a>
+<tt class="descname">getShowConstraints</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getShowConstraints" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show constraint relationships in the DAG.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getShowDeformers"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getShowDeformers"></a>
+<tt class="descname">getShowDeformers</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getShowDeformers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show deformer or geometry filter relationships in the DAG.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getShowExpressions"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getShowExpressions"></a>
+<tt class="descname">getShowExpressions</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getShowExpressions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show expression relationships in the DAG.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getShowInvisible"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getShowInvisible"></a>
+<tt class="descname">getShowInvisible</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getShowInvisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show invisible nodes in the DAG.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getShowRelationships"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getShowRelationships"></a>
+<tt class="descname">getShowRelationships</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getShowRelationships" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show relationship (message) connections.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getShowShapes"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getShowShapes"></a>
+<tt class="descname">getShowShapes</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getShowShapes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show shape nodes in the DAG.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getShowUnderworld"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getShowUnderworld"></a>
+<tt class="descname">getShowUnderworld</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getShowUnderworld" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show underworld graphs in the DAG.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getStateString"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getStateString"></a>
+<tt class="descname">getStateString</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getStateString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query only flag.  Returns the MEL command that will edit an editor to match the current editor state. The returned command string uses the string variable $editorName in place of a specific name.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getTransitionFrames"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getTransitionFrames"></a>
+<tt class="descname">getTransitionFrames</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getTransitionFrames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify te number of transition frames for animate transitions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getUpdateNodeAdded"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getUpdateNodeAdded"></a>
+<tt class="descname">getUpdateNodeAdded</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getUpdateNodeAdded" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update graph when a new node is added to the database</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getUpdateSelection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getUpdateSelection"></a>
+<tt class="descname">getUpdateSelection</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getUpdateSelection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update selection state in the graph when the selection state of database changes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getUseFeedbackList"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getUseFeedbackList"></a>
+<tt class="descname">getUseFeedbackList</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getUseFeedbackList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use feedback or highlight list as the target selection when processing other hypergraph command-line options.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.getViewOption"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.getViewOption"></a>
+<tt class="descname">getViewOption</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.getViewOption" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set or query the view option for this hyper graph editor. The currently allowed views are asIconsand asList.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.layout"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.layout"></a>
+<tt class="descname">layout</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.layout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform an automatic layout on the graph.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.layoutSelected"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.layoutSelected"></a>
+<tt class="descname">layoutSelected</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.layoutSelected" title="Permalink to this definition">¶</a></dt>
+<dd><p>Perform an automatic layout on the selected object. circularLayout|hierarchicalLayout|orthogonalLayout|symmetricLayout|treeLayout</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.lockMainConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.lockMainConnection"></a>
+<tt class="descname">lockMainConnection</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.lockMainConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Locks the current list of objects within the mainConnection, so that only those objects are displayed within the editor. Further changes to the original mainConnection are ignored.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.look"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.look"></a>
+<tt class="descname">look</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.look" title="Permalink to this definition">¶</a></dt>
+<dd><p>Look at a coordinate in the graph view</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.navigateHome"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.navigateHome"></a>
+<tt class="descname">navigateHome</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.navigateHome" title="Permalink to this definition">¶</a></dt>
+<dd><p>Navigate to the home (DAG) view.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.nextView"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.nextView"></a>
+<tt class="descname">nextView</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.nextView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Changes the view to the next DAG view.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.nodeDropCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.nodeDropCommand"></a>
+<tt class="descname">nodeDropCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.nodeDropCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the command to be called when a node is dropped in the hypergraph window.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.nodePressCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.nodePressCommand"></a>
+<tt class="descname">nodePressCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.nodePressCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the command to be called when the user presses a mouse button while the cursor is over a node in the hypergraph window.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.nodeReleaseCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.nodeReleaseCommand"></a>
+<tt class="descname">nodeReleaseCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.nodeReleaseCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the command to be called when the user releases a mouse button while the cursor is over a node in the hypergraph window.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.popupMenuScript"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.popupMenuScript"></a>
+<tt class="descname">popupMenuScript</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.popupMenuScript" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the script to be called to register the popup menu with the control for this hypergraph. The script will be called with a string argument which gives the name of the hypergraph whose control the popup menu should be parented to.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.previousView"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.previousView"></a>
+<tt class="descname">previousView</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.previousView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Changes the view back to the previous DAG view.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.rebuild"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.rebuild"></a>
+<tt class="descname">rebuild</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.rebuild" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rebuilds graph</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.removeNode"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.removeNode"></a>
+<tt class="descname">removeNode</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.removeNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes the node identified by string from the graph.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.resetFreeform"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.resetFreeform"></a>
+<tt class="descname">resetFreeform</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.resetFreeform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resets freeform position on all nodes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.restoreBookmark"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.restoreBookmark"></a>
+<tt class="descname">restoreBookmark</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.restoreBookmark" title="Permalink to this definition">¶</a></dt>
+<dd><p>Restore the view corresponding to the bookmark.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.scrollUpDownNoZoom"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.scrollUpDownNoZoom"></a>
+<tt class="descname">scrollUpDownNoZoom</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.scrollUpDownNoZoom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify if we want to be in the scroll along y only with no free zooming mode. By default, hyper graph editor allows user to pan left and right.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setAnimateTransition"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setAnimateTransition"></a>
+<tt class="descname">setAnimateTransition</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setAnimateTransition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Turns animate transitions off and on.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setDocTag"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setDocTag"></a>
+<tt class="descname">setDocTag</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setDocTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Attaches a tag to the Maya editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setFilter"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setFilter"></a>
+<tt class="descname">setFilter</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of an itemFilter object to be placed on this editor. This filters the information coming onto the main list of the editor.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setForceMainConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setForceMainConnection"></a>
+<tt class="descname">setForceMainConnection</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setForceMainConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of a selectionConnection object which the editor will use as its source of content.  The editor will only display items contained in the selectionConnection object. This is a variant of the -mainListConnection flag in that it will force a change even when the connection is locked. This flag is used to reduce the overhead when using the -unlockMainConnection , -mainListConnection, -lockMainConnection flags in immediate succession.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setFreeform"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setFreeform"></a>
+<tt class="descname">setFreeform</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setFreeform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable freeform layout mode.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setGraphLayoutStyle"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setGraphLayoutStyle"></a>
+<tt class="descname">setGraphLayoutStyle</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setGraphLayoutStyle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Selects the graph layout style : circularLayout|hierarchicalLayout|orthogonalLayout|symmetricLayout|treeLayout</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setHighlightConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setHighlightConnection"></a>
+<tt class="descname">setHighlightConnection</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setHighlightConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of a selectionConnection object which the editor will synchronize with its highlight list.  Not all editors have a highlight list. For those that do, it is a secondary selection list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setIconSize"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setIconSize"></a>
+<tt class="descname">setIconSize</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setIconSize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set or query the icon size for this hyper graph editor. The currently allowed icon sizes are small, mediumand large.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setImage"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setImage"></a>
+<tt class="descname">setImage</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setImage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify background image to be loaded from the project image directory.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setImageEnabled"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setImageEnabled"></a>
+<tt class="descname">setImageEnabled</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setImageEnabled" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable display of a loaded background image (Freeform DAG view or DG view)</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setImageForContainer"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setImageForContainer"></a>
+<tt class="descname">setImageForContainer</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setImageForContainer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify that the following flags work on selected containers instead of the whole image: -imageScale,-imagePosition, fitImageToWidth, -fitImageToHeight, -image</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setImagePosition"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setImagePosition"></a>
+<tt class="descname">setImagePosition</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setImagePosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Position of the background image.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setImageScale"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setImageScale"></a>
+<tt class="descname">setImageScale</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setImageScale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uniform scale of the background image.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setMainListConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setMainListConnection"></a>
+<tt class="descname">setMainListConnection</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setMainListConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of a selectionConnection object which the editor will use as its source of content.  The editor will only display items contained in the selectionConnection object.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setMergeConnections"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setMergeConnections"></a>
+<tt class="descname">setMergeConnections</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setMergeConnections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Merge groups of connections into ‘fat’ connections.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setNodePosition"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setNodePosition"></a>
+<tt class="descname">setNodePosition</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setNodePosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the node identified by string to the (x,y) position in the window specified by the two floats. If the node is not in the graph than it will be added to the graph and then moved to the new position.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setOpaqueContainers"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setOpaqueContainers"></a>
+<tt class="descname">setOpaqueContainers</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setOpaqueContainers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets expanded container background opacity.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setOrientation"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setOrientation"></a>
+<tt class="descname">setOrientation</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setOrientation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Selects orientation style of graph: horiz|vert</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setParent"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setParent"></a>
+<tt class="descname">setParent</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setParent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the parent layout for this editor. This flag will only have an effect if the editor is currently un-parented.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setRange"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setRange"></a>
+<tt class="descname">setRange</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setRange" title="Permalink to this definition">¶</a></dt>
+<dd><p>Limits the display of nodes to only those within the range. There are two float values expected, the first the lower threshold of the range and the second the upper threshold of the range. The values are absolute timing values, not percentages.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setSelectionConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setSelectionConnection"></a>
+<tt class="descname">setSelectionConnection</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setSelectionConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the name of a selectionConnection object which the editor will synchronize with its own selection list.  As the user selects things in this editor, they will be selected in the selectionConnection object. If the object undergoes changes, the editor updates to show the change.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setShowConnectionFromSelected"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setShowConnectionFromSelected"></a>
+<tt class="descname">setShowConnectionFromSelected</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setShowConnectionFromSelected" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the connects (constraints, expresions, and deformers - see showConstraints for example) leaving from selected nodes. This can be combined with showConnectionToSelected to show both arrive and leaving connects. If both flags are false then all the connections will be shown.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setShowConnectionToSelected"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setShowConnectionToSelected"></a>
+<tt class="descname">setShowConnectionToSelected</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setShowConnectionToSelected" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the connects (constraints, expresions, and deformers - see showConstraints for example) arriving at selected nodes. This can be combined with showConnectionFromSelected to show both arrive and leaving connects. If both flags are false then all the connections will be shown.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setShowConstraints"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setShowConstraints"></a>
+<tt class="descname">setShowConstraints</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setShowConstraints" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show constraint relationships in the DAG.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setShowDeformers"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setShowDeformers"></a>
+<tt class="descname">setShowDeformers</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setShowDeformers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show deformer or geometry filter relationships in the DAG.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setShowExpressions"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setShowExpressions"></a>
+<tt class="descname">setShowExpressions</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setShowExpressions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show expression relationships in the DAG.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setShowInvisible"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setShowInvisible"></a>
+<tt class="descname">setShowInvisible</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setShowInvisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show invisible nodes in the DAG.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setShowRelationships"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setShowRelationships"></a>
+<tt class="descname">setShowRelationships</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setShowRelationships" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show relationship (message) connections.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setShowShapes"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setShowShapes"></a>
+<tt class="descname">setShowShapes</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setShowShapes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show shape nodes in the DAG.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setShowUnderworld"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setShowUnderworld"></a>
+<tt class="descname">setShowUnderworld</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setShowUnderworld" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show underworld graphs in the DAG.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setTransitionFrames"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setTransitionFrames"></a>
+<tt class="descname">setTransitionFrames</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setTransitionFrames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify te number of transition frames for animate transitions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setUpdateNodeAdded"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setUpdateNodeAdded"></a>
+<tt class="descname">setUpdateNodeAdded</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setUpdateNodeAdded" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update graph when a new node is added to the database</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setUpdateSelection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setUpdateSelection"></a>
+<tt class="descname">setUpdateSelection</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setUpdateSelection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update selection state in the graph when the selection state of database changes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setUseFeedbackList"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setUseFeedbackList"></a>
+<tt class="descname">setUseFeedbackList</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setUseFeedbackList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use feedback or highlight list as the target selection when processing other hypergraph command-line options.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.setViewOption"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.setViewOption"></a>
+<tt class="descname">setViewOption</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.setViewOption" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set or query the view option for this hyper graph editor. The currently allowed views are asIconsand asList.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.unParent"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.unParent"></a>
+<tt class="descname">unParent</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.unParent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies that the editor should be removed from its layout. This cannot be used with query.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.unfold"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.unfold"></a>
+<tt class="descname">unfold</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.unfold" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unfolds (expands) selected object.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.unfoldAll"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.unfoldAll"></a>
+<tt class="descname">unfoldAll</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.unfoldAll" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unfolds everything under selected object.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.unlockMainConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.unlockMainConnection"></a>
+<tt class="descname">unlockMainConnection</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.unlockMainConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unlocks the mainConnection, effectively restoring the original mainConnection (if it is still available), and dynamic updates.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.updateMainConnection"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.updateMainConnection"></a>
+<tt class="descname">updateMainConnection</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.updateMainConnection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Causes a locked mainConnection to be updated from the orginal mainConnection, but preserves the lock state.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.upstream"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.upstream"></a>
+<tt class="descname">upstream</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.upstream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show upstream dependency graph of selected node(s).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.visibility"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.visibility"></a>
+<tt class="descname">visibility</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.visibility" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the visible state of the selected node(s).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.HyperGraph.zoom"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.HyperGraph.zoom"></a>
+<tt class="descname">zoom</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.HyperGraph.zoom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify the zoom factor for animating transitions                         Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hyperGraph</span></tt></p>
+</dd></dl>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.uitypes.HelpLine.html" title="previous chapter">pymel.core.uitypes.HelpLine</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.uitypes.HyperPanel.html" title="next chapter">pymel.core.uitypes.HyperPanel</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/classes/pymel.core.uitypes/pymel.core.uitypes.HyperGraph.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.uitypes.HyperPanel.html" title="pymel.core.uitypes.HyperPanel">next</a> |</li>
+<li class="right">
+<a href="pymel.core.uitypes.HelpLine.html" title="pymel.core.uitypes.HelpLine">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.uitypes.html">pymel.core.uitypes</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.uitypes/pymel.core.uitypes.HyperGraph.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:18:11 GMT -->
+</body></html>

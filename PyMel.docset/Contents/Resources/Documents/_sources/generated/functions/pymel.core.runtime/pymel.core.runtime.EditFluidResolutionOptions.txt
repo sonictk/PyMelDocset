@@ -1,0 +1,6 @@
+pymel.core.runtime.EditFluidResolutionOptions
+=============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: EditFluidResolutionOptions

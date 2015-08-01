@@ -1,0 +1,6 @@
+pymel.core.runtime.DetachEdgeComponent
+======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: DetachEdgeComponent

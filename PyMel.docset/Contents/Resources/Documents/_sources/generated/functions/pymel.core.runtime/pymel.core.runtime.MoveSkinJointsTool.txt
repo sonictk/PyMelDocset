@@ -1,0 +1,6 @@
+pymel.core.runtime.MoveSkinJointsTool
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: MoveSkinJointsTool

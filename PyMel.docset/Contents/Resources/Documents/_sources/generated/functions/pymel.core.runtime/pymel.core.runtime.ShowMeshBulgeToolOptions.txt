@@ -1,0 +1,6 @@
+pymel.core.runtime.ShowMeshBulgeToolOptions
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ShowMeshBulgeToolOptions

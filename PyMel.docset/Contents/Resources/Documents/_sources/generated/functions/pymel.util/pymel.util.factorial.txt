@@ -1,0 +1,6 @@
+pymel.util.factorial
+====================
+
+.. currentmodule:: pymel.util
+
+.. autofunction:: factorial

@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeSelectCamerasAndImagePlanes
+========================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeSelectCamerasAndImagePlanes

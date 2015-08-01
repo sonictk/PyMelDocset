@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeImport
+===================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeImport

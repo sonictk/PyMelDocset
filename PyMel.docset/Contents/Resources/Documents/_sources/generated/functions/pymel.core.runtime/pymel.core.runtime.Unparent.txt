@@ -1,0 +1,6 @@
+pymel.core.runtime.Unparent
+===========================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: Unparent

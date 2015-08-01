@@ -1,0 +1,6 @@
+pymel.core.runtime.PolySpinEdgeBackward
+=======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: PolySpinEdgeBackward

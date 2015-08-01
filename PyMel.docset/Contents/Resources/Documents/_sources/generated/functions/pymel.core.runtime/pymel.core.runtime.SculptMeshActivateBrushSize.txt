@@ -1,0 +1,6 @@
+pymel.core.runtime.SculptMeshActivateBrushSize
+==============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SculptMeshActivateBrushSize

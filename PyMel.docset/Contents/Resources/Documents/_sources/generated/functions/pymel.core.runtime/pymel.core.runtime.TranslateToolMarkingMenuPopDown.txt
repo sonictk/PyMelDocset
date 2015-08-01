@@ -1,0 +1,6 @@
+pymel.core.runtime.TranslateToolMarkingMenuPopDown
+==================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: TranslateToolMarkingMenuPopDown

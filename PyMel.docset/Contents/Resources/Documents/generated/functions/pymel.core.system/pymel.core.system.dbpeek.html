@@ -1,0 +1,319 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.system/pymel.core.system.dbpeek.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:25:11 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.system.dbpeek — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.system.html" rel="up" title="pymel.core.system"/>
+<link href="pymel.core.system.dbtrace.html" rel="next" title="pymel.core.system.dbtrace"/>
+<link href="pymel.core.system.dbmessage.html" rel="prev" title="pymel.core.system.dbmessage"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.system » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.system.dbpeek ¶ 
+ 
+ 
+ dbpeek ( *args , **kwargs ) ¶ 
+ The dbpeekcommand is used to analyze the Maya data for information of interest. See a description of the flags for
+details on what types of things can be analyzed. 
+ Flags: 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Long Name / Short Name 
+ Argument Types 
+ Properties 
+ 
+ 
+ 
+ allObjects / all 
+ bool..." name="description"/><meta content="__PyMel_generated_functions_pymel_core_system_pymel_core_system_dbpeek_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.system.dbtrace.html" title="pymel.core.system.dbtrace">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.system.dbmessage.html" title="pymel.core.system.dbmessage">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.system.html">pymel.core.system</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-system-dbpeek">
+<h1>pymel.core.system.dbpeek<a class="headerlink" href="#pymel-core-system-dbpeek" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.core.system.dbpeek"><a name="//apple_ref/cpp/Function/pymel.core.system.dbpeek"></a>
+<tt class="descname">dbpeek</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.system.dbpeek" title="Permalink to this definition">¶</a></dt>
+<dd><p>The dbpeekcommand is used to analyze the Maya data for information of interest. See a description of the flags for
+details on what types of things can be analyzed.</p>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">allObjects</span></tt> / <tt class="docutils literal"><span class="pre">all</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Ignore any specified or selected objects and peek into all applicable objects. The definition of allObjectswill vary based on the peek operation being performed -
+see the flag documentation for details on what it means for a given operation. By default if no objects are selected or specified then it will behave as though
+this flag were set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">argument</span></tt> / <tt class="docutils literal"><span class="pre">a</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Specify one or more arguments to be passed to the operation. The acceptable values for the argument string are documented in the flag to which they will be
+applied. If the argument itself takes a value then the value will be of the form argname=argvalue.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">count</span></tt> / <tt class="docutils literal"><span class="pre">c</span></tt></td>
+<td><em>int</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Specify a count to be used by the test. Different tests make different use of the count, query the operation to find out how it interprets the value. For example
+a performance test might use it as the number of iterations to run in the test, an output operation might use it to limit the amount of output it produces.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">operation</span></tt> / <tt class="docutils literal"><span class="pre">op</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Specify the peeking operation to perform. The various operations are registered at run time and can be listed by querying this flag without a value. If you query
+it with a value then you get the detail values that peek operation accepts and a description of what it does. In query mode, this flag can accept a value.Flag can
+have multiple arguments, passed either as a tuple or a list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">outputFile</span></tt> / <tt class="docutils literal"><span class="pre">of</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Specify the location of a file to which the information is to be dumped. Default will return the value from the command.  Use the special names stdoutand stderrto
+redirect to your command window. The special name msdevis available when debugging on Windows to direct your output to the debug tab in the output window of
+Visual Studio.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.dbpeek</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre>import pymel.core as pm
+
+import maya.cmds as cmds
+// Find the available peek operations
+pm.dbpeek( op=True, query=True )
+# Return: ['metadata', 'nodes', 'references', 'plugIterator'] #
+// Describe the detail of a single available type
+pm.dbpeek( query=True, op='nodes' )
+# Return: 'The operation 'nodes' understands type flags 'attributes, visible'.
+The 'visible' flag filters the display list to ignore any hidden
+or internal nodes. Default is to show all nodes
+Normal display will show a count of nodes in the scene of each
+type. Adding the 'attributes' flag includes the attribute count
+for each node as well, segregated by static, extension, and dynamic types.
+'#
+# Describe the detail of a single available operation
+pm.dbpeek( query=True, op='plugIterator' )
+# Return: 'The test 'plugIterator' doesn't have any type flags.
+Suggested iteration count minimum is 1000000 for which the test machine
+measured a time of 19.234s.
+This tests the performance of the class which iterates over all of the
+networked plugs in a plug tree.
+'#
+pm.dbpeek( op='plugIterator', count=10000 )
+# Return: 'Run 10,000 loops of plug iteration over a tree of size 51, depth 4
+Total time:   17.0s
+Maximum time: 0.81s
+Minimum time: 0.23s
+Average time: 0.30s
+'#
+# Run a performance test for 1000000 loops and store the results
+pm.dbpeek( op='plugIterator', count=1000000, outputFile='MyFile.txt' )
+# Return: 0 #
+pm.loadPlugin( 'MetadataSample' )
+pm.polyPlane( name='planeLuck' )
+pm.dataStructure( asString='name=TestStructure:int32=ID )
+pm.importMetadata( asString='channel face\n stream\n TestStream\n TestStructure\n 0\n 99\n 1\n 999\n 2\n 9999\n endStream\n endChannel\n endAssociations" "planeLuckShape' )
+# Peek at the newly created metadata
+#
+pm.dbpeek( op='metadata', type='summary' )
+# Return: 'Node planeLuckShape : face( TestStream[3] )' #
+</pre></div>
+</div>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.system.dbmessage.html" title="previous chapter">pymel.core.system.dbmessage</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.system.dbtrace.html" title="next chapter">pymel.core.system.dbtrace</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.core.system/pymel.core.system.dbpeek.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.system.dbtrace.html" title="pymel.core.system.dbtrace">next</a> |</li>
+<li class="right">
+<a href="pymel.core.system.dbmessage.html" title="pymel.core.system.dbmessage">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.system.html">pymel.core.system</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.system/pymel.core.system.dbpeek.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:25:11 GMT -->
+</body></html>

@@ -1,0 +1,6 @@
+pymel.core.runtime.CreateJiggleDeformer
+=======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreateJiggleDeformer

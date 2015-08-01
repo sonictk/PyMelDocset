@@ -1,0 +1,6 @@
+pymel.core.runtime.CreateBindingSet
+===================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreateBindingSet

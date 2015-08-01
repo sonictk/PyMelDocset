@@ -1,0 +1,6 @@
+pymel.core.runtime.TwistOptions
+===============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: TwistOptions

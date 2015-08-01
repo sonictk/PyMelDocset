@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeDeleteUnusedNodes
+==============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeDeleteUnusedNodes

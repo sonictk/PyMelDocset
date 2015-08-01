@@ -1,0 +1,427 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.modeling/pymel.core.modeling.hasMetadata.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:29:59 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.modeling.hasMetadata — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.modeling.html" rel="up" title="pymel.core.modeling"/>
+<link href="pymel.core.modeling.illustratorCurves.html" rel="next" title="pymel.core.modeling.illustratorCurves"/>
+<link href="pymel.core.modeling.hardenPointCurve.html" rel="prev" title="pymel.core.modeling.hardenPointCurve"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.modeling » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.modeling.hasMetadata ¶ 
+ 
+ 
+ hasMetadata ( *args , **kwargs ) ¶ 
+ This command is used to query for the presence of metadata elements on a node, components, or scene. The command works
+at all levels of metadata presence, from the existence of any metadata at all on a node or scene right down to the
+presence of metadata values set on a..." name="description"/><meta content="__PyMel_generated_functions_pymel_core_modeling_pymel_core_modeling_hasMetadata_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.modeling.illustratorCurves.html" title="pymel.core.modeling.illustratorCurves">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.modeling.hardenPointCurve.html" title="pymel.core.modeling.hardenPointCurve">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.modeling.html">pymel.core.modeling</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-modeling-hasmetadata">
+<h1>pymel.core.modeling.hasMetadata<a class="headerlink" href="#pymel-core-modeling-hasmetadata" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.core.modeling.hasMetadata"><a name="//apple_ref/cpp/Function/pymel.core.modeling.hasMetadata"></a>
+<tt class="descname">hasMetadata</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.modeling.hasMetadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command is used to query for the presence of metadata elements on a node, components, or scene. The command works
+at all levels of metadata presence, from the existence of any metadata at all on a node or scene right down to the
+presence of metadata values set on a particular metadata Stream index.  Filter FlagschannelName- Only look for metadata
+on one particular Channel typestreamName- Only look for metadata on one particular named Stream. When used in
+conjunction with channelNamethen ignore Streams with a matching name but a different Channel typeindex- Only look for
+metadata on one or more specific Index values of a Stream. Requires use of the streamNameflag. Does not require the
+indexTypeflag as that will be inferred by the streamName.startIndex/endIndex- Same as indexbut using an entire range of
+Index values rather than a single oneindexType- Only look for metadata using a particular Index type. Can have its scope
+narrowed by other filter flags as well.ignoreDefault- Treat any metadata that still has the default value (e.g. 0 for
+numerics, for strings) the same as metadata that isn’t present. This means that any metadata with default values will
+not be reported. It is useful for quickly finding values that you have changed. When this flag is set you can also use
+the memberNamefilter to narrow down the check to a particular member of the metadata Structure. Without that filter it
+will only skip over metadata where every member of the Structure has a non-default value.memberName- Only look at one
+particular Member in the metadata in a Structure. Only used when checking for non-default values as existence is based
+on the entire Structure, not any particular Member.Operation Flagsnormal mode- Return True for every specified location
+containing metadata. This combines with the filter flags as follows:no flag- True if there is any metadata at all on the
+node or scenechannelName- True if there is any metadata at all on the Channel         with the given namestreamName-
+True if there is any metadata at all on the Stream         with the given nameindex/startIndex/endIndex- An array of
+booleans ordered the same         as the natural ordering of the Index values (i.e. specifying index 3, 2, and 4
+in that order will still return booleans in the order for indices 2,3,4)         where True means that there is metadata
+assigned at that Index. This form is         better suited with the asListmodification since with that variation it
+is easier to tell exactly which indices have the metadata.asList- Adding this flag switches the return values from a
+single boolean or array of booleans to an array of strings indicating exactly which metadata elements have values. The
+return values of the command are changed to be the following:no flag- List of Channel names with metadatachannelName-
+List of Stream names in the Channel with metadatastreamName- List of Index values on the Stream with
+metadataindex/startIndex/endIndex- List of Index values with metadata,         restricted to the set of specified Index
+values.</p>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">asList</span></tt> / <tt class="docutils literal"><span class="pre">al</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Use this flag when you want to return string values indicating where the metadata lives rather than boolean values. See the command description for more details
+on what this flag will return.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">channelName</span></tt> / <tt class="docutils literal"><span class="pre">cn</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Filter the metadata selection to only recognize metadata belonging to the specified named Channel (e.g. vertex). This flag is ignored if the components on the
+selection list are being used to specify the metadata of interest. In query mode, this flag can accept a value.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">channelType</span></tt> / <tt class="docutils literal"><span class="pre">cht</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Obsolete - use the ‘channelName’ flag instead. In query mode, this flag can accept a value.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">endIndex</span></tt> / <tt class="docutils literal"><span class="pre">eix</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">The metadata is stored in a Stream, which is an indexed list. If you have mesh components selected then the metadata indices are implicit in the list of selected
+components. If you select only the node or scene then this flag may be used in conjunction with the startIndexflag to specify a range of indices from which to
+retrieve the metadata. It is an error to have the value of startIndexbe greater than that of endIndex.  See also the indexflag for an alternate way to specify
+multiple indices. This flag can only be used on index types that support a range (e.g. integer values - it makes no sense to request a range between two strings)
+In query mode, this flag can accept a value.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">ignoreDefault</span></tt> / <tt class="docutils literal"><span class="pre">id</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Use this flag when you want to skip over any metadata that has only default values. i.e. the metadata may exist but it hasn’t had a new value set yet (non-zero
+for numerics, non-empty strings, etc.) See the command description for more details on how this flag filters the search.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">index</span></tt> / <tt class="docutils literal"><span class="pre">idx</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">In the typical case metadata is indexed using a simple integer value. Certain types of data may use other index types. e.g. a vertexFacecomponent will use a
+pairindex type, which is two integer values; one for the face ID of the component and the second for the vertex ID.  The indexflag takes a string, formatted in
+the way the specified indexTyperequires. All uses of the indexflag have the same indexType. If the type was not specified it is assumed to be a simple integer
+value.  In query mode, this flag can accept a value.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">indexType</span></tt> / <tt class="docutils literal"><span class="pre">idt</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Name of the index type the new Channel should be using. If not specified this defaults to a simple integer index. Of the native types only a mesh
+vertexFacechannel is different, using a pairindex type. In query mode, this flag can accept a value.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">memberName</span></tt> / <tt class="docutils literal"><span class="pre">mn</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Name of the Structure member being checked. The names of the members are set up in the Structure definition, either through the description passed in through the
+dataStructurecommand or via the API used to create that Structure. As the assignment of metadata is on a per-structure basis this flag only needs to be specified
+when querying for non-default values. If you query for non-default values and omit this flag then it checks that any of the members have a non-default value.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">scene</span></tt> / <tt class="docutils literal"><span class="pre">scn</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Use this flag when you want to add metadata to the scene as a whole rather than to any individual nodes. If you use this flag and have nodes selected the nodes
+will be ignored and a warning will be displayed.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">startIndex</span></tt> / <tt class="docutils literal"><span class="pre">six</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">The metadata is stored in a Stream, which is an indexed list. If you have mesh components selected then the metadata indices are implicit in the list of selected
+components. If you select only the node or scene then this flag may be used in conjunction with the endIndexflag to specify a range of indices from which to
+retrieve the metadata. It is an error to have the value of startIndexbe greater than that of endIndex.  See also the indexflag for an alternate way to specify
+multiple indices. This flag can only be used on index types that support a range (e.g. integer values - it makes no sense to request a range between two strings)
+In query mode, this flag can accept a value.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">streamName</span></tt> / <tt class="docutils literal"><span class="pre">stn</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Name of the metadata Stream. Depending on context it could be the name of a Stream to be created, or the name of the Stream to pass through the filter. In query
+mode, this flag can accept a value.Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.hasMetadata</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+
+<span class="kn">import</span> <span class="nn">maya.cmds</span> <span class="kn">as</span> <span class="nn">cmds</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">polyPlane</span><span class="p">(</span> <span class="n">name</span><span class="o">=</span><span class="s">'smcPlane'</span><span class="p">,</span> <span class="n">constructionHistory</span><span class="o">=</span><span class="bp">False</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'smcPlane')] #</span>
+<span class="c"># Create structures</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">dataStructure</span><span class="p">(</span> <span class="n">format</span><span class="o">=</span><span class="s">'raw'</span><span class="p">,</span> <span class="n">asString</span><span class="o">=</span><span class="s">'name=idStructure:int32=ID'</span> <span class="p">)</span>
+<span class="c"># Result: u'idStructure' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">dataStructure</span><span class="p">(</span> <span class="n">format</span><span class="o">=</span><span class="s">'raw'</span><span class="p">,</span> <span class="n">asString</span><span class="o">=</span><span class="s">'name=keyValueStructure:string=value'</span> <span class="p">)</span>
+<span class="c"># Result: u'keyValueStructure' #</span>
+<span class="c"># Apply structures to plane</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">select</span><span class="p">(</span> <span class="s">'smcPlaneShape'</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">addMetadata</span><span class="p">(</span> <span class="n">structure</span><span class="o">=</span><span class="s">'idStructure'</span><span class="p">,</span> <span class="n">streamName</span><span class="o">=</span><span class="s">'idStream'</span><span class="p">,</span> <span class="n">channelName</span><span class="o">=</span><span class="s">'vertex'</span> <span class="p">)</span>
+<span class="c"># Result: [u'smcPlaneShape'] #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">addMetadata</span><span class="p">(</span> <span class="n">structure</span><span class="o">=</span><span class="s">'keyValueStructure'</span><span class="p">,</span> <span class="n">streamName</span><span class="o">=</span><span class="s">'keyValueStream'</span><span class="p">,</span> <span class="n">channelName</span><span class="o">=</span><span class="s">'key'</span><span class="p">,</span> <span class="n">indexType</span><span class="o">=</span><span class="s">'string'</span> <span class="p">)</span>
+<span class="c"># Result: [u'smcPlaneShape'] #</span>
+<span class="c"># Apply the metadata values to three of the components by selection</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">select</span><span class="p">(</span> <span class="s">'smcPlaneShape.vtx[8:10]'</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">editMetadata</span><span class="p">(</span> <span class="n">streamName</span><span class="o">=</span><span class="s">'idStream'</span><span class="p">,</span> <span class="n">memberName</span><span class="o">=</span><span class="s">'ID'</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">7</span> <span class="p">)</span>
+<span class="c"># Result: nt.Mesh(u'smcPlaneShape') #</span>
+<span class="c"># Verify existence of the three newly set metadata values at the node level</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">select</span><span class="p">(</span> <span class="s">'smcPlaneShape'</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">hasMetadata</span><span class="p">()</span>
+<span class="c"># Result: [True] #</span>
+<span class="c"># Verify existence of the three newly set metadata values at the Channel level</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">hasMetadata</span><span class="p">(</span> <span class="n">channelName</span><span class="o">=</span><span class="s">'vertex'</span> <span class="p">)</span>
+<span class="c"># Result: [True, True] #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">hasMetadata</span><span class="p">(</span> <span class="n">channelName</span><span class="o">=</span><span class="s">'edge'</span> <span class="p">)</span>
+<span class="c"># Result: [False] #</span>
+<span class="c"># Verify existence of the three newly set metadata values at the Stream level</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">hasMetadata</span><span class="p">(</span> <span class="n">channelName</span><span class="o">=</span><span class="s">'vertex'</span><span class="p">,</span> <span class="n">streamName</span><span class="o">=</span><span class="s">'idStream'</span> <span class="p">)</span>
+<span class="c"># Result: [True] #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">hasMetadata</span><span class="p">(</span> <span class="n">channelName</span><span class="o">=</span><span class="s">'edge'</span><span class="p">,</span> <span class="n">streamName</span><span class="o">=</span><span class="s">'someOtherStream'</span> <span class="p">)</span>
+<span class="c"># Result: [False] #</span>
+<span class="c"># Verify existence of the three newly set metadata values at the Index level</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">hasMetadata</span><span class="p">(</span> <span class="n">channelName</span><span class="o">=</span><span class="s">'vertex'</span><span class="p">,</span> <span class="n">streamName</span><span class="o">=</span><span class="s">'idStream'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s">'8'</span><span class="p">,</span><span class="s">'9'</span><span class="p">]</span> <span class="p">)</span>
+<span class="c"># Result: [True, True] #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">hasMetadata</span><span class="p">(</span> <span class="n">channelName</span><span class="o">=</span><span class="s">'vertex'</span><span class="p">,</span> <span class="n">streamName</span><span class="o">=</span><span class="s">'idStream'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s">'8'</span><span class="p">,</span><span class="s">'9999'</span><span class="p">]</span> <span class="p">)</span>
+<span class="c"># Result: [True, False] #</span>
+<span class="c"># Verify existence of default metadata values at the Index level. Since the</span>
+<span class="c"># index range was established to be 0-17 by assignment and the Stream</span>
+<span class="c"># defaults to returning default values for unassigned indices the lower index</span>
+<span class="c"># values "0" and "1" do have metadata (as default values) but the higher one</span>
+<span class="c"># "9999" in the above example does not.</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">hasMetadata</span><span class="p">(</span> <span class="n">channelName</span><span class="o">=</span><span class="s">'vertex'</span><span class="p">,</span> <span class="n">streamName</span><span class="o">=</span><span class="s">'idStream'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s">'0'</span><span class="p">,</span><span class="s">'1'</span><span class="p">]</span> <span class="p">)</span>
+<span class="c"># Result: [False, False] #</span>
+<span class="c"># Verify non-existence of non-default metadata values at the Index level</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">hasMetadata</span><span class="p">(</span> <span class="n">ignoreDefault</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">channelName</span><span class="o">=</span><span class="s">'edge'</span><span class="p">,</span> <span class="n">streamName</span><span class="o">=</span><span class="s">'idStream'</span><span class="p">,</span> <span class="n">memberName</span><span class="o">=</span><span class="s">'ID'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s">'0'</span><span class="p">,</span><span class="s">'1'</span><span class="p">]</span> <span class="p">)</span>
+<span class="c"># Result: [False, False] #</span>
+<span class="c"># Get the list of Index values with assigned metadata on the object</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">select</span><span class="p">(</span> <span class="s">'smcPlaneShape.vtx[8:20]'</span><span class="p">,</span> <span class="n">replace</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">hasMetadata</span><span class="p">(</span> <span class="n">channelName</span><span class="o">=</span><span class="s">'vertex'</span><span class="p">,</span> <span class="n">streamName</span><span class="o">=</span><span class="s">'idStream'</span><span class="p">,</span> <span class="n">asList</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [u'8', u'9', u'10'] #</span>
+<span class="c"># Set metadata values using the complex index type='string'</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">editMetadata</span><span class="p">(</span> <span class="n">streamName</span><span class="o">=</span><span class="s">'keyValueStream'</span><span class="p">,</span> <span class="n">memberName</span><span class="o">=</span><span class="s">'value'</span><span class="p">,</span> <span class="n">stringValue</span><span class="o">=</span><span class="s">'Starry Night'</span><span class="p">,</span> <span class="n">indexType</span><span class="o">=</span><span class="s">'string'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="s">'Title'</span> <span class="p">)</span>
+<span class="c"># Result: nt.Mesh(u'smcPlaneShape') #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">editMetadata</span><span class="p">(</span> <span class="n">streamName</span><span class="o">=</span><span class="s">'keyValueStream'</span><span class="p">,</span> <span class="n">memberName</span><span class="o">=</span><span class="s">'value'</span><span class="p">,</span> <span class="n">stringValue</span><span class="o">=</span><span class="s">'Vincent Van Gogh'</span><span class="p">,</span> <span class="n">indexType</span><span class="o">=</span><span class="s">'string'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="s">'Artist'</span> <span class="p">)</span>
+<span class="c"># Result: nt.Mesh(u'smcPlaneShape') #</span>
+<span class="c"># Verify existence of the complex index data</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">hasMetadata</span><span class="p">(</span> <span class="n">streamName</span><span class="o">=</span><span class="s">'keyValueStream'</span><span class="p">,</span> <span class="n">memberName</span><span class="o">=</span><span class="s">'value'</span><span class="p">,</span> <span class="n">channelName</span><span class="o">=</span><span class="s">'key'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s">'Title'</span><span class="p">,</span><span class="s">'Artist'</span><span class="p">],</span> <span class="n">indexType</span><span class="o">=</span><span class="s">'string'</span><span class="p">,</span> <span class="n">asList</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [u'Artist', u'Title'] #</span>
+</pre></div>
+</div>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.modeling.hardenPointCurve.html" title="previous chapter">pymel.core.modeling.hardenPointCurve</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.modeling.illustratorCurves.html" title="next chapter">pymel.core.modeling.illustratorCurves</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.core.modeling/pymel.core.modeling.hasMetadata.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.modeling.illustratorCurves.html" title="pymel.core.modeling.illustratorCurves">next</a> |</li>
+<li class="right">
+<a href="pymel.core.modeling.hardenPointCurve.html" title="pymel.core.modeling.hardenPointCurve">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.modeling.html">pymel.core.modeling</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.modeling/pymel.core.modeling.hasMetadata.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:29:59 GMT -->
+</body></html>

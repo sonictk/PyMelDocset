@@ -1,0 +1,1244 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.nodetypes/pymel.core.nodetypes.Transform.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:20:26 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.nodetypes.Transform — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.nodetypes.html" rel="up" title="pymel.core.nodetypes"/>
+<link href="pymel.core.nodetypes.TransformGeometry.html" rel="next" title="pymel.core.nodetypes.TransformGeometry"/>
+<link href="pymel.core.nodetypes.TransferAttributes.html" rel="prev" title="pymel.core.nodetypes.TransferAttributes"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.nodetypes » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.nodetypes.Transform ¶ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ class Transform ( *args , **kwargs ) ¶ 
+ class counterpart of mel function xform 
+ This command can be used query/set any element in a transformation node. It can also be used to query some values that cannot be set directly such as the transformation matrix or the bounding box. It..." name="description"/><meta content="__PyMel_generated_classes_pymel_core_nodetypes_pymel_core_nodetypes_Transform_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.nodetypes.TransformGeometry.html" title="pymel.core.nodetypes.TransformGeometry">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.nodetypes.TransferAttributes.html" title="pymel.core.nodetypes.TransferAttributes">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.nodetypes.html">pymel.core.nodetypes</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-nodetypes-transform">
+<h1>pymel.core.nodetypes.Transform<a class="headerlink" href="#pymel-core-nodetypes-transform" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img alt="Inheritance diagram of Transform" class="inheritance" src="../../../_images/inheritance-f0cce266eb7880c10728df8ee081fbf4c99f07f1.png" usemap="#inheritance1a7bcab41d"/>
+<map id="inheritance1a7bcab41d" name="inheritance1a7bcab41d">
+<area alt="" coords="5,121,97,145" href="pymel.core.nodetypes.ContainerBase.html#pymel.core.nodetypes.ContainerBase" id="node1" shape="rect" title="ContainerBase"></area>
+<area alt="" coords="15,160,87,184" href="pymel.core.nodetypes.Entity.html#pymel.core.nodetypes.Entity" id="node4" shape="rect" title="Entity"></area>
+<area alt="" coords="9,83,93,107" href="pymel.core.nodetypes.DependNode.html#pymel.core.nodetypes.DependNode" id="node2" shape="rect" title="DependNode"></area>
+<area alt="" coords="15,199,87,223" href="pymel.core.nodetypes.DagNode.html#pymel.core.nodetypes.DagNode" id="node3" shape="rect" title="DagNode"></area>
+<area alt="" coords="15,237,87,261" href="#pymel.core.nodetypes.Transform" id="node7" shape="rect" title="class counterpart of mel function `xform`"></area>
+<area alt="" coords="15,44,87,68" href="../pymel.core.general/pymel.core.general.PyNode.html#pymel.core.general.PyNode" id="node5" shape="rect" title="Abstract class that is base for all pymel nodes classes."></area>
+<area alt="" coords="7,5,95,29" href="../pymel.util.utilitytypes/pymel.util.utilitytypes.ProxyUnicode.html#pymel.util.utilitytypes.ProxyUnicode" id="node6" shape="rect" title="ProxyUnicode"></area>
+</map>
+</p>
+<dl class="class">
+<dt id="pymel.core.nodetypes.Transform"><a name="//apple_ref/cpp/Class/pymel.core.nodetypes.Transform"></a>
+<em class="property">class </em><tt class="descname">Transform</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>class counterpart of mel function <tt class="xref py py-obj docutils literal"><span class="pre">xform</span></tt></p>
+<p>This command can be used query/set any element in a transformation node. It can also be used to query some values that cannot be set directly such as the transformation matrix or the bounding box. It can also set both pivot points to convenient values. All values are specified in transformation coordinates. (attribute-space) In addition, the attributes are applied/returned in the order in which they appear in the flags section. (which corresponds to the order they appear in the transformation matrix as given below) See also:move, rotate, scale where: [sp] = |  1      0        0       0 | = scale pivot matrix |  0      1        0       0 | |  0      0        1       0 | | -spx   -spy     -spz     1 | [s]  = |  sx     0        0       0 | = scale matrix |  0      sy       0       0 | |  0      0        sz      0 | |  0      0        0       1 | [sh] = |  1      0        0       0 | = shear matrix |  xy     1        0       0 | |  xz     yz       1       0 | |  0      0        0       1 | -1 [sp] = |  1       0       0       0 | = scale pivot inverse matrix |  0       1       0       0 | |  0       0       1       0 | |  spx     spy     spz     1 | [st] = |  1       0       0       0 | = scale translate matrix |  0       1       0       0 | |  0       0       1       0 | |  stx     sty     stz     1 | [rp] = |  1       0       0       0 | = rotate pivot matrix |  0       1       0       0 | |  0       0       1       0 | | -rpx    -rpy    -rpz     1 | [ar] = |  *       *       *       0 | = axis rotation matrix |  *       *       *       0 |   (composite rotation, |  *       *       *       0 |    see [rx], [ry], [rz] |  0       0       0       1 |    below for details) [rx] = |  1       0       0       0 | = rotate X matrix |  0       cos(x)  sin(x)  0 | |  0      -sin(x)  cos(x)  0 | |  0       0       0       1 | [ry] = |  cos(y)  0      -sin(y)  0 | = rotate Y matrix |  0       1       0       0 | |  sin(y)  0       cos(y)  0 | |  0       0       0       1 | [rz] = |  cos(z)  sin(z)  0       0 | = rotate Z matrix | -sin(z)  cos(z)  0       0 | |  0       0       1       0 | |  0       0       0       1 | -1 [rp] = |  1       0       0       0 | = rotate pivot matrix |  0       1       0       0 | |  0       0       1       0 | |  rpx     rpy     rpz     1 | [rt] = |  1       0       0       0 | = rotate translate matrix |  0       1       0       0 | |  0       0       1       0 | |  rtx     rty     rtz     1 | [t]  = |  1       0       0       0 | = translation matrix |  0       1       0       0 | |  0       0       1       0 | |  tx      ty      tz      1 | In query mode, return type is based on queried flag.</p>
+<dl class="attribute">
+<dt id="pymel.core.nodetypes.Transform.LimitType"><a name="//apple_ref/cpp/Attribute/pymel.core.nodetypes.Transform.LimitType"></a>
+<tt class="descname">LimitType</tt><em class="property"> = Enum( EnumValue('LimitType', 0, 'scaleMinX'), EnumValue('LimitType', 1, 'scaleMaxX'), EnumValue('LimitType', 2, 'scaleMinY'), EnumValue('LimitType', 3, 'scaleMaxY'), EnumValue('LimitType', 4, 'scaleMinZ'), EnumValue('LimitType', 5, 'scaleMaxZ'), EnumValue('LimitType', 6, 'shearMinXY'), EnumValue('LimitType', 7, 'shearMaxXY'), EnumValue('LimitType', 8, 'shearMinXZ'), EnumValue('LimitType', 9, 'shearMaxXZ'), EnumValue('LimitType', 10, 'shearMinYZ'), EnumValue('LimitType', 11, 'shearMaxYZ'), EnumValue('LimitType', 12, 'rotateMinX'), EnumValue('LimitType', 13, 'rotateMaxX'), EnumValue('LimitType', 14, 'rotateMinY'), EnumValue('LimitType', 15, 'rotateMaxY'), EnumValue('LimitType', 16, 'rotateMinZ'), EnumValue('LimitType', 17, 'rotateMaxZ'), EnumValue('LimitType', 18, 'translateMinX'), EnumValue('LimitType', 19, 'translateMaxX'), EnumValue('LimitType', 20, 'translateMinY'), EnumValue('LimitType', 21, 'translateMaxY'), EnumValue('LimitType', 22, 'translateMinZ'), EnumValue('LimitType', 23, 'translateMaxZ'))</em><a class="headerlink" href="#pymel.core.nodetypes.Transform.LimitType" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.attr"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.attr"></a>
+<tt class="descname">attr</tt><big>(</big><em>attr</em>, <em>checkShape=True</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.attr" title="Permalink to this definition">¶</a></dt>
+<dd><p>when checkShape is enabled, if the attribute does not exist the transform but does on the shape, then the shape’s attribute will
+be returned.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">Attribute</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.centerPivots"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.centerPivots"></a>
+<tt class="descname">centerPivots</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.centerPivots" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set pivot points to the center of the object’s bounding box. (see -p flag)</p>
+<dl class="docutils">
+<dt>Flags:</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>preserve:</dt>
+<dd><p class="first last">preserve overall transformation. used to prevent object from jumpingwhen changing pivots or rotation order. the default
+value is true. (used with -sp, -rp, -roo, -cp, -ra)</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.xform</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.centerPivotsOnComponents"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.centerPivotsOnComponents"></a>
+<tt class="descname">centerPivotsOnComponents</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.centerPivotsOnComponents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set pivot points to the center of the component’s bounding box. (see -p flag)</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.xform</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.clearRestPosition"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.clearRestPosition"></a>
+<tt class="descname">clearRestPosition</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.clearRestPosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear the saved rest position of this transform.
+Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnTransform.clearRestPosition</span></tt></p>
+<p><strong>Undo is not currently supported for this method</strong></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.deletePriorHistory"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.deletePriorHistory"></a>
+<tt class="descname">deletePriorHistory</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.deletePriorHistory" title="Permalink to this definition">¶</a></dt>
+<dd><p>If true then delete the construction history before the operation is performed.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.xform</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.getBoundingBox"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.getBoundingBox"></a>
+<tt class="descname">getBoundingBox</tt><big>(</big><em>invisible=False</em>, <em>space='object'</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.getBoundingBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>xform -boundingBox and xform -boundingBoxInvisible</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">BoundingBox</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.getBoundingBoxInvisible"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.getBoundingBoxInvisible"></a>
+<tt class="descname">getBoundingBoxInvisible</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.getBoundingBoxInvisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the bounding box of an object. This includes the bounding boxes of all invisible children which are not included using the boundingBox flag. The values returned are in following order: xmin ymin zmin xmax ymax zmax.</p>
+<dl class="docutils">
+<dt>Flags:</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>objectSpace:</dt>
+<dd><p class="first last">treat values as object-space transformation values (only works for pivots, translations, rotation, rotation axis,
+matrix, and bounding box flags)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>worldSpace:</dt>
+<dd><p class="first last">(works for pivots, translations, rotation, rotation axis, matrix, and bounding box flags). Note that, when querying the
+scale, that this calculation is cumulative and is only valid if there are all uniform scales and no rotation. In a
+hierarchy with non-uniform scale and rotation, this value may not correspond entirely with the perceived global scale.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.xform</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.getBoundingBoxMax"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.getBoundingBoxMax"></a>
+<tt class="descname">getBoundingBoxMax</tt><big>(</big><em>invisible=False</em>, <em>space='object'</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.getBoundingBoxMax" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">Vector</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.getBoundingBoxMin"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.getBoundingBoxMin"></a>
+<tt class="descname">getBoundingBoxMin</tt><big>(</big><em>invisible=False</em>, <em>space='object'</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.getBoundingBoxMin" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">Vector</span></tt></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.getLimit"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.getLimit"></a>
+<tt class="descname">getLimit</tt><big>(</big><em>type</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.getLimit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine the current value of the specified limit.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt>type <span class="classifier-delimiter">:</span> <span class="classifier"><a class="reference internal" href="#pymel.core.nodetypes.Transform.LimitType" title="pymel.core.nodetypes.Transform.LimitType"><tt class="xref py py-obj docutils literal"><span class="pre">Transform.LimitType</span></tt></a></span></dt>
+<dd><p class="first">type to query limit</p>
+<p class="last">values: ‘scaleMinX’, ‘scaleMaxX’, ‘scaleMinY’, ‘scaleMaxY’, ‘scaleMinZ’, ‘scaleMaxZ’, ‘shearMinXY’, ‘shearMaxXY’, ‘shearMinXZ’, ‘shearMaxXZ’, ‘shearMinYZ’, ‘shearMaxYZ’, ‘rotateMinX’, ‘rotateMaxX’, ‘rotateMinY’, ‘rotateMaxY’, ‘rotateMinZ’, ‘rotateMaxZ’, ‘translateMinX’, ‘translateMaxX’, ‘translateMinY’, ‘translateMaxY’, ‘translateMinZ’, ‘translateMaxZ’</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnTransform.limitValue</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.getMatrix"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.getMatrix"></a>
+<tt class="descname">getMatrix</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.getMatrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets/returns the composite transformation matrix. *Note* the matrix is represented by 16 double arguments that are specified in row order.</p>
+<dl class="docutils">
+<dt>Flags:</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>objectSpace:</dt>
+<dd><p class="first last">treat values as object-space transformation values (only works for pivots, translations, rotation, rotation axis,
+matrix, and bounding box flags)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>worldSpace:</dt>
+<dd><p class="first last">(works for pivots, translations, rotation, rotation axis, matrix, and bounding box flags). Note that, when querying the
+scale, that this calculation is cumulative and is only valid if there are all uniform scales and no rotation. In a
+hierarchy with non-uniform scale and rotation, this value may not correspond entirely with the perceived global scale.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.xform</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.getPivots"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.getPivots"></a>
+<tt class="descname">getPivots</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.getPivots" title="Permalink to this definition">¶</a></dt>
+<dd><p>convenience method that changes both the rotate and scale pivots simultaneously. (see -rp -sp flags for more info)</p>
+<dl class="docutils">
+<dt>Flags:</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>objectSpace:</dt>
+<dd><p class="first last">treat values as object-space transformation values (only works for pivots, translations, rotation, rotation axis,
+matrix, and bounding box flags)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>worldSpace:</dt>
+<dd><p class="first last">(works for pivots, translations, rotation, rotation axis, matrix, and bounding box flags). Note that, when querying the
+scale, that this calculation is cumulative and is only valid if there are all uniform scales and no rotation. In a
+hierarchy with non-uniform scale and rotation, this value may not correspond entirely with the perceived global scale.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>worldSpaceDistance:</dt>
+<dd><p class="first last">Values for -sp, -rp, -st, -rt, -t, -piv flags are treated as world space distances to move along the local axis. (where
+the local axis depends on whether the command is operating in local-space or object-space. This flag has no effect for
+world space.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.xform</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.getRestPosition"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.getRestPosition"></a>
+<tt class="descname">getRestPosition</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.getRestPosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the saved rest position of this transform.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">TransformationMatrix</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnTransform.restPosition</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.getRotateAxis"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.getRotateAxis"></a>
+<tt class="descname">getRotateAxis</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.getRotateAxis" title="Permalink to this definition">¶</a></dt>
+<dd><p>rotation axis orientation (when used with the -p flag the overall rotation is preserved by modifying the rotation to compensate for the axis rotation)</p>
+<dl class="docutils">
+<dt>Flags:</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>objectSpace:</dt>
+<dd><p class="first last">treat values as object-space transformation values (only works for pivots, translations, rotation, rotation axis,
+matrix, and bounding box flags)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>worldSpace:</dt>
+<dd><p class="first last">(works for pivots, translations, rotation, rotation axis, matrix, and bounding box flags). Note that, when querying the
+scale, that this calculation is cumulative and is only valid if there are all uniform scales and no rotation. In a
+hierarchy with non-uniform scale and rotation, this value may not correspond entirely with the perceived global scale.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>preserve:</dt>
+<dd><p class="first last">preserve overall transformation. used to prevent object from jumpingwhen changing pivots or rotation order. the default
+value is true. (used with -sp, -rp, -roo, -cp, -ra)</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.xform</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.getRotatePivot"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.getRotatePivot"></a>
+<tt class="descname">getRotatePivot</tt><big>(</big><em>space='object'</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.getRotatePivot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the pivot about which the rotation is applied.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt>space <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">Space.Space</span></tt></span></dt>
+<dd><p class="first">space in which to get the pivot</p>
+<p class="last">values: ‘transform’, ‘preTransform’, ‘object’, ‘world’</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><tt class="xref py py-obj docutils literal"><span class="pre">Point</span></tt></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MSpace.rotatePivot</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.getRotatePivotTranslation"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.getRotatePivotTranslation"></a>
+<tt class="descname">getRotatePivotTranslation</tt><big>(</big><em>space='object'</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.getRotatePivotTranslation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the rotate pivot translation in linear units. This component is used internally by maya when the user moves the rotate pivot, or when the balance flag is set to true in the MfnTransform::setRotatePivot method. It serves as a compensation that allows existing transformations to be preserved. For the precise mathematics, refer to the transformation matrix details in the description section of  MFnTransform .</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt>space <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">Space.Space</span></tt></span></dt>
+<dd><p class="first">space in which to get the pivot translation</p>
+<p class="last">values: ‘transform’, ‘preTransform’, ‘object’, ‘world’</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><tt class="xref py py-obj docutils literal"><span class="pre">Vector</span></tt></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MSpace.rotatePivotTranslation</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.getRotation"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.getRotation"></a>
+<tt class="descname">getRotation</tt><big>(</big><em>space='object'</em>, <em>quaternion=False</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.getRotation" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><dl class="docutils">
+<dt>Modifications:</dt>
+<dd><ul class="first last simple">
+<li>added ‘quaternion’ keyword arg, to specify whether the result
+be returned as a Quaternion object, as opposed to the default
+EulerRotation object</li>
+<li>added ‘space’ keyword arg, which defaults to ‘object’</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<p>Retrieve the rotation component of this transformation. The rotation is retrieved in  MSpace::kTransform  space.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">EulerRotation</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnTransform.getRotation</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.getRotationOrder"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.getRotationOrder"></a>
+<tt class="descname">getRotationOrder</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.getRotationOrder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the rotation order for the transform matrix - the order in which the Euler angles are applied to create the end rotation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">TransformationMatrix.RotationOrder</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnTransform.rotationOrder</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.getScale"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.getScale"></a>
+<tt class="descname">getScale</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.getScale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the scaling component of this transformation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(<tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt>, <tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt>, <tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt>)</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnTransform.getScale</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.getScalePivot"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.getScalePivot"></a>
+<tt class="descname">getScalePivot</tt><big>(</big><em>space='object'</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.getScalePivot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the pivot around which the scale is applied. The pivot will be in linear units.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt>space <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">Space.Space</span></tt></span></dt>
+<dd><p class="first">space in which to get the pivot</p>
+<p class="last">values: ‘transform’, ‘preTransform’, ‘object’, ‘world’</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><tt class="xref py py-obj docutils literal"><span class="pre">Point</span></tt></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MSpace.scalePivot</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.getScalePivotTranslation"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.getScalePivotTranslation"></a>
+<tt class="descname">getScalePivotTranslation</tt><big>(</big><em>space='object'</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.getScalePivotTranslation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the scale pivot translation in linear units. This component is used as a compensation by maya when the user moves the scale pivot, or when the balance flag is set to true in the MfnTransform::setScalePivot method. The scale pivot translation serves as a compensation that allows existing transformations to be preserved when the scale pivot is modified. For the precise mathematics, refer to the transformation matrix details in the description section of  MFnTransform .</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt>space <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">Space.Space</span></tt></span></dt>
+<dd><p class="first">space in which to get the scale pivot translation</p>
+<p class="last">values: ‘transform’, ‘preTransform’, ‘object’, ‘world’</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><tt class="xref py py-obj docutils literal"><span class="pre">Vector</span></tt></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MSpace.scalePivotTranslation</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.getShape"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.getShape"></a>
+<tt class="descname">getShape</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.getShape" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pymel.core.nodetypes.DagNode.html#pymel.core.nodetypes.DagNode" title="pymel.core.nodetypes.DagNode"><tt class="xref py py-obj docutils literal"><span class="pre">DagNode</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.getShapes"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.getShapes"></a>
+<tt class="descname">getShapes</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.getShapes" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="pymel.core.nodetypes.DagNode.html#pymel.core.nodetypes.DagNode" title="pymel.core.nodetypes.DagNode"><tt class="xref py py-obj docutils literal"><span class="pre">DagNode</span></tt></a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.getShear"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.getShear"></a>
+<tt class="descname">getShear</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.getShear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the shearing component of this transformation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">(<tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt>, <tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt>, <tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt>)</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnTransform.getShear</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.getTransformation"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.getTransformation"></a>
+<tt class="descname">getTransformation</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.getTransformation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the transformation matrix represented by this transform.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><tt class="xref py py-obj docutils literal"><span class="pre">TransformationMatrix</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnTransform.transformation</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.getTranslation"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.getTranslation"></a>
+<tt class="descname">getTranslation</tt><big>(</big><em>space='object'</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.getTranslation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the translation component of this transformation in linear units.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt>space <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">Space.Space</span></tt></span></dt>
+<dd><p class="first">transform space in which to get the translation</p>
+<p class="last">values: ‘transform’, ‘preTransform’, ‘object’, ‘world’</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><tt class="xref py py-obj docutils literal"><span class="pre">Vector</span></tt></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MSpace.getTranslation</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.isLimited"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.isLimited"></a>
+<tt class="descname">isLimited</tt><big>(</big><em>type</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.isLimited" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine if the specified limit attribute is enabled or disabled.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt>type <span class="classifier-delimiter">:</span> <span class="classifier"><a class="reference internal" href="#pymel.core.nodetypes.Transform.LimitType" title="pymel.core.nodetypes.Transform.LimitType"><tt class="xref py py-obj docutils literal"><span class="pre">Transform.LimitType</span></tt></a></span></dt>
+<dd><p class="first">type to query limit</p>
+<p class="last">values: ‘scaleMinX’, ‘scaleMaxX’, ‘scaleMinY’, ‘scaleMaxY’, ‘scaleMinZ’, ‘scaleMaxZ’, ‘shearMinXY’, ‘shearMaxXY’, ‘shearMinXZ’, ‘shearMaxXZ’, ‘shearMinYZ’, ‘shearMaxYZ’, ‘rotateMinX’, ‘rotateMaxX’, ‘rotateMinY’, ‘rotateMaxY’, ‘rotateMinZ’, ‘rotateMaxZ’, ‘translateMinX’, ‘translateMaxX’, ‘translateMinY’, ‘translateMaxY’, ‘translateMinZ’, ‘translateMaxZ’</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnTransform.isLimited</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.preserveUV"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.preserveUV"></a>
+<tt class="descname">preserveUV</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.preserveUV" title="Permalink to this definition">¶</a></dt>
+<dd><p>When true, UV values on rotated components are projected across the rotation in 3d space. For small edits, this will freeze the world space texture mapping on the object. When false, the UV values will not change for a selected vertices. Default is false.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.xform</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.reflection"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.reflection"></a>
+<tt class="descname">reflection</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.reflection" title="Permalink to this definition">¶</a></dt>
+<dd><p>To move the corresponding symmetric components also.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.xform</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.reflectionAboutBBox"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.reflectionAboutBBox"></a>
+<tt class="descname">reflectionAboutBBox</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.reflectionAboutBBox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the position of the reflection axis  at the geometry bounding box</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.xform</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.reflectionAboutOrigin"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.reflectionAboutOrigin"></a>
+<tt class="descname">reflectionAboutOrigin</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.reflectionAboutOrigin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the position of the reflection axis  at the origin</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.xform</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.reflectionAboutX"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.reflectionAboutX"></a>
+<tt class="descname">reflectionAboutX</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.reflectionAboutX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the X=0 as reflection plane</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.xform</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.reflectionAboutY"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.reflectionAboutY"></a>
+<tt class="descname">reflectionAboutY</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.reflectionAboutY" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the Y=0 as reflection plane</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.xform</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.reflectionAboutZ"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.reflectionAboutZ"></a>
+<tt class="descname">reflectionAboutZ</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.reflectionAboutZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the Z=0 as reflection plane</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.xform</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.reflectionTolerance"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.reflectionTolerance"></a>
+<tt class="descname">reflectionTolerance</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.reflectionTolerance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specifies the tolerance to findout the corresponding reflected components</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.xform</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.resetFromRestPosition"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.resetFromRestPosition"></a>
+<tt class="descname">resetFromRestPosition</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.resetFromRestPosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset the transform to its rest position.
+Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnTransform.resetFromRestPosition</span></tt></p>
+<p><strong>Undo is not currently supported for this method</strong></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.rotateBy"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.rotateBy"></a>
+<tt class="descname">rotateBy</tt><big>(</big><em>rotation</em>, <em>space='object'</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.rotateBy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Relatively change the rotation of this transformation using a quaternion.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt>quaternion <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">Quaternion</span></tt></span></dt>
+<dd><p class="first last">the quaternion</p>
+</dd>
+<dt>space <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">Space.Space</span></tt></span></dt>
+<dd><p class="first">transform space in which to perform the rotation</p>
+<p class="last">values: ‘transform’, ‘preTransform’, ‘object’, ‘world’</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MSpace.rotateBy</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.scaleBy"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.scaleBy"></a>
+<tt class="descname">scaleBy</tt><big>(</big><em>scale</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.scaleBy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Relatively scale this transformation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt>scale <span class="classifier-delimiter">:</span> <span class="classifier">(<tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt>, <tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt>, <tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt>)</span></dt>
+<dd><p class="first last">The ratio by which to scale the transform</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnTransform.scaleBy</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.setLimit"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.setLimit"></a>
+<tt class="descname">setLimit</tt><big>(</big><em>type</em>, <em>value</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.setLimit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change the limit value for the specified limit type, and automatically enable the limit to be true.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt>type <span class="classifier-delimiter">:</span> <span class="classifier"><a class="reference internal" href="#pymel.core.nodetypes.Transform.LimitType" title="pymel.core.nodetypes.Transform.LimitType"><tt class="xref py py-obj docutils literal"><span class="pre">Transform.LimitType</span></tt></a></span></dt>
+<dd><p class="first">type to apply a limit</p>
+<p class="last">values: ‘scaleMinX’, ‘scaleMaxX’, ‘scaleMinY’, ‘scaleMaxY’, ‘scaleMinZ’, ‘scaleMaxZ’, ‘shearMinXY’, ‘shearMaxXY’, ‘shearMinXZ’, ‘shearMaxXZ’, ‘shearMinYZ’, ‘shearMaxYZ’, ‘rotateMinX’, ‘rotateMaxX’, ‘rotateMinY’, ‘rotateMaxY’, ‘rotateMinZ’, ‘rotateMaxZ’, ‘translateMinX’, ‘translateMaxX’, ‘translateMinY’, ‘translateMaxY’, ‘translateMinZ’, ‘translateMaxZ’</p>
+</dd>
+<dt>value <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt></span></dt>
+<dd><p class="first last">new limit value as internal unit</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnTransform.setLimit</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.setLimited"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.setLimited"></a>
+<tt class="descname">setLimited</tt><big>(</big><em>type</em>, <em>flag</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.setLimited" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable or disable the limit value for the specified limit type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt>type <span class="classifier-delimiter">:</span> <span class="classifier"><a class="reference internal" href="#pymel.core.nodetypes.Transform.LimitType" title="pymel.core.nodetypes.Transform.LimitType"><tt class="xref py py-obj docutils literal"><span class="pre">Transform.LimitType</span></tt></a></span></dt>
+<dd><p class="first">type to apply a limit</p>
+<p class="last">values: ‘scaleMinX’, ‘scaleMaxX’, ‘scaleMinY’, ‘scaleMaxY’, ‘scaleMinZ’, ‘scaleMaxZ’, ‘shearMinXY’, ‘shearMaxXY’, ‘shearMinXZ’, ‘shearMaxXZ’, ‘shearMinYZ’, ‘shearMaxYZ’, ‘rotateMinX’, ‘rotateMaxX’, ‘rotateMinY’, ‘rotateMaxY’, ‘rotateMinZ’, ‘rotateMaxZ’, ‘translateMinX’, ‘translateMaxX’, ‘translateMinY’, ‘translateMaxY’, ‘translateMinZ’, ‘translateMaxZ’</p>
+</dd>
+<dt>flag <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></span></dt>
+<dd><p class="first last">true or false to enable</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnTransform.enableLimit</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.setMatrix"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.setMatrix"></a>
+<tt class="descname">setMatrix</tt><big>(</big><em>val</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.setMatrix" title="Permalink to this definition">¶</a></dt>
+<dd><p>rotation axis orientation (when used with the -p flag the overall rotation is preserved by modifying the rotation to compensate for the axis rotation)</p>
+<dl class="docutils">
+<dt>Flags:</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>objectSpace:</dt>
+<dd><p class="first last">treat values as object-space transformation values (only works for pivots, translations, rotation, rotation axis,
+matrix, and bounding box flags)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>worldSpace:</dt>
+<dd><p class="first last">(works for pivots, translations, rotation, rotation axis, matrix, and bounding box flags). Note that, when querying the
+scale, that this calculation is cumulative and is only valid if there are all uniform scales and no rotation. In a
+hierarchy with non-uniform scale and rotation, this value may not correspond entirely with the perceived global scale.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>preserve:</dt>
+<dd><p class="first last">preserve overall transformation. used to prevent object from jumpingwhen changing pivots or rotation order. the default
+value is true. (used with -sp, -rp, -roo, -cp, -ra)</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.xform</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.setPivots"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.setPivots"></a>
+<tt class="descname">setPivots</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.setPivots" title="Permalink to this definition">¶</a></dt>
+<dd><p>convenience method that changes both the rotate and scale pivots simultaneously. (see -rp -sp flags for more info)</p>
+<dl class="docutils">
+<dt>Flags:</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>objectSpace:</dt>
+<dd><p class="first last">treat values as object-space transformation values (only works for pivots, translations, rotation, rotation axis,
+matrix, and bounding box flags)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>worldSpace:</dt>
+<dd><p class="first last">(works for pivots, translations, rotation, rotation axis, matrix, and bounding box flags). Note that, when querying the
+scale, that this calculation is cumulative and is only valid if there are all uniform scales and no rotation. In a
+hierarchy with non-uniform scale and rotation, this value may not correspond entirely with the perceived global scale.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>worldSpaceDistance:</dt>
+<dd><p class="first last">Values for -sp, -rp, -st, -rt, -t, -piv flags are treated as world space distances to move along the local axis. (where
+the local axis depends on whether the command is operating in local-space or object-space. This flag has no effect for
+world space.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.xform</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.setRestPosition"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.setRestPosition"></a>
+<tt class="descname">setRestPosition</tt><big>(</big><em>matrix</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.setRestPosition" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change the saved rest position of this transform. The rest position is not used internally by Maya. It is exclusively for use from the API as a temporary cache, which can be set and restored within a single Maya session. Note that the rest position is not saved with the scene.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt>matrix <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">TransformationMatrix</span></tt></span></dt>
+<dd><p class="first last">the new rest position for this transform</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnTransform.setRestPosition</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.setRotateAxis"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.setRotateAxis"></a>
+<tt class="descname">setRotateAxis</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.setRotateAxis" title="Permalink to this definition">¶</a></dt>
+<dd><p>rotation axis orientation (when used with the -p flag the overall rotation is preserved by modifying the rotation to compensate for the axis rotation)</p>
+<dl class="docutils">
+<dt>Flags:</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>objectSpace:</dt>
+<dd><p class="first last">treat values as object-space transformation values (only works for pivots, translations, rotation, rotation axis,
+matrix, and bounding box flags)</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>worldSpace:</dt>
+<dd><p class="first last">(works for pivots, translations, rotation, rotation axis, matrix, and bounding box flags). Note that, when querying the
+scale, that this calculation is cumulative and is only valid if there are all uniform scales and no rotation. In a
+hierarchy with non-uniform scale and rotation, this value may not correspond entirely with the perceived global scale.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>preserve:</dt>
+<dd><p class="first last">preserve overall transformation. used to prevent object from jumpingwhen changing pivots or rotation order. the default
+value is true. (used with -sp, -rp, -roo, -cp, -ra)</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.xform</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.setRotatePivot"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.setRotatePivot"></a>
+<tt class="descname">setRotatePivot</tt><big>(</big><em>point</em>, <em>space='object'</em>, <em>balance=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.setRotatePivot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the rotate pivot in linear units about which rotation is applied.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt>point <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">Point</span></tt></span></dt>
+<dd><p class="first last">new rotation pivot in centimeters</p>
+</dd>
+<dt>space <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">Space.Space</span></tt></span></dt>
+<dd><p class="first">transform space in which to set the pivot</p>
+<p class="last">values: ‘transform’, ‘preTransform’, ‘object’, ‘world’</p>
+</dd>
+<dt>balance <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></span></dt>
+<dd><p class="first last">whether to balance the matrix</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MSpace.setRotatePivot</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.setRotatePivotTranslation"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.setRotatePivotTranslation"></a>
+<tt class="descname">setRotatePivotTranslation</tt><big>(</big><em>vector</em>, <em>space='object'</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.setRotatePivotTranslation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the rotate pivot translation in linear units. This component is used internally by maya when the user moves the rotate pivot, or when the balance flag is true in the  MFnTransform::setRotatePivot  method. It serves as a compensation that allows existing transformations to be preserved when the rotate pivot is modified. For the precise mathematics, refer to the transformation matrix details in the description section of  MFnTransform .</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt>vector <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">Vector</span></tt></span></dt>
+<dd><p class="first last">new rotation pivot translation in centimeters</p>
+</dd>
+<dt>space <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">Space.Space</span></tt></span></dt>
+<dd><p class="first">transform space in which to set the rotation pivot translation</p>
+<p class="last">values: ‘transform’, ‘preTransform’, ‘object’, ‘world’</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MSpace.setRotatePivotTranslation</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.setRotation"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.setRotation"></a>
+<tt class="descname">setRotation</tt><big>(</big><em>rotation</em>, <em>space='object'</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.setRotation" title="Permalink to this definition">¶</a></dt>
+<dd><blockquote>
+<div><dl class="docutils">
+<dt>Modifications:</dt>
+<dd><ul class="first last simple">
+<li>rotation may be given as an EulerRotation, Quaternion, or iterable of 3
+or 4 components (to specify an euler/quaternion, respectively)</li>
+</ul>
+</dd>
+</dl>
+</div></blockquote>
+<p>Change the rotation component of this transformation using a quaternion. The only valid transformation spaces for this method are  MSpace::kTransform  and  MSpace::kWorld . All other spaces are treated as being equivalent to  MSpace::kTransform .</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt>quaternion <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">Quaternion</span></tt></span></dt>
+<dd><p class="first last">the quaternion</p>
+</dd>
+<dt>space <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">Space.Space</span></tt></span></dt>
+<dd><p class="first">transform space in which to perform the rotation</p>
+<p class="last">values: ‘transform’, ‘preTransform’, ‘object’, ‘world’</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MSpace.setRotation</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.setRotationOrder"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.setRotationOrder"></a>
+<tt class="descname">setRotationOrder</tt><big>(</big><em>order</em>, <em>reorder</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.setRotationOrder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change the rotation order for the transform - the order in which the Euler angles are applied to create the end rotation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt>order <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">TransformationMatrix.RotationOrder</span></tt></span></dt>
+<dd><p class="first">the order in which to apply rotations</p>
+<p class="last">values: ‘XYZ’, ‘YZX’, ‘ZXY’, ‘XZY’, ‘YXZ’, ‘ZYX’</p>
+</dd>
+<dt>reorder <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></span></dt>
+<dd><p class="first last">flag indicating whether or not rotations should be reordered.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MTransformationMatrix.setRotationOrder</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.setScale"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.setScale"></a>
+<tt class="descname">setScale</tt><big>(</big><em>scale</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.setScale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the scaling component of this transformation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt>scale <span class="classifier-delimiter">:</span> <span class="classifier">(<tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt>, <tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt>, <tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt>)</span></dt>
+<dd><p class="first last">The scale of the transform</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnTransform.setScale</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.setScalePivot"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.setScalePivot"></a>
+<tt class="descname">setScalePivot</tt><big>(</big><em>point</em>, <em>space='object'</em>, <em>balance=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.setScalePivot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the pivot around which the scale is applied in linear units.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt>point <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">Point</span></tt></span></dt>
+<dd><p class="first last">new scale pivot in centimeters</p>
+</dd>
+<dt>space <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">Space.Space</span></tt></span></dt>
+<dd><p class="first">transform space in which to set the scale pivot</p>
+<p class="last">values: ‘transform’, ‘preTransform’, ‘object’, ‘world’</p>
+</dd>
+<dt>balance <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">bool</span></tt></span></dt>
+<dd><p class="first last">whether to balance the matrix</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MSpace.setScalePivot</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.setScalePivotTranslation"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.setScalePivotTranslation"></a>
+<tt class="descname">setScalePivotTranslation</tt><big>(</big><em>vector</em>, <em>space='object'</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.setScalePivotTranslation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the scale pivot translation in linear units. This component is used internally by maya when the user moves the scale pivot, or when the balance flag is set to true in the MfnTransform::setScalePivot method. It serves as a compensation that allows existing transformations to be preserved when the scale pivot is modified. For the precise mathematics, refer to the transformation matrix details in the description section of  MFnTransform .</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt>vector <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">Vector</span></tt></span></dt>
+<dd><p class="first last">new scale pivot translation in centimeters</p>
+</dd>
+<dt>space <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">Space.Space</span></tt></span></dt>
+<dd><p class="first">transform space in which to set the scale translation</p>
+<p class="last">values: ‘transform’, ‘preTransform’, ‘object’, ‘world’</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MSpace.setScalePivotTranslation</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.setShear"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.setShear"></a>
+<tt class="descname">setShear</tt><big>(</big><em>shear</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.setShear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the shearing component of this transformation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt>shear <span class="classifier-delimiter">:</span> <span class="classifier">(<tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt>, <tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt>, <tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt>)</span></dt>
+<dd><p class="first last">The shear of the transform</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnTransform.setShear</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.setTransformation"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.setTransformation"></a>
+<tt class="descname">setTransformation</tt><big>(</big><em>transform</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.setTransformation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change this transform to equal the given matrix.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt>transform <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">TransformationMatrix</span></tt></span></dt>
+<dd><p class="first last">the matrix to copy</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnTransform.set</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.setTranslation"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.setTranslation"></a>
+<tt class="descname">setTranslation</tt><big>(</big><em>vector</em>, <em>space='object'</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.setTranslation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change the translation component of this transformation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt>vector <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">Vector</span></tt></span></dt>
+<dd><p class="first last">the new translation vector in centimeters</p>
+</dd>
+<dt>space <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">Space.Space</span></tt></span></dt>
+<dd><p class="first">transform space in which to perform the translation</p>
+<p class="last">values: ‘transform’, ‘preTransform’, ‘object’, ‘world’</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MSpace.setTranslation</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.shearBy"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.shearBy"></a>
+<tt class="descname">shearBy</tt><big>(</big><em>shear</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.shearBy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Relatively shear this transformation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt>shear <span class="classifier-delimiter">:</span> <span class="classifier">(<tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt>, <tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt>, <tt class="xref py py-obj docutils literal"><span class="pre">float</span></tt>)</span></dt>
+<dd><p class="first last">The ratio by which to shear the transform</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MFnTransform.shearBy</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.translateBy"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.translateBy"></a>
+<tt class="descname">translateBy</tt><big>(</big><em>vector</em>, <em>space='object'</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.translateBy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Relatively change the translation component of this transformation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name"></col>
+<col class="field-body"></col>
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt>vector <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">Vector</span></tt></span></dt>
+<dd><p class="first last">the relative translation vector</p>
+</dd>
+<dt>space <span class="classifier-delimiter">:</span> <span class="classifier"><tt class="xref py py-obj docutils literal"><span class="pre">Space.Space</span></tt></span></dt>
+<dd><p class="first">transform space in which to perform the translation</p>
+<p class="last">values: ‘transform’, ‘preTransform’, ‘object’, ‘world’</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from api method <tt class="xref py py-obj docutils literal"><span class="pre">maya.OpenMaya.MSpace.translateBy</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.ungroup"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.ungroup"></a>
+<tt class="descname">ungroup</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.ungroup" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.nodetypes.Transform.zeroTransformPivots"><a name="//apple_ref/cpp/Method/pymel.core.nodetypes.Transform.zeroTransformPivots"></a>
+<tt class="descname">zeroTransformPivots</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.nodetypes.Transform.zeroTransformPivots" title="Permalink to this definition">¶</a></dt>
+<dd><p>reset pivot points and pivot translations without changing the overall matrix by applying these values into the translation channel.                      Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.xform</span></tt></p>
+</dd></dl>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.nodetypes.TransferAttributes.html" title="previous chapter">pymel.core.nodetypes.TransferAttributes</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.nodetypes.TransformGeometry.html" title="next chapter">pymel.core.nodetypes.TransformGeometry</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/classes/pymel.core.nodetypes/pymel.core.nodetypes.Transform.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.nodetypes.TransformGeometry.html" title="pymel.core.nodetypes.TransformGeometry">next</a> |</li>
+<li class="right">
+<a href="pymel.core.nodetypes.TransferAttributes.html" title="pymel.core.nodetypes.TransferAttributes">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.nodetypes.html">pymel.core.nodetypes</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.nodetypes/pymel.core.nodetypes.Transform.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:20:26 GMT -->
+</body></html>

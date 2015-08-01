@@ -1,0 +1,6 @@
+pymel.core.runtime.ShowAllComponents
+====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ShowAllComponents

@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorTransforms
+=======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorTransforms

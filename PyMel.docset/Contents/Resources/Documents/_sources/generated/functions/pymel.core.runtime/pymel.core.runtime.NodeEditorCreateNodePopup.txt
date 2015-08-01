@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorCreateNodePopup
+============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorCreateNodePopup

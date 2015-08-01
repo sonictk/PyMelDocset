@@ -1,0 +1,6 @@
+pymel.core.runtime.SelectMeshUVShell
+====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SelectMeshUVShell

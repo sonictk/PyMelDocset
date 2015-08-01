@@ -1,0 +1,6 @@
+pymel.core.runtime.ConvertSelectionToUVShell
+============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ConvertSelectionToUVShell

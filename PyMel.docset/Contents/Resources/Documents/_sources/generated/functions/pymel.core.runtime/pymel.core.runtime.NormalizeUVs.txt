@@ -1,0 +1,6 @@
+pymel.core.runtime.NormalizeUVs
+===============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NormalizeUVs

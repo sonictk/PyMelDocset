@@ -1,0 +1,6 @@
+pymel.core.runtime.InvertSelection
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: InvertSelection

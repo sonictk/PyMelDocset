@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorSelectConnected
+============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorSelectConnected

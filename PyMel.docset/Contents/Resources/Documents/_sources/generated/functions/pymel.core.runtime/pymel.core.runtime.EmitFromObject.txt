@@ -1,0 +1,6 @@
+pymel.core.runtime.EmitFromObject
+=================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: EmitFromObject

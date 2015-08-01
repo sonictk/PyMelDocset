@@ -1,0 +1,6 @@
+pymel.core.runtime.SetMeshRelaxTool
+===================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SetMeshRelaxTool

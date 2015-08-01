@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeToggleZoomIn
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeToggleZoomIn

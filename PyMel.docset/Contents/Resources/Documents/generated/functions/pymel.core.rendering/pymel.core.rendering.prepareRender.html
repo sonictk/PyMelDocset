@@ -1,0 +1,532 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.rendering/pymel.core.rendering.prepareRender.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:37:29 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.rendering.prepareRender — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.rendering.html" rel="up" title="pymel.core.rendering"/>
+<link href="pymel.core.rendering.projectionManip.html" rel="next" title="pymel.core.rendering.projectionManip"/>
+<link href="pymel.core.rendering.pointLight.html" rel="prev" title="pymel.core.rendering.pointLight"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.rendering » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.rendering.prepareRender ¶ 
+ 
+ 
+ prepareRender ( *args , **kwargs ) ¶ 
+ This command is used to register, manage and invoke render traversals. Render traversals are used to configure a scene
+to prepare it for rendering. This command has special support for scene assembly nodes. To render scene assembly nodes,
+a rendering traversal can..." name="description"/><meta content="__PyMel_generated_functions_pymel_core_rendering_pymel_core_rendering_prepareRender_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.rendering.projectionManip.html" title="pymel.core.rendering.projectionManip">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.rendering.pointLight.html" title="pymel.core.rendering.pointLight">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.rendering.html">pymel.core.rendering</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-rendering-preparerender">
+<h1>pymel.core.rendering.prepareRender<a class="headerlink" href="#pymel-core-rendering-preparerender" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.core.rendering.prepareRender"><a name="//apple_ref/cpp/Function/pymel.core.rendering.prepareRender"></a>
+<tt class="descname">prepareRender</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.rendering.prepareRender" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command is used to register, manage and invoke render traversals. Render traversals are used to configure a scene
+to prepare it for rendering. This command has special support for scene assembly nodes.  To render scene assembly nodes,
+a rendering traversal can activate an appropriate representation, for each assembly node in the scene.  When rendering
+is done, this command can correspondingly restore the representation that was active before rendering on each assembly.
+Render traversals are grouped into traversal sets.  A render traversal set includes callbacks, or render traversals, for
+one or more of the following steps of rendering, ordered by decreasing level of granularity. A render traversal callback
+is an arbitrary script, either MEL or Python, that can transform the Maya scene for rendering purposes.
+preRenderTraversal run once per render, before any rendering is performed.postRenderTraversal run once per render, after
+all rendering has been performed.preRenderLayerTraversal run before rendering each render layer.postRenderLayerTraversal
+run after rendering each render layer.preRenderFrameTraversal run before rendering each frame.postRenderFrameTraversal
+run after rendering each frame.During a render view or batch render, Maya will run the render traversals from the same
+traversal set, the default traversal set.  Traversal sets are named, so multiple traversal sets can be registered with
+this command, and the default render traversal set can be switched to any one of these registered traversal sets.  When
+changing the default traversal set, the different render traversal callbacks (preRender, preRenderLayer, preRenderFrame,
+postRender, postRenderLayer, postRenderFrame) are switched as a unit. At render time, the software rendering code
+invokes the callbacks of the default traversal set.  The prepareRender scripting capability allows for the development
+of multiple rendering preparation scripts, including from plugins, to provide extensibility rather than being
+constrained to a single implementation. A special traversal set is the nulltraversal set.  It is the initial default
+traversal set, and cannot be deregistered.  It performs no work, and does not save and restore the assembly node active
+representation configuration.  It will provide WYSIWYG (What You See Is What You Get) rendering of assembly nodes,
+without switching to a different representation to render. Render traversals are invoked by Maya using this command’s
+create mode. This is done by Maya’s rendering infrastructure, and should not be required unless developing new render
+views or batch render code.  Most uses of this command will simply use the edit mode to register render traversals into
+a render traversal set, or the query mode to query the names of the render traversals in a render traversal set. The
+prepareRender command has support for saving and restoring the active representation of assembly nodes in the scene.
+Use the saveAssemblyConfig flag to indicate that the render traversal set requires saving the assembly node active
+representation before rendering begins, and should restore the assembly node active representation after rendering ends.
+It is the responsibility of render traversals that modify the scene in ways other than changing the active
+representation on assembly nodes to restore the scene to its previous state, most likely using the postRender,
+postRenderLayer, and postRenderFrame traversals. Note that Maya does not call the prepareRender -restore command on
+batch render completion, since batch rendering is done on a copy of the scene which is discarded once rendering
+terminates.  Implementors of render traversals may wish to check whether they are running in batch mode, to implement
+the same optimization.            In query mode, return type is based on queried flag.</p>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">defaultTraversalSet</span></tt> / <tt class="docutils literal"><span class="pre">dt</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set or query the default traversal set.  The prepareRender command performs operations on the default traversal set, unless the -traversalSet flag is used to
+specify an explicit traversal set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">deregister</span></tt> / <tt class="docutils literal"><span class="pre">d</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Deregister a registered traversal set.  If the deregistered traversal set is the default traversal set, the new default traversal set will be the nulltraversal
+set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">invokePostRender</span></tt> / <tt class="docutils literal"><span class="pre">ior</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Invoke the postRender render traversal for a given traversal set.  The traversal set will be the default traversal set, unless the -traversalSet flag is used to
+specify an explicit traversal set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">invokePostRenderFrame</span></tt> / <tt class="docutils literal"><span class="pre">iof</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Invoke the postRenderFrame render traversal for a given traversal set.  The traversal set will be the default traversal set, unless the -traversalSet flag is used
+to specify an explicit traversal set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">invokePostRenderLayer</span></tt> / <tt class="docutils literal"><span class="pre">iol</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Invoke the postRenderLayer render traversal for a given traversal set.  The traversal set will be the default traversal set, unless the -traversalSet flag is used
+to specify an explicit traversal set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">invokePreRender</span></tt> / <tt class="docutils literal"><span class="pre">irr</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Invoke the preRender render traversal for a given traversal set.  The traversal set will be the default traversal set, unless the -traversalSet flag is used to
+specify an explicit traversal set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">invokePreRenderFrame</span></tt> / <tt class="docutils literal"><span class="pre">irf</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Invoke the preRenderFrame render traversal for a given traversal set.  The traversal set will be the default traversal set, unless the -traversalSet flag is used
+to specify an explicit traversal set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">invokePreRenderLayer</span></tt> / <tt class="docutils literal"><span class="pre">irl</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Invoke the preRenderLayer render traversal for a given traversal set.  The traversal set will be the default traversal set, unless the -traversalSet flag is used
+to specify an explicit traversal set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">invokeSettingsUI</span></tt> / <tt class="docutils literal"><span class="pre">isu</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Invoke the settings UI callback to populate a layout with UI controls, for a given traversal set.  The current UI parent will be a form layout, which the callback
+can query using the setParent command.  The traversal set will be the default traversal set, unless the -traversalSet flag is used to specify an explicit
+traversal set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">label</span></tt> / <tt class="docutils literal"><span class="pre">lbl</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set or query the label for a given traversal set.  The label is used for UI display purposes, and can be localized.  The traversal set will be the default, unless
+the -traversalSet flag is used to specify an explicit traversal set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">listTraversalSets</span></tt> / <tt class="docutils literal"><span class="pre">lt</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Query the supported render traversal sets.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">postRender</span></tt> / <tt class="docutils literal"><span class="pre">por</span></tt></td>
+<td><em>script</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set or query the postRender render traversal for a given traversal set.  This traversal is run after a render.  The traversal set will be the default traversal
+set, unless the -traversalSet flag is used to specify an explicit traversal set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">postRenderFrame</span></tt> / <tt class="docutils literal"><span class="pre">pof</span></tt></td>
+<td><em>script</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set or query the postRenderFrame render traversal for a given traversal set.  This traversal is run after the render of a single frame, with a render layer.  The
+traversal set will be the default traversal set, unless the -traversalSet flag is used to specify an explicit traversal set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">postRenderLayer</span></tt> / <tt class="docutils literal"><span class="pre">pol</span></tt></td>
+<td><em>script</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set or query the postRenderLayer render traversal for a given traversal set.  This traversal is run after a render layer is rendered, within a render.  The
+traversal set will be the default traversal set, unless the -traversalSet flag is used to specify an explicit traversal set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">preRender</span></tt> / <tt class="docutils literal"><span class="pre">prr</span></tt></td>
+<td><em>script</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set or query the preRender render traversal for a given traversal set.  This traversal is run before a render.  The traversal set will be the default traversal
+set, unless the -traversalSet flag is used to specify an explicit traversal set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">preRenderFrame</span></tt> / <tt class="docutils literal"><span class="pre">prf</span></tt></td>
+<td><em>script</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set or query the preRenderFrame render traversal for a given traversal set.  This traversal is run before the render of a single frame, with a render layer.  The
+traversal set will be the default traversal set, unless the -traversalSet flag is used to specify an explicit traversal set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">preRenderLayer</span></tt> / <tt class="docutils literal"><span class="pre">prl</span></tt></td>
+<td><em>script</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set or query the preRenderLayer render traversal for a given traversal set.  This traversal is run before a render layer is rendered, within a render.  The
+traversal set will be the default traversal set, unless the -traversalSet flag is used to specify an explicit traversal set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">restore</span></tt> / <tt class="docutils literal"><span class="pre">rtr</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Clean up after rendering, including restoring the assembly active representation configuration for the whole scene, if the saveAssemblyConfig flag for the
+traversal set is true.  The traversal set will be the default traversal set, unless the -traversalSet flag is used to specify an explicit traversal set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">saveAssemblyConfig</span></tt> / <tt class="docutils literal"><span class="pre">sac</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set or query whether or not the assembly active representation configuration for the whole scene should be saved for a given traversal set.  The traversal set
+will be the default, unless the -traversalSet flag is used to specify an explicit traversal set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">settingsUI</span></tt> / <tt class="docutils literal"><span class="pre">sui</span></tt></td>
+<td><em>script</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set or query the settings UI callback for a given traversal set.  The traversal set will be the default traversal set, unless the -traversalSet flag is used to
+specify an explicit traversal set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">setup</span></tt> / <tt class="docutils literal"><span class="pre">stp</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Setup render preparation, including saving the assembly active representation configuration for the whole scene, if the saveAssemblyConfig flag for the traversal
+set is true.  Any previously-saved configuration will be overwritten.  The traversal set will be the default traversal set, unless the -traversalSet flag is used
+to specify an explicit traversal set.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">traversalSet</span></tt> / <tt class="docutils literal"><span class="pre">ts</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Set or query properties for the specified registered traversal set.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">traversalSetInit</span></tt> / <tt class="docutils literal"><span class="pre">tsi</span></tt></td>
+<td><em>script</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set or query the traversal set initialisation callback for a given traversal set. The traversal set will be the default traversal set, unless the -traversalSet
+flag is used to specify an explicit traversal set. This callback is invoked whenever the specified traversal set becomes the default. traversal set.
+Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.prepareRender</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+
+<span class="c"># Query what the default render traversal set is.</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">prepareRender</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">defaultTraversalSet</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="c"># Result: u'null' #</span>
+<span class="c"># Set the render traversal set to 'MyPrepareRender'.</span>
+<span class="n">cmd</span><span class="o">.</span><span class="n">prepareRender</span><span class="p">(</span><span class="n">edit</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">defaultTraversalSet</span><span class="o">=</span><span class="s">'MyPrepareRender'</span><span class="p">)</span>
+<span class="c"># Set the preRender traversal to the adskPrepareRender.preRender function,</span>
+<span class="c"># for the default render traversal set.</span>
+<span class="n">cmd</span><span class="o">.</span><span class="n">prepareRender</span><span class="p">(</span><span class="n">edit</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">preRender</span><span class="o">=</span><span class="n">adskPrepareRender</span><span class="o">.</span><span class="n">preRender</span><span class="p">)</span>
+<span class="c"># Set the default render traversal set to require saving the assembly node</span>
+<span class="c"># configuration before render, and restore it once rendering completes.</span>
+<span class="n">cmd</span><span class="o">.</span><span class="n">prepareRender</span><span class="p">(</span><span class="n">edit</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">saveAssemblyConfig</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="c"># Set the label of traversal set 'MyPrepareRender' to be 'Custom Render'.</span>
+<span class="n">cmd</span><span class="o">.</span><span class="n">prepareRender</span><span class="p">(</span><span class="n">edit</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'Custom Render'</span><span class="p">,</span> <span class="n">traversalSet</span><span class="o">=</span><span class="s">'MyPrepareRender'</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.rendering.pointLight.html" title="previous chapter">pymel.core.rendering.pointLight</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.rendering.projectionManip.html" title="next chapter">pymel.core.rendering.projectionManip</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.core.rendering/pymel.core.rendering.prepareRender.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.rendering.projectionManip.html" title="pymel.core.rendering.projectionManip">next</a> |</li>
+<li class="right">
+<a href="pymel.core.rendering.pointLight.html" title="pymel.core.rendering.pointLight">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.rendering.html">pymel.core.rendering</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.rendering/pymel.core.rendering.prepareRender.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:37:29 GMT -->
+</body></html>

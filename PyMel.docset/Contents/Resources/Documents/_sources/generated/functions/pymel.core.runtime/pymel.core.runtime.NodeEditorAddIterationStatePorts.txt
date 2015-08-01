@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorAddIterationStatePorts
+===================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorAddIterationStatePorts

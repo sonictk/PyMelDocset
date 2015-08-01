@@ -1,0 +1,6 @@
+pymel.core.runtime.PublishAttributes
+====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: PublishAttributes

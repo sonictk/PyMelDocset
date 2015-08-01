@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeEditTexture
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeEditTexture

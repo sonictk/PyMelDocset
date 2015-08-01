@@ -1,0 +1,6 @@
+pymel.core.runtime.DeleteHair
+=============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: DeleteHair

@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeOpenOutlinerWindow
+===============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeOpenOutlinerWindow

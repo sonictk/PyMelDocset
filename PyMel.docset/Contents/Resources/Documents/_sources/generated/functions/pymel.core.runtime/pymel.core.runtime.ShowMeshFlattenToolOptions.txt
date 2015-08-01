@@ -1,0 +1,6 @@
+pymel.core.runtime.ShowMeshFlattenToolOptions
+=============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ShowMeshFlattenToolOptions

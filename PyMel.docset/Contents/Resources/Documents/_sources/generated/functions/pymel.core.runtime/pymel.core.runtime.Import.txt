@@ -1,0 +1,6 @@
+pymel.core.runtime.Import
+=========================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: Import

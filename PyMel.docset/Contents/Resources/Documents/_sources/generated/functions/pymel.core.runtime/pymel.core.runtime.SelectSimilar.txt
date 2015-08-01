@@ -1,0 +1,6 @@
+pymel.core.runtime.SelectSimilar
+================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SelectSimilar

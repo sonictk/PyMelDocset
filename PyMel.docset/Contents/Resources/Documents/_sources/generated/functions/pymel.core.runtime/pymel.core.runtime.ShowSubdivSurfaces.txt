@@ -1,0 +1,6 @@
+pymel.core.runtime.ShowSubdivSurfaces
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ShowSubdivSurfaces

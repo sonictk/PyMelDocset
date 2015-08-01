@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeOpenModelEditorWindow
+==================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeOpenModelEditorWindow

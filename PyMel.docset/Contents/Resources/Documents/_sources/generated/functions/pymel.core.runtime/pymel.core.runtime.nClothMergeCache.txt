@@ -1,0 +1,6 @@
+pymel.core.runtime.nClothMergeCache
+===================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: nClothMergeCache

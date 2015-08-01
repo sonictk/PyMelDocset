@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorGraphRemoveUpstream
+================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorGraphRemoveUpstream

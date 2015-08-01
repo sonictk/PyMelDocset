@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeRemoveTab
+======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeRemoveTab

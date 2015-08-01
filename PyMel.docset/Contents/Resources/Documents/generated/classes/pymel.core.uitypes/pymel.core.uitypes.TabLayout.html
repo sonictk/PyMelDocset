@@ -1,0 +1,572 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.uitypes/pymel.core.uitypes.TabLayout.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:22:09 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.uitypes.TabLayout — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.uitypes.html" rel="up" title="pymel.core.uitypes"/>
+<link href="pymel.core.uitypes.Text.html" rel="next" title="pymel.core.uitypes.Text"/>
+<link href="pymel.core.uitypes.SymbolCheckBox.html" rel="prev" title="pymel.core.uitypes.SymbolCheckBox"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.uitypes » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.uitypes.TabLayout ¶ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ class TabLayout ¶ 
+ class counterpart of mel function tabLayout 
+ This command creates a tab group. Tab groups are a specialized form of control layouts that contain only control layouts. Whenever a control layout is added to a tab group it will have a tab provided for it that allows selection..." name="description"/><meta content="__PyMel_generated_classes_pymel_core_uitypes_pymel_core_uitypes_TabLayout_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.uitypes.Text.html" title="pymel.core.uitypes.Text">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.uitypes.SymbolCheckBox.html" title="pymel.core.uitypes.SymbolCheckBox">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.uitypes.html">pymel.core.uitypes</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-uitypes-tablayout">
+<h1>pymel.core.uitypes.TabLayout<a class="headerlink" href="#pymel-core-uitypes-tablayout" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img alt="Inheritance diagram of TabLayout" class="inheritance" src="../../../_images/inheritance-741ebbc320cc23630c1d9740fbcfd88d792c96b1.png" usemap="#inheritance2f259a86b5"/>
+<map id="inheritance2f259a86b5" name="inheritance2f259a86b5">
+<area alt="" coords="5,44,77,68" href="pymel.core.uitypes.Layout.html#pymel.core.uitypes.Layout" id="node1" shape="rect" title="Layout"></area>
+<area alt="" coords="5,83,77,107" href="#pymel.core.uitypes.TabLayout" id="node3" shape="rect" title="class counterpart of mel function `tabLayout`"></area>
+<area alt="" coords="5,5,77,29" href="pymel.core.uitypes.PyUI.html#pymel.core.uitypes.PyUI" id="node2" shape="rect" title="PyUI"></area>
+</map>
+</p>
+<dl class="class">
+<dt id="pymel.core.uitypes.TabLayout"><a name="//apple_ref/cpp/Class/pymel.core.uitypes.TabLayout"></a>
+<em class="property">class </em><tt class="descname">TabLayout</tt><a class="headerlink" href="#pymel.core.uitypes.TabLayout" title="Permalink to this definition">¶</a></dt>
+<dd><p>class counterpart of mel function <tt class="xref py py-obj docutils literal"><span class="pre">tabLayout</span></tt></p>
+<p>This command creates a tab group. Tab groups are a specialized form of control layouts that contain only control layouts. Whenever a control layout is added to a tab group it will have a tab provided for it that allows selection of that group from amongst other tabbed control groups. Only one child of a tab layout is visible at a time.</p>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.changeCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.changeCommand"></a>
+<tt class="descname">changeCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.changeCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command executed when a tab is selected interactively. This command is only invoked when the selected tab changes. Re-selecting the current tab will not invoke this command.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.doubleClickCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.doubleClickCommand"></a>
+<tt class="descname">doubleClickCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.doubleClickCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command executed when a tab is double clicked on.  Note that the first click will select the tab and the second click will execute the double click command.  Double clicking the current tab will re-invoke the double click command.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.dragCallback"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.dragCallback"></a>
+<tt class="descname">dragCallback</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.dragCallback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a callback that is called when the middle mouse button is pressed.  The MEL version of the callback is of the form: global proc string[] callbackName(string $dragControl, int $x, int $y, int $mods) The proc returns a string array that is transferred to the drop site. By convention the first string in the array describes the user settable message type.  Controls that are application defined drag sources may ignore the callback. $mods allows testing for the key modifiers CTL and SHIFT. Possible values are 0 == No modifiers, 1 == SHIFT, 2 == CTL, 3 == CTL + SHIFT. In Python, it is similar, but there are two ways to specify the callback.  The recommended way is to pass a Python function object as the argument.  In that case, the Python callback should have the form: def callbackName( dragControl, x, y, modifiers ): The values of these arguments are the same as those for the MEL version above. The other way to specify the callback in Python is to specify a string to be executed.  In that case, the string will have the values substituted into it via the standard Python format operator.  The format values are passed in a dictionary with the keys dragControl, x, y, modifiers.  The dragControlvalue is a string and the other values are integers (eg the callback string could be print ‘%(dragControl)s %(x)d %(y)d %(modifiers)d’</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.dropCallback"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.dropCallback"></a>
+<tt class="descname">dropCallback</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.dropCallback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a callback that is called when a drag and drop operation is released above the drop site.  The MEL version of the callback is of the form: global proc callbackName(string $dragControl, string $dropControl, string $msgs[], int $x, int $y, int $type) The proc receives a string array that is transferred from the drag source. The first string in the msgs array describes the user defined message type. Controls that are application defined drop sites may ignore the callback. $type can have values of 1 == Move, 2 == Copy, 3 == Link. In Python, it is similar, but there are two ways to specify the callback.  The recommended way is to pass a Python function object as the argument.  In that case, the Python callback should have the form: def pythonDropTest( dragControl, dropControl, messages, x, y, dragType ): The values of these arguments are the same as those for the MEL version above. The other way to specify the callback in Python is to specify a string to be executed.  In that case, the string will have the values substituted into it via the standard Python format operator.  The format values are passed in a dictionary with the keys dragControl, dropControl, messages, x, y, type.  The dragControlvalue is a string and the other values are integers (eg the callback string could be print ‘%(dragControl)s %(dropControl)s %(messages)r %(x)d %(y)d %(type)d’</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getAnnotation"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getAnnotation"></a>
+<tt class="descname">getAnnotation</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getAnnotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Annotate the control with an extra string value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getBackgroundColor"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getBackgroundColor"></a>
+<tt class="descname">getBackgroundColor</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getBackgroundColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>The background color of the control. The arguments correspond to the red, green, and blue color components. Each component ranges in value from 0.0 to 1.0. When setting backgroundColor, the background is automatically enabled, unless enableBackground is also specified with a false value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getBorderStyle"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getBorderStyle"></a>
+<tt class="descname">getBorderStyle</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getBorderStyle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify the style of the border for tab layout. Valid values are none, topand full. By default, it will use fullto draw a simple frame around the body area of the tab layout. none- Do not draw borders around the body area of the tab layouttop- Only draw a simple line right below the tabsfull- Draw a simple frame around the body area of the tab layoutFlag can have multiple arguments, passed either as a tuple or a list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getChildArray"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getChildArray"></a>
+<tt class="descname">getChildArray</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getChildArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a string array of the names of the layout’s immediate children.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getChildResizable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getChildResizable"></a>
+<tt class="descname">getChildResizable</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getChildResizable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set to true if you want the child of the control layout to be as wide as the scroll area.  You may also indicate a minimum width for the child using the -mcw/minChildWidthflag.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getDocTag"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getDocTag"></a>
+<tt class="descname">getDocTag</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getDocTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a documentation flag to the control.  The documentation flag has a directory structure like hierarchy. Eg. -dt render/multiLister/createNode/material</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getEnable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getEnable"></a>
+<tt class="descname">getEnable</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getEnable" title="Permalink to this definition">¶</a></dt>
+<dd><p>The enable state of the control.  By default, this flag is set to true and the control is enabled.  Specify false and the control will appear dimmed or greyed-out indicating it is disabled.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getEnableBackground"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getEnableBackground"></a>
+<tt class="descname">getEnableBackground</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getEnableBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables the background color of the control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getFullPathName"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getFullPathName"></a>
+<tt class="descname">getFullPathName</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getFullPathName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the full path name of the widget, which includes all the parents</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getHeight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getHeight"></a>
+<tt class="descname">getHeight</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>The height of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getImage"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getImage"></a>
+<tt class="descname">getImage</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getImage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Image appearing in top right corner of tab layout.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getImageVisible"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getImageVisible"></a>
+<tt class="descname">getImageVisible</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getImageVisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>Visibility of tab image.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getInnerMarginHeight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getInnerMarginHeight"></a>
+<tt class="descname">getInnerMarginHeight</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getInnerMarginHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Margin height for all tab children.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getInnerMarginWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getInnerMarginWidth"></a>
+<tt class="descname">getInnerMarginWidth</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getInnerMarginWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Margin width for all tab children.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getIsObscured"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getIsObscured"></a>
+<tt class="descname">getIsObscured</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getIsObscured" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether the control can actually be seen by the user. The control will be obscured if its state is invisible, if it is blocked (entirely or partially) by some other control, if it or a parent layout is unmanaged, or if the control’s window is invisible or iconified.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getManage"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getManage"></a>
+<tt class="descname">getManage</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getManage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Manage state of the control.  An unmanaged control is not visible, nor does it take up any screen real estate.  All controls are created managed by default.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getMinChildWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getMinChildWidth"></a>
+<tt class="descname">getMinChildWidth</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getMinChildWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify a positive non-zero integer value indicating the minimum width the tab layout’s children.  This flag only has meaning when the -cr/childResizableflag is set to true.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getNumberOfChildren"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getNumberOfChildren"></a>
+<tt class="descname">getNumberOfChildren</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getNumberOfChildren" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns in an int the number of immediate children of the layout.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getNumberOfPopupMenus"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getNumberOfPopupMenus"></a>
+<tt class="descname">getNumberOfPopupMenus</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getNumberOfPopupMenus" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the number of popup menus attached to this control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getPopupMenuArray"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getPopupMenuArray"></a>
+<tt class="descname">getPopupMenuArray</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getPopupMenuArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the names of all the popup menus attached to this control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getPreventOverride"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getPreventOverride"></a>
+<tt class="descname">getPreventOverride</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getPreventOverride" title="Permalink to this definition">¶</a></dt>
+<dd><p>If true, this flag disallows overriding the control’s attribute via the control’s right mouse button menu.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getScrollable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getScrollable"></a>
+<tt class="descname">getScrollable</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getScrollable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Puts all children of this layout within a scroll area.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getSelectCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getSelectCommand"></a>
+<tt class="descname">getSelectCommand</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getSelectCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command executed when a tab is selected interactively  This command will be invoked whenever a tab is selected, ie. re-selecting the current tab will invoke this command.  Note that this command is not executed by using either of the -st/selectTabor -sti/selectTabIndexflags.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getSelectTab"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getSelectTab"></a>
+<tt class="descname">getSelectTab</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getSelectTab" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name, in short form, of the selected tab.  An empty string is returned on query if there are no child tabs.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getSelectTabIndex"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getSelectTabIndex"></a>
+<tt class="descname">getSelectTabIndex</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getSelectTabIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Identical to the -st/selectTabflag except this flag takes a 1-based index to identify the selected tab.  A value of 0 is returned on query if there are not child tabs.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getShowNewTab"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getShowNewTab"></a>
+<tt class="descname">getShowNewTab</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getShowNewTab" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set to true if you want to have a ‘New Tab’ button shown at the end of the tab bar.  Note: use the -ntc/newTabCommandflag to set the command executed when this button is clicked.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getTabLabel"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getTabLabel"></a>
+<tt class="descname">getTabLabel</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getTabLabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set a tab label.  The first argument is the name of a control that must be a child of the tab layout.  The second argument is the label for the tab associated with that child. If this flag is queried then the tab labels for all the children are returned.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getTabLabelIndex"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getTabLabelIndex"></a>
+<tt class="descname">getTabLabelIndex</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getTabLabelIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Identical to the -tl/tabLabelflag except this flag takes a 1-based index to identify the tab you want to set the label for. If this flag is queried the tab labels for all the children are returned.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getTabsClosable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getTabsClosable"></a>
+<tt class="descname">getTabsClosable</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getTabsClosable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set to true if you want to have a close button icon on all created tabs.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getTabsVisible"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getTabsVisible"></a>
+<tt class="descname">getTabsVisible</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getTabsVisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>Visibility of the tab labels.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getVisible"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getVisible"></a>
+<tt class="descname">getVisible</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getVisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>The visible state of the control.  A control is created visible by default.  Note that a control’s actual appearance is also dependent on the visible state of its parent layout(s).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getVisibleChangeCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getVisibleChangeCommand"></a>
+<tt class="descname">getVisibleChangeCommand</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getVisibleChangeCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command that gets executed when visible state of the control changes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.getWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.getWidth"></a>
+<tt class="descname">getWidth</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.getWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>The width of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.horizontalScrollBarThickness"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.horizontalScrollBarThickness"></a>
+<tt class="descname">horizontalScrollBarThickness</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.horizontalScrollBarThickness" title="Permalink to this definition">¶</a></dt>
+<dd><p>Thickness of the horizontal scroll bar.  Specify an integer value greater than or equal to zero. This flag has no effect on Windows systems.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.moveTab"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.moveTab"></a>
+<tt class="descname">moveTab</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.moveTab" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move the tab from the current index to a new index.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.newTabCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.newTabCommand"></a>
+<tt class="descname">newTabCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.newTabCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command executed when the ‘New Tab’ button (on the tab bar) is clicked.  Note: in order to show the new tab button use the -snt/showNewTabflag.  Using this command will override any internal Maya logic for adding a new tab (only this command will be executed).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.noBackground"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.noBackground"></a>
+<tt class="descname">noBackground</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.noBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear/reset the control’s background. Passing true means the background should not be drawn at all, false means the background should be drawn.  The state of this flag is inherited by children of this control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.preSelectCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.preSelectCommand"></a>
+<tt class="descname">preSelectCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.preSelectCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command executed when a tab is selected but before it’s contents become visible.  Re-selecting the current tab will not invoke this command.  Note that this command is not executed by using either of the -st/selectTabor -sti/selectTabIndexflags.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.setAnnotation"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.setAnnotation"></a>
+<tt class="descname">setAnnotation</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.setAnnotation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Annotate the control with an extra string value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.setBackgroundColor"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.setBackgroundColor"></a>
+<tt class="descname">setBackgroundColor</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.setBackgroundColor" title="Permalink to this definition">¶</a></dt>
+<dd><p>The background color of the control. The arguments correspond to the red, green, and blue color components. Each component ranges in value from 0.0 to 1.0. When setting backgroundColor, the background is automatically enabled, unless enableBackground is also specified with a false value.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.setBorderStyle"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.setBorderStyle"></a>
+<tt class="descname">setBorderStyle</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.setBorderStyle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify the style of the border for tab layout. Valid values are none, topand full. By default, it will use fullto draw a simple frame around the body area of the tab layout. none- Do not draw borders around the body area of the tab layouttop- Only draw a simple line right below the tabsfull- Draw a simple frame around the body area of the tab layoutFlag can have multiple arguments, passed either as a tuple or a list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.setDocTag"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.setDocTag"></a>
+<tt class="descname">setDocTag</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.setDocTag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a documentation flag to the control.  The documentation flag has a directory structure like hierarchy. Eg. -dt render/multiLister/createNode/material</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.setEnable"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.setEnable"></a>
+<tt class="descname">setEnable</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.setEnable" title="Permalink to this definition">¶</a></dt>
+<dd><p>The enable state of the control.  By default, this flag is set to true and the control is enabled.  Specify false and the control will appear dimmed or greyed-out indicating it is disabled.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.setEnableBackground"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.setEnableBackground"></a>
+<tt class="descname">setEnableBackground</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.setEnableBackground" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables the background color of the control.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.setHeight"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.setHeight"></a>
+<tt class="descname">setHeight</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.setHeight" title="Permalink to this definition">¶</a></dt>
+<dd><p>The height of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.setImage"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.setImage"></a>
+<tt class="descname">setImage</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.setImage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Image appearing in top right corner of tab layout.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.setImageVisible"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.setImageVisible"></a>
+<tt class="descname">setImageVisible</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.setImageVisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>Visibility of tab image.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.setManage"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.setManage"></a>
+<tt class="descname">setManage</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.setManage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Manage state of the control.  An unmanaged control is not visible, nor does it take up any screen real estate.  All controls are created managed by default.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.setPreventOverride"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.setPreventOverride"></a>
+<tt class="descname">setPreventOverride</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.setPreventOverride" title="Permalink to this definition">¶</a></dt>
+<dd><p>If true, this flag disallows overriding the control’s attribute via the control’s right mouse button menu.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.setSelectCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.setSelectCommand"></a>
+<tt class="descname">setSelectCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.setSelectCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command executed when a tab is selected interactively  This command will be invoked whenever a tab is selected, ie. re-selecting the current tab will invoke this command.  Note that this command is not executed by using either of the -st/selectTabor -sti/selectTabIndexflags.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.setSelectTab"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.setSelectTab"></a>
+<tt class="descname">setSelectTab</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.setSelectTab" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name, in short form, of the selected tab.  An empty string is returned on query if there are no child tabs.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.setSelectTabIndex"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.setSelectTabIndex"></a>
+<tt class="descname">setSelectTabIndex</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.setSelectTabIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Identical to the -st/selectTabflag except this flag takes a 1-based index to identify the selected tab.  A value of 0 is returned on query if there are not child tabs.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.setShowNewTab"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.setShowNewTab"></a>
+<tt class="descname">setShowNewTab</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.setShowNewTab" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set to true if you want to have a ‘New Tab’ button shown at the end of the tab bar.  Note: use the -ntc/newTabCommandflag to set the command executed when this button is clicked.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.setTabLabel"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.setTabLabel"></a>
+<tt class="descname">setTabLabel</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.setTabLabel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set a tab label.  The first argument is the name of a control that must be a child of the tab layout.  The second argument is the label for the tab associated with that child. If this flag is queried then the tab labels for all the children are returned.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.setTabLabelIndex"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.setTabLabelIndex"></a>
+<tt class="descname">setTabLabelIndex</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.setTabLabelIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Identical to the -tl/tabLabelflag except this flag takes a 1-based index to identify the tab you want to set the label for. If this flag is queried the tab labels for all the children are returned.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.setTabsVisible"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.setTabsVisible"></a>
+<tt class="descname">setTabsVisible</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.setTabsVisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>Visibility of the tab labels.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.setVisible"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.setVisible"></a>
+<tt class="descname">setVisible</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.setVisible" title="Permalink to this definition">¶</a></dt>
+<dd><p>The visible state of the control.  A control is created visible by default.  Note that a control’s actual appearance is also dependent on the visible state of its parent layout(s).</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.setVisibleChangeCommand"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.setVisibleChangeCommand"></a>
+<tt class="descname">setVisibleChangeCommand</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.setVisibleChangeCommand" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command that gets executed when visible state of the control changes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.setWidth"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.setWidth"></a>
+<tt class="descname">setWidth</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.setWidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>The width of the control.  The control will attempt to be this size if it is not overruled by parent layout conditions.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.uitypes.TabLayout.verticalScrollBarThickness"><a name="//apple_ref/cpp/Method/pymel.core.uitypes.TabLayout.verticalScrollBarThickness"></a>
+<tt class="descname">verticalScrollBarThickness</tt><big>(</big><em>val=True</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.uitypes.TabLayout.verticalScrollBarThickness" title="Permalink to this definition">¶</a></dt>
+<dd><p>Thickness of the vertical scroll bar.  Specify an integer value greater than or equal to zero. This flag has no effect on Windows systems.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.tabLayout</span></tt></p>
+</dd></dl>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.uitypes.SymbolCheckBox.html" title="previous chapter">pymel.core.uitypes.SymbolCheckBox</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.uitypes.Text.html" title="next chapter">pymel.core.uitypes.Text</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/classes/pymel.core.uitypes/pymel.core.uitypes.TabLayout.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.uitypes.Text.html" title="pymel.core.uitypes.Text">next</a> |</li>
+<li class="right">
+<a href="pymel.core.uitypes.SymbolCheckBox.html" title="pymel.core.uitypes.SymbolCheckBox">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.uitypes.html">pymel.core.uitypes</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.uitypes/pymel.core.uitypes.TabLayout.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:22:10 GMT -->
+</body></html>

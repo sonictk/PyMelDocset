@@ -1,0 +1,6 @@
+pymel.core.runtime.DisplayLayerEditorWindow
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: DisplayLayerEditorWindow

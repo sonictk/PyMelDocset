@@ -1,0 +1,6 @@
+pymel.core.runtime.ShowMeshSmearToolOptions
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ShowMeshSmearToolOptions

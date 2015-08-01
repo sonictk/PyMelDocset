@@ -1,0 +1,6 @@
+pymel.core.runtime.RenderFlagsWindow
+====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: RenderFlagsWindow

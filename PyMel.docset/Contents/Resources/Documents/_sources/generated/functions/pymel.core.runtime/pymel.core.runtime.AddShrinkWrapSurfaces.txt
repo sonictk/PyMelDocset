@@ -1,0 +1,6 @@
+pymel.core.runtime.AddShrinkWrapSurfaces
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: AddShrinkWrapSurfaces

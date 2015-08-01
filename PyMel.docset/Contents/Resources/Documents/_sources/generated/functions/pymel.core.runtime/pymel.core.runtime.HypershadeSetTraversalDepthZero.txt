@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeSetTraversalDepthZero
+==================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeSetTraversalDepthZero

@@ -1,0 +1,6 @@
+pymel.util.log1p
+================
+
+.. currentmodule:: pymel.util
+
+.. autofunction:: log1p

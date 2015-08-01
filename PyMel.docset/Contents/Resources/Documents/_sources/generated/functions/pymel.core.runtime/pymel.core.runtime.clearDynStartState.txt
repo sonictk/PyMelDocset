@@ -1,0 +1,6 @@
+pymel.core.runtime.clearDynStartState
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: clearDynStartState

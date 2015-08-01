@@ -1,0 +1,6 @@
+pymel.core.runtime.SmoothCurve
+==============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SmoothCurve

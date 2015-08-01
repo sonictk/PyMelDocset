@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeHideAttributes
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeHideAttributes

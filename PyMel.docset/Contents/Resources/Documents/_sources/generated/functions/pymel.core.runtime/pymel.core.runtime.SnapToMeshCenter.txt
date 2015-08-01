@@ -1,0 +1,6 @@
+pymel.core.runtime.SnapToMeshCenter
+===================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SnapToMeshCenter

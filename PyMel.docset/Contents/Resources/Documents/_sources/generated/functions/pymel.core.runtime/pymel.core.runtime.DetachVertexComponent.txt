@@ -1,0 +1,6 @@
+pymel.core.runtime.DetachVertexComponent
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: DetachVertexComponent

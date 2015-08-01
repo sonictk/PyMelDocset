@@ -1,0 +1,6 @@
+pymel.core.runtime.KeyBlendShapeTargetsWeight
+=============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: KeyBlendShapeTargetsWeight

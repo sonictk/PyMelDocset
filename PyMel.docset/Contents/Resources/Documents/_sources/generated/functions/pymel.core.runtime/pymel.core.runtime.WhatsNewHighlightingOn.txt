@@ -1,0 +1,6 @@
+pymel.core.runtime.WhatsNewHighlightingOn
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: WhatsNewHighlightingOn

@@ -1,0 +1,6 @@
+pymel.core.runtime.MergeCharacterSet
+====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: MergeCharacterSet

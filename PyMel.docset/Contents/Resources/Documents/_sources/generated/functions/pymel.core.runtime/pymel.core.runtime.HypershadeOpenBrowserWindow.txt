@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeOpenBrowserWindow
+==============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeOpenBrowserWindow

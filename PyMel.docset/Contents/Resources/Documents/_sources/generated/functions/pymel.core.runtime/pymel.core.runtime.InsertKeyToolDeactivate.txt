@@ -1,0 +1,6 @@
+pymel.core.runtime.InsertKeyToolDeactivate
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: InsertKeyToolDeactivate

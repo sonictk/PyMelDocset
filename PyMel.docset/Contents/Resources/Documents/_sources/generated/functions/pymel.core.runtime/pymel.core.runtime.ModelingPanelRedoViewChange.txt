@@ -1,0 +1,6 @@
+pymel.core.runtime.ModelingPanelRedoViewChange
+==============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ModelingPanelRedoViewChange

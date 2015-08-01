@@ -1,0 +1,6 @@
+pymel.core.runtime.mrMapVisualizer
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: mrMapVisualizer

@@ -1,0 +1,6 @@
+pymel.core.runtime.DisplayIntermediateObjects
+=============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: DisplayIntermediateObjects

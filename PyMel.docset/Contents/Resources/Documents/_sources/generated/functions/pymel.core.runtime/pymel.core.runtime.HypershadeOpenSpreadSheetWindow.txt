@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeOpenSpreadSheetWindow
+==================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeOpenSpreadSheetWindow

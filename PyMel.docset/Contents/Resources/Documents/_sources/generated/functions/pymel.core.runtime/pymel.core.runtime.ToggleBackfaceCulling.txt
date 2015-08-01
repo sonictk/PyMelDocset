@@ -1,0 +1,6 @@
+pymel.core.runtime.ToggleBackfaceCulling
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ToggleBackfaceCulling

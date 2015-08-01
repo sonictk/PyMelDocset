@@ -1,0 +1,6 @@
+pymel.core.runtime.EnterEditModeRelease
+=======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: EnterEditModeRelease

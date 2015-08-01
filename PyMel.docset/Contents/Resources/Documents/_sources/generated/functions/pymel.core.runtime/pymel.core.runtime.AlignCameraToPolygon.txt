@@ -1,0 +1,6 @@
+pymel.core.runtime.AlignCameraToPolygon
+=======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: AlignCameraToPolygon

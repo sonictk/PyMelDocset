@@ -1,0 +1,6 @@
+pymel.core.runtime.CreateSubCharacterOptions
+============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreateSubCharacterOptions

@@ -1,0 +1,6 @@
+pymel.core.runtime.OptimzeUVs
+=============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: OptimzeUVs

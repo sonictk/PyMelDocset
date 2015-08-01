@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeRenameActiveTab
+============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeRenameActiveTab

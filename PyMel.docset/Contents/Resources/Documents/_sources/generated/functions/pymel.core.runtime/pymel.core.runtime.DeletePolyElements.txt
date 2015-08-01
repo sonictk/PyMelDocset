@@ -1,0 +1,6 @@
+pymel.core.runtime.DeletePolyElements
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: DeletePolyElements

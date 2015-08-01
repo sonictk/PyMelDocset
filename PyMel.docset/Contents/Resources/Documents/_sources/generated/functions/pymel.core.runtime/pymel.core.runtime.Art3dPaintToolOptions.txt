@@ -1,0 +1,6 @@
+pymel.core.runtime.Art3dPaintToolOptions
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: Art3dPaintToolOptions

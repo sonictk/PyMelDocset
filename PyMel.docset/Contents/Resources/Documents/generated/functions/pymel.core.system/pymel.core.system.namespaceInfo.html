@@ -1,0 +1,448 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.system/pymel.core.system.namespaceInfo.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:34:34 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.system.namespaceInfo — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.system.html" rel="up" title="pymel.core.system"/>
+<link href="pymel.core.system.newFile.html" rel="next" title="pymel.core.system.newFile"/>
+<link href="pymel.core.system.namespace.html" rel="prev" title="pymel.core.system.namespace"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.system » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.system.namespaceInfo ¶ 
+ 
+ 
+ namespaceInfo ( *args , **kwargs ) ¶ 
+ This command displays information about a namespace. The target namespace can optionally be specified on the command
+line. If no namespace is specified, the command will display information about the current namespace. A namespace is a
+simple grouping of objects under a..." name="description"/><meta content="__PyMel_generated_functions_pymel_core_system_pymel_core_system_namespaceInfo_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.system.newFile.html" title="pymel.core.system.newFile">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.system.namespace.html" title="pymel.core.system.namespace">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.system.html">pymel.core.system</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-system-namespaceinfo">
+<h1>pymel.core.system.namespaceInfo<a class="headerlink" href="#pymel-core-system-namespaceinfo" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.core.system.namespaceInfo"><a name="//apple_ref/cpp/Function/pymel.core.system.namespaceInfo"></a>
+<tt class="descname">namespaceInfo</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.system.namespaceInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command displays information about a namespace. The target namespace can optionally be specified on the command
+line. If no namespace is specified, the command will display information about the current namespace. A namespace is a
+simple grouping of objects under a given name. Each item in a namespace can then be identified by its own name, along
+with what namespace it belongs to.  Namespaces can contain other namespaces like sets, with the restriction that all
+namespaces are disjoint. Namespaces are primarily used to resolve name-clash issues in Maya, where a new object has the
+same name as an existing object (from importing a file, for example). Using namespaces, you can have two objects with
+the same name, as long as they are contained in different namespaces. Note that namespaces are a simple grouping of
+names, so they do not effect selection, the DAG, the Dependency Graph, or any other aspect of Maya.  All namespace names
+are colon-separated. The namespace format flags are: baseName(shortName), fullNameand absoluteName. The flags are used
+in conjunction with the main query flags to specify the desired namespace format of the returned result. They can also
+be used to return the different formats of a specified namespace. By default, when no format is specified, the result
+will be returned as a full name.</p>
+<dl class="docutils">
+<dt>Modifications:</dt>
+<dd><ul class="first last simple">
+<li>returns an empty list when the result is None</li>
+<li>returns wrapped classes for listOnlyDependencyNodes</li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">absoluteName</span></tt> / <tt class="docutils literal"><span class="pre">an</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This is a general flag which can be used to specify the desired format for the namespace(s) returned by the command. The absolute name of the namespace is a full
+namespace path, starting from the root namespace :and including all parent namespaces.  For example :ns:ballis an absolute namespace name while ns:ballis not. The
+absolute namespace name is invariant and is not affected by the current namespace or relative namespace modes. See also other format modifiers ‘baseName’,
+‘fullName’, etc</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">baseName</span></tt> / <tt class="docutils literal"><span class="pre">bn</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This is a general flag which can be used to specify the desired format for the namespace(s) returned by the command. The base name of the namespace contains only
+the leaf level name and does not contain its parent namespace(s). For example the base name of an object named ns:ballis ball. This mode will always return the
+base name in the same manner, and is not affected by the current namespace or relative namespace mode. See also other format modifiers ‘absoluteName’, ‘fullName’,
+etc The flag ‘shortName’ is a synonym for ‘baseName’.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">currentNamespace</span></tt> / <tt class="docutils literal"><span class="pre">cur</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Display the name of the current namespace.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">dagPath</span></tt> / <tt class="docutils literal"><span class="pre">dp</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This flag modifies the ‘listNamespace’ and ‘listOnlyDependencyNodes’ flags to indicate that the names of any dag objects returned will include as much of the dag
+path as is necessary to make the names unique. If this flag is not present, the names returned will not include any dag paths.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">fullName</span></tt> / <tt class="docutils literal"><span class="pre">fn</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This is a general flag which can be used to specify the desired format for the namespace(s) returned by the command. The full name of the namespace contains both
+the namespace path and the base name, but without the leading colon representing the root namespace. For example ns:ballis a full name, whereas :ns:ballis an
+absolute name. This mode is affected by the current namespace and relative namespace modes. See also other format modifiers ‘baseName’, ‘absoluteName’, etc.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">internal</span></tt> / <tt class="docutils literal"><span class="pre">int</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This flag is used together with the ‘listOnlyDependencyNodes’ flag. When this flag is set, the returned list will include internal nodes (for example itemFilters)
+that are not listed by default.                        Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">isRootNamespace</span></tt> / <tt class="docutils literal"><span class="pre">ir</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns true if the namespace is root(:), false if not.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">listNamespace</span></tt> / <tt class="docutils literal"><span class="pre">ls</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List the contents of the namespace.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">listOnlyDependencyNodes</span></tt> / <tt class="docutils literal"><span class="pre">lod</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List all dependency nodes in the namespace.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">listOnlyNamespaces</span></tt> / <tt class="docutils literal"><span class="pre">lon</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>List all namespaces in the namespace.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">parent</span></tt> / <tt class="docutils literal"><span class="pre">p</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Display the parent of the namespace. By default, the list returned will not include internal nodes (such as itemFilters). To include the internal nodes, use the
+‘internal’ flag.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">recurse</span></tt> / <tt class="docutils literal"><span class="pre">r</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Can be specified with ‘listNamespace’, ‘listOnlyNamespaces’ or ‘listOnlyDependencyNode’ to cause the listing to recursively include any child namespaces of the
+namespaces;</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">shortName</span></tt> / <tt class="docutils literal"><span class="pre">sn</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>This flag is deprecated and may be removed in future releases of Maya. It is a synonym for the baseName flag. Please use the baseName flag instead.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.namespaceInfo</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+
+<span class="c"># List the contents of the current namespace</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespaceInfo</span><span class="p">(</span> <span class="n">listNamespace</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [u'CubeCompass', u'CustomGPUCacheFilter', u'DefaultAllLightsFilter', u'DefaultAllLightsFilter1', u'DefaultAllLightsFilter2', u'DefaultAllLightsFilter6', u'DefaultAllRenderClassificationsFilter', u'DefaultAllRenderClassificationsFilter1', u'DefaultAllRenderNodesFilter', u'DefaultAllShadingNodesFilter', u'DefaultBakeSetsFilter', u'DefaultBakeSetsFilter2', u'DefaultBasicRenderNodesFilter', u'DefaultCameraShapesFilter', u'DefaultCameraShapesFilter1', u'DefaultCameraShapesFilter4', u'DefaultCameraShapesImagePlanesFilter', u'DefaultCameraShapesImagePlanesFilter3', u'DefaultContainerFilter', u'DefaultContainerNodeFilter', u'DefaultExclLightShapesFilter', u'DefaultGeometryFilter', u'DefaultHiddenAttributesFilter', u'DefaultIkHandlesFilter', u'DefaultImagePlanesFilter', u'DefaultImagePlanesFilter1', u'DefaultImagePlanesFilter4', u'DefaultJointsFilter', u'DefaultLightLinkingLightFilter', u'DefaultLightShapesFilter', u'DefaultLightShapesPostProcsFilter', u'DefaultLightShapesPostProcsFilter1', u'DefaultLightShapesPostProcsFilter2', u'DefaultLightShapesTexturesFilter', u'DefaultLightShapesTexturesFilter1', u'DefaultLightsAndOpticalFXFilter', u'DefaultLightsAndOpticalFXFilter4', u'DefaultMaterialsAndShaderGlowFilter', u'DefaultMaterialsAndShaderGlowFilter6', u'DefaultMaterialsFilter', u'DefaultMaterialsFilter1', u'DefaultMaterialsFilter2', u'DefaultMaterialsFilter8', u'DefaultMaterialsTexturesLightShapesFilter', u'DefaultMaterialsTexturesLightShapesFilter1', u'DefaultMrContourContrastFilter', u'DefaultMrContourOutputFilter', u'DefaultMrContourShaderFilter', u'DefaultMrContourStoreFilter', u'DefaultMrDataConversionFilter', u'DefaultMrDisplacementFilter', u'DefaultMrEmitterFilter', u'DefaultMrEnvironmentFilter', u'DefaultMrGeometryFilter', u'DefaultMrLensFilter', u'DefaultMrLightFilter', u'DefaultMrLightmapFilter', u'DefaultMrMaterialFilter', u'DefaultMrMiscFilter', u'DefaultMrNodesFilter', u'DefaultMrOutputFilter', u'DefaultMrPhotonFilter', u'DefaultMrPhotonVolumeFilter', u'DefaultMrSampleCompositingFilter', u'DefaultMrShadowFilter', u'DefaultMrStateFilter', u'DefaultMrTextureFilter', u'DefaultMrVolumeFilter', u'DefaultNURBSObjectsFilter', u'DefaultNoShaderGlowFilter', u'DefaultNonExclLightShapesFilter', u'DefaultOpticalFXFilter', u'DefaultOpticalFXFilter1', u'DefaultOpticalFXFilter5', u'DefaultPolygonObjectsFilter', u'DefaultPostProcFilter', u'DefaultRenderUtilitiesFilter', u'DefaultRenderUtilitiesFilter5', u'DefaultRenderingFilter', u'DefaultSGLightShapesFilter', u'DefaultSGLightShapesTexturesFilter', u'DefaultSetsFilter', u'DefaultShaderGlowFilter', u'DefaultShaderGlowFilter1', u'DefaultShaderGlowFilter2', u'DefaultShaderGlowFilter8', u'DefaultShadingGroupsAndMaterialsFilter', u'DefaultShadingGroupsFilter', u'DefaultShadingGroupsFilter1', u'DefaultShadingGroupsFilter2', u'DefaultShadingGroupsFilter3', u'DefaultShadingGroupsFilter4', u'DefaultShadingGroupsFilter5', u'DefaultShadingGroupsFilter6', u'DefaultShadingGroupsFilter7', u'DefaultShadingGroupsFilter8', u'DefaultSubdivObjectsFilter', u'DefaultTextures2dFilter', u'DefaultTextures3dFilter', u'DefaultTexturesFilter', u'DefaultTexturesFilter1', u'DefaultTexturesFilter7', u'DefaultTexturesSGFilter', u'DefaultUsesImageFileFilter', u'Manipulator1', u'UI', u'UniversalManip', u'animCurveFilter', u'animLayersFilter', u'characterPartition', u'characterSetsFilter', u'clipsFilter', u'clusterSetsFilter', u'defaultCreaseDataSet', u'defaultHardwareRenderGlobals', u'defaultLayer', u'defaultLightList1', u'defaultLightSet', u'defaultObjectSet', u'defaultRenderGlobals', u'defaultRenderLayer', u'defaultRenderLayerFilter', u'defaultRenderQuality', u'defaultRenderUtilityList1', u'defaultRenderingList1', u'defaultResolution', u'defaultSetFilter', u'defaultShaderList1', u'defaultTextureList1', u'defaultViewColorManager', u'deformerSetsFilter', u'dof1', u'drivenKeyFilter', u'dynController1', u'dynamicFilter', u'expressionFilter', u'front', u'frontShape', u'globalCacheControl', u'groundPlane', u'groundPlane_transform', u'hardwareRenderGlobals', u'hardwareRenderingGlobals', u'hyperGraphInfo', u'hyperGraphLayout', u'ikSystem', u'initialMaterialInfo', u'initialParticleSE', u'initialShadingGroup', u'jointClusterSetsFilter', u'keyableFilter', u'lambert1', u'latticeSetsFilter', u'layerManager', u'layersFilter', u'lightLinker1', u'lightLinkingObjectFilter', u'lightList1', u'lightSetFilter', u'lightSetFilter1', u'nonLinearSetsFilter', u'notAnimLayersFilter', u'objectAttrFilter1', u'objectAttrFilter2', u'objectAttrFilter3', u'objectAttrFilter4', u'objectAttrFilter5', u'objectAttrFilter6', u'objectAttrFilter7', u'objectAttrFilter8', u'objectFilter17', u'objectFilter18', u'objectFilter19', u'objectFilter20', u'objectFilter21', u'objectNameFilter1', u'objectNameFilter2', u'objectNameFilter3', u'objectNameFilter4', u'objectScriptFilter1', u'objectScriptFilter2', u'objectScriptFilter3', u'objectScriptFilter4', u'objectScriptFilter5', u'objectScriptFilter6', u'objectScriptFilter7', u'objectScriptFilter8', u'objectScriptFilter9', u'objectScriptFilter10', u'objectTypeFilter1', u'objectTypeFilter2', u'objectTypeFilter3', u'objectTypeFilter4', u'objectTypeFilter5', u'objectTypeFilter6', u'objectTypeFilter7', u'objectTypeFilter8', u'objectTypeFilter9', u'objectTypeFilter10', u'objectTypeFilter11', u'objectTypeFilter12', u'objectTypeFilter13', u'objectTypeFilter14', u'objectTypeFilter15', u'objectTypeFilter16', u'objectTypeFilter17', u'objectTypeFilter18', u'objectTypeFilter19', u'objectTypeFilter20', u'objectTypeFilter21', u'objectTypeFilter22', u'objectTypeFilter23', u'objectTypeFilter24', u'objectTypeFilter25', u'objectTypeFilter26', u'objectTypeFilter27', u'objectTypeFilter28', u'objectTypeFilter29', u'objectTypeFilter30', u'objectTypeFilter31', u'objectTypeFilter32', u'objectTypeFilter33', u'objectTypeFilter34', u'objectTypeFilter35', u'objectTypeFilter36', u'objectTypeFilter37', u'objectTypeFilter38', u'objectTypeFilter39', u'objectTypeFilter40', u'objectTypeFilter41', u'objectTypeFilter42', u'objectTypeFilter43', u'objectTypeFilter44', u'objectTypeFilter45', u'objectTypeFilter46', u'objectTypeFilter47', u'objectTypeFilter48', u'objectTypeFilter49', u'objectTypeFilter50', u'objectTypeFilter51', u'objectTypeFilter52', u'objectTypeFilter67', u'objectTypeFilter68', u'objectTypeFilter69', u'objectTypeFilter70', u'objectTypeFilter71', u'objectTypeFilter72', u'objectTypeFilter73', u'objectTypeFilter74', u'objectTypeFilter75', u'objectTypeFilter76', u'objectTypeFilter77', u'objectTypeFilter78', u'objectTypeFilter79', u'otherDeformerSetsFilter', u'particleCloud1', u'partitionFilter', u'persp', u'perspShape', u'polyMergeEdgeToolDefaults', u'polyMergeFaceToolDefaults', u'postProcessList1', u'publishedFilter', u'relationshipPanel1LeftAttrFilter', u'relationshipPanel1RightAttrFilter', u'renderGlobalsList1', u'renderLayerFilter', u'renderLayerManager', u'renderPartition', u'renderPassSetsFilter', u'renderPassesFilter', u'renderableObjectSetFilter', u'renderableObjectSetFilter1', u'renderableObjectSetFilter2', u'renderableObjectShapeFilter', u'renderableObjectShapeFilter1', u'renderableObjectShapeFilter2', u'renderableObjectsAndSetsFilter', u'renderableObjectsAndSetsFilter1', u'renderingSetsFilter', u'rotateFilter', u'scaleFilter', u'scaleRotateTranslateFilter', u'selectionListOperator1', u'selectionListOperator2', u'selectionListOperator3', u'selectionListOperator4', u'selectionListOperator5', u'selectionListOperator6', u'selectionListOperator7', u'selectionListOperator8', u'selectionListOperator9', u'selectionListOperator10', u'selectionListOperator11', u'selectionListOperator12', u'selectionListOperator13', u'selectionListOperator14', u'selectionListOperator15', u'selectionListOperator16', u'selectionListOperator17', u'selectionListOperator18', u'selectionListOperator19', u'selectionListOperator20', u'selectionListOperator21', u'selectionListOperator22', u'selectionListOperator23', u'selectionListOperator24', u'selectionListOperator25', u'selectionListOperator26', u'selectionListOperator27', u'selectionListOperator28', u'selectionListOperator29', u'selectionListOperator30', u'selectionListOperator57', u'selectionListOperator58', u'selectionListOperator59', u'selectionListOperator60', u'selectionListOperator61', u'selectionListOperator62', u'selectionListOperator63', u'selectionListOperator64', u'selectionListOperator65', u'selectionListOperator66', u'sequenceManager1', u'shaderGlow1', u'shared', u'side', u'sideShape', u'skinClusterSetsFilter', u'strokeGlobals', u'time1', u'top', u'topShape', u'translateFilter', u'world'] #</span>
+
+<span class="c"># List the parent of the current namespace</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespaceInfo</span><span class="p">(</span> <span class="n">parent</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: u'' #</span>
+
+<span class="c"># List the parent of the current namespace with short name</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespaceInfo</span><span class="p">(</span> <span class="n">parent</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">shortName</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: u'' #</span>
+
+<span class="c"># Determine if the current namespace is root</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespaceInfo</span><span class="p">(</span> <span class="n">rootNamespace</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+
+<span class="c"># List the parent of the current namespace with absolute name</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespaceInfo</span><span class="p">(</span> <span class="n">parent</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">absoluteName</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+
+<span class="c"># List dependency nodes including internal nodes</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespaceInfo</span><span class="p">(</span><span class="n">listOnlyDependencyNodes</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span>  <span class="n">internal</span> <span class="o">=</span> <span class="bp">True</span><span class="p">);</span>
+
+<span class="c"># samples of query info of specified namespace</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="nb">set</span> <span class="o">=</span><span class="s">":"</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">add</span> <span class="o">=</span><span class="s">"sample"</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="nb">set</span> <span class="o">=</span><span class="s">":sample"</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">add</span> <span class="o">=</span><span class="s">"sun"</span> <span class="p">)</span>
+
+<span class="c"># List the contents of the specified namespace</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespaceInfo</span><span class="p">(</span> <span class="s">":sample"</span><span class="p">,</span> <span class="n">listNamespace</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: sample:sun</span>
+
+<span class="c"># List the parent of the specified namespace</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespaceInfo</span><span class="p">(</span> <span class="s">":sample:sun"</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># result: sample</span>
+
+<span class="c"># List the parent of the specified namespace with baseName name</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespaceInfo</span><span class="p">(</span> <span class="s">":sample:sun"</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">baseName</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># result: sample</span>
+
+<span class="c"># Determine if the specified namespace is root</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespaceInfo</span><span class="p">(</span> <span class="s">":"</span><span class="p">,</span> <span class="n">isRootNamespace</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># result: True</span>
+
+<span class="c"># List the parent of the specified namespace with absolute name</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespaceInfo</span><span class="p">(</span> <span class="s">":sample:sun"</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">absoluteName</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># result: :sample</span>
+
+<span class="c"># List dependency nodes including internal nodes</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespaceInfo</span><span class="p">(</span>  <span class="s">":sample"</span><span class="p">,</span> <span class="n">listOnlyNamespaces</span> <span class="o">=</span> <span class="bp">True</span> <span class="p">)</span>
+<span class="c"># result: sample:sun</span>
+
+<span class="c"># Query the namespace name and have it returned in different formats</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespaceInfo</span><span class="p">(</span> <span class="s">":sample:sun"</span><span class="p">,</span> <span class="n">baseName</span> <span class="o">=</span> <span class="bp">True</span> <span class="p">)</span>
+<span class="c"># result: "sun"</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">namespaceInfo</span><span class="p">(</span> <span class="s">":sample:sun"</span><span class="p">,</span> <span class="n">fullName</span> <span class="o">=</span> <span class="bp">True</span> <span class="p">)</span>
+<span class="c"># result: "sample:sun"</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">namespaceInfo</span><span class="p">(</span> <span class="s">"sample:sun"</span><span class="p">,</span> <span class="n">absoluteName</span> <span class="o">=</span> <span class="bp">True</span> <span class="p">)</span>
+<span class="c"># result: ":sample:sun"</span>
+</pre></div>
+</div>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.system.namespace.html" title="previous chapter">pymel.core.system.namespace</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.system.newFile.html" title="next chapter">pymel.core.system.newFile</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.core.system/pymel.core.system.namespaceInfo.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.system.newFile.html" title="pymel.core.system.newFile">next</a> |</li>
+<li class="right">
+<a href="pymel.core.system.namespace.html" title="pymel.core.system.namespace">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.system.html">pymel.core.system</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.system/pymel.core.system.namespaceInfo.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:34:34 GMT -->
+</body></html>

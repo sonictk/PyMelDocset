@@ -1,0 +1,6 @@
+pymel.core.runtime.ToggleIsolateSelect
+======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ToggleIsolateSelect

@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorCloseAllTabs
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorCloseAllTabs

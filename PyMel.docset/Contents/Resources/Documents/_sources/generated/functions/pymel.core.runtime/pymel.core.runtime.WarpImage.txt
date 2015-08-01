@@ -1,0 +1,6 @@
+pymel.core.runtime.WarpImage
+============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: WarpImage

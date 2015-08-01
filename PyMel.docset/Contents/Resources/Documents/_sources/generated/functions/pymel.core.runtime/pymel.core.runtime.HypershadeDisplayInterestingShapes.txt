@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeDisplayInterestingShapes
+=====================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeDisplayInterestingShapes

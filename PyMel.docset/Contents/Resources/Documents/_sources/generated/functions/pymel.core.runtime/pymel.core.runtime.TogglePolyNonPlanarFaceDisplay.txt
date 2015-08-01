@@ -1,0 +1,6 @@
+pymel.core.runtime.TogglePolyNonPlanarFaceDisplay
+=================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: TogglePolyNonPlanarFaceDisplay

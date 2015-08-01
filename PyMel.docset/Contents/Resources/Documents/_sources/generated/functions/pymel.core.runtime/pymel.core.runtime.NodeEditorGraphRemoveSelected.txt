@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorGraphRemoveSelected
+================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorGraphRemoveSelected

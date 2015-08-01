@@ -1,0 +1,6 @@
+pymel.core.runtime.RemoveShrinkWrapTarget
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: RemoveShrinkWrapTarget

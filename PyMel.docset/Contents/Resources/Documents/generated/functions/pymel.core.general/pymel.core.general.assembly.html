@@ -1,0 +1,627 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.general/pymel.core.general.assembly.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:20:10 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.general.assembly — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.general.html" rel="up" title="pymel.core.general"/>
+<link href="pymel.core.general.assignCommand.html" rel="next" title="pymel.core.general.assignCommand"/>
+<link href="pymel.core.general.artAttrTool.html" rel="prev" title="pymel.core.general.artAttrTool"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.general » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.general.assembly ¶ 
+ 
+ 
+ assembly ( *args , **kwargs ) ¶ 
+ Command to register assemblies for the scene assembly framework, to create them, and to edit and query them. Assembly
+nodes are DAG nodes, and are therefore shown in the various DAG editors (Outliner, Hypergraph, Node Editor). At assembly
+creation time, the node name defaults to..." name="description"/><meta content="__PyMel_generated_functions_pymel_core_general_pymel_core_general_assembly_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.general.assignCommand.html" title="pymel.core.general.assignCommand">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.general.artAttrTool.html" title="pymel.core.general.artAttrTool">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.general.html">pymel.core.general</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-general-assembly">
+<h1>pymel.core.general.assembly<a class="headerlink" href="#pymel-core-general-assembly" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.core.general.assembly"><a name="//apple_ref/cpp/Function/pymel.core.general.assembly"></a>
+<tt class="descname">assembly</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.general.assembly" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command to register assemblies for the scene assembly framework, to create them, and to edit and query them. Assembly
+nodes are DAG nodes, and are therefore shown in the various DAG editors (Outliner, Hypergraph, Node Editor). At assembly
+creation time, the node name defaults to the node type name. The assembly command can create any node that is derived
+from the assembly node base class.  It also acts as a registry of these types, so that various scripting callbacks can
+be defined and registered with the assembly command.  These callbacks are invoked by Maya during operations on assembly
+nodes, and can be used to customize behavior. In query mode, return type is based on queried flag.</p>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">active</span></tt> / <tt class="docutils literal"><span class="pre">a</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set the active representation by name, or query the name of the active representation. Edit mode can be applied to more than one assembly. Query mode will return
+a single string when only a single assembly is specified, and will return an array of strings when multiple assemblies are specified. Using an empty string as
+name means to inactivate the currently active representation.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">activeLabel</span></tt> / <tt class="docutils literal"><span class="pre">al</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set the active representation by label, or query the label of the active representation. Edit mode can be applied to more than one assembly. Query mode will
+return a single string when only a single assembly is specified, and will return an array of strings when multiple assemblies are specified.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">canCreate</span></tt> / <tt class="docutils literal"><span class="pre">cc</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Query the representation types the specific assembly can create.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">createOptionBoxProc</span></tt> / <tt class="docutils literal"><span class="pre">cob</span></tt></td>
+<td><em>script</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set or query the option box menu procedure for a specific assembly type. The assembly type will be the default type, unless the -type flag is used to specify an
+explicit assembly type.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">createRepresentation</span></tt> / <tt class="docutils literal"><span class="pre">cr</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Create and add a specific type of representation for an assembly. If the representation type needs additional parameters, they must be specified using the
+inputflag. For example, the Maya scene assembly reference implementation Cache and Scene representations need an input file.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">defaultType</span></tt> / <tt class="docutils literal"><span class="pre">dt</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set or query the default type of assembly.  When the assembly command is used to perform an operation on an assembly type rather than on an assembly object, it
+will be performed on the default type, unless the -type flag is used to specify an explicit assembly type.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">deleteRepresentation</span></tt> / <tt class="docutils literal"><span class="pre">dr</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Delete a specific representation from an assembly.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">deregister</span></tt> / <tt class="docutils literal"><span class="pre">d</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Deregister a registered assembly type. If the deregistered type is the default type, the default type will be set to the empty string.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">input</span></tt> / <tt class="docutils literal"><span class="pre">input</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Specify the additional parameters of representation creation procedure when creating a representation. This flag must be used with createRepresentation flag.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">isAType</span></tt> / <tt class="docutils literal"><span class="pre">isa</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Query whether the given object is of an assembly type.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">isTrackingMemberEdits</span></tt> / <tt class="docutils literal"><span class="pre">ite</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Query whether the given object is tracking member edits.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">label</span></tt> / <tt class="docutils literal"><span class="pre">lbl</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Set or query the label for an assembly type. Assembly type is specified with flag type. If no type specified, the default type is used.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">listRepTypes</span></tt> / <tt class="docutils literal"><span class="pre">lrt</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Query the supported representation types for a given assembly type.  The assembly type will be the default type, unless the -type flag is used to specify an
+explicit assembly type.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">listRepTypesProc</span></tt> / <tt class="docutils literal"><span class="pre">lrp</span></tt></td>
+<td><em>script</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set or query the procedure that provides the representation type list which an assembly type supports.  This procedure takes no argument, and returns a string
+array of representation types that represents the full set of representation types this assembly type can create.  The assembly type for which this procedure
+applies will be the default type, unless the type flag is used to specify an explicit assembly type.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">listRepresentations</span></tt> / <tt class="docutils literal"><span class="pre">lr</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Query the created representations list for a specific assembly.  The -repType flag can be used to filter the list and return representations for a single
+representation type.  If the -repType flag is not used, all created representations will be returned.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">listTypes</span></tt> / <tt class="docutils literal"><span class="pre">lt</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Query the supported assembly types.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">name</span></tt> / <tt class="docutils literal"><span class="pre">n</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Specify the name of the assembly when creating it.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">newRepLabel</span></tt> / <tt class="docutils literal"><span class="pre">nrl</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Specify the representation label to set on representation label edit.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">postCreateUIProc</span></tt> / <tt class="docutils literal"><span class="pre">aoc</span></tt></td>
+<td><em>script</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set or query the UI post-creation procedure for a given assembly type. This procedure will be invoked by Maya immediately after an assembly of the specified type
+is created from the UI, but not through scripting.  It can be used to invoke a dialog, to obtain and set initial parameters on a newly-created assembly.  The
+assembly type will be the default type, unless the -type flag is used to specify an explicit assembly type.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">proc</span></tt> / <tt class="docutils literal"><span class="pre">prc</span></tt></td>
+<td><em>script</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Specify the procedure when setting the representation UI post- or pre-creation procedure, for a given assembly type.  The assembly type will be the default type,
+unless the -type flag is used to specify an explicit assembly type.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">renameRepresentation</span></tt> / <tt class="docutils literal"><span class="pre">rnr</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Renames the representation that is the argument to this flag.  The repName flag must be used to provide the new name.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">repLabel</span></tt> / <tt class="docutils literal"><span class="pre">rl</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Query or edit the label of the representation that is the argument to this flag, for a given assembly.  In both query and edit modes, the -repLabel flag specifies
+the name of the representation.  In edit mode, the -newRepLabel flag must be used to specify the new representation label.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">repName</span></tt> / <tt class="docutils literal"><span class="pre">rnm</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/edit.gif" class="first last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Specify the representation name to set on representation creation or rename. This flag is optional with the createRepresentation flag: if omitted, the assembly
+will name the representation.  It is mandatory with the renameRepresentation flag.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">repNamespace</span></tt> / <tt class="docutils literal"><span class="pre">rns</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Query the representation namespace of this assembly node. The value returned is used by Maya for creating the namespace where nodes created by the activation of a
+representation will be added. If a name clash occurs when the namespace is added to its parent namespace, Maya will update repNamespace with the new name. Two
+namespaces are involved when dealing with an assembly node: the namespace of the assembly node itself (which this flag does not affect or query), and the
+namespace of its representations. The representation namespace is a child of its assembly node’s namespace. The assembly node’s namespace is set by its containing
+assembly, if it is nested, or by the top-level file. Either the assembly node’s namespace, or the representation namespace, or both, can be the empty string. It
+should be noted that if the assembly node is nested, the assembly node’s namespace will be (by virtue of its nesting) the representation namespace of its
+containing assembly.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">repPostCreateUIProc</span></tt> / <tt class="docutils literal"><span class="pre">poc</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set or query the UI post-creation procedure for a specific representation type, and for a specific assembly type.  This procedure takes two arguments, the first
+the DAG path to the assembly, and the second the name of the representation.  It returns no value.  It will be invoked by Maya immediately after a representation
+of the specified type is created from the UI, but not through scripting.  It can be used to invoke a dialog, to obtain and set initial parameters on a newly-
+created representation.  The representation type is the argument of this flag. The -proc flag must be used to specify the procedure name.  The assembly type will
+be the default type, unless the -type flag is used to specify an explicit assembly type.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">repPreCreateUIProc</span></tt> / <tt class="docutils literal"><span class="pre">pec</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set or query the UI pre-creation procedure for a specific representation type, and for a specific assembly type.  This procedure takes no argument, and returns a
+string that is passed as an argument to the -input flag when Maya invokes the assembly command with the -createRepresentation flag. The representation pre-
+creation procedure is invoked by Maya immediately before creating a representation of the specified type from the UI, but not through scripting.  It can be used
+to invoke a dialog, to obtain the creation argument for a new representation.  The representation type is the argument of this flag.  The -proc flag must be used
+to specify the procedure name.  The assembly type will be the default type, unless the -type flag is used to specify an explicit assembly type.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">repType</span></tt> / <tt class="docutils literal"><span class="pre">rt</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Specify a representation type to use as a filter for the -listRepresentations query.  The representation type is the argument to this flag.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">repTypeLabel</span></tt> / <tt class="docutils literal"><span class="pre">rtl</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Query the label of the specific representation type.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">repTypeLabelProc</span></tt> / <tt class="docutils literal"><span class="pre">rtp</span></tt></td>
+<td><em>script</em></td>
+<td><img alt="../../../_images/query.gif" class="first" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Set or query the procedure that provides the representation type label, for a given assembly type.  The procedure takes the representation type as its sole
+argument, and returns a localized representation type label. The assembly type for which this procedure applies will be the default type, unless the -type flag is
+used to specify an explicit assembly type.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">type</span></tt> / <tt class="docutils literal"><span class="pre">typ</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" src="../../../_images/query.gif"/>
+<img alt="../../../_images/edit.gif" class="last" src="../../../_images/edit.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Set or query properties for the specified registered assembly type. Flag can have multiple arguments, passed either as a tuple or a list.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.assembly</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+
+<span class="c">#Create a default type of assembly and name it MyAssembly.</span>
+<span class="c">#The assembly name is optional.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">assembly</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'MyAssembly'</span><span class="p">)</span>
+<span class="c"># Result: nt.AssemblyDefinition(u'MyAssembly') #</span>
+<span class="c">#Create an assembly of type MyAssemblyType and name it MyAssembly.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">assembly</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'MyAssembly'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s">'MyAssemblyType'</span><span class="p">)</span>
+<span class="c">#Set the default type to be MyAssemblyType.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">assembly</span><span class="p">(</span><span class="n">edit</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">defaultType</span><span class="o">=</span><span class="s">'MyAssemblyType'</span><span class="p">)</span>
+<span class="c">#Create a representation of type "MyRepType", on assembly myAssembly, and</span>
+<span class="c">#name it "MyRepName"</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">assembly</span><span class="p">(</span><span class="n">myAssembly</span><span class="p">,</span> <span class="n">edit</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">createRepresentation</span><span class="o">=</span><span class="s">'MyRepType'</span><span class="p">,</span>
+              <span class="n">repName</span><span class="o">=</span><span class="s">'MyRepName'</span><span class="p">)</span>
+<span class="c">#Rename representation "MyRepName" to "MyNewRepName" on assembly myAssembly.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">assembly</span><span class="p">(</span><span class="n">myAssembly</span><span class="p">,</span> <span class="n">edit</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">renameRepresentation</span><span class="o">=</span><span class="s">'MyRepName'</span><span class="p">,</span>
+                      <span class="n">repName</span><span class="o">=</span><span class="s">'MyNewRepName'</span><span class="p">)</span>
+<span class="c">#Set the procedure that provides the representation type label for</span>
+<span class="c">#an assembly type.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">assembly</span><span class="p">(</span><span class="n">edit</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">repTypeLabelProc</span><span class="o">=</span><span class="s">'MyRepTypeLabelQuery'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s">'MyAssembly'</span><span class="p">)</span>
+<span class="c">#Set the label for the default assembly type.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">assembly</span><span class="p">(</span><span class="n">edit</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'My Assembly Type'</span><span class="p">)</span>
+<span class="c">#Set the procedure that provides the representation type list which the</span>
+<span class="c">#default assembly supports.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">assembly</span><span class="p">(</span><span class="n">edit</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">listRepTypesProc</span><span class="o">=</span><span class="s">'MyRepTypesProc'</span><span class="p">)</span>
+<span class="c">#Set the pre-create UI procedure for a representation type, for a</span>
+<span class="c">#specific type of assembly.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">assembly</span><span class="p">(</span><span class="n">edit</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">repPreCreateUIProc</span><span class="o">=</span><span class="s">'MyRepresentation'</span><span class="p">,</span> <span class="n">proc</span><span class="o">=</span><span class="s">'MyPreCreateProcedure'</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="s">'MyAssembly'</span><span class="p">)</span>
+<span class="c">#Set the post-create UI procedure for a representation type, for the</span>
+<span class="c">#default assembly type.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">assembly</span><span class="p">(</span><span class="n">edit</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">repPostCreateUIProc</span><span class="o">=</span><span class="s">'MyRepresentation'</span><span class="p">,</span> <span class="n">proc</span><span class="o">=</span><span class="s">'MyPostCreateProcedure'</span> <span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.general.artAttrTool.html" title="previous chapter">pymel.core.general.artAttrTool</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.general.assignCommand.html" title="next chapter">pymel.core.general.assignCommand</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.core.general/pymel.core.general.assembly.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.general.assignCommand.html" title="pymel.core.general.assignCommand">next</a> |</li>
+<li class="right">
+<a href="pymel.core.general.artAttrTool.html" title="pymel.core.general.artAttrTool">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.general.html">pymel.core.general</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.general/pymel.core.general.assembly.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:20:10 GMT -->
+</body></html>

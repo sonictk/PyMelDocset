@@ -1,0 +1,624 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.system/pymel.core.system.namespace.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:34:33 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.system.namespace — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.system.html" rel="up" title="pymel.core.system"/>
+<link href="pymel.core.system.namespaceInfo.html" rel="next" title="pymel.core.system.namespaceInfo"/>
+<link href="pymel.core.system.mouse.html" rel="prev" title="pymel.core.system.mouse"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.system » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.system.namespace ¶ 
+ 
+ 
+ namespace ( *args , **kwargs ) ¶ 
+ This command allows a namespace to be created, set or removed. A namespace is a simple grouping of objects under a given
+name. Namespaces are primarily used to resolve name-clash issues in Maya, where a new object has the same name as an
+existing object (from importing a file,..." name="description"/><meta content="__PyMel_generated_functions_pymel_core_system_pymel_core_system_namespace_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.system.namespaceInfo.html" title="pymel.core.system.namespaceInfo">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.system.mouse.html" title="pymel.core.system.mouse">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.system.html">pymel.core.system</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-system-namespace">
+<h1>pymel.core.system.namespace<a class="headerlink" href="#pymel-core-system-namespace" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.core.system.namespace"><a name="//apple_ref/cpp/Function/pymel.core.system.namespace"></a>
+<tt class="descname">namespace</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.system.namespace" title="Permalink to this definition">¶</a></dt>
+<dd><p>This command allows a namespace to be created, set or removed. A namespace is a simple grouping of objects under a given
+name. Namespaces are primarily used to resolve name-clash issues in Maya, where a new object has the same name as an
+existing object (from importing a file, for example).  Using namespaces, you can have two objects with the same name, as
+long as they are contained in differenct namespaces. Namespaces are reminiscent of hierarchical structures like file
+systems where namespaces are analogous to directories and objects are analogous to files. The colon (‘:’) character is
+the separator used to separate the names of namespaces and nodes instead of the slash (‘/’) or backslash (‘’)
+character.  Namespaces can contain other namespaces as well as objects.  Like objects, the names of namespaces must be
+unique within another namespace. Objects and namespaces can be in only one namespace. Namespace names and object names
+don’t clash so a namespace and an object contained in another namespace can have the same name. There is an unnamed root
+namespace specified with a leading colon (‘:’).  Any object not in a named namespace is in the root namespace. Normally,
+the leading colon is omitted from the name of an object as it’s presence is implied. The presence of a leading colon is
+important when moving objects between namespaces using the ‘rename’ command.  For the ‘rename’ command, the new name is
+relative to the current namespace unless the new name is fully qualified with a leading colon. Namespaces are created
+using the ‘add/addNamespace’ flag. By default they are created under the current namespace. Changing the current
+namespace is done with the ‘set/setNamespace’ flag. To reset the current namespace to the root namespace, use ‘namespace
+-set :;’. Whenever an object is created, it is added by default to the current namespace. When creating a new namespace
+using a qualified name, any intervening namespaces which do not yet exist will be automatically created. For example, if
+the name of the new namespace is specified as A:Band the current namespace already has a child namespace named Athen a
+new child namespace named Bwill be created under A. But if the current namespace does not yet have a child named Athen
+it will be created automatically. This applies regardless of the number of levels in the provided name (e.g. A:B:C:D).
+The ‘p/parent’ flag can be used to explicitly specify the parent namespace under which the new one should be created,
+rather than just defaulting to the current namespace. If the name given for the new namespace is absolute (i.e. it
+begins with a colon, as in :A:B) then both the current namespace and the ‘parent’ flag will be ignored and the new
+namespace will be created under the root namespace. The relativeNamespace flag can be used to change the way node names
+are displayed in the UI and returned by the ‘ls’ command. Here are some specific details on how the return from the ‘ls’
+command works in relativeNamespace mode: List all mesh objects in the scene:ls -type mesh;The above command lists all
+mesh objects in the root and any child namespaces. In relative name lookup mode, all names will be displayed relative to
+the current namespace. When not in relative name lookup mode (the default behaviour in Maya), results are printed
+relative to the root namespace. Using a *wildcard:namespace -set myNS;ls -type mesh *;In relative name lookup mode,
+the *will match to the current namespace and thus the ls command will list only those meshes defined within the current
+namespace (i.e. myNs). If relative name lookup is off (the default behaviour in Maya), names are root-relative and thus
+*matches the root namespace, with the net result being that only thoses meshes defined in the root namespace will be
+listed. You can force the root namespace to be listed when in relative name lookup mode by specifying :*as your search
+pattern (i.e. ls -type mesh :*which lists those meshes defined in the root namespace only). Note that you can also use
+:*when relative name lookup mode is off to match the root if you want a consistent way to list the root. Listing child
+namespace contents:ls -type mesh *:*;For an example to list all meshes in immediate child namespaces, use *:*. In
+relative name lookup mode *:*lists those meshes in immediate child namespaces of the current namespaces. When not in
+relative name lookup mode, *:*lists meshes in namespaces one level below the root. Recursive listing of namespace
+contents:Example: ls -type mesh -recurse on *The ‘recurse’ flag is provided on the lscommand to recursively traverse
+any child namespaces. In relative name lookup mode, the above example command will list all meshes in the current and
+any child namespaces of current. When not in relative name lookup mode, the above example command works from the root
+downwards and is thus equivalent to ls -type mesh.</p>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">absoluteName</span></tt> / <tt class="docutils literal"><span class="pre">an</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">This is a general flag which can be used to specify the desired format for the namespace(s) returned by the command. The absolute name of the namespace is a full
+namespace path, starting from the root namespace :and including all parent namespaces.  For example :ns:ballis an absolute namespace name while ns:ballis not.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">addNamespace</span></tt> / <tt class="docutils literal"><span class="pre">add</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Create a new namespace with the given name. Both qualified names (A:B) and unqualified names (A) are acceptable. If any of the higher-level namespaces in a
+qualified name do not yet exist, they will be created. If the supplied name contains invalid characters it will first be modified as per the validateName flag.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">collapseAncestors</span></tt> / <tt class="docutils literal"><span class="pre">ch</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Delete all empty ancestors of the given namespace. An empty namespace is a a namespace that does not contain any objects or other nested namespaces
+Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">deleteNamespaceContent</span></tt> / <tt class="docutils literal"><span class="pre">dnc</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Used with the ‘rm/removeNamespace’ flag to indicate that when removing a namespace the contents of the namespace will also be removed.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">exists</span></tt> / <tt class="docutils literal"><span class="pre">ex</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns true if the specified namespace exists, false if not.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">force</span></tt> / <tt class="docutils literal"><span class="pre">f</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Used with ‘mv/moveNamespace’ to force the move operation to ignore name clashes.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">isRootNamespace</span></tt> / <tt class="docutils literal"><span class="pre">ir</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Returns true if the specified namespace is root, false if not.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">mergeNamespaceWithParent</span></tt> / <tt class="docutils literal"><span class="pre">mnp</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Used with the ‘rm/removeNamespace’ flag. When removing a namespace, move the rest of the namespace content to the parent namespace.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">mergeNamespaceWithRoot</span></tt> / <tt class="docutils literal"><span class="pre">mnr</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Used with the ‘rm/removeNamespace’ flag. When removing a namespace, move the rest of the namespace content to the root namespace.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">moveNamespace</span></tt> / <tt class="docutils literal"><span class="pre">mv</span></tt></td>
+<td><em>unicode, unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Move the contents of the first namespace into the second namespace. Child namespaces will also be moved. Attempting to move a namespace containing referenced
+nodes will result in an error; use the ‘file’ command (‘file -edit -namespace’) to change a reference namespace. If there are objects in the source namespace with
+the same name as objects in the destination namespace, an error will be issued. Use the ‘force’ flag to override this error - name clashes will be resolved by
+renaming the objects to ensure uniqueness.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">parent</span></tt> / <tt class="docutils literal"><span class="pre">p</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Used with the ‘addNamespace’ or ‘rename’ flags to specifiy the parent of the new namespace. The full namespace parent path is required. When using ‘addNamespace’
+with an absolute name, the ‘parent’ will be ignored and the command will display a warning</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">recurse</span></tt> / <tt class="docutils literal"><span class="pre">r</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Can be used with the ‘exists’ flag to recursively look for the specified namespace</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">relativeNames</span></tt> / <tt class="docutils literal"><span class="pre">rel</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Turns on relative name lookup, which causes name lookups within Maya to be relative to the current namespace. By default this is off, meaning that name lookups
+are always relative to the root namespace. Be careful turning this feature on since commands such as setAttr will behave differently. It is wise to only turn this
+feature on while executing custom procedures that you have written to be namespace independent and turning relativeNames off when returning control from your
+custom procedures. Note that Maya will turn on relative naming during file I/O. Although it is not recommended to leave relativeNames turned on, if you try to
+toggle the value during file I/O you may notice that the value stays onbecause Maya has already temporarily enabled it internally. When relativeNames are enabled,
+the returns provided by the ‘ls’ command will be relative to the current namespace. See the main description of this command for more details.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">removeNamespace</span></tt> / <tt class="docutils literal"><span class="pre">rm</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Deletes the given namespace.  The namespace must be empty for it to be deleted.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">rename</span></tt> / <tt class="docutils literal"><span class="pre">ren</span></tt></td>
+<td><em>unicode, unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Rename the first namespace to second namespace name. Child namespaces will also be renamed. Both names are relative to the current namespace. Use the ‘parent’
+flag to specify a parent namespace for the renamed namespace. An error is issued if the second namespace name already exists. If the supplied name contains
+invalid characters it will first be modified as per the validateName flag.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">setNamespace</span></tt> / <tt class="docutils literal"><span class="pre">set</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Sets the current namespace.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">validateName</span></tt> / <tt class="docutils literal"><span class="pre">vn</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Convert the specified name to a valid name to make it contain no illegal characters. The leading illegal characters will be removed and other illegal characters
+will be converted to ‘_’. Specially, the leading numeric characters and trailing space characters will be also removed.  Full name path can be validated as well.
+However, if the namespace of the path does not exist, command will only return the base name. For example, :nonExistentNS:namewill be converted to name.  If the
+entire name consists solely of illegal characters, e.g. 123which contains only leading digits, then the returned string will be empty.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.namespace</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+
+<span class="c"># Create three namespaces</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">add</span><span class="o">=</span><span class="s">'FOO'</span> <span class="p">)</span>
+<span class="c"># Result: u'FOO' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">add</span><span class="o">=</span><span class="s">'BAR'</span> <span class="p">)</span>
+<span class="c"># Result: u'BAR' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">add</span><span class="o">=</span><span class="s">'FRED'</span> <span class="p">)</span>
+<span class="c"># Result: u'FRED' #</span>
+
+<span class="c"># Create namespace with qualified name</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">add</span><span class="o">=</span><span class="s">"A:B"</span> <span class="p">)</span>
+<span class="c"># Result: u'A:B' #</span>
+
+<span class="c"># Create namespace with qualified name</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">add</span><span class="o">=</span><span class="s">"C:D"</span><span class="p">,</span> <span class="n">parent</span><span class="o">=</span><span class="s">"A:B"</span> <span class="p">)</span>
+<span class="c"># Result: u'A:B:C:D' #</span>
+
+<span class="c"># Create namespace with qualified name</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">add</span><span class="o">=</span><span class="s">":A:B:C:D:E"</span> <span class="p">)</span>
+<span class="c"># Result: u'A:B:C:D:E' #</span>
+
+<span class="c"># Set the current namespace to FOO</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="nb">set</span><span class="o">=</span><span class="s">'FOO'</span> <span class="p">)</span>
+<span class="c"># Result: u'FOO' #</span>
+
+<span class="c"># Create the namespace BAR Under FOO. Note there are</span>
+<span class="c"># two "BAR" namespaces, :BAR and :FOO:BAR.</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">add</span><span class="o">=</span><span class="s">'BAR'</span> <span class="p">)</span>
+<span class="c"># Result: u'FOO:BAR' #</span>
+
+<span class="c"># Check to see that the BAR namespace exists within the current</span>
+<span class="c"># namespace (FOO)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">exists</span><span class="o">=</span><span class="s">'BAR'</span> <span class="p">)</span>
+<span class="c"># Result: True #</span>
+
+<span class="c"># Check to see that the FRED namespace exists under the root namespace</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">exists</span><span class="o">=</span><span class="s">':FRED'</span> <span class="p">)</span>
+<span class="c"># Result: True #</span>
+
+<span class="c"># Create two objects. It gets added to the current namespace FOO;</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">sphere</span><span class="p">(</span> <span class="n">n</span><span class="o">=</span><span class="s">'sphere1'</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'FOO:sphere1'), nt.MakeNurbSphere(u'FOO:makeNurbSphere1')] #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">sphere</span><span class="p">(</span> <span class="n">n</span><span class="o">=</span><span class="s">'sphere2'</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'FOO:sphere2'), nt.MakeNurbSphere(u'FOO:makeNurbSphere2')] #</span>
+
+<span class="c"># Move sphere1 from namespace FOO to FOO:BAR. Note that we</span>
+<span class="c"># need to qualify sphere1 with the namespace FOO because</span>
+<span class="c"># "sphere1" identifies a non-existent object in the root namespace.</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span> <span class="s">'FOO:sphere1'</span><span class="p">,</span> <span class="s">'BAR:sphere1'</span> <span class="p">)</span>
+<span class="c"># Result: nt.Transform(u'FOO:BAR:sphere1') #</span>
+
+<span class="c"># Move sphere2 from namespace FOO to BAR.  Note the leading</span>
+<span class="c"># colon on the new name.</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span> <span class="s">'FOO:sphere2'</span><span class="p">,</span> <span class="s">':BAR:sphere2'</span> <span class="p">)</span>
+<span class="c"># Result: nt.Transform(u'BAR:sphere2') #</span>
+
+<span class="c"># query the current namespace (using the namespaceInfo command)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespaceInfo</span><span class="p">(</span> <span class="n">currentNamespace</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: u'FOO' #</span>
+
+<span class="c"># remove the namespace FRED (it must be empty)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="nb">set</span><span class="o">=</span><span class="s">':'</span> <span class="p">)</span>
+<span class="c"># Result: u'' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">rm</span><span class="o">=</span><span class="s">'FRED'</span> <span class="p">)</span>
+
+<span class="c"># Check to see that the FRED namespace has been removed</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">exists</span><span class="o">=</span><span class="s">':FRED'</span> <span class="p">)</span>
+<span class="c"># Result: False #</span>
+
+<span class="c"># Rename namespace BAR to JOE</span>
+<span class="c"># Note: this is done by creating JOE, moving the contents of</span>
+<span class="c"># BAR into JOE, and then removing the (now empty) BAR.</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="nb">set</span><span class="o">=</span><span class="s">':'</span> <span class="p">)</span>
+<span class="c"># Result: u'' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">add</span><span class="o">=</span><span class="s">'JOE'</span> <span class="p">)</span>
+<span class="c"># Result: u'JOE' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">mv</span><span class="o">=</span><span class="p">(</span><span class="s">'BAR'</span><span class="p">,</span> <span class="s">'JOE'</span><span class="p">)</span> <span class="p">)</span>
+<span class="c"># Result: u'BAR' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">rm</span><span class="o">=</span><span class="s">'BAR'</span> <span class="p">)</span>
+
+<span class="c"># JOE should now contain a single node: 'sphere2'.</span>
+<span class="c"># Move the contents of JOE into FRANK, when FRANK already</span>
+<span class="c"># has a 'sphere2' node. The '-force'</span>
+<span class="c"># flag is needed.</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="nb">set</span><span class="o">=</span><span class="s">':'</span> <span class="p">)</span>
+<span class="c"># Result: u'' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">add</span><span class="o">=</span><span class="s">'FRANK'</span> <span class="p">)</span>
+<span class="c"># Result: u'FRANK' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="nb">set</span><span class="o">=</span><span class="s">'FRANK'</span> <span class="p">)</span>
+<span class="c"># Result: u'FRANK' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">sphere</span><span class="p">(</span> <span class="n">n</span><span class="o">=</span><span class="s">'sphere2'</span> <span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'FRANK:sphere2'), nt.MakeNurbSphere(u'FRANK:makeNurbSphere1')] #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">force</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">mv</span><span class="o">=</span><span class="p">(</span><span class="s">':JOE'</span><span class="p">,</span> <span class="s">':FRANK'</span><span class="p">)</span> <span class="p">)</span>
+<span class="c"># Result: u'JOE' #</span>
+<span class="c"># In moving 'sphere2' from JOE to FRANK it will be renamed to</span>
+<span class="c"># 'sphere3' to ensure uniqueness.</span>
+<span class="c"># The namespace FRANK should now contain 'sphere2', 'sphere2Shape',</span>
+<span class="c"># and 'sphere3'.</span>
+
+<span class="c"># Determine whether the given namespace is root</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">query</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">isRootNamespace</span><span class="o">=</span><span class="s">"FOO"</span> <span class="p">)</span>
+<span class="c"># Result: False #</span>
+
+<span class="c">#Set return value to be absolute namespace name</span>
+<span class="c">#</span>
+<span class="k">print</span><span class="p">(</span><span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span><span class="n">add</span> <span class="o">=</span> <span class="s">"testAbsoluteName"</span><span class="p">,</span> <span class="n">absoluteName</span> <span class="o">=</span> <span class="bp">True</span><span class="p">))</span>
+
+<span class="c">#Create a sample hierachy that contains only empty namespaces, then collapse it</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="nb">set</span> <span class="o">=</span> <span class="s">":"</span><span class="p">)</span>
+<span class="c"># Result: u'' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">add</span> <span class="o">=</span> <span class="s">"emptyLevel1"</span><span class="p">)</span>
+<span class="c"># Result: u'emptyLevel1' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">add</span> <span class="o">=</span> <span class="s">"emptyLevel2"</span><span class="p">,</span> <span class="n">parent</span> <span class="o">=</span> <span class="s">"emptyLevel1"</span><span class="p">)</span>
+<span class="c"># Result: u'emptyLevel1:emptyLevel2' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">add</span> <span class="o">=</span> <span class="s">"leaf"</span><span class="p">,</span> <span class="n">parent</span> <span class="o">=</span> <span class="s">"emptyLevel1:emptyLevel2"</span><span class="p">)</span>
+<span class="c"># Result: u'emptyLevel1:emptyLevel2:leaf' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">collapseAncestors</span> <span class="o">=</span> <span class="s">"emptyLevel1:emptyLevel2:leaf"</span><span class="p">)</span>
+<span class="c"># Result: u'leaf' #</span>
+
+<span class="c"># Create a sample for removing an existed namespace.</span>
+<span class="c"># This command can also be used together with three option parameters named</span>
+<span class="c"># deleteNamespaceContent/mergeNamespaceWithParent/mergeNamespaceWithRoot.</span>
+<span class="c"># The functionality of the three option parameters will also be displayed in the</span>
+<span class="c"># following sample.</span>
+<span class="c"># Note: The three option parameters are mutually exclusive.</span>
+<span class="c">#       Without any option parameters specified, the default way it performances that</span>
+<span class="c">#       it can only remove a namespace that is empty. If you want to remove any namespace</span>
+<span class="c">#       with contents, please add option parameter deleteNamespaceContent.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="nb">set</span> <span class="o">=</span> <span class="s">":"</span><span class="p">)</span>
+<span class="c"># Result: u'' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">add</span> <span class="o">=</span> <span class="s">":RM_TEST_ROOT:FOO:BAR:JOE"</span><span class="p">)</span>
+<span class="c"># Result: u'RM_TEST_ROOT:FOO:BAR:JOE' #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">sphere</span><span class="p">(</span> <span class="n">name</span> <span class="o">=</span> <span class="s">":RM_TEST_ROOT:FOO:obj1"</span><span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'RM_TEST_ROOT:FOO:obj1'), nt.MakeNurbSphere(u'makeNurbSphere1')] #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">sphere</span><span class="p">(</span> <span class="n">name</span> <span class="o">=</span> <span class="s">":RM_TEST_ROOT:FOO:BAR:obj2"</span><span class="p">)</span>
+<span class="c"># Result: [nt.Transform(u'RM_TEST_ROOT:FOO:BAR:obj2'), nt.MakeNurbSphere(u'makeNurbSphere2')] #</span>
+
+<span class="c"># Trying to remove a namespace that is not empty without option parameter,</span>
+<span class="c"># user will get an error message show that maya cannot remove a namespace that</span>
+<span class="c"># is not empty.</span>
+<span class="c">#</span>
+<span class="c">#pm.namespace( removeNamespace = ":RM_TEST_ROOT:FOO") # Run this command you'll get an error.</span>
+
+<span class="c"># Trying to remove an empty namespace.</span>
+<span class="c"># Namespace :RM_TEST_ROOT:FOO:BAR:JOE has been removed successfully by the command.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">removeNamespace</span> <span class="o">=</span> <span class="s">":RM_TEST_ROOT:FOO:BAR:JOE"</span><span class="p">)</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">undo</span><span class="p">()</span>
+
+<span class="c"># Usage of deleteNamespaceContent option parameter:</span>
+<span class="c"># Remove all the contents in the target namespace specified in the command and</span>
+<span class="c"># remove the namespace</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">removeNamespace</span> <span class="o">=</span> <span class="s">":RM_TEST_ROOT:FOO:BAR"</span><span class="p">,</span> <span class="n">deleteNamespaceContent</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">undo</span><span class="p">()</span>
+
+<span class="c"># Usage of mergeNamespaceWithParent parameter:</span>
+<span class="c"># Move the content of the target namespace specified in the command to its parent</span>
+<span class="c"># namespace and remove the namespace.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">removeNamespace</span> <span class="o">=</span> <span class="s">":RM_TEST_ROOT:FOO:BAR"</span><span class="p">,</span> <span class="n">mergeNamespaceWithParent</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+
+<span class="n">pm</span><span class="o">.</span><span class="n">undo</span><span class="p">()</span>
+
+<span class="c"># Usage of mergeNamespaceWithRoot parameter:</span>
+<span class="c"># Move the content of the target namespace specified in the command to the root</span>
+<span class="c"># namespace and remove the namespace.</span>
+<span class="c">#</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">namespace</span><span class="p">(</span> <span class="n">removeNamespace</span> <span class="o">=</span> <span class="s">":RM_TEST_ROOT:FOO:BAR"</span><span class="p">,</span> <span class="n">mergeNamespaceWithRoot</span> <span class="o">=</span> <span class="bp">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.system.mouse.html" title="previous chapter">pymel.core.system.mouse</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.system.namespaceInfo.html" title="next chapter">pymel.core.system.namespaceInfo</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.core.system/pymel.core.system.namespace.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.system.namespaceInfo.html" title="pymel.core.system.namespaceInfo">next</a> |</li>
+<li class="right">
+<a href="pymel.core.system.mouse.html" title="pymel.core.system.mouse">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.system.html">pymel.core.system</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.system/pymel.core.system.namespace.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:34:34 GMT -->
+</body></html>

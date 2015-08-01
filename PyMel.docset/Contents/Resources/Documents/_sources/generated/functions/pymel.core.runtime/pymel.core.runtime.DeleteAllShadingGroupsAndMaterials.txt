@@ -1,0 +1,6 @@
+pymel.core.runtime.DeleteAllShadingGroupsAndMaterials
+=====================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: DeleteAllShadingGroupsAndMaterials

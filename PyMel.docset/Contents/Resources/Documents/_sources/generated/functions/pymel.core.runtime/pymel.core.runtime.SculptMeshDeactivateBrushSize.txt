@@ -1,0 +1,6 @@
+pymel.core.runtime.SculptMeshDeactivateBrushSize
+================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SculptMeshDeactivateBrushSize

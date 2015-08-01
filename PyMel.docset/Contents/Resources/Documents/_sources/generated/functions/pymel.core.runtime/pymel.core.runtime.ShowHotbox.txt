@@ -1,0 +1,6 @@
+pymel.core.runtime.ShowHotbox
+=============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ShowHotbox

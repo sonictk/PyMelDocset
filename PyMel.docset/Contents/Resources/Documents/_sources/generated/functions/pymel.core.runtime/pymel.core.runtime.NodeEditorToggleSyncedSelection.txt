@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorToggleSyncedSelection
+==================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorToggleSyncedSelection

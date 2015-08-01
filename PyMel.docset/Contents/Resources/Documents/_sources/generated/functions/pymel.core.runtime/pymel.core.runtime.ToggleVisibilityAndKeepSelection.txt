@@ -1,0 +1,6 @@
+pymel.core.runtime.ToggleVisibilityAndKeepSelection
+===================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ToggleVisibilityAndKeepSelection

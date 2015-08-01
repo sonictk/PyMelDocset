@@ -1,0 +1,6 @@
+pymel.core.runtime.InsertKeysToolOptions
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: InsertKeysToolOptions

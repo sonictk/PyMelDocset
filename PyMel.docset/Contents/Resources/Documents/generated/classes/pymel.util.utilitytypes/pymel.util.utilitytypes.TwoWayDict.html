@@ -1,0 +1,284 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.util.utilitytypes/pymel.util.utilitytypes.TwoWayDict.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:22:27 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.util.utilitytypes.TwoWayDict — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.util.utilitytypes.html" rel="up" title="pymel.util.utilitytypes"/>
+<link href="pymel.util.utilitytypes.defaultdict.html" rel="next" title="pymel.util.utilitytypes.defaultdict"/>
+<link href="pymel.util.utilitytypes.Singleton.html" rel="prev" title="pymel.util.utilitytypes.Singleton"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.util.utilitytypes » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.util.utilitytypes.TwoWayDict ¶ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ class TwoWayDict ( *args , **kwargs ) ¶ 
+ A dictionary that can also map in reverse: value to key. 
+ &gt;&gt;&gt; twd = TwoWayDict ( { 3 : 'foobar' } ) 
+ &gt;&gt;&gt; twd [ 3 ] 
+ 'foobar' 
+ &gt;&gt;&gt; twd . get_key ( 'foobar' ) 
+ 3 
+ 
+ 
+ Entries in both sets..." name="description"/><meta content="__PyMel_generated_classes_pymel_util_utilitytypes_pymel_util_utilitytypes_TwoWayDict_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.util.utilitytypes.defaultdict.html" title="pymel.util.utilitytypes.defaultdict">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.util.utilitytypes.Singleton.html" title="pymel.util.utilitytypes.Singleton">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.util.utilitytypes.html">pymel.util.utilitytypes</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-util-utilitytypes-twowaydict">
+<h1>pymel.util.utilitytypes.TwoWayDict<a class="headerlink" href="#pymel-util-utilitytypes-twowaydict" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img alt="Inheritance diagram of TwoWayDict" class="inheritance" src="../../../_images/inheritance-101fa87e1f98304cd6729d94042d41f8be6c9103.png" usemap="#inheritance30418b3645"/>
+<map id="inheritance30418b3645" name="inheritance30418b3645">
+<area alt="" coords="5,5,86,29" href="#pymel.util.utilitytypes.TwoWayDict" id="node1" shape="rect" title="A dictionary that can also map in reverse: value to key."></area>
+</map>
+</p>
+<dl class="class">
+<dt id="pymel.util.utilitytypes.TwoWayDict"><a name="//apple_ref/cpp/Class/pymel.util.utilitytypes.TwoWayDict"></a>
+<em class="property">class </em><tt class="descname">TwoWayDict</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.util.utilitytypes.TwoWayDict" title="Permalink to this definition">¶</a></dt>
+<dd><p>A dictionary that can also map in reverse: value to key.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">twd</span> <span class="o">=</span> <span class="n">TwoWayDict</span><span class="p">(</span> <span class="p">{</span><span class="mi">3</span><span class="p">:</span><span class="s">'foobar'</span><span class="p">}</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">twd</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="go">'foobar'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">twd</span><span class="o">.</span><span class="n">get_key</span><span class="p">(</span><span class="s">'foobar'</span><span class="p">)</span>
+<span class="go">3</span>
+</pre></div>
+</div>
+<p>Entries in both sets (keys and values) must be unique within that set, but
+not necessarily across the two sets - ie, you may have 12 as both a key and
+a value, but you may not have two keys which both map to 12 (or, as with a
+regular dict, two key entries for 12).</p>
+<p>If a key is updated to a new value, get_key for the old value will raise
+a KeyError:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">twd</span> <span class="o">=</span> <span class="n">TwoWayDict</span><span class="p">(</span> <span class="p">{</span><span class="mi">3</span><span class="p">:</span><span class="s">'old'</span><span class="p">}</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">twd</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="s">'new'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">twd</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+<span class="go">'new'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">twd</span><span class="o">.</span><span class="n">get_key</span><span class="p">(</span><span class="s">'new'</span><span class="p">)</span>
+<span class="go">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">twd</span><span class="o">.</span><span class="n">get_key</span><span class="p">(</span><span class="s">'old'</span><span class="p">)</span>
+<span class="gt">Traceback (most recent call last):</span>
+    <span class="o">...</span>
+<span class="gr">KeyError</span>: <span class="n">'old'</span>
+</pre></div>
+</div>
+<p>Similarly, if a key is updated to an already-existing value, then the old key
+will be removed from the dictionary!</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">twd</span> <span class="o">=</span> <span class="n">TwoWayDict</span><span class="p">(</span> <span class="p">{</span><span class="s">'oldKey'</span><span class="p">:</span><span class="s">'aValue'</span><span class="p">}</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">twd</span><span class="p">[</span><span class="s">'newKey'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'aValue'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">twd</span><span class="p">[</span><span class="s">'newKey'</span><span class="p">]</span>
+<span class="go">'aValue'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">twd</span><span class="o">.</span><span class="n">get_key</span><span class="p">(</span><span class="s">'aValue'</span><span class="p">)</span>
+<span class="go">'newKey'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">twd</span><span class="p">[</span><span class="s">'oldKey'</span><span class="p">]</span>
+<span class="gt">Traceback (most recent call last):</span>
+    <span class="o">...</span>
+<span class="gr">KeyError</span>: <span class="n">'oldKey'</span>
+</pre></div>
+</div>
+<p>If a group of values is fed to the TwoWayDict (either on initialization, or
+through ‘update’, etc) that is not consistent with these conditions, then the
+resulting dictionary is indeterminate; however, it is guaranteed to be a valid/
+uncorrupted TwoWayDict.
+(This is similar to how dict will allow, for instance, {1:’foo’, 1:’bar’}).</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">twd</span> <span class="o">=</span> <span class="n">TwoWayDict</span><span class="p">(</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="s">'foo'</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="s">'bar'</span><span class="p">}</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Is twd[1] 'foo' or 'bar'?? Nobody knows!</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># ...however, one of these is guaranteed to raise an error...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">twd</span><span class="o">.</span><span class="n">get_key</span><span class="p">(</span><span class="s">'foo'</span><span class="p">)</span> <span class="o">+</span> <span class="n">twd</span><span class="o">.</span><span class="n">get_key</span><span class="p">(</span><span class="s">'bar'</span><span class="p">)</span>   
+<span class="gt">Traceback (most recent call last):</span>
+    <span class="o">...</span>
+<span class="gr">KeyError</span>: <span class="n">(either 'bar' or 'foo')</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">twd</span> <span class="o">=</span> <span class="n">TwoWayDict</span><span class="p">(</span> <span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="s">'foo'</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="s">'foo'</span><span class="p">}</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># Is twd.get_key('foo') 1 or 2? Nobody knows!</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># ...however, one of these is guaranteed to raise an error...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">twd</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">twd</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>   
+<span class="gt">Traceback (most recent call last):</span>
+    <span class="o">...</span>
+<span class="gr">KeyError</span>: <span class="n">(either 1 or 2)</span>
+</pre></div>
+</div>
+<p>Obviously, such shenannigans should be avoided - at some point in the future, this may
+cause an error to be raised...</p>
+<dl class="method">
+<dt id="pymel.util.utilitytypes.TwoWayDict.clear">
+<tt class="descname">clear</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.util.utilitytypes.TwoWayDict.clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.util.utilitytypes.TwoWayDict.copy">
+<tt class="descname">copy</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.util.utilitytypes.TwoWayDict.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.util.utilitytypes.TwoWayDict.get_key">
+<tt class="descname">get_key</tt><big>(</big><em>v</em><big>)</big><a class="headerlink" href="#pymel.util.utilitytypes.TwoWayDict.get_key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.util.utilitytypes.TwoWayDict.has_value">
+<tt class="descname">has_value</tt><big>(</big><em>v</em><big>)</big><a class="headerlink" href="#pymel.util.utilitytypes.TwoWayDict.has_value" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.util.utilitytypes.TwoWayDict.pop">
+<tt class="descname">pop</tt><big>(</big><em>k</em><big>)</big><a class="headerlink" href="#pymel.util.utilitytypes.TwoWayDict.pop" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.util.utilitytypes.TwoWayDict.popitem">
+<tt class="descname">popitem</tt><big>(</big><em>**kws</em><big>)</big><a class="headerlink" href="#pymel.util.utilitytypes.TwoWayDict.popitem" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.util.utilitytypes.TwoWayDict.setdefault">
+<tt class="descname">setdefault</tt><big>(</big><em>**kws</em><big>)</big><a class="headerlink" href="#pymel.util.utilitytypes.TwoWayDict.setdefault" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.util.utilitytypes.TwoWayDict.update">
+<tt class="descname">update</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.util.utilitytypes.TwoWayDict.update" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.util.utilitytypes.Singleton.html" title="previous chapter">pymel.util.utilitytypes.Singleton</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.util.utilitytypes.defaultdict.html" title="next chapter">pymel.util.utilitytypes.defaultdict</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/classes/pymel.util.utilitytypes/pymel.util.utilitytypes.TwoWayDict.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.util.utilitytypes.defaultdict.html" title="pymel.util.utilitytypes.defaultdict">next</a> |</li>
+<li class="right">
+<a href="pymel.util.utilitytypes.Singleton.html" title="pymel.util.utilitytypes.Singleton">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.util.utilitytypes.html">pymel.util.utilitytypes</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.util.utilitytypes/pymel.util.utilitytypes.TwoWayDict.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:22:27 GMT -->
+</body></html>

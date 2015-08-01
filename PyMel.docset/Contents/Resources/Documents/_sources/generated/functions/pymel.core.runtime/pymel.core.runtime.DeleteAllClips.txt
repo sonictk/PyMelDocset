@@ -1,0 +1,6 @@
+pymel.core.runtime.DeleteAllClips
+=================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: DeleteAllClips

@@ -1,0 +1,6 @@
+pymel.core.runtime.SoloMaterial
+===============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SoloMaterial

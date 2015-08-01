@@ -1,0 +1,6 @@
+pymel.core.runtime.WhatsNewStartupDialogOn
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: WhatsNewStartupDialogOn

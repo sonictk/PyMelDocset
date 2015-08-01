@@ -1,0 +1,6 @@
+pymel.core.runtime.Birail1Options
+=================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: Birail1Options

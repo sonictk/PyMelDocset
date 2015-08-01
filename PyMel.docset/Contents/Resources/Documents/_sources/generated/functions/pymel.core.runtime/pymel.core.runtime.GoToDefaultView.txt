@@ -1,0 +1,6 @@
+pymel.core.runtime.GoToDefaultView
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: GoToDefaultView

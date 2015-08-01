@@ -1,0 +1,6 @@
+pymel.core.runtime.SquashOptions
+================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SquashOptions

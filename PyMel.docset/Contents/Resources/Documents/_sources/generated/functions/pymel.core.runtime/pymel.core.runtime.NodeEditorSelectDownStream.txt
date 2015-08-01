@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorSelectDownStream
+=============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorSelectDownStream

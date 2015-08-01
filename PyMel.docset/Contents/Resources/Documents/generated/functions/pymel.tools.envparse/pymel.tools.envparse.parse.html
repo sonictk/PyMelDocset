@@ -1,0 +1,168 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.tools.envparse/pymel.tools.envparse.parse.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:36:00 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.tools.envparse.parse — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.tools.envparse.html" rel="up" title="pymel.tools.envparse"/>
+<link href="pymel.tools.envparse.parseMayaenv.html" rel="next" title="pymel.tools.envparse.parseMayaenv"/>
+<link href="pymel.tools.envparse.getMayaAppDir.html" rel="prev" title="pymel.tools.envparse.getMayaAppDir"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.tools.envparse » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.tools.envparse.parse ¶ 
+ 
+ 
+ parse ( text , environ={'MAYA_MODULE_PATH': '/Applications/Autodesk/maya2016/Maya.app/Contents/modules:/Users/chad/Library/Preferences/Autodesk/maya/2016/modules:/Users/chad/Library/Preferences/Autodesk/maya/modules:/Users/Shared/Autodesk/modules/maya/2016:/Users/Shared/Autodesk/modules/maya' ,..." name="description"/><meta content="__PyMel_generated_functions_pymel_tools_envparse_pymel_tools_envparse_parse_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.tools.envparse.parseMayaenv.html" title="pymel.tools.envparse.parseMayaenv">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.tools.envparse.getMayaAppDir.html" title="pymel.tools.envparse.getMayaAppDir">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.tools.envparse.html">pymel.tools.envparse</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-tools-envparse-parse">
+<h1>pymel.tools.envparse.parse<a class="headerlink" href="#pymel-tools-envparse-parse" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.tools.envparse.parse"><a name="//apple_ref/cpp/Function/pymel.tools.envparse.parse"></a>
+<tt class="descname">parse</tt><big>(</big><em>text</em>, <em>environ={'MAYA_MODULE_PATH': '/Applications/Autodesk/maya2016/Maya.app/Contents/modules:/Users/chad/Library/Preferences/Autodesk/maya/2016/modules:/Users/chad/Library/Preferences/Autodesk/maya/modules:/Users/Shared/Autodesk/modules/maya/2016:/Users/Shared/Autodesk/modules/maya'</em>, <em>'__KMP_REGISTERED_LIB_2854': '0x10c8071d0-cafe6807-libiomp5.dylib'</em>, <em>'PYMEL_INCLUDE_EXAMPLES': 'True'</em>, <em>'FBX_LOCATION': '/Applications/Autodesk/maya2016/plug-ins/fbx/'</em>, <em>'LOGNAME': 'chad'</em>, <em>'USER': 'chad'</em>, <em>'SUBSTANCES_LOCATION': '/Applications/Autodesk/maya2016/plug-ins/substance/substances'</em>, <em>'PATH': '/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Autodesk/maya2016/Maya.app/Contents/bin:/usr/aw/COM/bin:/Applications/Autodesk/maya2016/plug-ins/bifrost/bin:/Applications/Autodesk/mentalrayForMaya2016/bin:/Applications/Autodesk/maya2016/plug-ins/xgen/bin'</em>, <em>'HOME': '/Users/chad'</em>, <em>'MAYA_SCRIPT_BASE': '/Applications/Autodesk/maya2016/Maya.app/Contents'</em>, <em>'MENTALRAY_INCLUDE_LOCATION': '/Applications/Autodesk/mentalrayForMaya2016/shaders/include'</em>, <em>'Apple_PubSub_Socket_Render': '/private/tmp/com.apple.launchd.GFlR2zM0Jj/Render'</em>, <em>'MAYA_LICENSE_METHOD': 'Standalone'</em>, <em>'MAYA_LICENSE': 'unlimited'</em>, <em>'QT_MAC_NO_NATIVE_MENUBAR': '1'</em>, <em>'XPC_FLAGS': '0x0'</em>, <em>'MAYA_SCRIPT_PATH': '/Users/chad/Documents/maya/projects/default/scripts:/Users/chad/Library/Preferences/Autodesk/maya/2016/scripts:/Users/chad/Library/Preferences/Autodesk/maya/scripts:/Users/chad/Library/Preferences/Autodesk/maya/2016/presets:/Users/Shared/Autodesk/maya/2016/scripts:/Users/Shared/Autodesk/maya/scripts:/Users/chad/Library/Preferences/Autodesk/maya/2016/prefs/shelves:/Users/chad/Library/Preferences/Autodesk/maya/2016/prefs/markingMenus:/Users/chad/Library/Preferences/Autodesk/maya/2016/prefs/scripts:/Applications/Autodesk/maya2016/Maya.app/Contents/scripts:/Applications/Autodesk/maya2016/Maya.app/Contents/scripts/startup:/Applications/Autodesk/maya2016/Maya.app/Contents/scripts/shelves:/Applications/Autodesk/maya2016/Maya.app/Contents/scripts/others:/Applications/Autodesk/maya2016/Maya.app/Contents/scripts/AETemplates:/Applications/Autodesk/maya2016/Maya.app/Contents/scripts/unsupported:/Applications/Autodesk/maya2016/Maya.app/Contents/scripts/paintEffects:/Applications/Autodesk/maya2016/Maya.app/Contents/scripts/fluidEffects:/Applications/Autodesk/maya2016/Maya.app/Contents/scripts/hair:/Applications/Autodesk/maya2016/Maya.app/Contents/scripts/cloth:/Applications/Autodesk/maya2016/Maya.app/Contents/scripts/live:/Applications/Autodesk/maya2016/Maya.app/Contents/scripts/fur:/Applications/Autodesk/maya2016/Maya.app/Contents/scripts/muscle:/Applications/Autodesk/maya2016/Maya.app/Contents/scripts/turtle:/Applications/Autodesk/maya2016/Maya.app/Contents/scripts/FBX:/Applications/Autodesk/maya2016/Maya.app/Contents/scripts/mayaHIK:/Applications/Autodesk/maya2016/plug-ins/bifrost/scripts/presets:/Applications/Autodesk/maya2016/plug-ins/bifrost/scripts:/Applications/Autodesk/maya2016/plug-ins/fbx/scripts:/Applications/Autodesk/mentalrayForMaya2016/scripts/AETemplates:/Applications/Autodesk/mentalrayForMaya2016/scripts/mentalray:/Applications/Autodesk/mentalrayForMaya2016/scripts/unsupported:/Applications/Autodesk/mentalrayForMaya2016/scripts:/Applications/Autodesk/maya2016/plug-ins/substance/scripts:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts/cafm:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts/xgenm:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts/xgenm/ui:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts/xgenm/xmaya:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts/xgenm/ui/brushes:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts/xgenm/ui/dialogs:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts/xgenm/ui/fxmodules:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts/xgenm/ui/tabs:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts/xgenm/ui/util:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts/xgenm/ui/widgets:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts'</em>, <em>'MAYA_REVERSE_FILEFORMAT_EXT': '1'</em>, <em>'XPC_SERVICE_NAME': 'com.autodesk.Maya.2016.87220'</em>, <em>'WF_IMF_CIN_WHITE_POINT': '685'</em>, <em>'MAYA_LOCATION': '/Applications/Autodesk/maya2016/Maya.app/Contents'</em>, <em>'PYTHONPATH': ':/Applications/Autodesk/maya2016/plug-ins/bifrost/scripts/presets:/Applications/Autodesk/maya2016/plug-ins/bifrost/scripts:/Applications/Autodesk/maya2016/plug-ins/fbx/scripts:/Applications/Autodesk/mentalrayForMaya2016/scripts/AETemplates:/Applications/Autodesk/mentalrayForMaya2016/scripts/mentalray:/Applications/Autodesk/mentalrayForMaya2016/scripts/unsupported:/Applications/Autodesk/mentalrayForMaya2016/scripts:/Applications/Autodesk/maya2016/plug-ins/substance/scripts:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts/cafm:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts/xgenm:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts/xgenm/ui:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts/xgenm/xmaya:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts/xgenm/ui/brushes:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts/xgenm/ui/dialogs:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts/xgenm/ui/fxmodules:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts/xgenm/ui/tabs:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts/xgenm/ui/util:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts/xgenm/ui/widgets:/Applications/Autodesk/maya2016/plug-ins/xgen/scripts'</em>, <em>'SSH_AUTH_SOCK': '/private/tmp/com.apple.launchd.CdVivsNO3b/Listeners'</em>, <em>'MENTALRAY_SHADERS_LOCATION': '/Applications/Autodesk/mentalrayForMaya2016/shaders'</em>, <em>'SHELL': '/bin/bash'</em>, <em>'MAYA_PRESET_PATH': ':/Applications/Autodesk/maya2016/plug-ins/bifrost/presets:/Applications/Autodesk/maya2016/plug-ins/fbx/presets:/Applications/Autodesk/mentalrayForMaya2016/presets/attrPresets:/Applications/Autodesk/mentalrayForMaya2016/presets/attrPresets/maya_bifrost_liquid:/Applications/Autodesk/mentalrayForMaya2016/presets/attrPresets/mia_material:/Applications/Autodesk/mentalrayForMaya2016/presets/attrPresets/mia_material_x:/Applications/Autodesk/mentalrayForMaya2016/presets/attrPresets/mia_material_x_passes:/Applications/Autodesk/mentalrayForMaya2016/presets:/Applications/Autodesk/maya2016/plug-ins/substance/presets:/Applications/Autodesk/maya2016/plug-ins/xgen/presets'</em>, <em>'XBMLANGPATH': '/Users/chad/Library/Preferences/Autodesk/maya/2016/prefs/icons:/Users/chad/Library/Preferences/Autodesk/maya/prefs/icons:/Users/Shared/Autodesk/maya/2016/icons:/Users/Shared/Autodesk/maya/icons:/Applications/Autodesk/maya2016/Maya.app/Contents/icons:/Applications/Autodesk/maya2016/Maya.app/Contents/app-defaults:/Applications/Autodesk/maya2016/Maya.app/Contents/icons/paintEffects:/Applications/Autodesk/maya2016/Maya.app/Contents/icons/fluidEffects:/Applications/Autodesk/maya2016/Maya.app/Contents/icons/hair:/Applications/Autodesk/maya2016/Maya.app/Contents/icons/cloth:/Applications/Autodesk/maya2016/Maya.app/Contents/icons/live:/Applications/Autodesk/maya2016/Maya.app/Contents/icons/fur:/Applications/Autodesk/maya2016/Maya.app/Contents/icons/muscle:/Applications/Autodesk/maya2016/Maya.app/Contents/icons/turtle:/Applications/Autodesk/maya2016/Maya.app/Contents/icons/FBX:/Applications/Autodesk/maya2016/Maya.app/Contents/icons/mayaHIK:/Applications/Autodesk/maya2016/plug-ins/bifrost/icons:/Applications/Autodesk/maya2016/plug-ins/fbx/icons:/Applications/Autodesk/mentalrayForMaya2016/icons:/Applications/Autodesk/maya2016/plug-ins/substance/icons:/Applications/Autodesk/maya2016/plug-ins/xgen/icons'</em>, <em>'MAYA_RENDER_DESC_PATH': ':/Applications/Autodesk/mentalrayForMaya2016/rendererDesc'</em>, <em>'MAYA_SHADER_LIBRARY_PATH': '/Users/Shared/Autodesk/maya/ShaderLibrary/shaders'</em>, <em>'MENTALRAY_LOCATION': '/Applications/Autodesk/mentalrayForMaya2016/'</em>, <em>'MAYA_FBX_PLUGIN_LOCATION': '/Applications/Autodesk/maya2016/plug-ins/fbx/plug-ins'</em>, <em>'TMPDIR': '/var/folders/8l/_gxk_gxx4xxdrfc27y0fjj0r0000zg/T/'</em>, <em>'MENTALRAY_BIN_LOCATION': '/Applications/Autodesk/mentalrayForMaya2016/bin'</em>, <em>'MAYA_PLUG_IN_PATH': '/Users/chad/Library/Preferences/Autodesk/maya/2016/plug-ins:/Users/chad/Library/Preferences/Autodesk/maya/plug-ins:/Users/Shared/Autodesk/maya/2016/plug-ins:/Users/Shared/Autodesk/maya/plug-ins:/Applications/Autodesk/maya2016/Maya.app/Contents/MacOS/plug-ins:/Applications/Autodesk/maya2016/plug-ins/bifrost/plug-ins:/Applications/Autodesk/maya2016/plug-ins/fbx/plug-ins:/Applications/Autodesk/mentalrayForMaya2016/plug-ins:/Applications/Autodesk/maya2016/plug-ins/substance/plug-ins:/Applications/Autodesk/maya2016/plug-ins/xgen/plug-ins'</em>, <em>'BIFROST_LOCATION': '/Applications/Autodesk/maya2016/plug-ins/bifrost/'</em>, <em>'MAYA_APP_DIR': '/Users/chad/Library/Preferences/Autodesk/maya'</em>, <em>'PYTHONHOME': '/Applications/Autodesk/maya2016/Maya.app/Contents/Frameworks/Python.framework/Versions/Current'</em>, <em>'MAYA_PLUG_IN_RESOURCE_PATH': ':/Applications/Autodesk/maya2016/plug-ins/bifrost/resources:/Applications/Autodesk/maya2016/plug-ins/fbx/resources:/Applications/Autodesk/mentalrayForMaya2016/resources:/Applications/Autodesk/maya2016/plug-ins/substance/resources:/Applications/Autodesk/maya2016/plug-ins/xgen/resources'</em>, <em>'XGEN_LOCATION': '/Applications/Autodesk/maya2016/plug-ins/xgen/'</em>, <em>'__CF_USER_TEXT_ENCODING': '0x3EF:0x0:0x0'</em>, <em>'IMF_PLUG_IN_PATH': ':/Applications/Autodesk/mentalrayForMaya2016/bin/image'</em>, <em>'WF_IMF_CIN_CORRECTION': 'both'}</em>, <em>osname='posix'</em><big>)</big><a class="headerlink" href="#pymel.tools.envparse.parse" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.tools.envparse.getMayaAppDir.html" title="previous chapter">pymel.tools.envparse.getMayaAppDir</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.tools.envparse.parseMayaenv.html" title="next chapter">pymel.tools.envparse.parseMayaenv</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.tools.envparse/pymel.tools.envparse.parse.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.tools.envparse.parseMayaenv.html" title="pymel.tools.envparse.parseMayaenv">next</a> |</li>
+<li class="right">
+<a href="pymel.tools.envparse.getMayaAppDir.html" title="pymel.tools.envparse.getMayaAppDir">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.tools.envparse.html">pymel.tools.envparse</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.tools.envparse/pymel.tools.envparse.parse.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:36:00 GMT -->
+</body></html>

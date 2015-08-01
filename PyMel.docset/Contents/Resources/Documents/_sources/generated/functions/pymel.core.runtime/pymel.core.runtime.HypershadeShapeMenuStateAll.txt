@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeShapeMenuStateAll
+==============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeShapeMenuStateAll

@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeTestTexture
+========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeTestTexture

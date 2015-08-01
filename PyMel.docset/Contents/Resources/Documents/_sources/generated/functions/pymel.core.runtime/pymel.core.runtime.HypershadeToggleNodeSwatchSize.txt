@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeToggleNodeSwatchSize
+=================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeToggleNodeSwatchSize

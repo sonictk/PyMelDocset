@@ -1,0 +1,6 @@
+pymel.core.runtime.PaintEffectsGlobalSettings
+=============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: PaintEffectsGlobalSettings

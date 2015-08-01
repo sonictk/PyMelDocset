@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeRevertToDefaultTabs
+================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeRevertToDefaultTabs

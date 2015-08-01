@@ -1,0 +1,6 @@
+pymel.core.runtime.ScriptEditor
+===============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ScriptEditor

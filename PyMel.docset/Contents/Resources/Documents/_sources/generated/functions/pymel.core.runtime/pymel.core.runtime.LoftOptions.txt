@@ -1,0 +1,6 @@
+pymel.core.runtime.LoftOptions
+==============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: LoftOptions

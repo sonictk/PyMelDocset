@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorCreateTab
+======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorCreateTab

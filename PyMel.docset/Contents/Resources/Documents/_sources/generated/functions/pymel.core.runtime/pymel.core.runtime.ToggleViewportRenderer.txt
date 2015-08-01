@@ -1,0 +1,6 @@
+pymel.core.runtime.ToggleViewportRenderer
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ToggleViewportRenderer

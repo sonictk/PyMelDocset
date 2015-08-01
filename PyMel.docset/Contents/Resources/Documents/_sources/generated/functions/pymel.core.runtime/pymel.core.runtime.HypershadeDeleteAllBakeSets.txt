@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeDeleteAllBakeSets
+==============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeDeleteAllBakeSets

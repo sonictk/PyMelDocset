@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeExportSelectedNetwork
+==================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeExportSelectedNetwork

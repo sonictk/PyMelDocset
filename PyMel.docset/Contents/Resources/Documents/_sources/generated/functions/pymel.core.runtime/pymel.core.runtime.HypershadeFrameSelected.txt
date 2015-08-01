@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeFrameSelected
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeFrameSelected

@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeToggleNodeTitleMode
+================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeToggleNodeTitleMode

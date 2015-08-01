@@ -1,0 +1,516 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.system/pymel.core.system.FileReference.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:22:22 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.system.FileReference — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.system.html" rel="up" title="pymel.core.system"/>
+<link href="pymel.core.system.Namespace.html" rel="next" title="pymel.core.system.Namespace"/>
+<link href="pymel.core.system.FileInfo.html" rel="prev" title="pymel.core.system.FileInfo"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.system » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.system.FileReference ¶ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ class FileReference ( pathOrRefNode=None , namespace=None , refnode=None ) ¶ 
+ A class for manipulating references which inherits Path and path. you can create an
+instance by supplying the path to a reference file, its namespace, or its reference node to the
+appropriate keyword. The namespace and..." name="description"/><meta content="__PyMel_generated_classes_pymel_core_system_pymel_core_system_FileReference_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.system.Namespace.html" title="pymel.core.system.Namespace">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.system.FileInfo.html" title="pymel.core.system.FileInfo">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.system.html">pymel.core.system</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-system-filereference">
+<h1>pymel.core.system.FileReference<a class="headerlink" href="#pymel-core-system-filereference" title="Permalink to this headline">¶</a></h1>
+<p class="graphviz">
+<img alt="Inheritance diagram of FileReference" class="inheritance" src="../../../_images/inheritance-cb5e8fb7c93a757a0f9de4f8e9b21ff4fffe245d.png" usemap="#inheritance4994b45ee5"/>
+<map id="inheritance4994b45ee5" name="inheritance4994b45ee5">
+<area alt="" coords="5,5,93,29" href="#pymel.core.system.FileReference" id="node1" shape="rect" title="A class for manipulating references which inherits Path and path.  you can create an"></area>
+</map>
+</p>
+<dl class="class">
+<dt id="pymel.core.system.FileReference"><a name="//apple_ref/cpp/Class/pymel.core.system.FileReference"></a>
+<em class="property">class </em><tt class="descname">FileReference</tt><big>(</big><em>pathOrRefNode=None</em>, <em>namespace=None</em>, <em>refnode=None</em><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference" title="Permalink to this definition">¶</a></dt>
+<dd><p>A class for manipulating references which inherits Path and path.  you can create an
+instance by supplying the path to a reference file, its namespace, or its reference node to the
+appropriate keyword. The namespace and reference node of the reference can be retreived via
+the namespace and refNode properties. The namespace property can also be used to change the namespace
+of the reference.</p>
+<p>Use listReferences command to return a list of references as instances of the FileReference class.</p>
+<p>It is important to note that instances of this class will have their copy number stripped off
+and stored in an internal variable upon creation.  This is to maintain compatibility with the numerous methods
+inherited from the path class which requires a real file path. When calling built-in methods of FileReference,
+the path will automatically be suffixed with the copy number before being passed to maya commands, thus ensuring
+the proper results in maya as well.</p>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.clean"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.clean"></a>
+<tt class="descname">clean</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.clean" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove edits from the passed in reference node. The reference must be in an unloaded state. To remove a particular type of edit, use the editCommand flag. If no flag is specified, all edits will be removed.</p>
+<dl class="docutils">
+<dt>Flags:</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>editCommand:</dt>
+<dd><p class="first last">For use with cleanReference. Remove only this type of edit. Supported edits are: setAttr addAttr deleteAttr connectAttr
+disconnectAttr and parent</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.file</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.copyNumberList"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.copyNumberList"></a>
+<tt class="descname">copyNumberList</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.copyNumberList" title="Permalink to this definition">¶</a></dt>
+<dd><p>When queried, this flag returns a string array containing a number that uniquely identifies each instance the file is used.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.file</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.exportAnim"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.exportAnim"></a>
+<tt class="descname">exportAnim</tt><big>(</big><em>exportPath</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.exportAnim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export the main scene animation nodes and animation helper nodes from all referenced objects. This flag, when used in conjunction with the -rfn/referenceNode flag, can be constrained to only export animation nodes from the specified reference file. See -ean/exportAnim flag description for details on usage of animation files.</p>
+<dl class="docutils">
+<dt>Flags:</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>force:</dt>
+<dd><p class="first last">Force an action to take place. (new, open, save, remove reference, unload reference) Used with removeReference to force
+remove reference namespace even if it has contents. Cannot be used with removeReference if the reference resides in the
+root namespace. Used with unloadReference to force unload reference even if the reference node is locked, without
+prompting a dialog that warns user about the lost of edits.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>referenceNode:</dt>
+<dd><p class="first last">This flag is only used during queries. In MEL, if it appears before -query then it must be followed by the name of one
+of the scene’s reference nodes. That will determine the reference to be queried by whatever flags appear after -query.
+If the named reference node does not exist within the scene the command will fail with an error. In Python the
+equivalent behavior is obtained by passing the name of the reference node as the flag’s value. In MEL, if this flag
+appears after -query then it takes no argument and will cause the command to return the name of the reference node
+associated with the file given as the command’s argument. If the file is not a reference or for some reason does not
+have a reference node (e.g. the user deleted it) then an empty string will be returned. If the file is not part of the
+current scene then the command will fail with an error. In Python the equivalent behavior is obtained by passing True as
+the flag’s value.       In query mode, this flag can accept a value.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>type:</dt>
+<dd><p class="first last">Set the type of this file.  By default this can be any one of: mayaAscii, mayaBinary, mel,  OBJ, directory, plug-in,
+audio, move, EPS, Adobe(R) Illustrator(R), imageplug-ins may define their own types as well.Return a string array of
+file types that match this file.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.file</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.exportSelectedAnim"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.exportSelectedAnim"></a>
+<tt class="descname">exportSelectedAnim</tt><big>(</big><em>exportPath</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.exportSelectedAnim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export the main scene animation nodes and animation helper nodes from the selected referenced objects. This flag, when used in conjunction with the -rfn/referenceNode flag, can be constrained to only export animation nodes from the selected nodes of a specified reference file. See -ean/exportAnim flag description for details on usage of animation files.</p>
+<dl class="docutils">
+<dt>Flags:</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>force:</dt>
+<dd><p class="first last">Force an action to take place. (new, open, save, remove reference, unload reference) Used with removeReference to force
+remove reference namespace even if it has contents. Cannot be used with removeReference if the reference resides in the
+root namespace. Used with unloadReference to force unload reference even if the reference node is locked, without
+prompting a dialog that warns user about the lost of edits.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>referenceNode:</dt>
+<dd><p class="first last">This flag is only used during queries. In MEL, if it appears before -query then it must be followed by the name of one
+of the scene’s reference nodes. That will determine the reference to be queried by whatever flags appear after -query.
+If the named reference node does not exist within the scene the command will fail with an error. In Python the
+equivalent behavior is obtained by passing the name of the reference node as the flag’s value. In MEL, if this flag
+appears after -query then it takes no argument and will cause the command to return the name of the reference node
+associated with the file given as the command’s argument. If the file is not a reference or for some reason does not
+have a reference node (e.g. the user deleted it) then an empty string will be returned. If the file is not part of the
+current scene then the command will fail with an error. In Python the equivalent behavior is obtained by passing True as
+the flag’s value.       In query mode, this flag can accept a value.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>type:</dt>
+<dd><p class="first last">Set the type of this file.  By default this can be any one of: mayaAscii, mayaBinary, mel,  OBJ, directory, plug-in,
+audio, move, EPS, Adobe(R) Illustrator(R), imageplug-ins may define their own types as well.Return a string array of
+file types that match this file.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.file</span></tt></p>
+</dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.system.FileReference.fullNamespace"><a name="//apple_ref/cpp/Attribute/pymel.core.system.FileReference.fullNamespace"></a>
+<tt class="descname">fullNamespace</tt><a class="headerlink" href="#pymel.core.system.FileReference.fullNamespace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.getReferenceEdits"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.getReferenceEdits"></a>
+<tt class="descname">getReferenceEdits</tt><big>(</big><em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.getReferenceEdits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a list of ReferenceEdit objects for this node</p>
+<p>Adapted from:
+referenceQuery -editString -onReferenceNode &lt;self.refNode&gt;</p>
+<p>By default, removes all edits. If neither of successfulEdits or
+failedEdits is given, they both default to True. If only one is given,
+the other defaults to the opposite value.</p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.importContents"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.importContents"></a>
+<tt class="descname">importContents</tt><big>(</big><em>removeNamespace=False</em><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.importContents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove the encapsulation of the reference around the data within the specified file.    This makes the contents of the specified file part of the current scene and all references to the original file are lost. Returns the name of the reference that was imported.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.file</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.isDeferred"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.isDeferred"></a>
+<tt class="descname">isDeferred</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.isDeferred" title="Permalink to this definition">¶</a></dt>
+<dd><p>When used in conjunction with the -reference flag, this flag determines if the reference is loaded, or if loading is deferred.C: The default is false.Q: When queried, this flag returns true if the reference is deferred, or false if the reference is not deferred. If this is used with -rfn/referenceNode, the -rfn flag must come before -q.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.file</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.isLoaded"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.isLoaded"></a>
+<tt class="descname">isLoaded</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.isLoaded" title="Permalink to this definition">¶</a></dt>
+<dd><p>When used in conjunction with the -reference flag, this flag determines if the reference is loaded, or if loading is deferred.C: The default is false.Q: When queried, this flag returns true if the reference is deferred, or false if the reference is not deferred. If this is used with -rfn/referenceNode, the -rfn flag must come before -q.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.file</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.isUsingNamespaces"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.isUsingNamespaces"></a>
+<tt class="descname">isUsingNamespaces</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.isUsingNamespaces" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns boolean. Queries whether the specified reference file uses namespaces or renaming prefixes.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.file</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.load"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.load"></a>
+<tt class="descname">load</tt><big>(</big><em>newFile=None</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.load" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag loads a file and associates it with the passed reference node. If the reference node does not exist, the command will fail. If the file is already loaded, then this flag will reload the same file.If a file is not given, the command will load (or reload) the last used reference file.</p>
+<dl class="docutils">
+<dt>Flags:</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>loadNoReferences:</dt>
+<dd><p class="first last">This flag is obsolete and has been replaced witht the loadReferenceDepth flag. When used with the -open flag, no
+references will be loaded. When used with -i/import, -r/reference or -lr/loadReference flags, will load the top-most
+reference only.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>loadReferenceDepth:</dt>
+<dd><p class="first last">Used to specify which references should be loaded. Valid types are all, noneand topOnly, which will load all references,
+no references and top-level references only, respectively. May only be used with the -o/open, -i/import, -r/reference or
+-lr/loadReference flags. When noneis used with -lr/loadReference, only path validation is performed. This can be used to
+replace a reference without triggering reload. Not using loadReferenceDepth will load references in the same loaded or
+unloaded state that they were in when the file was saved. Additionally, the -lr/loadReference flag supports a fourth
+type, asPrefs. This will force any nested references to be loaded according to the state (if any) stored in the current
+scene file, rather than according to the state saved in the reference file itself.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>returnNewNodes:</dt>
+<dd><p class="first last">Used to control the return value in open, import, loadReference, and reference operations. It will force the file
+command to return a list of new nodes added to the current scene.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.file</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.lock"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.lock"></a>
+<tt class="descname">lock</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.lock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Locks attributes and nodes from the referenced file.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.file</span></tt></p>
+</dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.system.FileReference.namespace"><a name="//apple_ref/cpp/Attribute/pymel.core.system.FileReference.namespace"></a>
+<tt class="descname">namespace</tt><a class="headerlink" href="#pymel.core.system.FileReference.namespace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.namespaceExists"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.namespaceExists"></a>
+<tt class="descname">namespaceExists</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.namespaceExists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns true if the specified namespace exists, false if not.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.namespace</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.nodes"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.nodes"></a>
+<tt class="descname">nodes</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.nodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns string array. A main flag used to query the contents of the target reference.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.referenceQuery</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.parent"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.parent"></a>
+<tt class="descname">parent</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the parent FileReference object, or None</p>
+</dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.system.FileReference.path"><a name="//apple_ref/cpp/Attribute/pymel.core.system.FileReference.path"></a>
+<tt class="descname">path</tt><a class="headerlink" href="#pymel.core.system.FileReference.path" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="attribute">
+<dt id="pymel.core.system.FileReference.refNode"><a name="//apple_ref/cpp/Attribute/pymel.core.system.FileReference.refNode"></a>
+<tt class="descname">refNode</tt><a class="headerlink" href="#pymel.core.system.FileReference.refNode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.remove"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.remove"></a>
+<tt class="descname">remove</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.remove" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove the given file reference from its parent. This will also Remove everything this file references. Returns the name of the file removed. If the reference is alone in its namespace, remove the namespace. If there are objects remaining in the namespace after the file reference is removed, by default, keep the remaining objects in the namespace. To merge the objects remaining in the namespace to the parent or root namespace, use flags mergeNamespaceWithParent or mergeNamespaceWithRoot. The empty file reference namespace is then removed. To forcibly delete all objects, use flag force. The empty file reference namespace is then removed.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.file</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.removeReferenceEdits"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.removeReferenceEdits"></a>
+<tt class="descname">removeReferenceEdits</tt><big>(</big><em>editCommand=None</em>, <em>force=False</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.removeReferenceEdits" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove edits from the reference.</p>
+<dl class="docutils">
+<dt>editCommand <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>If specified, remove only edits of a particular type: addAttr,
+setAttr, connectAttr, disconnectAttr or parent</dd>
+<dt>force <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Unload the reference if it is not unloaded already</dd>
+<dt>successfulEdits <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Whether to remove successful edits</dd>
+<dt>failedEdits <span class="classifier-delimiter">:</span> <span class="classifier">bool</span></dt>
+<dd>Whether to remove failed edits</dd>
+</dl>
+<p>By default, removes all edits. If neither of successfulEdits or
+failedEdits is given, they both default to True. If only one is given,
+the other defaults to the opposite value. This will only succeed on
+unapplied edits (ie, on unloaded nodes, or failed edits)... However,
+like maya.cmds.file/maya.cmds.referenceEdit, no error will be raised
+if there are no unapplied edits to work on. This may change in the
+future, however...</p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.replaceWith"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.replaceWith"></a>
+<tt class="descname">replaceWith</tt><big>(</big><em>newFile</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.replaceWith" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag loads a file and associates it with the passed reference node. If the reference node does not exist, the command will fail. If the file is already loaded, then this flag will reload the same file.If a file is not given, the command will load (or reload) the last used reference file.</p>
+<dl class="docutils">
+<dt>Flags:</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>loadNoReferences:</dt>
+<dd><p class="first last">This flag is obsolete and has been replaced witht the loadReferenceDepth flag. When used with the -open flag, no
+references will be loaded. When used with -i/import, -r/reference or -lr/loadReference flags, will load the top-most
+reference only.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>loadReferenceDepth:</dt>
+<dd><p class="first last">Used to specify which references should be loaded. Valid types are all, noneand topOnly, which will load all references,
+no references and top-level references only, respectively. May only be used with the -o/open, -i/import, -r/reference or
+-lr/loadReference flags. When noneis used with -lr/loadReference, only path validation is performed. This can be used to
+replace a reference without triggering reload. Not using loadReferenceDepth will load references in the same loaded or
+unloaded state that they were in when the file was saved. Additionally, the -lr/loadReference flag supports a fourth
+type, asPrefs. This will force any nested references to be loaded according to the state (if any) stored in the current
+scene file, rather than according to the state saved in the reference file itself.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>returnNewNodes:</dt>
+<dd><p class="first last">Used to control the return value in open, import, loadReference, and reference operations. It will force the file
+command to return a list of new nodes added to the current scene.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.file</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.selectAll"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.selectAll"></a>
+<tt class="descname">selectAll</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.selectAll" title="Permalink to this definition">¶</a></dt>
+<dd><p>Select all the components of this file as well as its child files.  Note that the file specified must be one that is already opened in this Maya session. The default behavior is to replace the existing selection. Use with the addflag to keep the active selection list.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.file</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.subReferences"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.subReferences"></a>
+<tt class="descname">subReferences</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.subReferences" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.unload"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.unload"></a>
+<tt class="descname">unload</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.unload" title="Permalink to this definition">¶</a></dt>
+<dd><p>This flag will unload the reference file associated with the passed reference node.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.file</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.unlock"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.unlock"></a>
+<tt class="descname">unlock</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.unlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Locks attributes and nodes from the referenced file.</p>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.file</span></tt></p>
+</dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.unresolvedPath"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.unresolvedPath"></a>
+<tt class="descname">unresolvedPath</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.unresolvedPath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+<dl class="method">
+<dt id="pymel.core.system.FileReference.withCopyNumber"><a name="//apple_ref/cpp/Method/pymel.core.system.FileReference.withCopyNumber"></a>
+<tt class="descname">withCopyNumber</tt><big>(</big><big>)</big><a class="headerlink" href="#pymel.core.system.FileReference.withCopyNumber" title="Permalink to this definition">¶</a></dt>
+<dd><p>return the path with the copy number at the end</p>
+</dd></dl>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.system.FileInfo.html" title="previous chapter">pymel.core.system.FileInfo</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.system.Namespace.html" title="next chapter">pymel.core.system.Namespace</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/classes/pymel.core.system/pymel.core.system.FileReference.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.system.Namespace.html" title="pymel.core.system.Namespace">next</a> |</li>
+<li class="right">
+<a href="pymel.core.system.FileInfo.html" title="pymel.core.system.FileInfo">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.system.html">pymel.core.system</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/classes/pymel.core.system/pymel.core.system.FileReference.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:22:23 GMT -->
+</body></html>

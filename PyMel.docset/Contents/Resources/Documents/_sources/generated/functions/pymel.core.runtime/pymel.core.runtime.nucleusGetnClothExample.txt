@@ -1,0 +1,6 @@
+pymel.core.runtime.nucleusGetnClothExample
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: nucleusGetnClothExample

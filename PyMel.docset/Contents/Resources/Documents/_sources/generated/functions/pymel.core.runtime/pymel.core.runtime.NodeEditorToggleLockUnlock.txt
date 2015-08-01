@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorToggleLockUnlock
+=============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorToggleLockUnlock

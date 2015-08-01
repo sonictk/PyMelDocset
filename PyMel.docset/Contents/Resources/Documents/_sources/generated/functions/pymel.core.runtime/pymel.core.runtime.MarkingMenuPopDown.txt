@@ -1,0 +1,6 @@
+pymel.core.runtime.MarkingMenuPopDown
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: MarkingMenuPopDown

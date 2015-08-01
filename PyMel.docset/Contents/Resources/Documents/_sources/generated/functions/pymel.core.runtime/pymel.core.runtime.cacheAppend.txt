@@ -1,0 +1,6 @@
+pymel.core.runtime.cacheAppend
+==============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: cacheAppend

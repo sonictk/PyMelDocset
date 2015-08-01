@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorSetTraversalDepthZero
+==================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorSetTraversalDepthZero

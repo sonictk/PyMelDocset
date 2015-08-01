@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorGridToggleVisibility
+=================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorGridToggleVisibility

@@ -1,0 +1,6 @@
+pymel.core.runtime.AttributeEditor
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: AttributeEditor

@@ -1,0 +1,6 @@
+pymel.core.runtime.ConnectToTime
+================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ConnectToTime

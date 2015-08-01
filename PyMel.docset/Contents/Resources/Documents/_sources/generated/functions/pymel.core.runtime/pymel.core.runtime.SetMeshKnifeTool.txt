@@ -1,0 +1,6 @@
+pymel.core.runtime.SetMeshKnifeTool
+===================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SetMeshKnifeTool

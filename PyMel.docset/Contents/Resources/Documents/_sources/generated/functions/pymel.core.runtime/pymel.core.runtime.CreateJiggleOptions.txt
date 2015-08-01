@@ -1,0 +1,6 @@
+pymel.core.runtime.CreateJiggleOptions
+======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreateJiggleOptions

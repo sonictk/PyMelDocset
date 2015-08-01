@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorToggleAttrFilter
+=============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorToggleAttrFilter

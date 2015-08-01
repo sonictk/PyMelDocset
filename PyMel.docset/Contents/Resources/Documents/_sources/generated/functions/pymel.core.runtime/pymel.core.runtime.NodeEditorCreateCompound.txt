@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorCreateCompound
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorCreateCompound

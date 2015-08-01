@@ -1,0 +1,6 @@
+pymel.core.runtime.DeltaMush
+============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: DeltaMush

@@ -1,0 +1,6 @@
+pymel.core.runtime.GreasePencilTool
+===================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: GreasePencilTool

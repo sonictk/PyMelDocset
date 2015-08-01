@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeMoveTabUp
+======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeMoveTabUp

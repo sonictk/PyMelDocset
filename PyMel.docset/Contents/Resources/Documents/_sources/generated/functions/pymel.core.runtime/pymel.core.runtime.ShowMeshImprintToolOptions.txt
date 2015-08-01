@@ -1,0 +1,6 @@
+pymel.core.runtime.ShowMeshImprintToolOptions
+=============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ShowMeshImprintToolOptions

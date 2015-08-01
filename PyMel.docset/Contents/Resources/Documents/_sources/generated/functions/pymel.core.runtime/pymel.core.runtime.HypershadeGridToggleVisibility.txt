@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeGridToggleVisibility
+=================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeGridToggleVisibility

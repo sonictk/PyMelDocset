@@ -1,0 +1,339 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.modeling/pymel.core.modeling.dataStructure.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:25:09 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.modeling.dataStructure — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.modeling.html" rel="up" title="pymel.core.modeling"/>
+<link href="pymel.core.modeling.detachCurve.html" rel="next" title="pymel.core.modeling.detachCurve"/>
+<link href="pymel.core.modeling.cylinder.html" rel="prev" title="pymel.core.modeling.cylinder"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.modeling » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.modeling.dataStructure ¶ 
+ 
+ 
+ dataStructure ( *args , **kwargs ) ¶ 
+ Takes in a description of the structure and creates it, adding it to the list of available data structures. The
+structure definition can either be supplied in the asStringflag or exist in a file that is referenced by the asFileflag.
+If the removeflag is specified..." name="description"/><meta content="__PyMel_generated_functions_pymel_core_modeling_pymel_core_modeling_dataStructure_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.modeling.detachCurve.html" title="pymel.core.modeling.detachCurve">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.modeling.cylinder.html" title="pymel.core.modeling.cylinder">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.modeling.html">pymel.core.modeling</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-modeling-datastructure">
+<h1>pymel.core.modeling.dataStructure<a class="headerlink" href="#pymel-core-modeling-datastructure" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.core.modeling.dataStructure"><a name="//apple_ref/cpp/Function/pymel.core.modeling.dataStructure"></a>
+<tt class="descname">dataStructure</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.modeling.dataStructure" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes in a description of the structure and creates it, adding it to the list of available data structures. The
+structure definition can either be supplied in the asStringflag or exist in a file that is referenced by the asFileflag.
+If the removeflag is specified with a nameflag then the data structure will be removed. This is to keep all structure
+operations in a single command rather than create separate commands to create, remove, and query the data structures.
+When you use the removeAllflag then every existing metadata structure is removed. Use with care! Note that removed
+structures may still be in use in metadata Streams after removal, they are just no longer available for the creation of
+new Streams.  Both the creation modes and the remove mode are undoable.  Creation of an exact duplicate of an existing
+structure (including name) will succeed silently without actually creating a new structure. Attempting to create a new
+non-duplicate structure with the same name as an existing structure will fail as there is no way to disambiguate two
+structures with the same name.  Querying modes are defined to show information both on the created structures and the
+structure serialization formats that have been registered. The serialization formats preserve the structure information
+as text (e.g. raw, XML, JSON). Since the rawstructure type is built in it will be assumed when none are specified.
+General query with no flags will return the list of names of all currently existing structures.  Querying the formatflag
+will return the list of all registered structure serialization formats.  Querying with the formatsupplied before the
+queryflag will show the detailed description of that particular structure serialization format.  Querying the
+asStringflag with a structure name and serialization format supplied before the queryflag will return a string
+representing the named data structure in the serialization format specified by the formatflag. Even if the format is the
+same as the one that created the structure the query return string may not be identical since the queried value is
+formatted in a standard way - original formatting is not preserved.  Querying the asFileflag with a structure name
+supplied before the queryflag will return the original file from which the structure was generated. If the structure was
+created using the asStringflag or through the API then an empty string will be returned.  Querying the nameflag returns
+the list of all structures created so far.</p>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">asFile</span></tt> / <tt class="docutils literal"><span class="pre">af</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Specify a file that contains the serialized data which describes the structure.  The format of the data is specified by the ‘format’ flag.
+Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">asString</span></tt> / <tt class="docutils literal"><span class="pre">asString</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Specify the string containing the serialized data which describes the structure. The format of the data is specified by the ‘format’ flag.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">dataType</span></tt> / <tt class="docutils literal"><span class="pre">dt</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Used with the flag ‘listMemberNames’ to query the type of the member. The type is appended after each relative member in the array. For example, if the format is
+name=idStructure:int32=id:string=namethe returned array is id int32 name string.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">format</span></tt> / <tt class="docutils literal"><span class="pre">fmt</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Format of data to expect in the structure description. rawis supported natively and will be assumed if the format type is omitted. Others are available via plug-
+in. You can query the available formats by using this flag in query mode. In query mode, this flag can accept a value.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">listMemberNames</span></tt> / <tt class="docutils literal"><span class="pre">lmn</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first" src="../../../_images/create.gif"/>
+<img alt="../../../_images/query.gif" class="last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Query the member names in the dataStructure. The member names will be returned in an array. The name of the data structure will not be returned. To get the type
+of each member, use ‘dataType’ together. Then the type of the member will be appended in the array after their relative member. For example, if the format is
+name=idStructure:int32=id:string=namethe returned array is id int32 name string.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">name</span></tt> / <tt class="docutils literal"><span class="pre">n</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/query.gif" class="first last" src="../../../_images/query.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Query mode only.  Name of the data structure to be queried, or set to list the available names. In query mode, this flag can accept a value.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">remove</span></tt> / <tt class="docutils literal"><span class="pre">rem</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Remove the named data structure. It’s an error if it doesn’t exist.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">removeAll</span></tt> / <tt class="docutils literal"><span class="pre">ral</span></tt></td>
+<td><em>bool</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Remove all metadata structures. This flag can not be used in conjunction with any other flags.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.dataStructure</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">pymel.core</span> <span class="kn">as</span> <span class="nn">pm</span>
+
+<span class="kn">import</span> <span class="nn">maya.cmds</span> <span class="kn">as</span> <span class="nn">cmds</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">dataStructure</span><span class="p">(</span> <span class="n">query</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">format</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="c"># Result: [u'raw'] #</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">dataStructure</span><span class="p">(</span> <span class="n">format</span><span class="o">=</span><span class="s">'raw'</span><span class="p">,</span> <span class="n">asString</span><span class="o">=</span><span class="s">'name=NameAndID:string=name:int32=ID'</span> <span class="p">)</span>
+<span class="c"># Result: u'NameAndID' #</span>
+<span class="c"># Note that this file doesn't exist, it's just an example of how to read</span>
+<span class="c"># from the file after you've created it. The file contents should look</span>
+<span class="c"># like this:</span>
+<span class="c">#               name=FileBasedStructure</span>
+<span class="c">#               string=fileInformation</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">dataStructure</span><span class="p">(</span> <span class="n">asFile</span><span class="o">=</span><span class="s">'someFile.raw'</span> <span class="p">)</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">dataStructure</span><span class="p">(</span> <span class="n">query</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="p">[</span><span class="s">'NameAndID'</span><span class="p">,</span> <span class="s">'FileBasedStructure'</span><span class="p">]</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">dataStructure</span><span class="p">(</span> <span class="n">name</span><span class="o">=</span><span class="s">'NameAndID'</span><span class="p">,</span> <span class="n">format</span><span class="o">=</span><span class="s">'raw'</span><span class="p">,</span> <span class="n">query</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">asString</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="s">'name=NameAndID:string=name:int32=ID'</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">dataStructure</span><span class="p">(</span> <span class="n">remove</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s">'NameAndID'</span> <span class="p">)</span>
+<span class="s">'NameAndID'</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">dataStructure</span><span class="p">(</span> <span class="n">query</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="p">[</span><span class="s">'FileBasedStructure'</span><span class="p">]</span>
+<span class="n">pm</span><span class="o">.</span><span class="n">dataStructure</span><span class="p">(</span> <span class="n">removeAll</span><span class="o">=</span><span class="bp">True</span> <span class="p">)</span>
+<span class="p">[</span><span class="s">'FileBasedStructure'</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.modeling.cylinder.html" title="previous chapter">pymel.core.modeling.cylinder</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.modeling.detachCurve.html" title="next chapter">pymel.core.modeling.detachCurve</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.core.modeling/pymel.core.modeling.dataStructure.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.modeling.detachCurve.html" title="pymel.core.modeling.detachCurve">next</a> |</li>
+<li class="right">
+<a href="pymel.core.modeling.cylinder.html" title="pymel.core.modeling.cylinder">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.modeling.html">pymel.core.modeling</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.modeling/pymel.core.modeling.dataStructure.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:25:10 GMT -->
+</body></html>

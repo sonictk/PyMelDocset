@@ -1,0 +1,6 @@
+pymel.core.runtime.PolygonCollapseEdges
+=======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: PolygonCollapseEdges

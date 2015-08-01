@@ -1,0 +1,341 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.rendering/pymel.core.rendering.nodePreset.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:35:05 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.rendering.nodePreset — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.rendering.html" rel="up" title="pymel.core.rendering"/>
+<link href="pymel.core.rendering.ogsRender.html" rel="next" title="pymel.core.rendering.ogsRender"/>
+<link href="pymel.core.rendering.nodeIconButton.html" rel="prev" title="pymel.core.rendering.nodeIconButton"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.rendering » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.rendering.nodePreset ¶ 
+ 
+ 
+ nodePreset ( *args , **kwargs ) ¶ 
+ Command to save and load preset settings for a node. This command allows you to take a snapshot of the values of all
+attributes of a node and save it to disk as a preset with user specified name. Later the saved preset can be loaded and
+applied onto a different node of..." name="description"/><meta content="__PyMel_generated_functions_pymel_core_rendering_pymel_core_rendering_nodePreset_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.rendering.ogsRender.html" title="pymel.core.rendering.ogsRender">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.rendering.nodeIconButton.html" title="pymel.core.rendering.nodeIconButton">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.rendering.html">pymel.core.rendering</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-rendering-nodepreset">
+<h1>pymel.core.rendering.nodePreset<a class="headerlink" href="#pymel-core-rendering-nodepreset" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.core.rendering.nodePreset"><a name="//apple_ref/cpp/Function/pymel.core.rendering.nodePreset"></a>
+<tt class="descname">nodePreset</tt><big>(</big><em>*args</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.rendering.nodePreset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Command to save and load preset settings for a node. This command allows you to take a snapshot of the values of all
+attributes of a node and save it to disk as a preset with user specified name. Later the saved preset can be loaded and
+applied onto a different node of the same type. The end result is that the node to which the preset is applied takes on
+the same values as the node from which the preset was generated had at the time of the snapshot.</p>
+<p class="rubric">Flags:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="1%"></col>
+<col width="61%"></col>
+<col width="19%"></col>
+<col width="19%"></col>
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head" colspan="2">Long Name / Short Name</th>
+<th class="head">Argument Types</th>
+<th class="head">Properties</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">attributes</span></tt> / <tt class="docutils literal"><span class="pre">atr</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">A white space separated string of the named attributes to save to the preset file. If not specified, all attributes will be stored.
+Flag can have multiple arguments, passed either as a tuple or a list.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">custom</span></tt> / <tt class="docutils literal"><span class="pre">ctm</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Specifies a MEL script for custom handling of node attributes that are not handled by the general save preset mechanism (ie. multis, dynamic attributes, or
+connections). The identifiers #presetName and #nodeName will be expanded before the script is run. The script must return an array of strings which will be saved
+to the preset file and issued as commands when the preset is applied to another node. The custom script can query #nodeName in determining what should be saved to
+the preset, or issue commands to query the selected node in deciding how the preset should be applied.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">delete</span></tt> / <tt class="docutils literal"><span class="pre">delete</span></tt></td>
+<td><em>PyNode, &lt;type ‘unicode’&gt;</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Deletes the existing preset for the node specified by the first argument with the name specified by the second argument.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">exists</span></tt> / <tt class="docutils literal"><span class="pre">ex</span></tt></td>
+<td><em>PyNode, &lt;type ‘unicode’&gt;</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Returns true if the node specified by the first argument already has a preset with a name specified by the second argument. This flag can be used to check if the
+user is about to overwrite an existing preset and thereby provide the user with an opportunity to choose a different name.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">isValidName</span></tt> / <tt class="docutils literal"><span class="pre">ivn</span></tt></td>
+<td><em>unicode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Returns true if the name consists entirely of valid characters for a preset name. Returns false if not. Because the preset name will become part of a file name
+and part of a MEL procedure name, some characters must be disallowed. Only alphanumeric characters and underscore are valid characters for the preset name.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">list</span></tt> / <tt class="docutils literal"><span class="pre">ls</span></tt></td>
+<td><em>PyNode</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><dl class="first last docutils">
+<dt>Lists the names of all presets which can be loaded onto the specified node.</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">load</span></tt> / <tt class="docutils literal"><span class="pre">ld</span></tt></td>
+<td><em>PyNode, &lt;type ‘unicode’&gt;</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Sets the settings of the node specified by the first argument according to the preset specified by the second argument. Any attributes on the node which are the
+destinations of connections or whose children (multi children or compound children) are destinations of connections will not be changed by the preset.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+<tr class="row-even"><td colspan="2"><tt class="docutils literal"><span class="pre">save</span></tt> / <tt class="docutils literal"><span class="pre">sv</span></tt></td>
+<td><em>PyNode, &lt;type ‘unicode’&gt;</em></td>
+<td><img alt="../../../_images/create.gif" class="first last" src="../../../_images/create.gif"/>
+</td>
+</tr>
+<tr class="row-odd"><td> </td>
+<td colspan="3"><p class="first">Saves the current settings of the node specified by the first argument to a preset of the name specified by the second argument. If a preset for that node with
+that name already exists, it will be overwritten with no warning. You can use the -exists flag to check if the preset already exists. If an attribute of the node
+is the destination of a connection, the value of the attribute will not be written as part of the preset.</p>
+<blockquote class="last">
+<div></div></blockquote>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.nodePreset</span></tt></p>
+<p class="rubric">Example:</p>
+<div class="highlight-python"><div class="highlight"><pre>import pymel.core as pm
+
+# To determine if "My Special Settings" is a valid name for a preset (it
+# is not because it contains spaces):
+#
+pm.nodePreset(isValidName="My Special Settings" )
+# Result: False #
+# To save the settings of nurbsSphereShape1 as a preset called "smithers":
+#
+pm.nodePreset( save=("nurbsSphereShape1","smithers") )
+# To get a list of all presets available that could be applied to
+# nurbsSphereShape1:
+#
+pm.nodePreset( list='nurbsSphereShape1' )
+[u'smithers', u'smoothSphere', u'roughSphere', u'atmoSphere']
+# To load the preset named "smoothSphere" onto nurbsSphereShape1:
+#
+pm.nodePreset( load=('nurbsSphereShape1', 'smoothSphere') )
+# To delete the preset named "smithers" which was formerly available for the
+# node nurbsSphereShape1 (and other nodes of the same type):
+#
+pm.nodePreset( delete=('nurbsSphereShape1', 'smithers') )
+# To determine if a preset named "smithers" exists for the node
+# nurbsSphereShape1 (it does not because it has been deleted):
+#
+pm.nodePreset( exists=('nurbsSphereShape1', 'smithers') )
+0
+# Create a preset containing only the color and diffuse attributes:
+#
+pm.nodePreset( save=("lambert1","colorAndDiffuse"), attributes='color diffuse' )
+# Create a preset to map a checker texture to the applied node.
+# Because the "custom" callback is required to return an array of MEL commands,
+# each line of python in the array must be wrapped by the MEL "python" command.
+#
+def customChecker():
+    doCheckerCmds = [
+                # Get the name of the node to apply the checker to.
+                "python( \"selection = pm.ls( selection=True )\" );",
+            "python( \"nodeName = selection[0]\" );",
+            # Create a checker texture.
+            "python( \"checkerName = pm.shadingNode( 'checker', asTexture=True )\" );",
+            # Connect the checker to the node the preset is applied to.
+                "python( \"pm.connectAttr( (checkerName+\\\".outColor\\\"), (nodeName+\\\".color\\\") )\" );"
+                ]
+    return doCheckerCmds
+        pm.nodePreset(custom="python( \"customChecker()\" )", save=('lambert1', 'checkered') )
+</pre></div>
+</div>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.rendering.nodeIconButton.html" title="previous chapter">pymel.core.rendering.nodeIconButton</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.rendering.ogsRender.html" title="next chapter">pymel.core.rendering.ogsRender</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.core.rendering/pymel.core.rendering.nodePreset.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.rendering.ogsRender.html" title="pymel.core.rendering.ogsRender">next</a> |</li>
+<li class="right">
+<a href="pymel.core.rendering.nodeIconButton.html" title="pymel.core.rendering.nodeIconButton">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.rendering.html">pymel.core.rendering</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.rendering/pymel.core.rendering.nodePreset.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:35:05 GMT -->
+</body></html>

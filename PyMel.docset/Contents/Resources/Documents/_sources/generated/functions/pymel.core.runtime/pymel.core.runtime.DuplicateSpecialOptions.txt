@@ -1,0 +1,6 @@
+pymel.core.runtime.DuplicateSpecialOptions
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: DuplicateSpecialOptions

@@ -1,0 +1,6 @@
+pymel.core.runtime.TogglePolyDisplayHardEdgesColor
+==================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: TogglePolyDisplayHardEdgesColor

@@ -1,0 +1,6 @@
+pymel.core.runtime.Vortex
+=========================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: Vortex

@@ -1,0 +1,314 @@
+<html><body><p>﻿<!-- saved from url=(0024)http://docs.autodesk.com -->
+<!DOCTYPE html>
+
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.system/pymel.core.system.createReference.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:24:25 GMT -->
+<!-- Added by HTTrack --><meta content="text/html;charset=utf-8" http-equiv="content-type"/><!-- /Added by HTTrack -->
+</p>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>pymel.core.system.createReference — PyMEL 1.0.7 documentation</title>
+<link href="../../../_static/nature.css" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+<script src="../../../_static/jquery.js" type="text/javascript"></script>
+<script src="../../../_static/underscore.js" type="text/javascript"></script>
+<script src="../../../_static/doctools.js" type="text/javascript"></script>
+<link href="../../../index-2.html" rel="top" title="PyMEL 1.0.7 documentation"/>
+<link href="../../pymel.core.system.html" rel="up" title="pymel.core.system"/>
+<link href="pymel.core.system.dagObjectCompare.html" rel="next" title="pymel.core.system.dagObjectCompare"/>
+<link href="pymel.core.system.convertUnit.html" rel="prev" title="pymel.core.system.convertUnit"/>
+<link href="../../../../style/adsk.cpm.css" rel="stylesheet" type="text/css"/><meta content="expert" name="experiencelevel"/><meta content="programmer" name="audience"/><meta content="enable" name="user-comments"/><meta content="ENU" name="language"/><meta content="MAYAUL" name="product"/><meta content="2016" name="release"/><meta content="Customization" name="book"/><meta content="Maya-Tech-Docs" name="component"/><meta content="/view/MAYAUL/2016/ENU/" name="helpsystempath"/><meta content="04/03/2015" name="created"/><meta content="04/03/2015" name="modified"/><meta content="Navigation 
+ 
+ 
+ index 
+ 
+ modules | 
+ 
+ next | 
+ 
+ previous | 
+ PyMEL 1.0.7 documentation » 
+ pymel.core.system » 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ pymel.core.system.createReference ¶ 
+ 
+ 
+ createReference ( filepath , **kwargs ) ¶ 
+ Create a reference to the specified file. Returns the name of the file referenced.Query all file references from the specified file. 
+ 
+ Flags: 
+ 
+ 
+ loadNoReferences: 
+ This flag is obsolete and has been replaced witht the loadReferenceDepth flag. When used with..." name="description"/><meta content="__PyMel_generated_functions_pymel_core_system_pymel_core_system_createReference_html" name="topicid"/>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a accesskey="I" href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a accesskey="N" href="pymel.core.system.dagObjectCompare.html" title="pymel.core.system.dagObjectCompare">next</a> |</li>
+<li class="right">
+<a accesskey="P" href="pymel.core.system.convertUnit.html" title="pymel.core.system.convertUnit">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a accesskey="U" href="../../pymel.core.system.html">pymel.core.system</a> »</li>
+</ul>
+</div>
+<div class="document">
+<div class="documentwrapper">
+<div class="bodywrapper">
+<div class="body">
+<div class="section" id="pymel-core-system-createreference">
+<h1>pymel.core.system.createReference<a class="headerlink" href="#pymel-core-system-createreference" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="pymel.core.system.createReference"><a name="//apple_ref/cpp/Function/pymel.core.system.createReference"></a>
+<tt class="descname">createReference</tt><big>(</big><em>filepath</em>, <em>**kwargs</em><big>)</big><a class="headerlink" href="#pymel.core.system.createReference" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a reference to the specified file. Returns the name of the file referenced.Query all file references from the specified file.</p>
+<dl class="docutils">
+<dt>Flags:</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>loadNoReferences:</dt>
+<dd><p class="first last">This flag is obsolete and has been replaced witht the loadReferenceDepth flag. When used with the -open flag, no
+references will be loaded. When used with -i/import, -r/reference or -lr/loadReference flags, will load the top-most
+reference only.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>loadReferenceDepth:</dt>
+<dd><p class="first last">Used to specify which references should be loaded. Valid types are all, noneand topOnly, which will load all references,
+no references and top-level references only, respectively. May only be used with the -o/open, -i/import, -r/reference or
+-lr/loadReference flags. When noneis used with -lr/loadReference, only path validation is performed. This can be used to
+replace a reference without triggering reload. Not using loadReferenceDepth will load references in the same loaded or
+unloaded state that they were in when the file was saved. Additionally, the -lr/loadReference flag supports a fourth
+type, asPrefs. This will force any nested references to be loaded according to the state (if any) stored in the current
+scene file, rather than according to the state saved in the reference file itself.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>defaultNamespace:</dt>
+<dd><p class="first last">Use the default name space for import and referencing.  This is an advanced option.  If set, then on import or
+reference, Maya will attempt to place all nodes from the imported or referenced file directly into the root (default)
+name space, without invoking any name clash resolution algorithms.  If the names of any of the new objects    already
+exist in the root namespace, then errors will result. The user of this flag is responsible for creating a name clash
+resolution mechanism outside of Maya to avoid such errors. Note:This flag    is intended only for use with custom file
+translators written through    the API. Use at your own risk.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>deferReference:</dt>
+<dd><p class="first last">When used in conjunction with the -reference flag, this flag determines if the reference is loaded, or if loading is
+deferred.C: The default is false.Q: When queried, this flag returns true if the reference is deferred, or false if the
+reference is not deferred. If this is used with -rfn/referenceNode, the -rfn flag must come before -q.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>groupReference:</dt>
+<dd><p class="first last">Used only with the -r or the -i flag. Used to group all the imported/referenced items under a single transform.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>groupLocator:</dt>
+<dd><p class="first last">Used only with the -r and the -gr flag. Used to group the output of groupReference under a locator</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>groupName:</dt>
+<dd><p class="first last">Used only with the -gr flag. Optionally used to set the name of the transform node that the imported/referenced items
+will be grouped under.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>namespace:</dt>
+<dd><p class="first last">The namespace name to use that will group all objects during importing and referencing. Change the namespace used to
+group all the objects from the specified referenced file. The reference must have been created with the Using
+Namespacesoption, and must be loaded. Non-referenced nodes contained in the existing namespace will also be moved to the
+new namespace. The new namespace will be created by this command and can not already exist. The old namespace will be
+removed.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>referenceNode:</dt>
+<dd><p class="first last">This flag is only used during queries. In MEL, if it appears before -query then it must be followed by the name of one
+of the scene’s reference nodes. That will determine the reference to be queried by whatever flags appear after -query.
+If the named reference node does not exist within the scene the command will fail with an error. In Python the
+equivalent behavior is obtained by passing the name of the reference node as the flag’s value. In MEL, if this flag
+appears after -query then it takes no argument and will cause the command to return the name of the reference node
+associated with the file given as the command’s argument. If the file is not a reference or for some reason does not
+have a reference node (e.g. the user deleted it) then an empty string will be returned. If the file is not part of the
+current scene then the command will fail with an error. In Python the equivalent behavior is obtained by passing True as
+the flag’s value.       In query mode, this flag can accept a value.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>renamingPrefix:</dt>
+<dd><p class="first last">The string to use as a prefix for all objects from this file. This flag has been replaced by -ns/namespace.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>swapNamespace:</dt>
+<dd><p class="first last">Can only be used in conjunction with the -r/reference or -i/import flags. This flag will replace any occurrences of a
+given namespace to an alternate specified namespace. This namespace swapwill occur as the file is referenced in. It
+takes in two string arguments. The first argument specifies the namespace to replace. The second argument specifies the
+replacement namespace. Use of this flag, implicitly enables the use of namespaces and cannot be used with
+deferReference.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>sharedReferenceFile:</dt>
+<dd><p class="first last">Can only be used in conjunction with the -r/reference flag and the -ns/namespace flag (there is no prefix support). This
+flag modifies the ‘-r/reference’ flag to indicate that all nodes within that reference should be treated as shared
+nodes. New copies    of those nodes will not be created if a copy already exists. Instead, the shared node will be
+merged with the existing node. The specifics of what happens when two nodes are merged depends on the node type. This
+flag cannot be used in conjunction with -shd/sharedNodes.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>sharedNodes:</dt>
+<dd><p class="first last">This flag modifies the ‘-r/reference’ flag to indicate that certain    types of nodes within that reference should be
+treated as shared nodes. All shared nodes will be placed in the default namespace. New copies of those nodes will not be
+created if a copy already exists in the default namespace, instead the shared node will be merged with the    existing
+node. The specifics of what happens when two nodes are merged depends on the node type. In general attribute values will
+not be merged, meaning the values set on any existing shared nodes will be retained, and the values of the nodes being
+merged in will be ignored. The valid options are displayLayers, shadingNetworks, renderLayersByName, and
+renderLayersById. This flag is multi-use; it may be specified multiple times to for example, share both display layers
+and shading networks. Two shading networks will only be merged if    they are identical: the network    of nodes feeding
+into the shading group must be arranged identically with equivalent nodes have the same name and node type. Additionally
+if a network is animated or contains a DAG object or expression it will not be mergeable. This flag cannot be used in
+conjunction with -srf/sharedReferenceFile.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>returnNewNodes:</dt>
+<dd><p class="first last">Used to control the return value in open, import, loadReference, and reference operations. It will force the file
+command to return a list of new nodes added to the current scene.</p>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<p>Derived from mel command <tt class="xref py py-obj docutils literal"><span class="pre">maya.cmds.file</span></tt></p>
+</dd></dl>
+</div>
+</div>
+</div>
+</div>
+<div class="sphinxsidebar">
+<div class="sphinxsidebarwrapper">
+<h4>Previous topic</h4>
+<p class="topless"><a href="pymel.core.system.convertUnit.html" title="previous chapter">pymel.core.system.convertUnit</a></p>
+<h4>Next topic</h4>
+<p class="topless"><a href="pymel.core.system.dagObjectCompare.html" title="next chapter">pymel.core.system.dagObjectCompare</a></p>
+<h3><a href="../../../modules.html">Core Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.animation.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Type Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.core.datatypes.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.uitypes.html#module-pymel.core.uitypes"><tt class="xref">uitypes</tt></a></li>
+</ul>
+<h3><a href="../../../modules.html">Other Modules</a></h3>
+<ul>
+<li><a class="reference external" href="../../pymel.api.plugins.html#module-pymel.api.plugins"><tt class="xref">plugins</tt></a></li>
+<li><a class="reference external" href="../../pymel.mayautils.html#module-pymel.mayautils"><tt class="xref">mayautils</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html#module-pymel.util"><tt class="xref">util</tt></a></li>
+<li><a class="reference external" href="../../pymel.versions.html#module-pymel.versions"><tt class="xref">versions</tt></a>
+</li><li><a class="reference external" href="../../pymel.tools.html#module-pymel.tools"><tt class="xref">tools</tt></a></li>
+</ul>
+<!--
+<ul>   
+<li><a class="reference external" href="../../pymel.core.animation.html.html#module-pymel.core.animation"><tt class="xref">animation</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.datatypes.html.html#module-pymel.core.datatypes"><tt class="xref">datatypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.effects.html.html#module-pymel.core.effects"><tt class="xref">effects</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.general.html.html#module-pymel.core.general"><tt class="xref">general</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.language.html.html#module-pymel.core.language"><tt class="xref">language</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.modeling.html.html#module-pymel.core.modeling"><tt class="xref">modeling</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.nodetypes.html.html#module-pymel.core.nodetypes"><tt class="xref">nodetypes</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.rendering.html.html#module-pymel.core.rendering"><tt class="xref">rendering</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.system.html.html#module-pymel.core.system"><tt class="xref">system</tt></a></li>
+<li><a class="reference external" href="../../pymel.core.windows.html.html#module-pymel.core.windows"><tt class="xref">windows</tt></a></li>
+<li><a class="reference external" href="../../pymel.util.html.html#module-pymel.util"><tt class="xref">pymel.util</tt></a></li>
+
+</ul>
+-->
+<h3>This Page</h3>
+<ul class="this-page-menu">
+<li><a href="../../../_sources/generated/functions/pymel.core.system/pymel.core.system.createReference.txt" rel="nofollow">Show Source</a></li>
+</ul>
+<div id="searchbox" style="display: none">
+<h3>Quick search</h3>
+<form action="http://help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/search.html" class="search" method="get"></form>
+<input name="q" type="text"/>
+<input type="submit" value="Go"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+<p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+</div>
+</div>
+<div class="clearer"></div>
+</div>
+<div class="related">
+<h3>Navigation</h3>
+<ul>
+<li class="right" style="margin-right: 10px">
+<a href="../../../genindex.html" title="General Index">index</a></li>
+<li class="right">
+<a href="../../../py-modindex.html" title="Python Module Index">modules</a> |</li>
+<li class="right">
+<a href="pymel.core.system.dagObjectCompare.html" title="pymel.core.system.dagObjectCompare">next</a> |</li>
+<li class="right">
+<a href="pymel.core.system.convertUnit.html" title="pymel.core.system.convertUnit">previous</a> |</li>
+<li><a href="../../../index-2.html">PyMEL 1.0.7 documentation</a> »</li>
+<li><a href="../../pymel.core.system.html">pymel.core.system</a> »</li>
+</ul>
+</div>
+<div class="footer">
+        © Copyright 2009, Chad Dombrova.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.3.
+    </div>
+<!-- Mirrored from help.autodesk.com/cloudhelp/2016/ENU/Maya-Tech-Docs/PyMel/generated/functions/pymel.core.system/pymel.core.system.createReference.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 01 Aug 2015 05:24:25 GMT -->
+</body></html>

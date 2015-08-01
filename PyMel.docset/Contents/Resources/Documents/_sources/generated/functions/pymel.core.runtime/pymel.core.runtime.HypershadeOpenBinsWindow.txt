@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeOpenBinsWindow
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeOpenBinsWindow

@@ -1,0 +1,6 @@
+pymel.core.runtime.SendAsNewScene3dsMax
+=======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SendAsNewScene3dsMax

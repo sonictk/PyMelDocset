@@ -1,0 +1,6 @@
+pymel.core.runtime.ProfilerToolReset
+====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ProfilerToolReset

@@ -1,0 +1,6 @@
+pymel.core.runtime.OutlinerToggleConnected
+==========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: OutlinerToggleConnected

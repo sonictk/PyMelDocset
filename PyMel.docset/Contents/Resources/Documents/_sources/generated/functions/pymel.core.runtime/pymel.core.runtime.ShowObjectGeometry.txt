@@ -1,0 +1,6 @@
+pymel.core.runtime.ShowObjectGeometry
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ShowObjectGeometry

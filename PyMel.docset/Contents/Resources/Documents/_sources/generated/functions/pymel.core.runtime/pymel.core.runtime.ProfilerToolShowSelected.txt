@@ -1,0 +1,6 @@
+pymel.core.runtime.ProfilerToolShowSelected
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ProfilerToolShowSelected

@@ -1,0 +1,6 @@
+pymel.core.runtime.SetMeshGrabTool
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SetMeshGrabTool

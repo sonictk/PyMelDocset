@@ -1,0 +1,6 @@
+pymel.core.runtime.CreateCameraFromView
+=======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreateCameraFromView

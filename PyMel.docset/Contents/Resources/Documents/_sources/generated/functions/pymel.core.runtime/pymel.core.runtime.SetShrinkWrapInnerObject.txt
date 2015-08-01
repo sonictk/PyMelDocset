@@ -1,0 +1,6 @@
+pymel.core.runtime.SetShrinkWrapInnerObject
+===========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SetShrinkWrapInnerObject

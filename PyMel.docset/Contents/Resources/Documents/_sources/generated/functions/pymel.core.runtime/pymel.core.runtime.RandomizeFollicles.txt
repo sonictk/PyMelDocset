@@ -1,0 +1,6 @@
+pymel.core.runtime.RandomizeFollicles
+=====================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: RandomizeFollicles

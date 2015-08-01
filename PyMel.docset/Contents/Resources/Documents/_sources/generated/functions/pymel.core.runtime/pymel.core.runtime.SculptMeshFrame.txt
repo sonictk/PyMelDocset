@@ -1,0 +1,6 @@
+pymel.core.runtime.SculptMeshFrame
+==================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: SculptMeshFrame

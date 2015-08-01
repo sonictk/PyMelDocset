@@ -1,0 +1,6 @@
+pymel.core.runtime.CreateSculptDeformerOptions
+==============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: CreateSculptDeformerOptions

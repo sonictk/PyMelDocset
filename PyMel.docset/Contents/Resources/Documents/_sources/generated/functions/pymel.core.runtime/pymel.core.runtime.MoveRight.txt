@@ -1,0 +1,6 @@
+pymel.core.runtime.MoveRight
+============================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: MoveRight

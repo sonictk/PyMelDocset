@@ -1,0 +1,6 @@
+pymel.core.runtime.UntemplateObject
+===================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: UntemplateObject

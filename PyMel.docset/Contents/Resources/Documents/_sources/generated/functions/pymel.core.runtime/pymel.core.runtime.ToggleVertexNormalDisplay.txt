@@ -1,0 +1,6 @@
+pymel.core.runtime.ToggleVertexNormalDisplay
+============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ToggleVertexNormalDisplay

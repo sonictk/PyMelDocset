@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeConnectSelected
+============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeConnectSelected

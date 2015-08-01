@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorGraphAllShapesExceptShading
+========================================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorGraphAllShapesExceptShading

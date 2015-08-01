@@ -1,0 +1,6 @@
+pymel.core.runtime.HypershadeCreateNewTab
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: HypershadeCreateNewTab

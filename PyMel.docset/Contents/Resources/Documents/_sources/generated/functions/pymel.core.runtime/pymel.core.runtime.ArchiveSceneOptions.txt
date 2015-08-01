@@ -1,0 +1,6 @@
+pymel.core.runtime.ArchiveSceneOptions
+======================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: ArchiveSceneOptions

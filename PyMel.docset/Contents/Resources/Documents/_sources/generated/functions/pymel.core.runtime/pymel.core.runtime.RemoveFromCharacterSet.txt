@@ -1,0 +1,6 @@
+pymel.core.runtime.RemoveFromCharacterSet
+=========================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: RemoveFromCharacterSet

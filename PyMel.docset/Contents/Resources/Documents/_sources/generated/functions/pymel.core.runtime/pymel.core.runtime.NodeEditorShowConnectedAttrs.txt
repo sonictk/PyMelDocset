@@ -1,0 +1,6 @@
+pymel.core.runtime.NodeEditorShowConnectedAttrs
+===============================================
+
+.. currentmodule:: pymel.core.runtime
+
+.. autofunction:: NodeEditorShowConnectedAttrs
